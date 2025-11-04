@@ -65,8 +65,7 @@ Para cada tipos e categorias dos cabos de rede, aquele que será utilizado depen
 
 # Referências
 
-https://blog.kalunga.com.br/cabo-de-rede-conheca-os-tipos-e-as-diferencas-entre-eles/. Acesso em 27/02/2025. https://conduscamp.com.br/blog/tipos-de-cabo-de-rede/. Acesso em 27/02/2025 
-
+https://blog.kalunga.com.br/cabo-de-rede-conheca-os-tipos-e-as-diferencas-entre-eles/. Acesso em 27/02/2025. 
+https://conduscamp.com.br/blog/tipos-de-cabo-de-rede/. Acesso em 27/02/2025 
 https://dutotec.com.br/blog/materiais-eletricos/qual-cabo-de-rede-usar/. Acesso em 27/02/2025 
-
 https://tecnoblog.net/responde/o-que-e-ethernet/. Acesso em 27/02/2025. 
