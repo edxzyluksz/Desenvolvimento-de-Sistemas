@@ -9,7 +9,7 @@ O objetivo era simples: Destrançar os pares e ordená-los no padrão T568A para
 No entanto, o processo para mim, tal como provavelmente para muitos, foi uma experiência frustrante, pois em meu caso, a maior dificuldade estava no desencape com o equipamento, que muitas vezes me resultou em também cortar as cores de cobre no interior, fazendo com que meu cabo ficasse relativamente pequeno. 
 No fim das contas, eu sequer consegui finalizar o segundo lado, e precisei de bastante suporte do orientador Wellington.
 
-<div style="display: block; text-align: center">
+<div style="display: block; justify-content: center">
   <img src="https://images.tcdn.com.br/img/img_prod/1220136/alicate_crimpar_8p8c_6p6c_4c_2c_catr_ht568r_speedlan_1099_1_372dbe65105aaf6802008498da2f64a8.jpg" width="150">
   <img src="https://www.upperseg.com.br/img/products/cabo-de-rede-u-utp-cat-6e-cm-cinza-mpt-metro_1_600.jpg" width="150">
   <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/ainffbuc/file.png" width="150">
