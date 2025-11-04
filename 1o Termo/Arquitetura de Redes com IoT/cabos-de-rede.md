@@ -61,3 +61,12 @@ Cat8: Possui largura de banda de até 40Gbps, frequência de 2000MHz e 30m de di
 # Conclusão 
 
 Para cada tipos e categorias dos cabos de rede, aquele que será utilizado depende unicamente do cliente, onde pode gerir um escritório de uma empresa ou escola ou apenas para conexões mais rápidas em casa. Também é necessário se atentar com os modelos de cabos e switches, roteadores e hubs e compará-los, para observar se há compatibilidade com os dispositivos que fornecem a internet. 
+
+
+# Referências
+
+https://blog.kalunga.com.br/cabo-de-rede-conheca-os-tipos-e-as-diferencas-entre-eles/. Acesso em 27/02/2025. https://conduscamp.com.br/blog/tipos-de-cabo-de-rede/. Acesso em 27/02/2025 
+
+https://dutotec.com.br/blog/materiais-eletricos/qual-cabo-de-rede-usar/. Acesso em 27/02/2025 
+
+https://tecnoblog.net/responde/o-que-e-ethernet/. Acesso em 27/02/2025. 
