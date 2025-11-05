@@ -5,7 +5,7 @@ Projeto - É algo que será desenvolvido para suprir uma demanda ou uma necessid
 **Como começar um bom projeto**
 - Definir claramente os stakeholders e suas expectativas, tal como verificar a viabilidade e ter a possibilidade de comunicação e importante documentar todas as etapas, planejamentos monetários e feedbacks 
 
-*Ciclo de vida dos projetos** 
+**Ciclo de vida dos projetos** 
 - Um projeto possui um ciclo de vida que se estende de seu início até seu encerramento. Um bom projeto pode aumentar sua vida útil dado ao bom planejamento inicial, execução, monitoramento e controle constantes em sua duração ao se tornar obsoleto = fim. 
 
 **Tripla Restrição**
