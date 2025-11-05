@@ -64,4 +64,4 @@ XML e JSON -> Transporte de dados entre os servidores
 
 ## Ponto Crucial
 
-O que definirá se o contêiner a ser utilizado é semântico ou não se trata do plano de desenvolvimento, mais especificamente na parte da Experiência do Usuário (UX). Quando o contêiner é semântico, os chamados Leitores de Tela para acessibilidade conseguirão identificar mais facilmente do que cada trecho da marcação se tratam.
+O que definirá se o contêiner a ser utilizado é semântico ou não se trata do plano de desenvolvimento, mais especificamente na parte da Experiência do Usuário (UX). Quando o contêiner é semântico, os chamados Leitores de Tela para acessibilidade conseguirão identificar mais facilmente do que cada trecho da marcação se tratam. No entanto, os contêiners não semânticos DEVEM ser utilizados em conjunto, visto que apelações visuais não serão relevantes para a acessibilidade, portanto, essenciais para a experiência do público geral.
