@@ -1,46 +1,114 @@
-# Banco de Dados
-Um banco de dados se trata do conjunto de dados armazenados de forma organizada e estruturada, um arquivo que contém as informações. 
+## 💾 BANCO DE DADOS: ANOTAÇÕES DE ESTUDO
 
-**Trajetória do Banco de Dados**
+---
 
-Quando surgiu o primeiro banco de dados: Seu nome é IMS (Information Management System) pela IBM em 1964 
+### **Conceitos Fundamentais**
 
-Quando se tornou padrão para o uso de BDs para o armazenamento das informações: 
-- 1970 – Crescer no mercado 
-- 1980 – Padrão SQL no mercado
+#### **Componentes de um SGBD**
 
-O que é o padrão SQL e como funciona: É uma linguagem de programação para gerenciar e manipular em bancos de dados relacionais 
+* **Itens Individuais:** Linhas - Registros ou Tuplas.
+* **Colunas:** Atributos ou Campos.
+* **Características:** Propriedades.
+* **Ações:** Restaurar, fazer *overwrite*, adicionar e excluir informações.
 
-# Dados SQL e NO-SQL: 
-SQL:  Dados estruturados para pesquisas com tabelas, divididos em linhas e colunas.  Com a presença de chaves primárias nas tabelas, é possível o sistema identificar cada linha. 
-Em resumo, isso permite que os usuários realizarem consultas complexas nos bancos de dados relacionais, e é o padrão aceito amplamente pelo mundo 
+#### **MER - Modelo Entidade Relacional**
+Uma forma de **representar a realidade em termos de dados**.
+* Modelo Visual.
 
-NO-SQL: Um banco de dados não-relacional para armazenar grandes volumes de dados que não se encaixam no modelo de tabela tradicional, vulgo Big Data 
-São altamente escaláveis e frequentemente utilizados em aplicações web com excesso de dados, sendo projetados para distribuição em múltiplas máquinas; 
+#### **DER - Diagrama Entidade Relacional**
+* **Normalização:**
+    1. O que o sistema precisa guardar? (**LR** - Levantamento de Requisitos).
+    2. Criar um **Modelo Conceitual**.
+    3. Organizar e descrever a **estrutura do Banco de Dados**.
+    4. Criar o Banco de Dados usando um **SGBD**.
 
-- SQL = Textos, números, data e hora;
-- NoSQL = Documentos, imagens, vídeos, músicas, grafos, chave-valor ou gráfico. 
+---
 
-# Bancos de dados mais utilizados do mercado: 
+### **Estrutura de Tabelas e Chaves**
 
-**SQL:**
+#### **Tabela Cliente (Exemplo)**
+| CAMPO | TIPO DE DADOS |
+| :--- | :--- |
+| NOME | VARCHAR |
+| CPF | CHAR |
+| EMAIL | VARCHAR |
 
-- MySQL 
-- PostgreSQL 
-- MariaDB (AWS) 
-- OracleDB 
-- MS SQL Server 
-- SQL Lite 
-- AuroraDB 
+#### **Chave Primária (Primary Key - PK)**
+Um campo (ou conjunto de campos) que **identifica unicamente cada registro em uma tabela**. Basicamente, o **ID**.
 
-**NoSQL:**
+* **Características:**
+    * Uma para cada registro.
+    * Não pode ser **nula**.
+    * Garante a **identificação exclusiva** de cada linha na tabela.
+* **Importância:**
+    * Facilita a **busca e atualização** de dados.
+    * Mantém a **integridade dos dados**.
+    * Base para **relacionamento entre tabelas**.
+* **Tipos:**
+    * **Chave Simples:** Atributo único.
+    * **Chave Composta:** Dois ou mais atributos, para formar **unicidade**.
 
-- MongoDB 
-- Redis 
-- CassandraDB 
-- DynamoDB 
-- FireStore 
-- IBM Cloudant
-- CouchDB
+#### **Chave Estrangeira (Foreign Key - FK)**
+Um campo em uma tabela que **aponta para a chave primária de outra tabela**.
 
-_Um SGBD é um grupo de ferramentas disponibilizadas para lidar com o banco de dados, e usamos ela para:  Armazenamento e recuperação; Integridade e segurança_
+* **Função:**
+    * Estabelecer **vínculos entre tabelas**.
+    * **Integridade Relacional**.
+    * Navegação e consulta integrada em conjuntos de dados relacionados.
+
+#### **Exemplo de Relacionamento (Autor e Livro)**
+1. A tabela **AUTOR** é **PAI**, sendo assim, a tabela **LIVRO** é **FILHO** do **AUTOR**.
+2. A tabela **AUTOR** possui somente uma chave, sendo esta **primária** "ID\_AUTOR", enquanto a tabela **LIVRO** possui chave **primária** "ID\_LIVRO" e chave **estrangeira** "ID\_AUTOR".
+3. Se não existe um autor atribuído a nenhum livro, este pode ser apagado sem problemas, caso contrário, o SGBD **proibiria a ação** (Integridade Referencial).
+
+---
+
+### **Normalização**
+
+#### **Modelo Físico**
+É interessante **DESNORMALIZAR** um BD para **RELATÓRIOS MAIS PESADOS** e para **FACILITAR IMPRESSÃO**.
+
+#### **Desnormalização**
+* Permite **redundância de dados**.
+* **Inconsistência** - ao apagar determinada informação, outras também podem ser excluídas ou mantidas isoladamente.
+
+#### **1ª Forma Normal (1FN)**
+Ao seguir a 1FN, estas considerações serão impostas:
+* Para **atributos multivalorados** (que podem ter vários valores para um mesmo registro), **duplica-se as linhas** para evitar desnormalização.
+* Para **atributos compostos**, este atributo transforma-se em **vários campos**.
+
+#### **Exemplo 1FN (Pessoa e Cursos)**
+| NOME | ENDEREÇO | NIF | CURSOS |
+| :--- | :--- | :--- | :--- |
+| ANA | COVILHÃ | 123456789 | PROGRAMADOR |
+| ANA | FUNDÃO | 999999999 | OPERADOR |
+| ANA | FUNDÃO | 000000000 | PROGRAMADOR |
+| CARLOS | COVILHÃ | 222333444 | ANALISTA |
+| CARLOS | COVILHÃ | 222333444 | PROGRAMADOR |
+| CARLOS | COVILHÃ | 222333444 | OPERADOR |
+| PAULO | GUARDA | 555666777 | OPERADOR |
+| PAULO | GUARDA | 555666777 | ANALISTA |
+
+#### **Exemplo 1FN (Pedido de Produtos)**
+| PEDIDO | PRODUTO | QTD | PREÇO |
+| :--- | :--- | :--- | :--- |
+| 1001 | CAMISA | 2 | 50 |
+| 1001 | TÉNIS | 1 | 100 |
+
+#### **2ª Forma Normal (2FN)**
+* Obrigatoriamente precisa da **1FN**.
+* Consiste basicamente em **atribuir as tabelas corretamente**.
+
+---
+
+### **SGBD e Dificuldades**
+
+#### **Aplicações**
+* **TCCs** (Trabalhos de Conclusão de Curso) deverão ser documentados e possuir **MER** e **DER**.
+* **SQL:** DDL (Data Definition Language), DML (Data Manipulation Language).
+
+#### **SGBD (Sistema Gerenciador de Banco de Dados)**
+Um Banco de Dados atual com SGBD é exponencialmente **mais veloz** do que uma planilha/Excel, e mais ainda que escrito com papel e caneta.
+
+#### **Dificuldades Encontradas**
+Aprender a manipular e criar ambientes como esse (Banco de Dados) significa estar disputando lado a lado com seus concorrentes e **abraçar o futuro**. As folhas físicas são mais **obsoletas** e difíceis de...
