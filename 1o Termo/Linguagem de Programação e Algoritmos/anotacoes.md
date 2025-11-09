@@ -1,253 +1,417 @@
-# Lógica de Programação e Algoritmos 👾
+# Lógica de Programação e Algoritmos
 
-**💡 Conceitos Fundamentais**
-- Lógica de Programação: A base do pensamento estruturado para desenvolver sistemas eficientes.
-- Algoritmo: Uma sequência ordenada e finita de passos para realizar uma tarefa.
-- Estrutura de Análise de Problemas:
-- Entrada (Input): O que é dado.
-- Processamento: O que precisa ser feito com os dados.
-- Saída (Output): O resultado esperado.
-- Elementos Essenciais: Entrada/Saída de Dados, Condicionais (SE/ENTÃO/SENÃO), e Laços de Repetição (ENQUANTO/PARA).
+## Conceitos e Fundamentos
 
-## 💻 Exercícios Resolvidos (Pseudocódigo)
+---
 
-**1. Média de Notas e Condição de Aprovação**
+### **Lógica de Programação e Algoritmos**
 
-**Objetivo:** Calcular a média de três notas e verificar se o aluno está APROVADO (Média $\ge 6.0$) ou REPROVADO.
+* **Lógica de Programação:** Consiste na lógica de produção para se desenvolver um sistema adequado.
+* **Conceito de Algoritmo:** A automação. É o processo em que uma tarefa deixa de ser desempenhada pelo homem e passa a ser realizada por máquinas.
+* **Especificação de Algoritmo:** A sequência ordenada de passos que deve ser seguida para a realização de uma tarefa, garantindo sua repetibilidade.
 
-```
-VARIÁVEIS:
-"Nota1, Nota2, Nota3", Real, Notas do aluno.
-Media, Real, Média aritmética das notas.
-MediaMinima, Real, Média mínima necessária para aprovação (Ex: 6.0).
-```
+### **LPA - Termos da Programação e Retomada dos Pseudocódigos (25/03)**
 
-```
-INICIO
-    // ENTRADA
-    SOLICITAR Nota1
-    SOLICITAR Nota2
-    SOLICITAR Nota3
-    DEFINIR MediaMinima = 6.0 // Ou valor solicitado
+#### **Variáveis**
+* Campo da memória onde são gravadas as informações.
+* O dado pode ser alterado.
+* **Variável:** Sempre começa com **letra minúscula**.
 
-    // PROCESSAMENTO
-    Media = (Nota1 + Nota2 + Nota3) / 3
+#### **Constantes**
+* Dado **fixo**.
+* Não pode ser alterado.
+* Sempre todos os caracteres em **MAIÚSCULO**.
 
-    // SAÍDA E CONDICIONAL
-    SE Media >= MediaMinima ENTÃO
-        ESCREVER "APROVADO"
-    SENÃO
-        ESCREVER "REPROVADO"
-    FIM SE
-FIM
-```
+#### **Escopo de Variável**
+* Ao declarar a variável dentro de uma condição, ela só terá **utilidade dentro do bloco**.
+* De declaração de variável em um bloco só é acessível no **bloco de comando**.
 
-**2. Cálculo de Saldo e Quantidade (Ingressos)**
+### **Variáveis Locais e Globais**
 
-**Objetivo:** Calcular a quantidade máxima de ingressos que podem ser comprados com um valor total e o troco resultante.
+* **Variáveis Locais:** Precisa ser declarada **antes do bloco**.
+* **Variáveis Globais:**
 
-```
-VARIÁVEIS:
-TotalDinheiro, Real, O dinheiro total disponível (Ex: 50.00).
-ValorIngresso, Real, O preço de um único ingresso (Ex: 12.00).
-Quantidade, Inteiro, Número de ingressos comprados.
-Sobrou, Real, O troco/valor restante.
-```
+### **Regras de Declaração de Variáveis**
 
-```
-INICIO
-    // ENTRADA/DADOS
-    TotalDinheiro = 50.00
-    ValorIngresso = 12.00
+* **Nunca** inicia com **Nº** (ex: A9).
+* Dependendo da LP, pode começar com **caracteres especiais**.
+* **Não** começar com **operadores matemáticos** ($*, /, $ etc.).
+* **Pode usar** (Sublinhado) `_`.
+* **Pode usar** Letras + **Nº**.
+* **Pode usar** Letras + **-** + **Nº**.
 
-    // PROCESSAMENTO
-    // Uso de divisão inteira para obter a quantidade máxima
-    Quantidade = TotalDinheiro / ValorIngresso 
-    
-    // Cálculo do troco
-    Sobrou = TotalDinheiro - (ValorIngresso * Quantidade)
+### **Sinal de Atribuição**
+$$=$$
 
-    // SAÍDA
-    ESCREVER "Quantidade de Ingressos:", Quantidade
-    ESCREVER "Sobrou R$", Sobrou
-FIM
-```
+### **Pauta - 11/02 (Continuação)**
 
-**3. Laço de Repetição: Tabuada de 1 a 10**
+* Linguagem de Programação e Algoritmos
+* Tomada de Decisões: Continuação
+* Do Fluxograma na Praia
+* Operação de Atribuição
 
-**Objetivo:** Imprimir a tabuada de 1 a 10 (múltiplos de 1 a 10).
+### **Fluxograma (Elementos)**
 
-```
-VARIÁVEIS:
-X, Inteiro, O número base da tabuada (de 1 a 10).
-Y, Inteiro, O multiplicador (de 1 a 10).
-```
+* Início/Fim (OVAL)
+* Processamento (RETÂNGULO)
+* Operação de Entrada de Dados (PARALELOGRAMO)
+* Operação de Saída de Dados (PARALELOGRAMO)
+* Decisão (LOSANGO)
+* Operação de Atribuição (SETAS)
 
-```
-INICIO
-    X = 1
-    // Loop principal para o número base
-    ENQUANTO X <= 10 FAÇA
-        Y = 1
-        // Loop aninhado para o multiplicador
-        ENQUANTO Y <= 10 FAÇA
-            // Imprime "X x Y = Resultado"
-            IMPRIMA (X, "x", Y, "=", X * Y)
-            Y = Y + 1
-        FIM ENQUANTO
-        X = X + 1
-    FIM ENQUANTO
-FIM
-```
+### **Passos para a Solução de Problemas**
 
-**4. 🗺️ Fluxograma (Exemplo: Pedido de Pizzaria)**
+Sempre leia um enunciado de problema e se pergunte:
 
-O fluxo abaixo ilustra a lógica de um sistema de pedidos, com seleção de itens, cálculo de total e decisão de finalizar ou continuar comprando.
+1.  O que é **dado**? (**ENTRADA**)
+2.  O que é necessário encontrar? (**SAÍDA**)
+3.  Quais são as **condições** e **restrições**? (**PROCESSAMENTO**)
 
-```
-INÍCIO
-  |
-  V
-EXIBIR CARDÁPIO
-  |
-  V
-ESCOLHA CLIENTE (A, B, C, D, ou Fechar)
-  |
-  V
-[DECISÃO: OPÇÃO VÁLIDA?] -- NÃO --> VOLTA CARDÁPIO
-  |
-  |
-  -- SIM --> V
-[DECISÃO: SELEÇÃO ITEM (A, B, C, D)]
-  |
-  V
-ATUALIZAR QUANTIDADE E VALOR TOTAL
-  |
-  V
-[DECISÃO: DESEJA FECHAR A CONTA?] -- NÃO --> VOLTA CARDÁPIO
-  |
-  |
-  -- SIM --> |
-             |
-             V
-      COBRAR CLIENTE
-            |
-            V
-           FIM
-```
+## Estruturas de Dados (Vetores e Matrizes)
 
-## 📝 Variáveis e Tipos de Dados
-**🔠 Declaração e Regras de Variáveis**
+---
 
-Uma variável é um campo na memória que pode ter seu conteúdo alterado durante a execução do algoritmo. Uma constante é um campo que não pode ser alterado.
+### **Vetores**
 
-**Regras para Nomes de Variáveis**
+* Conjunto de **variáveis** no qual cada uma pode guardar um dado diferente, mas todas compartilham o **mesmo nome**.
+* A esse nome são associados os **índices** que representam as posições do vetor.
+* *Exemplo:* $\text{V} = [2, 4, 3, 8, 10]$.
 
-- Nunca inicia com um número;
-- Não pode começar com operadores matemáticos (+, -, *, /);
-- Permite underline (_);
-- Permite letras e números;
-- Pode começar com caracteres especiais (dependendo da linguagem) Ex: $ em PHP.
+### **Matrizes**
 
-**Convenções (Estilo de Codificação)**
+* São **estruturas de dados (arrays)** que precisam de **dois índices** para individualizar um elemento do conjunto.
+* O **primeiro índice** representa as **linhas** e o **segundo índice** representa as **colunas**.
+* *Exemplo:*
+$$\text{M} = \begin{bmatrix} 4 & 8 & 4 & 7 & 6 \\ 2 & 7 & 3 & 2 & 5 \\ 1 & 4 & 1 & 2 & 1 \end{bmatrix}$$
+* Acesso: $\text{M}[2][4] = 5$ (Assumindo índice base 1), $\text{M}[3][3] = 1$.
 
-- Variável: Sempre começa com letra minúscula. (Ex: nomeUsuario, idade);
-- Constante: Sempre em MAIÚSCULO. (Ex: PI, LIMITE_CARACTERES).
+## Tipagem e Operadores
 
-**Escopo e Atribuição**
+---
 
-- Variável Local: Declarada dentro de um bloco (ex: SE, ENQUANTO, Função), sua utilidade fica restrita àquele bloco.
-- Variável Global: Deve ser declarada antes do bloco principal e é acessível em qualquer parte do código.
-- Sinal de Atribuição: O símbolo = é usado para atribuição de valor (e.g., X = 10).
+### **Declaração de Variáveis - Tipagem**
 
-**🏷️ Tipagem de Variáveis (Exemplos)**
+| Tipo | Sigla | Nome Completo |
+| :--- | :--- | :--- |
+| **Inteiro** | INT | INT - SMALLINT - BIGINT |
+| **Real** | REAL | FLOAT - DECIMAL |
+| **Data** | DATE | TIMESTAMP - DATETIME |
+| **Caractere** | CHAR | |
+| **Texto** | STRING | STRING - TEXT - VARCHAR |
+| **Booleano** | BOO | BOOLEAN |
 
-A tipagem define o tipo de dado que a variável pode armazenar:
+**Exemplos de Variáveis:**
 
-- Inteiro (Números sem casas decimais), "INT, SMALLINT, BIGINT", int, idade
-- Real (Números com casas decimais), "REAL, FLOAT, DECIMAL", "float, double", salario
-- Data/Hora, "DATE, TIMESTAMP, DATETIME","Date, DateTime", dtNasc
-- Caractere (Letra ou símbolo único), "CHARACTER, CHAR", char, sexo
-- Texto (Cadeia de caracteres), "STRING, TEXT, VARCHAR", string, nomeUsuario
-- Booleano (Verdadeiro ou Falso), "BOO, BOOLEAN", bool, estudante
+* **INT** - IDADE
+* **DATE** - DTNASC
+* **CHAR** - SEXO
+* **BOOL** - ESTUDANTE
+* **REAL** - SALARIO
+* **TIME** - HORANASC
+* **VARCHAR(40)** - NOME\_USUARIO
 
+### **Operadores**
 
+#### **Operadores Matemáticos**
+$$*, /, +, -, \text{ e } \text{ \%}$$
 
-## ⚙️ Operadores
+#### **Operadores Relacionais**
+$$>, <, >=, <=, = \text{ e } \neq \text{ (ou } \text{!)}$$
 
-**Operadores Relacionais (Condição)**
+#### **Operadores Lógicos**
+$$\text{E}, \text{ OU}, \text{ XOR}, \text{ e } \text{ NÃO}$$
 
-Usados para fazer comparações em estruturas de decisão:
-```
-OPERADOR > SIGNIFICADO
+### **Tabela Verdade (Operador OU)**
 
->, Maior que
-<, Menor que
->=, Maior ou igual a
-<=, Menor ou igual a
-==, Igual a
-!= ou <>, Diferente de
-```
+| V | V | = V |
+| :--- | :--- | :--- |
+| V | F | = V |
+| F | V | = V |
+| F | F | = F |
 
+## Estruturas de Controle
 
-**Operadores Lógicos (Decisão)**
+---
 
-Usados para combinar múltiplas condições (Tabela Verdade):
+### **Estruturas de Decisão**
 
-```
-E (AND), V e V = V, Só é Verdadeiro se ambos forem Verdadeiros.
-OU (OR), V ou F = V, É Verdadeiro se pelo menos um for Verdadeiro.
-NÃO (NOT), NÃO F = V, Inverte o valor lógico.
-```
+* **SE (Condição) $\rightarrow$ IF**
+* **Blocos de Comando**
 
+### **Estruturas de Repetição**
 
-**🔁 Estruturas de Controle**
+* **ENQUANTO (Loop)**
+    * $\text{INÍCIO}$
+    * $\text{X} = 1$
+    * $\text{ENQUANTO} (\text{LOOP})$
+        * $\text{X} = \text{X} + 1$
+    * $\text{FIM ENQUANTO}$
+* **Avaliação de $\text{WHILE}$ vs $\text{DO WHILE}$ (22/04)**
+    * A diferença do **$\text{WHILE}$** é que o primeiro testa se a **condição é verdadeira antes de executar o bloco**.
 
-ENQUANTO (WHILE) - Testa a condição antes de executar o bloco. O bloco só executa se a condição for Verdadeira.
-REPITA (DO-WHILE) - Executa o bloco pelo menos uma vez, e só depois testa a condição.
-PARA (FOR) - Estrutura aninhada comum para tabuadas ou iteração com contadores definidos.
+### **Código da Tabuada (FOR Aninhado)**
 
-## 👨‍💼 Procedimentos e Funções (Sub-rotinas)
+$$\text{for (i=0; i<x; i++) \{ print(i) \}}$$
 
-Ambos são sub-algoritmos (Sub-rotinas) que podem ser chamados pelo algoritmo principal ou por outro sub-algoritmo para realizar tarefas específicas.
+* **P1:** Declara e inicializa o contador.
+* **P2:** Condição. É repetida o bloco se for verdadeira.
+* **P3:** Feito antes de repetir o bloco (subtrai ou adiciona).
 
-**Procedimento (SUB-ALGORITMO):**
+## Procedimentos e Funções (27/05)
 
-- É um programa ou sub-algoritmo que, ao ser chamado, causa um desvio no programa para que os comandos do sub-algoritmo sejam executados.
-- Ao finalizar, a execução retorna ao ponto seguinte à chamada do procedimento.
-- Estrutura: PROCEDIMENTO NOME (TIPO P1, TIPO P2...) | BLOCO DE COMANDO | FIM.
+---
 
-**Função:**
+### **Procedimento**
 
-- São iguais aos procedimentos, mas com a diferença de retornar um valor.
-- Estrutura: FUNÇÃO TIPO NOME (TIPO P1, TIPO P2...) | BLOCO DE COMANDO | RETORNO <VALOR> | FIM.
+* É um programa (subalgoritmo) que, para ser executado, tem que ser chamado pelo **algoritmo principal** que o constitui, ou por outro algoritmo.
+* Quando o nome de um procedimento é localizado, acontece um **desvio no programa** para que os comandos do subalgoritmo sejam realizados.
+* Quando o procedimento é finalizado, a execução **retornará ao ponto seguinte à chamada do procedimento**.
 
-  ## 📊 Estruturas de Dados
+**Estrutura do Procedimento:**
 
-**Vetores (Arrays)**
+$$\text{PROCEDIMENTO NOME} (\text{TIPO P1}, \text{ TIPO P2}, \dots)$$
+$$[\text{BLOCO DE COMANDO}]$$
+$$\text{FIM PROCEDIMENTO}$$
 
-- Conceito: Um conjunto de variáveis que compartilham o mesmo nome, mas cada uma armazena um dado diferente.
-- Posições: As posições são representadas por índices associados ao nome do vetor.
+### **Funções**
 
-```
-V = [ 2 | 4 | 3 | 8 | 10 ]
-Índice: 0   1   2   3   4
-```
+* As funções são **iguais aos procedimentos** com apenas a diferença de **retornar o valor**.
+* O nome representa a **linha** e força **algoritmos**.
 
-**Matrizes (Arrays Multidimensionais)**
+**Estrutura da Função:**
 
-- Conceito: Estruturas de dados que precisam de dois índices para localizar um elemento.
-- Indices:
-  1. O primeiro índice representa as LINHAS.
-  2. O segundo índice representa as COLUNAS.
+$$\text{FUNÇÃO TIPO NOME} (\text{TIPO P1}, \text{ TIPO P2}, \dots)$$
+$$[\text{BLOCO DE COMANDOS}]$$
+$$\text{RETORNO } <\text{VALOR}>$$
+$$\text{FIM FUNÇÃO}$$
 
-```
-M = [ 4  8  4  7 ]
-    [ 2  7  3  2 ]
-    [ 1  4  1  2 ]
-```
+## Exemplos de Algoritmos (Pseudocódigo e Fluxograma)
 
-**Exemplos de Acesso:**
+---
 
-- M[0][3] = 7 (Linha 0, Coluna 3)
-- M[2][0] = 1 (Linha 2, Coluna 0)
+### **Exemplos de Algoritmo - Atividades Diárias**
+
+* Faça o algoritmo da sua atividade **após** o almoço de domingo.
+    * *Exemplo:* Após o almoço de domingo tomei minha pílula de vitamina D e li algumas páginas do livro 'A Última Apostasia'. Depois, estou lendo no celular. Às 01:00 voltei para casa e me preparei para dormir. Minha janta foi pizza.
+
+* Crie o **próprio projeto** enquanto trabalha dentro de uma empresa.
+
+### **Algoritmo de Viagem para a Praia (2 Horas) - Carro**
+
+**Para uma viagem à praia com o carro, é necessário:**
+
+* Ter **acordado**; caso contrário, **ACORDAR**.
+* Ter uma **habilitação de motorista**; caso contrário, **PROVIDENCIAR** uma.
+* Estar com o **tanque de combustível cheio**; caso contrário, **REABASTECER**.
+* Se certificar de **alimentação**, **vestimentas** e **equipamentos**; caso algum valor esteja incompleto, **PROVIDENCIAR** ou **ADIAR** viagem.
+* Ter **dinheiro** para o pedágio; senão, **GANHE**.
+* Para agilizar a viagem: **REALIZAR** o uso do **GPS** como guia.
+* Seguir uma estrada menos movimentada.
+* Ter a assinatura no Sem Parar.
+
+**Condições (Versão do Professor)**
+
+* Tenho um carro? (**SIM/NÃO**) - Se **NÃO**, não providenciar.
+* Tenho condições/desejos para viajar? (**SIM/NÃO**)
+* Está em condições? (**SIM/NÃO**) - Se **NÃO**, enviar para revisão.
+* Devidamente abastecido? (**SIM/NÃO**) - Se **NÃO**, providenciar.
+* Estão prontas as malas? (**SIM/NÃO**) - Se **NÃO**, providenciar.
+* Condições climáticas? Se tempo **bom e mais rápido**, seguir; se tempo **nublado e menor**, seguir.
+* Itens de segurança e manutenção? (**S/N**) - Se **NÃO**, providenciar. Se **SIM**, ir para o próximo passo.
+* Meios de pagamento/pedágio? (**S/N**) - Se **NÃO**, providenciar. Se **SIM**, ir para o próximo passo.
+* Sabe o caminho para a praia? (**SIM/NÃO**) - Se **NÃO**, providenciar **GPS** ou **mapas** e voltar ao passo anterior.
+* Chegou na praia? (**SIM/NÃO**) - Se **SIM**, parabéns. Se **NÃO**, continue o trajeto.
+
+### **Exemplos de Exercícios - Resoluções**
+
+#### **1. Máximo de Ingressos**
+Um aluno tem **R$ 50,00** e quer comprar o máximo de ingressos para um show que custa **R$ 12,00** cada. Quantos ele comprará e quanto sobrará?
+
+* **DADO:**
+    * TOTAL = **50**
+    * VALOR INGRESSO = **12**
+* **INÍCIO:**
+    * TOTAL DINHEIRO = **50**
+    * VALOR INGRESSO = **12**
+    * QUANTIDADE = TOTAL DINHEIRO / VALOR INGRESSO
+    * SOBROU = TOTAL DINHEIRO - (INGRESSO \* QUANTIDADE)
+    * ESCREVA A **QUANTIDADE**
+    * ESCREVA "**SOBROU R$**" + **SOBROU**
+* **FIM**
+
+#### **2. Média e Aprovação (Nota Mínima = 6)**
+Planeje a solução para o seguinte: um aluno tem uma nota final de **5**, **7**, e **8**. Calcule a **média final** e verifique se o aluno **passou** (média maior ou igual a 6).
+
+* **DADOS:** 3 Notas (**5**, **7**, **8**). Média Mínima.
+* **PROCESSAMENTO:** Calcular a Média.
+* **CONDIÇÃO:** MÉDIA >= **6** -> APROVADO, SENÃO -> REPROVADO.
+* **INÍCIO:**
+    * SOLICITAR A NOTA 1
+    * SOLICITAR A NOTA 2
+    * SOLICITAR A NOTA 3
+    * SOLICITAR A NOTA MÍNIMA (**6**)
+    * CALCULAR A MÉDIA: (**NOTA 1** + **NOTA 2** + **NOTA 3**) / **3**
+    * SE MÉDIA >= NOTA MÍNIMA
+        * ESCREVER "**APROVADO**"
+    * SENÃO
+        * ESCREVER "**REPROVADO**"
+* **FIM**
+
+#### **3. Múltiplo de 3 e 5**
+Escreva um algoritmo para verificar se um número dado é **múltiplo de 3 E 5**.
+
+* **DADO:** Número que seja **múltiplo de 3 e 5**.
+* **INÍCIO:**
+    * INSIRA NÚMERO QUALQUER
+    * CALCULE NÚMERO QUALQUER / **3**
+    * CALCULE NÚMERO QUALQUER / **5**
+    * CASO AMBOS OS RESULTADOS FOREM **VALORES INTEIROS**:
+        * ESCREVER "**ESTE NÚMERO É MÚLTIPLO DE 3 E 5**"
+    * SENÃO:
+        * ESCREVER "**CONDIÇÃO NÃO APROVADA**"
+* **FIM**
+
+### **Pseudocódigo Simples (Média de 4 Notas)**
+
+* **PSEUDOCÓDIGO:**
+    * INÍCIO
+    * LEIA NÚMERO 1
+    * LEIA NÚMERO 2
+    * LEIA NÚMERO 3
+    * LEIA NÚMERO 4
+    * MÉDIA = (**N1** + **N2** + **N3** + **N4**) / **4**
+    * ESCREVA **MÉDIA**
+    * FIM
+
+## Outros Exercícios Propostos
+
+---
+
+* **Exercício 1 (Média e Resultado):** Que leia 4 notas, tire a média e apresentar o resultado.
+* **Exercício 2 (Cálculo de Área):** Que recebe o dado necessário para calcular a **área** de um **quadrado**, **retângulo** e **triângulo**.
+* **Exercício 3 (Cálculo Salário):** Que realize o cálculo do **salário líquido** do professor.
+
+### **Exercício: Jogo da Cobrinha (20x20)**
+
+Quadrado **20x20**. A cobra começa em **[1,1]** e termina em **[20, 20]**, passando por toda a área. Ela não aumenta de tamanho.
+
+* **INÍCIO:**
+    * X = **1**
+    * Y = **1**
+    * POSIÇÃO = (**X**, **Y**)
+    * ENQUANTO POSIÇÃO < **20**
+        * FAÇA ENQUANTO Y < **20**
+            * Y = Y + **1**
+        * FIM FAÇA
+        * X = X + **1**
+    * FAÇA ENQUANTO Y > **1**
+        * Y = Y - **1**
+    * FIM FAÇA
+    * ENQUANTO X < **20**
+        * X = X + **1**
+* **FIM**
+
+### **Exercício: Tabuada**
+
+Imprimir a **tabuada do 1 ao 10** com seus múltiplos de 1 a 10, respectivamente.
+
+* **INÍCIO:**
+    * X = **1**
+    * FAÇA ENQUANTO X < **11**
+        * Y = **1**
+        * FAÇA ENQUANTO Y < **11**
+            * IMPRIMA (**X** \* **Y**)
+            * Y = Y + **1**
+        * FIM FAÇA
+        * X = X + **1**
+    * FIM FAÇA
+* **FIM**
+
+### **Exercícios Adicionais**
+
+#### **1. Par ou Ímpar**
+Faça um algoritmo que leia um número e escreva se é **par ou ímpar**.
+
+#### **2. Média e Situação (4 números)**
+Faça um algoritmo que leia **4 números**, calcule a **média** e se:
+* Maior **7,00** = **APROVADO**
+* Entre **5,00** e **6,99** = **RECUPERAÇÃO**
+* Abaixo de **5,00** = **REPROVADO**
+
+#### **3. Expressão Matemática e Resultado Percentual**
+Faça um algoritmo que resolva a seguinte **expressão matemática**:
+$$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
+**Se o resultado:**
+* $\le 10$: Expressão **10%**
+* $11 - 20$: Expressão **20%**
+* $21 - 50$: Expressão **50%**
+* $51 - 75$: Expressão **45%**
+* $> 76$: **ESTRANHA**
+
+## Fluxograma - Exercício da Pizzaria (18/03)
+
+---
+
+### **Dados**
+
+* 4 Queijos - **50 A**
+* Frango - **45 B**
+* Peperoni - **65 C**
+* Coca - **5 D**
+* **QUANTIDADE**
+* **VALOR TOTAL**
+
+### **Estrutura do Fluxograma**
+
+1.  **INÍCIO**
+2.  **EXIBIR CARDÁPIO**
+3.  **OPÇÃO CLIENTE** (Decisão: Deseja fechar conta? SIM/NÃO)
+    * Se **NÃO**, segue para **ESCOLHA CLIENTE**
+    * Se **SIM**, segue para **COBRA CLIENTE** -> **FIM**
+4.  **ESCOLHA CLIENTE** (Decisão/Escolha: A, B, C, D)
+    * **A (4 Queijos):**
+        * QT + **1**
+        * VT + **50**
+    * **B (Frango):**
+        * QT + **1**
+        * VT + **45**
+    * **C (Peperoni):**
+        * QT + **1**
+        * VT + **65**
+    * **D (Coca):**
+        * QT + **1**
+        * VT + **5**
+5.  **EXIBIR TOTAL**
+6.  Retorna para a **OPÇÃO CLIENTE** (ponto Z).
+
+## Testes e Análise de Linguagem
+
+---
+
+### **Teste de Mesa (Exemplo com Palavra/Símbolo)**
+
+* **INÍCIO**
+    * X = **1**
+    * IMPRIMA **DIGITE A PALAVRA**
+    * LEIA **PALAVRA**
+    * ENQUANTO X < TOTAL SÍMBOLOS
+        * SE SÍMBOLO \[X] = **2**
+            * TOTAL DE **2** = TOTAL DE **2** + **1**
+        * SE SÍMBOLO \[X] = **3**
+            * TOTAL DE **3** = TOTAL DE **3** + **1**
+        * SE SÍMBOLO \[X] = **4**
+            * TOTAL DE **4** = TOTAL DE **4** + **1**
+        * X = X + **1**
+    * FIM ENQUANTO
+    * SE TOTAL **2** = **1** E TOTAL **3** = **2** E TOTAL **4** = **3**
+        * IMPRIMA **PALAVRA CORRETA**
+    * SENÃO
+        * IMPRIMA **PALAVRA INCORRETA**
+* **FIM**
+
+### **Pesquisas e Tópicos**
+
+* Pesquisar **Backtracking** e **Força Bruta** na Programação e Algoritmos.
+* Programação **Fibonacci**.
+* **Complexidade Algorítmica** (Wikipedia).
+* **Teste Automatizado**.
