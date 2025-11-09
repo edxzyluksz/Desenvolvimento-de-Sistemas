@@ -1,75 +1,111 @@
-# Linguagens de Marcação (Principais)
+# 📚 Linguagens de Marcação
 
-XML: Extensible Markup Language 
+---
 
-HTML: Hypertext Markup Language 
+## 🌐 Introdução às Linguagens de Marcação e Estrutura Web
 
-JSON: JavaScript Object Notation 
+### Linguagens de Marcação
 
-## Diferenças
+Sistemas para anotar um documento (texto) com **tags** para definir a **estrutura**, **layout** e **significado** do conteúdo.
 
-O HTML é utilizado para estruturar páginas na web, como textos, links e imagens, dito isso, sua função é ser uma linguagem de marcação amplamente usada e entendida por várias máquinas. Suas tags são pré-definidas: Podem até ser alteradas mas não é o convencional do mercado, graças à problemas de compatibilidade entre vários dispositivos.  
+* **Características:**
+    * Uso de **tags**.
+    * Estrutura **hierárquica**.
+    * Separar **conteúdo**.
+    * **Legibilidade**.
 
-O XML possui a função-chave o transporte de dados estruturado , para que diferentes sistemas possam trocar informações de maneira padronizada. No entanto, diferente do HTML, suas tags são personalizáveis em todos os casos e o desenvolvedor deve ser instruir o sistema o que cada uma irá exibir.  
+* **Tipos de Linguagem:**
+    * **HTML (HyperText Markup Language):** Espinha dorsal do WWW.
+        * Usa **tags pré-definidas**.
+        * Suporta **Hyperlinks**.
+        * Define a **estrutura e conteúdo** das páginas.
+    * **XML (eXtensible Markup Language):**
+        * **Armazenamento e transporte de dados**.
+        * É **Case Sensitive**.
+        * Tags dos **próprios usuários**.
+        * **Aviso: Tag não é comando!**
+    * **JSON (JavaScript Object Notation):**
+        * **Evolução do XML**.
+        * **Padrão das trocas de informação por API**.
+        * **Leve e fácil de ler**.
+    * **Outras Linguagens:**
+        * **Markdown**.
+        * **SVG**.
+        * **YAML**.
 
-O JSON possui tags personalizáveis tal como o XML, no entanto compactas com o uso de pares chave-valor e mais leve para a troca de dados entre sistemas, onde encontra-se o foco em APIs ou aplicações web em geral. 
+### Estrutura da Web
 
-HTML -> Construtor de páginas web 
+* **Internet:** **Meio físico**.
+* **WWW (World Wide Web):** Um dos **serviços da Internet**.
 
-XML e JSON -> Transporte de dados entre os servidores 
+---
 
- 
+## 💻 Registro, Domínio e Hospedagem
 
-## Estrutura Básica do HTML
+### Registro
 
- 
-```
-<html>
-  <head>
-    <title> Título da Página </title>
-  </head> 
-  <body>
-    <h1> Olá mundo! </h1>
-    <p> Conheça o básico da linguagem HTML </p>
-  </body>
-</html>
-```
- 
+Processo formal de **reservar um nome único** para uso exclusivo.
 
-## Exemplos de Tags Containers semânticas e não semânticas 
+* **Registro de Domínios:**
+    * Verificar se o nome **não é usado**.
+    * Usar **servidores DNS**.
+    * Renovar os registros.
+    * **Registradores:** **Registro.br**, **GoDaddy**, **HostGator**, **NameCheap**, etc.
+    * Estudar o processo de **adquirir o domínio e registro de um site**.
 
-**Semânticos**
+### Domínio
 
-&lt;header&gt; Representa o cabeçalho ou início de uma seção ou página. 
+O **nome amigável** feito para ser **memorizado facilmente**.
 
-&lt;nav&gt; Define um bloco para navegação, ideal para listas e links como um menu principal 
+* **Domínio $\ne$ Hospedagem**.
+* **Domínio de Primeiro Nível (TLD):** A **extensão** do nome (.com, .org, .br, etc.).
+* **Domínio de Segundo Nível:** O **nome escolhido** pelo usuário.
+* **Subdomínios:** (Ex.: blog.exemplo.com).
+* **Importância:**
+    * **Presença Online**.
+    * **Proteção de Marca**.
+    * **Encontrar o site na Web**.
+    * **E-mails Personalizados**.
 
-&lt;main&gt; Representa o conteúdo principal de uma página. Pode-se ter apenas um tag main. 
+### Hospedagem
 
-&lt;article&gt; Representa um conteúdo autônomo independente ou independente, como uma notícia ou um post de blog. Pode ser distribuido independentemente 
+* **Hospedagem Compartilhada:**
+    * **Vantagem:** Baixo custo, fácil uso.
+    * **Efeito:** Recursos limitados, baixo desempenho, sites pequenos.
+* **VPS (Virtual Private Server):**
+    * **Vantagem:** Maior controle, alto custo.
+    * **Efeito:** Instabilidade (?), sites médios/altos tráfegos.
+* **Servidor Dedicado:**
+    * **Vantagem:** Segurança, total controle.
+    * **Efeito:** Alto custo, manutenção privada fixa, sites altos.
+* **Cloud Hosting:**
+    * **Vantagem:** Menor custo, flexibilidade, pagamento conforme uso.
+    * **Efeito:** Confiabilidade, dependência de infraestrutura (AWS, Azure).
+* **Conclusão:** Tipo ideal é **Cloud Hosting** por pagar somente o que usa.
 
-&lt;section&gt; Define uma seção genérica de um documento, e deve ser usada para agrupar conteúdo relacionados tematicamente 
+---
 
-&lt;footer&gt; Define o conteúdo que será exibido no rodapé da página, tudo que estará no final do conteúdo apresentado. 
+## 📄 Boas Práticas e Validação de Código
 
-&lt;aside&gt; Define um conteúdo que está separado dos demais, é comumente usado em barras laterais (sidebars) 
+* **W3C (World Wide Web Consortium):** Define **boas práticas** para as linguagens Web.
+* Usar **[validator.w3.org]** para **verificar o código**.
+* **MDN (Mozilla Developer Network):** Para **ler documentações**.
+* HTML usa **hierarquia padrão**.
+    * **`<HTML>` $\rightarrow$ Elemento Raiz**.
+    * **`<HEAD>`:** Contém **metadados**.
 
-&lt;figure&gt; Usada para um bloco de imagem, ilustrações, gráficos, etc. Pode-se utilizar uma tag auxiliar como a &lt;figcaption&gt; para colocar a legenda na tag. 
+---
 
-**Não semânticos**
+## 📐 Tipos de Layout
 
-&lt;div&gt; Usada para agrupar blocos de conteúdo que possam ser manipulados com CSS ou JavaScript.
-
-&lt;span&gt; Tag usada para agrupar e estilizar pequenas partes de texto dentro de um paragráfo 
-
-## Ponto Crucial
-
-O que definirá se o contêiner a ser utilizado é semântico ou não se trata do plano de desenvolvimento, mais especificamente na parte da Experiência do Usuário (UX). Quando o contêiner é semântico, os chamados Leitores de Tela para acessibilidade conseguirão identificar mais facilmente do que cada trecho da marcação se tratam. No entanto, os contêiners não semânticos DEVEM ser utilizados em conjunto, visto que apelações visuais não serão relevantes para a acessibilidade, portanto, essenciais para a experiência do público geral.
-
-
-# Box Model
-
-- Diagramação dos elementos com &lt;div&gt;
-- Propriedade display
-  - Posicionamentos
-- Propriedades
+* **Layout Fixo:**
+    * Usa valores **absolutos em pixels**.
+    * **Não adapta** com a tela.
+* **Layout Fluido:**
+    * Usa valores **relativos em %**.
+* **Layout Responsivo:**
+    * Combina o **fluido** com **Media Queries**.
+    * Ajusta-se no **tamanho da tela**.
+* **Layout Adaptativa:**
+    * Versões **específicas** para diferentes tamanhos de tela.
+    * **Detecta o dispositivo**.
