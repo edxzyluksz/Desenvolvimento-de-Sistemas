@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réplica de um Marketshop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+
+        header a {
+            text-decoration-line: none;
+            color: rgb(94, 94, 94);
+        }
+
+        header a:hover {
+            cursor: pointer;
+            color: rgb(111, 110, 110);
+            border-bottom: 3px solid blue;
+
+        }
+
+        .marca {
+            margin: 10px 50px;
+        }
+
+        .marca-navegacao {
+            height: 15vh;
+            display: flex;
+            background-color: rgb(239, 239, 60);
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-usuario {
+            margin-left: 100px;
+        }
+
+        header ul {
+            display: flex;
+            gap: 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            gap: 30vw;
+            background: rgb(232, 232, 232);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tipo-categorias {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ofertas {
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 1px black;
+        }
+
+        .abas {
+            display: flex;
+            flex-direction: row;
+            width: 75vw;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .abas img {
+            width: 10vw;
+            height: 15vh;
+        }
+
+        .abas img:hover {
+            border-bottom: 5px solid blue;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .aviso {
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .card-produtos {
+            display: grid;
+        }
+
+        main li {
+            color: grey;
+        }
+
+        main li:hover {
+            color: rgb(84, 84, 84);
+            cursor: pointer;
+        }
+
+        .aviso {
+            line-height: 1.2;
+        }
+
+        .aviso p {
+            margin: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="marca-navegacao">
+                <div class="marca">
+                    <span>LOGO</span>
+                    <input type="search" name="pesquisa" id="pesquisa" ,
+                        placeholder="Buscar produtos, marcas e muito mais..."
+                        style="width: 20vw; border-radius: 8px; height: 5vh;">
+                </div>
+                <nav>
+                    <div class="nav-produto">
+                        <ul>
+                            <li><a href="#">Categorias</a></li>
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Cupons</a></li>
+                            <li><a href="#">Supermercado</a></li>
+                            <li><a href="#">Moda</a></li>
+                            <li><a href="#">Vender</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-usuario">
+                        <ul>
+                            <li><a href="#">Crie sua conta</a></li>
+                            <li><a href="#">Entre</a></li>
+                            <li><a href="#">Compras</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="ofertas">
+                <div class="aviso">
+                    <h3>Ofertas do dia</h3>
+                    <p>Aproveite esses preços agora mesmo!</p>
+                    <p>Novas ofertas todos os dias.</p>
+                </div>
+                <div class="abas">
+                    <img src="https://static.wikia.nocookie.net/central/images/3/3f/Placeholder_view_vector.svg/revision/latest/scale-to-width-down/681?cb=20250302081817"
+                        alt="Placeholder">
+                    <img src="https://static.wikia.nocookie.net/central/images/3/3f/Placeholder_view_vector.svg/revision/latest/scale-to-width-down/681?cb=20250302081817"
+                        alt="Placeholder">
+                    <img src="https://static.wikia.nocookie.net/central/images/3/3f/Placeholder_view_vector.svg/revision/latest/scale-to-width-down/681?cb=20250302081817"
+                        alt="Placeholder">
+                    <img src="https://static.wikia.nocookie.net/central/images/3/3f/Placeholder_view_vector.svg/revision/latest/scale-to-width-down/681?cb=20250302081817"
+                        alt="Placeholder">
+                    <img src="https://static.wikia.nocookie.net/central/images/3/3f/Placeholder_view_vector.svg/revision/latest/scale-to-width-down/681?cb=20250302081817"
+                        alt="Placeholder">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="tipo-categorias">
+                <div class="info-produto">
+                    <h4>Todas</h4>
+                    <p>10.000 produtos</p>
+                </div>
+
+                <hr>
+
+                <div class="tipo-promocao">
+                    <h4>Tipo de promoção</h4>
+                    <ul>
+                        <li>Oferta relâmpago (66)</li>
+                        <li>Oferta do dia (59)</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="categorias">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#"></a>Acessórios para veículos (1261)</li>
+                        <li><a href=""></a>Agro (319)</li>
+                        <li><a href=""></a>Alimentos e Bebidas (259)</li>
+                        <li><a href=""></a>Antiguidades e Coleções (13)</li>
+                        <li><a href=""></a>Arte, papelaria e Armarinho (191)</li>
+                        <li><a href=""></a>Bebês (191)</li>
+                        <li><a href=""></a>Beleza e cuidado pessoal (563)</li>
+                        <li><a href=""></a>Brinquedos e Hobbies (218)</li>
+                        <li><a href=""></a>Calçados, Roupas e Bolsas (1801)</li>
+                        <li><a href=""></a>Casa, Móveis e Decoração (3122)</li>
+                        <li><a href=""></a>Celulares e Telefones (379)</li>
+                        <li><a href=""></a>Construção (628)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-produtos">
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

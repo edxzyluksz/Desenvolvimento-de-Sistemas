@@ -25,6 +25,7 @@ while True:
 
         if tentativas == 0:
             print("\nPoxa! Você não conseguiu acertar em 10 tentativas...")
+            
         
     print("Desejaria continuar para tentar acertar outro número?\nS - Continuar\nX - Sair")
 
