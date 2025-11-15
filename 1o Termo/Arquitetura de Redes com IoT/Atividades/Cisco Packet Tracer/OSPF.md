@@ -1,3 +1,5 @@
+# Material complementar
+
 Configuração do protocolo de roteamento para configurar o protocolo OSPF no router e fazer a comunicação entre as redes.
 
 1o. veja quais redes estão ligadas no roteador 
@@ -24,7 +26,7 @@ exit
 write memory
 ```
 
-Como calcular a mascara invertida
+Como calcular a Máscara invertida
 Ex. IP: 192.168.1.23 - 255.255.255.0
 Calculo ---> 255.255.255.0  menos 255.255.255.255 --> 0.0.0.255
 
