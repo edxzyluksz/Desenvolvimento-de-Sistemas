@@ -16,3 +16,6 @@ Meu nome é Eduardo Lucas Garcia, e no momento em que escrevo esta descrição, 
 -- Situação: Não alcançado.
 
 Para 2026, o professor William (Billy) será substituído pelo docente Diogo, um professor que foi transferido da unidade de Limeira para Americana.
+
+### Lista de Afazeres (Repositório):
+- Adicionar o perfil profissional e apresentação inicial do curso por Wellington
