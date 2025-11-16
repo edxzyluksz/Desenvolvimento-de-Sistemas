@@ -53,8 +53,10 @@
 
         main {
             display: flex;
+            flex-direction: row;
+            box-shadow: 1px black;
             justify-content: center;
-            gap: 30vw;
+            align-items: center;
             background: rgb(232, 232, 232);
         }
 
@@ -67,6 +69,7 @@
         .tipo-categorias {
             display: flex;
             flex-direction: column;
+            width: 25vw;
         }
 
         .ofertas {
@@ -74,12 +77,13 @@
             display: flex;
             flex-direction: row;
             box-shadow: 1px black;
+            justify-content: center;
         }
 
         .abas {
             display: flex;
             flex-direction: row;
-            width: 75vw;
+            width: 60vw;
             justify-content: center;
             align-items: center;
             gap: 15px;
@@ -98,13 +102,21 @@
 
         .aviso {
             width: 25vw;
+            height: 15vh;
             display: flex;
             flex-direction: column;
-            margin-left: 30px;
+            margin-left: 0px;
         }
 
         .card-produtos {
-            display: grid;
+            display: flex;
+            background-color: white;
+            height: 80vh;
+            width: 60vw;
+            border-radius: 3px;
+            justify-content: space-between;
+            flex-direction: column;
+            overflow-y: scroll;
         }
 
         main li {
@@ -116,13 +128,52 @@
             cursor: pointer;
         }
 
-        .aviso {
-            line-height: 1.2;
-        }
-
         .aviso p {
             margin: 2px 0;
         }
+
+        h4 {
+            margin-top: 0.5em;
+        }
+
+        .card-produtos img {
+            width: 10em;
+            height: 10em;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .produto:hover {
+            cursor: pointer;
+        }
+
+        .produto {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .linha1 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .linha2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .linha3{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
     </style>
 </head>
 
@@ -215,7 +266,39 @@
                 </div>
             </section>
             <section class="card-produtos">
-
+                <div class="linha1">
+                    <div class="produto">
+                        <img src="https://www.isekaianime.com.au/cdn/shop/files/plushie-hangable-rain-official-genshin-4.webp?v=1759798807" alt="Kazuha Pelúcia">
+                    </div>
+                    <div class="produto">
+                        <img src="https://ae01.alicdn.com/kf/Sabd78076e1044f0fb46c35397c667ceav.jpg" alt="Flins Pelúcia">
+                    </div>
+                    <div class="produto">
+                        <img src="https://m.media-amazon.com/images/I/61KVfgeYlKL._AC_SL1200_.jpg" alt="Miku Plush">
+                    </div>
+                </div>
+                <div class="linha2">
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/4zG3RCll_pNvUX1EA-3zRRrKuNFI8uhzZxsrgKgfJ6k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzYyNTQ3NjU5L3Iv/aWwvNGJjMThiLzcz/MTY1NTUwNDYvaWxf/MzAweDMwMC43MzE2/NTU1MDQ2X296cmQu/anBn" alt="Teto Plush">
+                    </div>
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/unarqNs3hEK3uc6a9I7osD3r65mdNJVcu0ZvKdjO6wk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9zZW8vU3Vw/ZXItTWFyaW8tU3Vw/ZXItWW9zaGktSXNs/YW5kLVlvc2hpLVBs/dXNoLUdyZWVuXzli/MjliYzY5LTY3YzAt/NDc0Yy04NTFhLTMw/NWJkZjczODY0ZC4w/ZTlkMTM4NGE2OGI3/NjI2MzBiMzhiZTM1/YzkxYWM5Mi5qcGVn/P29kbkhlaWdodD01/ODAmb2RuV2lkdGg9/NTgwJm9kbkJnPUZG/RkZGRg" alt="Yoshi Plush">
+                    </div>
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/uzkJBocafOAJ3DnTjHQIITHKyM2negNoWAtBWUQo6bg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YXdzbGkuY29tLmJy/LzYwMHg3MDAvMjQ1/MC8yNDUwNzgxL3By/b2R1dG8vMTYzOTE3/MzMxL2U1MDQzMjUz/MzAuanBn" alt="Darth Vader Máscara">
+                    </div>
+                </div>
+                <div class="linha3">
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/KowmnM5v_wSXM5rYQRS2RaWEM6QhdmKC7twLwGbajHQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/aS1maW5hbGx5LWJv/dWdodC10aGUtbm8t/aGF0LXJhbHNlaS1w/bHVzaC12MC0wOGcz/a2MxNnh3cGUxLmpw/ZWc_d2lkdGg9NjQw/JmNyb3A9c21hcnQm/YXV0bz13ZWJwJnM9/NGEwMmViMjI1MWIx/Mzc3OWUxODM1OTNi/M2JlNWIxOTNjNGFk/MDEyYQ" alt="Ralsei Pelúcia">
+                    </div>
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/H9DgNiHx_eIrDLeDLwtvHGmchaKki3i3DAFMLWHcTE4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdHJp/Y3RseXNva3Vkby5j/b20vY2RuL3Nob3Av/ZmlsZXMvVW50aXRs/ZWQtMV81ZGYzYWI2/Ny02ZGFkLTQyOGEt/OWUxYy1iZjdhYTcx/MTYxYTMucG5nP3Y9/MTczNjA4MDI1OSZ3/aWR0aD0xNDQ1" alt="Porco Pelúcia">
+                    </div>
+                    <div class="produto">
+                        <img src="https://imgs.search.brave.com/op66u2xWliZ7z1XxepdR0FGb2oZBpg7S2OYzMlxLTBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzkwNzQ1NC1DQlQ4/MTYzMjQyMDkxN18x/MjIwMjQtRS53ZWJw" alt="Freddy Pelúcia">
+                    </div>
+                </div>
             </section>
         </main>
     </div>
