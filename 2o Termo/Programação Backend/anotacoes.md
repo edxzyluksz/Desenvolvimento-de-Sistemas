@@ -63,4 +63,10 @@
     * **COBOL (1959) - COMON BUSINESS ORIENTED LANGUAGE**
     * **ASSEMBLY (1949)** - Escrito em **cartões perfurados**.
 
+## Mockup
+
+Basicamente, é como o esqueleto do seu projeto, mais especificamente na parte do backend. Seguindo um exemplo de uma matéria passada, se trata de um "carro modelado por argila" - Você não pode utilizá-lo, porém este já possibilita a visão geral de como ficará o produto final.
+
+**Software adequado para Mockup**: BALSAMIQ (https://www.balsamiq.com/download)
+
 ---

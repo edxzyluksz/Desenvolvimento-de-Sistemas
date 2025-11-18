@@ -1,6 +1,6 @@
 dadosLogin = []
 
-def AutenticaUsuario(sucesso, cargo):
+def AutenticaUsuario():
   while True:
     try:
       menu = input("1 - Registrar-se\n2 - Logar-se\nO que deseja fazer agora? R: ")
@@ -19,6 +19,7 @@ def AutenticaUsuario(sucesso, cargo):
             continue
           else:
             dadosLogin.append(f"Email: {emailCad}; Senha: {senhaCad}; Cargo: {cargo}")
+            print("Usuário registrado com sucesso!")
             break
         
         if not emailCad or not senhaCad:
@@ -30,12 +31,14 @@ def AutenticaUsuario(sucesso, cargo):
           emailInput = input("Email: ")
           senhaInput = input("Senha: ")
           credenciais = f"Email: {emailInput}; Senha: {senhaInput}"
-          if any(credenciais in item for item in dadosLogin):
-            print("Login bem-sucedido!")
-            return True, cargo
-          else:
-            print("Email e/ou senha incorretos.")
-
+          for item in dadosLogin:
+            if credenciais in item:
+                cargo_str = item.split("Cargo: ")[1]
+                cargo = int(cargo_str)
+                return True, cargo
+              
+          print("Erro. Não foi possível encontrar seus dados no sistema.")
+            
         else:
           print("Não existem usuários registrados no sistemas.")
     except ValueError:

@@ -1,21 +1,21 @@
 from autenticacao import AutenticaUsuario
-
-
-print("=== Gestão Educacional ConEduc ===")
-print("Tornando a educação um processo automatizado em dobro!")
-
+import os
 
 sucesso, cargo = AutenticaUsuario()
 
 if sucesso:
-    if cargo == 3:
+    os.system('cls')
+    print("=== Gestão Educacional ConEduc ===")
+    print("Tornando a educação um processo automatizado em dobro!")
+
+    if cargo == 1:
         print("")
         # MenuAluno()
     elif cargo == 2:
         print("")
         # MenuProfessor()
-    elif cargo == 1:
+    elif cargo == 3:
         print("")
-        # MenuGestao()
+        # MenuGestor()
     else:
         print("Este cargo não existe.")
