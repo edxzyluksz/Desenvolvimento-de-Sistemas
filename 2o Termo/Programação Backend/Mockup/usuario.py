@@ -9,3 +9,9 @@ def FinalizarCadastro(cargo):
 
 def MenuAluno():
     pass
+
+def MenuProfessor():
+    pass
+
+def MenuGestor():
+    pass
