@@ -112,3 +112,7 @@ Um Banco de Dados atual com SGBD é exponencialmente **mais veloz** do que uma p
 
 #### **Dificuldades Encontradas**
 Aprender a manipular e criar ambientes como esse (Banco de Dados) significa estar disputando lado a lado com seus concorrentes e **abraçar o futuro**. As folhas físicas são mais **obsoletas** e difíceis de...
+
+## MySQL
+
+O comando SELECT "*" é ideal apenas em ambiente de testes, visto que em uma aplicação real isto traria mais processamento para o banco de dados.
