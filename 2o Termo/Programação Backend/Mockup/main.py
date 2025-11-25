@@ -1,5 +1,6 @@
-from autenticacao import AutenticaUsuario
 import os
+from autenticacao import AutenticaUsuario
+from usuario import FinalizarCadastro, MenuAluno, MenuGestor, MenuProfessor
 
 sucesso, cargo = AutenticaUsuario()
 

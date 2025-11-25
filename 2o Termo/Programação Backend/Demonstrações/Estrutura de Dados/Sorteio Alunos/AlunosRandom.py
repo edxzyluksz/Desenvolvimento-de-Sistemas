@@ -3,7 +3,8 @@ import os # Importamos a biblioteca 'os' para verificar o tamanho do arquivo
 os.system("cls")
 
 # Nome do arquivo que contém a lista de nomes
-nome_arquivo = "nomes.txt"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+nome_arquivo = os.path.join(BASE_DIR, "nomes.txt")
 nomes_limpos = [] # Inicializa a lista de nomes
 
 # Tenta ler o arquivo de nomes
