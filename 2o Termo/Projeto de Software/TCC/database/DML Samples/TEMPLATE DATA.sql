@@ -1,113 +1,108 @@
-USE ConEduc;
-
-INSERT INTO Clientes (nomeAluno, nomeResponsavel, email, inicioMatricula, numeroFIAPS)
-VALUES
-('Ana Silva', 'Carlos Silva', 'ana.silva@example.com', '2024-02-10', 2),
-('Pedro Oliveira', 'Marina Oliveira', 'pedro.oliveira@example.com', '2023-09-05', 1),
-('Julia Santos', 'Roberto Santos', 'julia.santos@example.com', '2024-01-20', 3);
-
-INSERT INTO Professores (nome, email, inicioAtricuicao, principaisFormacoes)
-VALUES
-('Mariana Costa', 'mariana.costa@coneduc.com', '2022-03-01', 'Licenciatura em Matemática; Especialização em Educação'),
-('Thiago Moreira', 'thiago.moreira@coneduc.com', '2021-02-15', 'Licenciatura em História'),
-('Fernanda Lima', 'fernanda.lima@coneduc.com', '2020-05-20', 'Letras; Mestrado em Linguística');
-
-INSERT INTO Gestores (nome, email)
-VALUES
-('Ricardo Almeida', 'ricardo.almeida@coneduc.com'),
-('Patricia Costa', 'patricia.costa@coneduc.com');
-
-INSERT INTO Materias (nome, descricao)
-VALUES
-('Matemática', 'Cálculos, lógica e resolução de problemas'),
-('História', 'Estudo das civilizações e eventos históricos'),
-('Português', 'Gramática, interpretação e produção textual');
-
-INSERT INTO Laboratorios (nome, sigla)
-VALUES
-('Laboratório de Informática', 'LABINFO'),
-('Laboratório de Ciências', 'LABCIEN');
-
-INSERT INTO Turmas (tipoEnsinoBasico, anoEnsinoBasico, inicialTurma, dataInicio, dataFim)
-VALUES
-('F', '2024', 'A', '2024-02-01', '2024-12-15'),
-('F', '2024', 'B', '2024-02-01', '2024-12-15');
-
-INSERT INTO StatusLab (tipoStatus)
-VALUES
-('Agendado'),
-('Cancelado'),
-('Concluído');
-
-INSERT INTO Municipios (nome, UF)
-VALUES
+/* --- INSERÇÃO DE DADOS NAS TABELAS INDEPENDENTES (Fortes) --- */
+INSERT INTO Municipios (nome, UF) VALUES
 ('São Paulo', 'SP'),
-('Campinas', 'SP');
+('Campinas', 'SP'),
+('Rio de Janeiro', 'RJ');
 
-INSERT INTO Bairros (nomeBairro)
-VALUES
+/* Bairros */
+INSERT INTO Bairros (nomeBairro) VALUES
+('Jardim Europa'),
 ('Centro'),
-('Jardim das Flores');
+('Vila Mariana');
 
-INSERT INTO TiposLogradouro (descricao)
-VALUES
+/* TiposLogradouro (Tipos de Logradouro) */
+INSERT INTO TiposLogradouro (descricao) VALUES
 ('Rua'),
 ('Avenida'),
-('Travessa');
+('Praça');
 
-INSERT INTO Logradouro (CEP, nomeLogradouro, id_tipoLogradouro, id_bairro, id_municipio)
-VALUES
-('01001000', 'Rua das Acácias', 1, 1, 1),
-('13040089', 'Avenida Central', 2, 2, 2);
+/* Logradouro (Endereço - depende de Bairros, Municipios, TiposLogradouro) */
+INSERT INTO Logradouro (CEP, nomeLogradouro, id_tipoLogradouro, id_bairro, id_municipio) VALUES
+('01440000', 'Europa', 2, 1, 1), 
+('13010001', 'Orozimbo Maia', 2, 2, 2), 
+('20010000', 'Quinze de Novembro', 3, 2, 3); 
 
-INSERT INTO Infos_Escola (nomeInstituicao, CEP, numeroEndereco, telefone_secretaria)
-VALUES
-('Colégio ConEduc', '01001000', '120', '1122334455');
+/* Infos_Escola (Informações da Escola - depende de Logradouro) */
+INSERT INTO Infos_Escola (nomeInstituicao, CEP, numeroEndereco, telefone_secretaria) VALUES
+('Colégio Conhecimento e Educação', '01440000', '1234', '1130889900');
 
-INSERT INTO Fiaps (matricula, data_e_hora, justificativa)
-VALUES
-(1, '2024-03-15 08:20:00', 'Atraso por trânsito'),
-(2, '2024-03-16 07:50:00', 'Consulta médica');
+/* Clientes (Alunos) */
+INSERT INTO Clientes (nomeAluno, nomeResponsavel, email, inicioMatricula, numeroFIAPS) VALUES
+('Maria Silva', 'João Silva', 'maria.s@email.com', '2023-02-01', 0),
+('Pedro Santos', 'Ana Santos', 'pedro.s@email.com', '2023-02-01', 0),
+('Lucas Oliveira', 'Carla Oliveira', 'lucas.o@email.com', '2024-02-01', 0);
 
-INSERT INTO Boletim (matricula, mediaSemestre1, mediaSemestre2, mediaFinal)
-VALUES
-(1, 7.5, 8.0, 7.8),
-(2, 9.0, 8.5, 8.7),
-(3, 6.5, 7.0, 6.8);
+/* Professores */
+INSERT INTO Professores (nome, email, inicioAtricuicao, principaisFormacoes) VALUES
+('Dr. Roberto Almeida', 'roberto.a@colegio.com', '2020-08-15', 'Doutorado em Matemática, Licenciatura em Física'),
+('Ms. Fernanda Costa', 'fernanda.c@colegio.com', '2021-02-10', 'Mestrado em Letras, Pós em Linguística');
 
-INSERT INTO Boletim_Materias (matricula, id_materia, notaSemestre1, notaSemestre2)
-VALUES
-(1, 1, 8.0, 7.5),
-(1, 2, 7.0, 8.0),
-(2, 1, 9.0, 8.5),
-(3, 3, 6.5, 7.0);
+/* Gestores */
+INSERT INTO Gestores (nome, email) VALUES
+('Diretora Helena Souza', 'helena.s@colegio.com'),
+('Coordenador Ricardo Melo', 'ricardo.m@colegio.com');
 
-INSERT INTO Eventos (nomeEvento, descricao, data_e_hora, id_gestor)
-VALUES
-('Feira de Ciências', 'Apresentações e experimentos escolares', '2024-06-20 09:00:00', 1),
-('Semana da Leitura', 'Atividades de incentivo à leitura', '2024-04-10 10:00:00', 2);
+/* Materias (Disciplinas) */
+INSERT INTO Materias (nome, descricao) VALUES
+('Matemática', 'Estudo de números, estruturas e variações.'),
+('Língua Portuguesa', 'Estudo da gramática e literatura brasileira.');
 
-INSERT INTO Agenda_Laboratorio (id_status, id_professor, id_laboratorio, diaAquisicao, HoraEntrada, HoraSaida, justificativa_aquisicao)
-VALUES
-(1, 1, 1, '2024-03-21', '08:00:00', '10:00:00', 'Aula prática de informática'),
-(1, 2, 2, '2024-03-22', '10:00:00', '12:00:00', 'Experimento de ciências');
+/* Laboratorios */
+INSERT INTO Laboratorios (nome, sigla) VALUES
+('Laboratório de Informática 1', 'LAB-I1'),
+('Laboratório de Ciências', 'LAB-C1');
 
-INSERT INTO Aulas (NumerodaAula, id_materia, id_turma, pauta, dataAula)
-VALUES
-(1, 1, 1, 'Operações básicas e revisão', '2024-03-10'),
-(2, 2, 1, 'Estudo da Idade Média', '2024-03-11'),
-(1, 3, 2, 'Interpretação de texto', '2024-03-12');
+/* Turmas */
+INSERT INTO Turmas (tipoEnsinoBasico, anoEnsinoBasico, inicialTurma, dataInicio, dataFim) VALUES
+('F', '9', 'A', '2024-02-19', '2024-12-15'), /* Ensino Fundamental - 9º Ano A */
+('M', '3', 'B', '2024-02-19', '2024-12-15'); /* Ensino Médio - 3º Ano B */
 
+/* StatusLab (Status do Laboratório) */
+INSERT INTO StatusLab (tipoStatus) VALUES
+('Disponível'),
+('Em Uso'),
+('Manutenção');
 
-INSERT INTO Materias_Turmas (id_materia, id_turma)
-VALUES
-(1, 1),
-(2, 1),
-(3, 2);
+/* --- INSERÇÃO DE DADOS NAS TABELAS DEPENDENTES (Fracas e N:M) --- */
 
+/* Fiaps (Fichas Individuais de Acompanhamento Pedagógico - depende de Clientes) */
+INSERT INTO Fiaps (matricula, data_e_hora, justificativa) VALUES
+(1, '2024-03-05 10:00:00', 'Atraso na entrega de trabalho de Matemática.'),
+(2, '2024-03-05 14:30:00', 'Discussão em sala de aula.');
 
-INSERT INTO Turmas_Professores (id_turma, id_professor)
-VALUES
-(1, 1),
-(1, 2),
-(2, 3);
+/* Boletim (depende de Clientes) */
+INSERT INTO Boletim (matricula, mediaSemestre1, mediaSemestre2, mediaFinal) VALUES
+(1, 80, 85, 83),
+(2, 75, 70, 73);
+
+/* Boletim_Materias (depende de Clientes e Materias) */
+INSERT INTO Boletim_Materias (matricula, id_materia, semestre, nota1, nota2, nota3, nota4) VALUES
+(1, 1, 1, 75, 85, 80, 90), 
+(1, 2, 1, 90, 80, 85, 95), 
+(2, 1, 1, 70, 75, 65, 80); 
+
+/* Eventos (depende de Gestores) */
+INSERT INTO Eventos (nomeEvento, descricao, data_e_hora, id_gestor) VALUES
+('Feira de Ciências', 'Exposição de projetos científicos dos alunos.', '2024-06-15 09:00:00', 1),
+('Reunião de Pais e Mestres', 'Discussão sobre o desempenho dos alunos e metas.', '2024-04-20 18:30:00', 2);
+
+/* Agenda_Laboratorio (depende de StatusLab, Professores, Laboratorios) */
+INSERT INTO Agenda_Laboratorio (id_status, id_professor, id_laboratorio, diaAquisicao, HoraEntrada, HoraSaida, justificativa_aquisicao) VALUES
+(2, 1, 1, '2024-04-10', '13:00:00', '15:00:00', 'Uso para aula prática de Geometria.');
+
+/* Aulas (depende de Materias e Turmas) */
+INSERT INTO Aulas (NumerodaAula, id_materia, id_turma, pauta, dataAula) VALUES
+(1, 1, 1, 'Revisão de Álgebra Linear. Início da pauta de Cálculo.', '2024-04-01'),
+(2, 2, 1, 'Leitura e interpretação de texto: Machado de Assis.', '2024-04-02');
+
+/* Materias_Turmas (Relação N:M - depende de Materias e Turmas) */
+INSERT INTO Materias_Turmas (id_materia, id_turma) VALUES
+(1, 1), 
+(2, 1), 
+(2, 2); 
+
+/* Turmas_Professores (Relação N:M - depende de Turmas e Professores) */
+INSERT INTO Turmas_Professores (id_turma, id_professor) VALUES
+(1, 1), 
+(1, 2), 
+(2, 2);

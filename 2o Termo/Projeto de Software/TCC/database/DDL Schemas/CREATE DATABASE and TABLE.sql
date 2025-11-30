@@ -86,9 +86,9 @@ ALTER TABLE Fiaps ADD CONSTRAINT FK_Fiaps
 
 CREATE TABLE Boletim (
     matricula INTEGER PRIMARY KEY,
-    mediaSemestre1 DECIMAL,
-    mediaSemestre2 DECIMAL,
-    mediaFinal DECIMAL
+    mediaSemestre1 INTEGER,
+    mediaSemestre2 INTEGER,
+    mediaFinal INTEGER
 );
  
 ALTER TABLE Boletim ADD CONSTRAINT FK_Boletim_Aluno
@@ -98,8 +98,11 @@ ALTER TABLE Boletim ADD CONSTRAINT FK_Boletim_Aluno
 CREATE TABLE Boletim_Materias (
     matricula INTEGER,
     id_materia INTEGER,
-    notaSemestre1 DECIMAL,
-    notaSemestre2 DECIMAL,
+    semestre INTEGER,
+    nota1 INTEGER,
+    nota2 INTEGER,
+    nota3 INTEGER,
+    nota4 INTEGER,
     PRIMARY KEY (matricula, id_materia)
 );
  
