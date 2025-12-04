@@ -84,7 +84,7 @@
         }
 
         .muted {
-            color: #31eb18;
+            color: #c6c799;
             font-size: 14px;
         }
 
@@ -97,6 +97,31 @@
             min-height: 40px;
             gap: 5px;
             margin-top: 10px
+        }
+
+        ul.todos {
+            list-style: none;
+            padding-left: 0;
+            margin: 8px 0;
+        }
+
+        ul.todos li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            padding: 6px;
+            margin-top: 6px;
+            background: #fff;
+        }
+
+        .danger {
+            color: #b91c1c;
+        }
+
+        .ok {
+            color: #166543;
         }
     </style>
 </head>
@@ -116,6 +141,78 @@
                 <span class="pill">let / const - string - number - boolean - array - object</span>
             </div>
             <div class="output" aria-live="polite"><code id="tiposOut"></code></div>
+        </section>
+        <section id="controle">
+            <h2>Estruturas de Controle (if/else, switch, for/while)</h2>
+            <div class="row">
+                <label for="idadeInp">Idade</label>
+                <input type="number" id="idadeInp" min="0" max="120" placeholder="Exemplo: 18">
+                <button id="btnVerificarIdade">Verificar maioridade (if/else)</button>
+            </div>
+            <div id="idadeOut" class="output"></div>
+            <div class="row" style="margin-top: 10px;">
+                <label for="corSel">Semáforo</label>
+                <select id="corSel">
+                    <option value="" disabled selected>Selecione uma cor do semáforo</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="verde">Verde</option>
+                </select>
+                <button id="btnSemaforo">Mensagem (switch)</button>
+            </div>
+            <div id="semaforoOut" class="output"></div>
+            <div class="row" style="margin-top: 10px;">
+                <label>Loop</label>
+                <button id="btnLoop">Gerar sequência (for/while)</button>
+            </div>
+            <div id="loopOut" class="output"></div>
+        </section>
+        <section id="funcoes">
+            <h2>3) Funções (declarações e arrow function)</h2>
+            <p class="muted">Demonstração de funções com parâmetros e retorno.</p>
+            <div class="row">
+                <input type="number" id="aInp" placeholder="a" />
+                <input type="number" id="bInp" placeholder="b" />
+                <button id="btnSomar">Somar (function)</button>
+                <button id="btnDobro">Dobro de a (arrow)</button>
+            </div>
+            <div id="funOut" class="output"></div>
+        </section>
+        <section id="domEventos">
+            <h2>4) Dom + Eventos</h2>
+            <h3>4.1) Contador</h3>
+            <div class="row">
+                <button id="menos">-</button>
+                <strong id="valor">0</strong>
+                <button id="mais">+</button>
+                <button id="zerar">Zerar</button>
+            </div>
+            <h3 style="margin-top: 14px;">Tema da página</h3>
+            <div class="row">
+                <button data-bg="#ffffff" data-fg="#111827">Claro</button>
+                <button data-bg="#0f172a" data-fg="#91A4CF">Escuro</button>
+                <button data-bg="#fef3c7" data-fg="#172937">Sépia</button>
+            </div>
+        </section>
+        <section id="formulario">
+            <h2>5) Formulário e Validação (onsubmit + preventDefault)</h2>
+            <form id="formAluno" novalidate>
+                <div class="row" style="margin-bottom: 8px;">
+                    <input type="text" id="nome" placeholder="Nome" required />
+                    <input type="number" id="idade" min="0" placeholder="Idade" required />
+                    <button type="submit" id="enviar">Enviar</button>
+                </div>
+                <div id="formOut" class="output"></div>
+            </form>
+        </section>
+        <section id="todo">
+            <h2>6) Lista de Tarefas (To-Do) - Criar e remover itens</h2>
+            <div class="row">
+                <input type="text" id="todoInp" placeholder="Nova tarefa...">
+                <button id="todoAdd">Adicionar</button>
+            </div>
+            <ul id="todoList" class="todos"></ul>
+            <p class="muted">Dica: Abra o console e veja o <code>console.table</code> da lista de tarefas</p>
         </section>
     </main>
     <script>
@@ -154,7 +251,200 @@
                 console.clear()
             };
         });
-    </script>
+
+
+        // Parte 2: Estruturas de Controle
+        const idadeInp = document.getElementById('idadeInp') // Input
+        const idadeBtn = document.getElementById('btnVerificarIdade') // Botão
+        const idadeOut = document.getElementById('idadeOut') // Div que exibe os resultados
+
+        idadeInp.addEventListener('input', () => {
+            idadeOut.innerHTML = ""; // limpa a mensagem
+            idadeBtn.textContent = "Verificar maioridade (if/else)"; // reseta o botão
+        });
+
+        idadeBtn.addEventListener('click', () => {
+
+            let idade = Number(idadeInp.value)
+
+            if ((idadeInp.value) === "") {
+                idadeOut.textContent = "Digite algum valor!";
+                return;
+            }
+            else if (idadeOut.innerHTML !== "" && idadeOut.innerHTML !== "Digite algum valor!") {
+                idadeBtn.textContent = "Verificar maioridade (if/else)";
+                idadeOut.innerHTML = "";
+                return;
+            }
+
+
+            if (Number.isNaN(idade)) {
+                idadeOut.innerHTML = "Digite um numero válido!";
+                return;
+            }
+
+            idadeBtn.textContent = "Esconder idade";
+
+            if (idade >= 18) {
+                idadeOut.innerHTML = "😊 Você é maior de idade ";
+            }
+            else {
+                idadeOut.innerHTML = "😂 Você é menor de idade - quase um fiote";
+            }
+        });
+
+        const CorSel = document.getElementById("corSel");
+        const btnSemaforo = document.getElementById("btnSemaforo");
+        const semaforoOut = document.getElementById("semaforoOut");
+
+        btnSemaforo.addEventListener("click", () => {
+            let cor = corSel.value;
+            let msg;
+            switch (cor) {
+                case 'vermelho': msg = "Pare!!!"; break;
+                case 'amarelo': msg = "Atenção..."; break;
+                case 'verde': msg = "Vá com Dio..."; break;
+                default: msg = '😒 Precisa selecionar uma cor antes...'
+            }
+            semaforoOut.textContent = msg;
+        })
+
+
+        const btnLoop = document.getElementById("btnLoop")
+        const loopOut = document.getElementById("loopOut")
+
+        btnLoop.addEventListener('click', () => {
+
+            let resultado = 'for i=1..5\n';
+
+            for (let i = 1; i <= 5; i++) {
+                resultado += `${i}`;
+            }
+
+            resultado += '\n\nwhile contador <3:\n';
+            let contador = 0;
+            while (contador < 3) {
+                resultado += `${contador}`;
+                contador++;
+            }
+            loopOut.textContent = resultado.trim();
+        });
+
+        const aInp = document.getElementById("aInp");
+        const bInp = document.getElementById("bInp");
+        const BtnSomar = document.getElementById("btnSomar");
+        const btnDobro = document.getElementById("btnDobro");
+        const funOut = document.getElementById("funOut");
+
+        // Trabalhando com função tradicional
+        function somar(a, b) {
+            return a + b;
+        }
+
+        BtnSomar.addEventListener('click', () => {
+            const a = Number(aInp.value)
+            const b = Number(bInp.value)
+            if (Number.isNaN(a) || Number.isNaN(b)) {
+                funOut.textContent = "Digite números válidos para A e B 🚫"
+                return;
+            }
+            funOut.textContent = `Resultado da soma (${a}) e (${b}) = ${somar(a, b)}`
+        });
+
+        const dobro = x => x * 2;
+
+        btnDobro.addEventListener('click', () => {
+            const a = Number(aInp.value);
+            if (Number.isNaN(a)) {
+                funOut.textContent = "Digite um número válido para A"
+            }
+            funOut.textContent = `Resultado do dobro de (${a}) é ${dobro(a)}`
+        });
+
+        // 4) Dom + Eventos
+        // 4.1) Contador
+
+        const btnMenos = document.getElementById("menos");
+        const Labelvalor = document.getElementById("valor");
+        const btnMais = document.getElementById("mais");
+        const btnZerar = document.getElementById("zerar");
+
+        let count = 0;
+        const renderCount = () => (Labelvalor.textContent = String(count));
+
+        btnMenos.addEventListener('click', () => {
+            count--;
+            renderCount();
+        });
+
+        btnMais.addEventListener('click', () => {
+            count++;
+            renderCount();
+        });
+
+        btnZerar.addEventListener('click', () => { count = 0; renderCount(); });
+
+        // 4.2) Tema - Usando dataset do botão
+        document.querySelectorAll('#domEventos [data-bg]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.body.style.background = btn.dataset.bg;
+                document.body.style.color = btn.dataset.fg;
+            });
+        });
+
+        // 5) Formulário + Validação
+        const form = document.getElementById("formAluno");
+        const nome = document.getElementById("nome");
+        const idade = document.getElementById("idade");
+        const formOut = document.getElementById("formOut");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let nomeVal = nome.value.trim();
+            let idadeVal = Number(idade.value);
+            if (!nomeVal || Number.isNaN(idadeVal)) {
+                formOut.innerHTML = '⚠ Preencha nome e idade corretamente';
+                return;
+            }
+            let maioridade = idadeVal >= 18 ? 'maior' : 'menor'
+            formOut.innerHTML = `Olá <strong>${nomeVal}</strong> - Você tem <strong>${idadeVal}</strong> anos e é ${maioridade} de idade.`;
+            console.log(`Form OK → { nome: "${nomeVal}", idade: "${idadeVal}" }`)
+        });
+
+        const toDoInp = document.getElementById("todoInp")
+        const toDoAdd = document.getElementById("todoAdd")
+        const toDolist = document.getElementById("todoList")
+        let todos = [];
+
+        function renderToDos() {
+            toDolist.innerHTML = '';
+            todos.forEach((tarefa, idx) => {
+                const li = document.createElement('li')
+                li.innerHTML = `<span>${tarefa}</span>`
+                const rm = document.createElement('button')
+                rm.textContent = 'Remover'
+                rm.addEventListener('click', () => {
+                    todos.splice(idx, 1);
+                    console.table(todos);
+                    renderToDos();
+                });
+                li.appendChild(rm)
+                toDolist.appendChild(li);
+            })
+        }
+
+        todoAdd.addEventListener('click', () => {
+            const txtTarefa = toDoInp.value.trim()
+            if (!txtTarefa) return;
+            todos.push(txtTarefa);
+            console.groupCollapsed('Lista de tarefas atualizada');
+            console.table(todos);
+            console.groupEnd();
+            toDoInp.value = ''
+            renderToDos()
+        })
+
+    </script>;
 </body>
 
 </html>

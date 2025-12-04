@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Histórico</title>
+    <style>
+        :root {
+            --c: #0d47a1;
+            --b: #f8fafc;
+            --t: #111827;
+            --card: #fff;
+            --bd: #e5e7eb;
+
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: var(--t);
+            background: var(--b);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        main {
+            max-width: 920px;
+            margin: 24px auto;
+            padding: 0 16px;
+            display: grid;
+            gap: 16px;
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        section h2 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            cursor: pointer;
+            border: 1px solid var(--bd);
+            background: #fff;
+            border-radius: 10px;
+            padding: 8px 12px;
+        }
+
+        input,
+        select {
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 2px 8px;
+            border: 1px solid var(--bd);
+            border-radius: 999px;
+            background: #fff;
+        }
+
+        .muted {
+            color: #c6c799;
+            font-size: 14px;
+        }
+
+        .output {
+            white-space: pre-wrap;
+            background: #f3f4f6;
+            border: 1px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 10px;
+            min-height: 40px;
+            gap: 5px;
+            margin-top: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="calculadora" style="text-align: center;">
+            <h1>Calculadora com Histórico</h1>
+            <div class="row" style="margin-top: 10px;">
+                <input type="number" name="numeroA" id="numeroA" required>
+                <select name="operation" id="operations">
+                    <option value="" disabled selected>Escolha a operação</option>
+                    <option value="sum">Soma</option>
+                    <option value="subtract">Subtração</option>
+                    <option value="multiply">Multiplicação</option>
+                    <option value="division">Divisão</option>
+                    <option value="exponent">Exponenciação</option>
+                </select>
+                <input type="number" name="numeroB" id="numeroB" required>
+            </div>
+            <button id="calcular" style="margin-top: 10px;">Calcular</button>
+            <div id="resultado" class="output" style="text-align: left;"></div>
+        </section>
+    </main>
+    <script>
+
+        const aInp = document.getElementById("numeroA");
+        const operator = document.getElementById("operations");
+        const bInp = document.getElementById("numeroB");
+        const btnCalc = document.getElementById("calcular");
+        const result = document.getElementById("resultado");
+        let historico = []
+
+        btnCalc.addEventListener('click', () => {
+            let a = Number(aInp.value);
+            let b = Number(bInp.value);
+            let resultado, calculo
+            if (operator.value === "sum") {
+                calculo = (a + b)
+                resultado = `[SOMA:] ${a} + ${b} = ${calculo}`
+            }
+            else if (operator.value === "subtract") {
+                calculo = (a - b)
+                resultado = `[SUBTRAÇÃO:] ${a} - ${b} = ${calculo}`
+            }
+            else if (operator.value === "multiply") {
+                calculo = (a * b)
+                resultado = `[MULTIPLICAÇÃO:] ${a} * ${b} = ${calculo}`
+            }
+            else if (operator.value === "division") {
+                calculo = (a / b)
+                resultado = `[DIVISÃO:] ${a} / ${b} = ${calculo}`
+            }
+            else if (operator.value === "exponent") {
+                calculo = (a ** b)
+                resultado = `[EXPONENCIAÇÃO:] ${a}`
+            }
+            else {
+                result.textContent = "⚠ Escolha uma operação antes de começar"
+                return;
+            }
+
+            historico.push(resultado)
+            result.textContent = historico.join("\n")
+        })
+    </script>
+</body>
+
+</html>

@@ -126,3 +126,15 @@ A linguagem de programação frontend na qual traz a interatividade para o usuá
 
 **Devtools**
 Uma ferramenta poderosa e geralmente já presente nos navegadores, utilizado para ver a estruturação da página HTML, Cookies, Comandos, etc.
+
+**Notação Húngara**
+Prevalece uma forma de escrever nomes de variáveis, funções e classes, criando uma padronização do código
+
+Exemplo: 
+- Todas as variáveis inteiras começam com "int"
+- Todas as strings começam com "str"
+- Todos os botões começam com "btn"
+- Todas as divs começam com "div"
+- Todos os inputs começam "inp"
+
+E assim por diante, prevalecendo o trabalho em equipe e legibilidade do código.
