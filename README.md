@@ -19,3 +19,7 @@ Para 2026, o professor William (Billy) será substituído pelo docente Diogo, um
 
 ### Lista de Afazeres (Repositório):
 - No momento de escrita, o repositório parece satisfatoriamente conter todas as vertentes já praticadas no curso.
+
+## Softwares Utilizados
+Pasta no Google Drive para a instalação dos Setups, Isos e Portáteis utilizados ao decorrer do curso:
+- https://drive.google.com/drive/folders/1650XkWGCc-5uLBJ8kgAfvQyAYtIYnJJW?usp=drive_link
