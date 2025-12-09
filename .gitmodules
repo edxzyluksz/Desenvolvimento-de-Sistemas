@@ -1,0 +1,6 @@
+[submodule "ConEduc"]
+    path = 2o Termo/Projeto de Software/ConEduc
+    url = https://github.com/LarissaNicodemo/TCC---Controle-de-Unidade-Escolar
+[submodule "TBRHub"]
+    path = 2o Termo/Linguagens de Marcação/TBRHub
+    url = https://github.com/eduardogarcia-senai/TBRHub-Repository
