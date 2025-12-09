@@ -108,8 +108,3 @@ def continuar(user):
         elif decisao_continuar in positivas:
             print("Vamos continuar!")
             return True
-
-
-        
-
-
