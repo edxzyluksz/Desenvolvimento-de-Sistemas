@@ -1,0 +1,20 @@
+@startuml Positivo_Negativo_Zero
+start
+
+:Mostrar "Escreva um número:";
+:Leia numero;
+
+if (numero >= 1?) then (Sim)
+  :Mostrar "Seu número é positivo!";
+endif
+
+if (numero < 0?) then (Sim)
+  :Mostrar "Seu número é negativo!";
+endif
+
+if (numero == 0?) then (Sim)
+  :Mostrar "Seu número é zero! Como se fosse o portal entre dimensões!";
+endif
+
+stop
+@enduml

@@ -1,0 +1,33 @@
+@startuml StringComposta
+start
+
+:Exibir "Escreva uma palavra aqui:";
+:ler palavra;
+
+:Exibir "Agora uma outra maior ou frase aqui:";
+:ler frase;
+
+:tamanho1 = numero_caracteres(palavra);
+:tamanho2 = numero_caracteres(frase);
+
+if (tamanho2 >= tamanho1) then (sim)
+    :encontrado = falso;
+    for (i = 0 até tamanho2 - tamanho1)
+        :trecho = extrair_subtexto(frase, i, i + tamanho1);
+        if (caixa_alta(trecho) == caixa_alta(palavra)) then (sim)
+            :encontrado = verdadeiro;
+            break;
+        endif
+    endfor
+
+    if (encontrado) then (sim)
+        :Exibir "Sim, a segunda string possui a primeira.";
+    else (não)
+        :Exibir "A segunda string não contém a primeira.";
+    endif
+else (não)
+    :Exibir "Tente escrever uma palavra na primeira e uma frase na segunda.";
+endif
+
+stop
+@enduml

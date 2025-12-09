@@ -109,3 +109,32 @@ O **nome amigável** feito para ser **memorizado facilmente**.
 * **Layout Adaptativa:**
     * Versões **específicas** para diferentes tamanhos de tela.
     * **Detecta o dispositivo**.
+
+# JavaScript
+A linguagem de programação frontend na qual traz a interatividade para o usuário, sendo possível rodá-lo no navegador nativamente ou no servidor com Node.Js
+
+**Frameworks mais usados:**
+- React (Feito pela Meta)
+- Angular (Feito pela Google)
+- Vue.js (Feito por Evan You)
+
+**Declaração de variáveis:**
+- var - antigo, não recomendado
+- let - variável com escopo de bloco
+- const - valor fixo, não pode ser reatribuído
+
+
+**Devtools**
+Uma ferramenta poderosa e geralmente já presente nos navegadores, utilizado para ver a estruturação da página HTML, Cookies, Comandos, etc.
+
+**Notação Húngara**
+Prevalece uma forma de escrever nomes de variáveis, funções e classes, criando uma padronização do código
+
+Exemplo: 
+- Todas as variáveis inteiras começam com "int"
+- Todas as strings começam com "str"
+- Todos os botões começam com "btn"
+- Todas as divs começam com "div"
+- Todos os inputs começam "inp"
+
+E assim por diante, prevalecendo o trabalho em equipe e legibilidade do código.

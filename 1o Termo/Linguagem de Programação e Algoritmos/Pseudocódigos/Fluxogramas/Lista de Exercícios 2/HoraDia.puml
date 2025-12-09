@@ -1,0 +1,18 @@
+@startuml HoraDia
+start
+
+:Mostrar "Olá, usuário! Qual é o seu nome?\nMeu nome é...";
+:Leia nomeuser;
+
+:hora = Calendario.hora_atual();
+
+if (hora >= 6 e hora <= 11?) then (Sim)
+  :Mostrar "Olá, " + nomeuser + "! Agora são " + hora + " Horas! Bom dia!";
+elseif (hora >= 12 e hora <= 18?) then (Sim)
+  :Mostrar "Olá, " + nomeuser + "! Agora são " + hora + " Horas! Boa tarde!";
+elseif (hora >= 19 ou hora <= 5?) then (Sim)
+  :Mostrar "Olá, " + nomeuser + "! Agora são " + hora + " Horas! Boa noite!";
+endif
+
+stop
+@enduml

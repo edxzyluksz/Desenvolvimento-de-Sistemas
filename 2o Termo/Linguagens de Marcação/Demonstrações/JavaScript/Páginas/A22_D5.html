@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A22-D5.</title>
+</head>
+
+<body>
+    <h1>Página Teste</h1>
+    <h1 id="tituloMouse">Passa o mouse aqui</h1>
+    <button id="btnTexto">Mudar texto</button>
+
+    <script>
+        console.log("Entrou na página!")
+        let titulo = document.getElementById("tituloMouse")
+        let botao = document.getElementById("btnTexto")
+
+        titulo.addEventListener("mouseover", () => {
+            console.log("Entrou no evento Mouseover")
+            titulo.style.color = "green";
+        });
+
+        titulo.addEventListener("mouseout", () => {
+            console.log("Entrou no evento Mouseout")
+            titulo.style.color = "black";
+        });
+
+        botao.addEventListener("click", () => {
+            if (titulo.innerHTML == "Texto alterado via JS") {
+                titulo.innerHTML = "Voltou..."
+            }
+            else {
+                titulo.innerHTML = "Texto alterado via JS";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

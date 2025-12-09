@@ -1,0 +1,32 @@
+@startuml NumeroMaior
+start 
+
+:Mostrar "Digite 3 números:\n1- ";
+:Leia numero1;
+
+repeat
+  :Mostrar "2- ";
+  :Leia numero2;
+  if (numero2 == numero1?) then (Sim)
+    :Mostrar "Os números não podem ser iguais.\n\n";
+  endif
+repeat while (numero2 == numero1?)
+
+repeat
+  :Mostrar "3- ";
+  :Leia numero3;
+  if (numero3 == numero1 ou numero3 == numero2?) then (Sim)
+    :Mostrar "Os números não podem ser iguais.\n\n";
+  endif
+repeat while (numero3 == numero1 ou numero3 == numero2?)
+
+if (numero1 > numero2 e numero1 > numero3?) then (Sim)
+  :Mostrar "Seu primeiro número é o maior (" + numero1 + ")";
+elseif (numero2 > numero1 e numero2 > numero3?) then (Sim)
+  :Mostrar "Seu segundo número é o maior (" + numero2 + ")";
+else
+  :Mostrar "Seu terceiro número é o maior (" + numero3 + ")";
+endif
+
+stop
+@enduml

@@ -1,0 +1,41 @@
+@startuml Temperatura
+start
+
+:Exibir "Digite 1 para usar Celsius ou 0 para Fahrenheit:";
+:ler medida;
+
+while (medida != 0 e medida != 1)
+    :Exibir "Opção inválida! Digite 1 para Celsius ou 0 para Fahrenheit:";
+    :ler medida;
+endwhile
+
+:Exibir "Digite a temperatura:";
+:ler temperatura;
+
+if (medida == 1) then (Celsius)
+    :Exibir "Certo, você inseriu temperatura°C";
+else (Fahrenheit)
+    :Exibir "Certo, você inseriu temperatura°F";
+endif
+
+:Exibir "Escolha a conversão desejada:";
+:Exibir "Digite 1 para converter para Celsius ou 0 para Fahrenheit:";
+:ler conversao;
+
+while (conversao != 0 e conversao != 1)
+    :Exibir "Opção inválida! Digite 1 para Celsius ou 0 para Fahrenheit:";
+    :ler conversao;
+endwhile
+
+if (medida == 0 e conversao == 1) then (F -> C)
+    :valor = (temperatura - 32) / 1.8;
+    :Exibir "temperatura°F em Celsius é: valor°C";
+else if (medida == 1 e conversao == 0) then (C -> F)
+    :valor = (temperatura * 9 / 5) + 32;
+    :Exibir "temperatura°C em Fahrenheit é: valor°F";
+else (mesma unidade)
+    :Exibir "O valor não se altera: temperatura + unidade";
+endif
+
+stop
+@enduml
