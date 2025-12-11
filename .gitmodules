@@ -4,3 +4,6 @@
 [submodule "TBRHub"]
     path = 2025/2o Termo/Linguagens de Marcação/TBRHub
     url = https://github.com/eduardogarcia-senai/TBRHub-Repository
+[submodule "Jogos c/ Unity"]
+    path = 2025/2o Termo/Jogos com Unity
+    url = https://github.com/edxzyluksz/Jogos-com-Unity/tree/main
