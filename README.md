@@ -11,11 +11,15 @@ Meu nome é Eduardo Lucas Garcia, e no momento em que escrevo esta descrição, 
 - Wellington Serafim dos Santos Silva: Programação Backend / Projeto de Software
 - William César Augustonelli: Banco de Dados / Linguagens de Marcação
 
+**Três últimos dia de aula**
+- César Perez Brandão: Criação de Jogos com Unity e C#
+- Diogo Takamori Barbosa: Revisão Git/GitHub
+
 ## 2026
 
 -- Situação: Não alcançado.
 
-Para 2026, o professor William (Billy) será substituído pelo docente Diogo, um professor que foi transferido da unidade de Limeira para Americana.
+Para 2026, os professores Wellington e William não estarão mais presentes na instituição para proporcionar novas aulas.
 
 ### Lista de Afazeres (Repositório):
 - No momento de escrita, o repositório parece satisfatoriamente conter todas as vertentes já praticadas no curso.
