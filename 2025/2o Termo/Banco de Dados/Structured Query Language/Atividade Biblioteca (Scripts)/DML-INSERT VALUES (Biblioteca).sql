@@ -2,7 +2,7 @@ USE AtividadeBiblioteca;
 
 INSERT INTO Autores(nomeAutor)
 VALUES	('Hellen Corina de Oliveira'),
-		('Melissa Leventon'),
+	('Melissa Leventon'),
         ('Janice McNeillie'),
         ('Maria Carolina Garcia'),
         ('Fernanda Nascimento'),

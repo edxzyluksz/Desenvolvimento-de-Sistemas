@@ -1,4 +1,4 @@
-/*CREATE DATABASE lab_Indices;
+CREATE DATABASE lab_Indices;
 USE lab_Indices; 
 
 CREATE TABLE Clientes(
@@ -25,7 +25,6 @@ BEGIN
 		END WHILE;
 END //
 DELIMITER ;
-*/
 
 SELECT * FROM Clientes;
 

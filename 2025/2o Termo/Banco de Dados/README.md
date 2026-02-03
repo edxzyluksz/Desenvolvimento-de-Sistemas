@@ -1,7 +1,5 @@
 ## 💾 BANCO DE DADOS: ANOTAÇÕES DE ESTUDO
 
----
-
 ### **Conceitos Fundamentais**
 
 #### **Componentes de um SGBD**
@@ -21,8 +19,6 @@ Uma forma de **representar a realidade em termos de dados**.
     2. Criar um **Modelo Conceitual**.
     3. Organizar e descrever a **estrutura do Banco de Dados**.
     4. Criar o Banco de Dados usando um **SGBD**.
-
----
 
 ### **Estrutura de Tabelas e Chaves**
 
@@ -61,8 +57,6 @@ Um campo em uma tabela que **aponta para a chave primária de outra tabela**.
 2. A tabela **AUTOR** possui somente uma chave, sendo esta **primária** "ID\_AUTOR", enquanto a tabela **LIVRO** possui chave **primária** "ID\_LIVRO" e chave **estrangeira** "ID\_AUTOR".
 3. Se não existe um autor atribuído a nenhum livro, este pode ser apagado sem problemas, caso contrário, o SGBD **proibiria a ação** (Integridade Referencial).
 
----
-
 ### **Normalização**
 
 #### **Modelo Físico**
@@ -98,8 +92,6 @@ Ao seguir a 1FN, estas considerações serão impostas:
 #### **2ª Forma Normal (2FN)**
 * Obrigatoriamente precisa da **1FN**.
 * Consiste basicamente em **atribuir as tabelas corretamente**.
-
----
 
 ### **SGBD e Dificuldades**
 

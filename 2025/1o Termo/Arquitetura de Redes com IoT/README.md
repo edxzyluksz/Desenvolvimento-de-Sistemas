@@ -2,8 +2,6 @@
 
 ## CONCEITOS E HISTÓRICO
 
----
-
 ### O Que São Redes de Computadores?
 
 **DEFINIÇÃO**
@@ -17,7 +15,6 @@
 * Trabalho e Produtividade
 * E-commerce e Bancos
 * Saúde
-* **Indispensáveis!!!**
 
 **REDE EXPERIMENTAL**
 * A criação das redes de internet surgiram durante a **Época da Guerra Fria** na década de 60, pois os EUA buscavam criar uma rede de comunicação **resistente a ataques nucleares**, que originou a rede experimental **ARPANET**.
@@ -37,11 +34,7 @@
 * Em 1992, o tráfego de dados era de até **100GB por dia**, enquanto em 2013, já ultrapassava **28TB por segundo**.
 * **Volume de Tráfego de Dados na Internet em 2024:** 68 Exabytes ou **24,92 Terabits por segundo**.
 
----
-
 ## TIPOS DE REDES E COMUNICAÇÃO
-
----
 
 ### Quantos Tipos de Redes Existem?
 
@@ -68,11 +61,7 @@
 **COMUTAÇÃO DE PACOTES**
 * Um método de transmissão de dados em que as informações são divididas em **pacotes menores** e enviadas **independentemente** através de uma rede.
 
----
-
 ## COMPONENTES E FUNÇÕES
-
----
 
 ### Dispositivos de Rede
 
@@ -101,11 +90,7 @@
 * **SERVIDOR DHCP** -> **SERVIDOR DNS** -> **SERVIDOR WEB** (sequência de comunicação).
 * **CERTIFICADO DIGITAL** - SHA-256.
 
----
-
 ## MODELOS E PROTOCOLOS DE COMUNICAÇÃO
-
----
 
 ### Modelos de Comunicação
 
@@ -148,11 +133,7 @@
 
 * **PACOTE:** Fragmento de um dado a ser transmitido em rede, dividido em cada uma das camadas (na prática, 4).
 
----
-
 ## ENDEREÇAMENTO E INFRAESTRUTURA
-
----
 
 ### Endereçamento IP
 
@@ -203,11 +184,7 @@
 * **CAT7 e CAT8:** Data centers e ambientes críticos.
 * Para dispositivos **iguais** use o **CROSSOVER**, caso contrário, **par trançado**.
 
----
-
 ## TOPOLOGIAS E FERRAMENTAS
-
----
 
 ### Tipos de Topologias de Rede
 

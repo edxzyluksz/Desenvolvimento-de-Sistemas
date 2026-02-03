@@ -1,7 +1,5 @@
 # 💻 Programação Backend
 
----
-
 ## 🚀 Conceitos Fundamentais
 
 * **Lógica de Programação e Algoritmo:** É a **base** para todas as linguagens de programação; estrutura essencial para a construção dos códigos.
@@ -9,8 +7,6 @@
 * **Tipos de Linguagens nos Dispositivos:** **Compilada** e **Interpretada**.
     * **Linguagem Compilada:** É convertida diretamente em um **código de máquina** que o processador pode executar.
     * **Linguagem Interpretada:** Executa o código diretamente como **streaming**, no momento da execução e é **traduzido**.
-
----
 
 ## 🗂️ Estruturas Essenciais
 
@@ -26,8 +22,6 @@
 * **Laços de Repetição**
 * **Orientação a Objetos**
 
----
-
 ## 🛠️ Funções e Bibliotecas
 
 * **Funções:** Blocos de **códigos predefinidos** que podemos utilizar em nossos programas.
@@ -41,8 +35,6 @@
 * **Funções Nativas do Python (70 Nativas):**
     1.  Manipulações de listas e sequências (remove, count, pop, insert)
     2.  Entrada e Saída (print e input)
-
----
 
 ## 🌐 Linguagens para Backend
 
@@ -68,5 +60,3 @@
 Basicamente, é como o esqueleto do seu projeto, mais especificamente na parte do backend. Seguindo um exemplo de uma matéria passada, se trata de um "carro modelado por argila" - Você não pode utilizá-lo, porém este já possibilita a visão geral de como ficará o produto final.
 
 **Software adequado para Mockup**: BALSAMIQ (https://www.balsamiq.com/download)
-
----

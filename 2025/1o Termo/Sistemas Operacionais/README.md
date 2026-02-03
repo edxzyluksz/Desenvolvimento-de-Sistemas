@@ -17,8 +17,6 @@
     * Deve operar **sem atrasos ou falhas de carregamentos**, pois deve **interagir com o mundo real de maneira constante e imediata**.
     * Usados em indústrias da **saúde, robótica, gás e petróleo**.
 
----
-
 ## Arquitetura de Hardware e Processadores
 
 ### Arquitetura de Processadores e Bitagem
@@ -51,8 +49,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
 * **O conceito de 32 bits e 64 bits podem ser utilizados tanto no sistema quanto nos softwares.**
 * A arquitetura **x86** que é de **32 bits** está em **franca desaceleração, descontinuado**.
 * O **Silício** é um **metal semicondutivo essencial** para a **construção dos processadores**.
-
----
 
 ## Dispositivos de Armazenamento e Memória
 
@@ -87,8 +83,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
     * **1 MB** = **10.0 GB**.
     * Os dados eram **transferidos para o Cache** e **depois escritos no HD**. (Cache = **SRAM**)
 
----
-
 ## Padrões de Conexão (Interface)
 
 * **Padrão PATA** (**Parallel Advanced Technology Attachment**):
@@ -100,8 +94,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
     * Uma **interface** para conectar **HDs, SSDs** e outros dispositivos de armazenamento à placa mãe. É a **evolução** do PATA.
 * **Padrão NVMe** (**Non-Volatile Memory Express**):
     * Representa um **novo protocolo de transferência de dados** que é conectado **direto à placa mãe**. É o mais atual.
-
----
 
 ## Sistemas de Arquivos (File Systems)
 
@@ -131,8 +123,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
 > **Por que o NTFS é o mais difundido do mundo?**
 > Por ser **Windows-compatível** e **constantemente melhor**.
 
----
-
 ## Máquinas Virtuais (VM) e Cloud
 
 * **O QUE É VIRTUAL MACHINE?**
@@ -143,8 +133,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
     * **Se o PC real, onde as VMs estão configuradas, parar de funcionar, todas as VMs também param**.
 * **VMWARE**: Utilizado no **âmbito profissional**, com **suporte técnico especializado**.
 * **VIRTUAL BOX**: **Open Source, gratuito**. **Fácil de utilizar** com comunidade ativa para suporte.
-
----
 
 ## Divisão, Backup e Otimização
 
@@ -162,8 +150,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
 * **JOURNALING**, **SNAPSHOTS**, **COPY-ON-WRITE**, **COMPRESSÃO** e **CHECKSUM** são mecanismos de segurança e recuperação.
     * **Não se faz SNAPSHOT de um banco de dados, se faz BACKUP**.
 
----
-
 ## BIOS, CMOS e TPM
 
 * **BIOS** (**Basic Input/Output System**):
@@ -176,8 +162,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
     * **Dispositivo físico** que existe para **auxiliar o BIOS** na **segurança do SO** com uma **criptografia de alta densidade**.
 * **ISO**: **Imagem grande padrão de instalação do SO** e **extensão de arquivo**.
 
----
-
 ## Licenciamento e Distribuições
 
 * **A pirataria** incide diretamente sobre a **propriedade intelectual** do conteúdo do SO.
@@ -186,8 +170,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
     * O **LINUX** mais parecido com o **WINDOWS** é o **MINT**.
     * **Empresas podem comprar licenças especiais** para suas necessidades (Lucro do SO).
     * O não uso massivo do Linux é devido à **zona de conforto**, **estabilidade** e **ausência de suporte** (por ser grátis).
-
----
 
 ## Histórico e Pioneiros
 
@@ -206,8 +188,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
 * O **maior tropeço da IBM em SO** foi **ENTREGAR O SISTEMA PARA A BILL GATES**.
 * **ENIAC**: **Sempre existiu o file systems** (sistemas de arquivo) mesmo fora da computação digital.
 
----
-
 ## Classificação de Porte (Computadores)
 
 * **GRANDE PORTE** (**MAINFRAME**): Dedicado ao **processamento de um volume de informações**.
@@ -216,8 +196,6 @@ A **arquitetura de SO** define o conjunto de **instruções que o computador é 
 * **UNIX** - Sistema operacional para **Mainframe** (**computadores de grande porte**).
 
 > **O produto mais importante para uma empresa são suas informações e dados.**
-
----
 
 ## Consumo de Energia e Eficiência
 

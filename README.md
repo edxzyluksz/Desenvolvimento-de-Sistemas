@@ -15,14 +15,21 @@ Meu nome é Eduardo Lucas Garcia, e no momento em que escrevo esta descrição, 
 - César Perez Brandão: Criação de Jogos com Unity e C#
 - Diogo Takamori Barbosa: Revisão Git/GitHub
 
-## 2026
-
--- Situação: Não alcançado.
-
 Para 2026, os professores Wellington e William não estarão mais presentes na instituição para proporcionar novas aulas.
 
+## 2026
+
+**3o Termo - Disciplinas**
+
+No momento, é incerto a distribuição das aulas entre os professores. Portanto, nos próximos dias estas informações serão preenchidas.
+
+Docentes:
+    - Diogo Takamori Barbosa;
+    - Jorge Carneiro.
+
 ### Lista de Afazeres (Repositório):
-- No momento de escrita, o repositório parece satisfatoriamente conter todas as vertentes já praticadas no curso.
+- 03/02/2026: É necessário preencher os conteúdos das pastas `.\2026\"3o Termo"\` conforme o andamento das aulas.
+- Adicionar os próximos softwares urilizados
 
 ## Softwares Utilizados
 Pasta no Google Drive para a instalação dos Setups, Isos e Portáteis utilizados ao decorrer do curso:

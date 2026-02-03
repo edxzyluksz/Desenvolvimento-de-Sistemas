@@ -69,8 +69,6 @@ Sempre leia um enunciado de problema e se pergunte:
 
 ## Estruturas de Dados (Vetores e Matrizes)
 
----
-
 ### **Vetores**
 
 * Conjunto de **variáveis** no qual cada uma pode guardar um dado diferente, mas todas compartilham o **mesmo nome**.
@@ -86,8 +84,6 @@ $$\text{M} = \begin{bmatrix} 4 & 8 & 4 & 7 & 6 \\ 2 & 7 & 3 & 2 & 5 \\ 1 & 4 & 1
 * Acesso: $\text{M}[2][4] = 5$ (Assumindo índice base 1), $\text{M}[3][3] = 1$.
 
 ## Tipagem e Operadores
-
----
 
 ### **Declaração de Variáveis - Tipagem**
 
@@ -159,8 +155,6 @@ $$\text{for (i=0; i<x; i++) \{ print(i) \}}$$
 
 ## Procedimentos e Funções (27/05)
 
----
-
 ### **Procedimento**
 
 * É um programa (subalgoritmo) que, para ser executado, tem que ser chamado pelo **algoritmo principal** que o constitui, ou por outro algoritmo.
@@ -186,8 +180,6 @@ $$\text{RETORNO } <\text{VALOR}>$$
 $$\text{FIM FUNÇÃO}$$
 
 ## Exemplos de Algoritmos (Pseudocódigo e Fluxograma)
-
----
 
 ### **Exemplos de Algoritmo - Atividades Diárias**
 
@@ -285,8 +277,6 @@ Escreva um algoritmo para verificar se um número dado é **múltiplo de 3 E 5**
 
 ## Outros Exercícios Propostos
 
----
-
 * **Exercício 1 (Média e Resultado):** Que leia 4 notas, tire a média e apresentar o resultado.
 * **Exercício 2 (Cálculo de Área):** Que recebe o dado necessário para calcular a **área** de um **quadrado**, **retângulo** e **triângulo**.
 * **Exercício 3 (Cálculo Salário):** Que realize o cálculo do **salário líquido** do professor.
@@ -350,8 +340,6 @@ $$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
 
 ## Fluxograma - Exercício da Pizzaria (18/03)
 
----
-
 ### **Dados**
 
 * 4 Queijos - **50 A**
@@ -386,8 +374,6 @@ $$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
 
 ## Testes e Análise de Linguagem
 
----
-
 ### **Teste de Mesa (Exemplo com Palavra/Símbolo)**
 
 * **INÍCIO**
@@ -411,7 +397,6 @@ $$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
 
 ### **Pesquisas e Tópicos**
 
-* Pesquisar **Backtracking** e **Força Bruta** na Programação e Algoritmos.
-* Programação **Fibonacci**.
-* **Complexidade Algorítmica** (Wikipedia).
-* **Teste Automatizado**.
+* Pesquisar <a href="https://pt.wikipedia.org/wiki/Backtracking" target="_blank">Backtracking</a> e <a href="https://pt.wikipedia.org/wiki/Ataque_de_for%C3%A7a_bruta" target="_blank">Força Bruta</a> na Programação e Algoritmos.
+* Programação <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence">Fibonacci.</a>
+* **Complexidade Algorítmica** <a href="https://pt.wikipedia.org/wiki/Complexidade_computacional" target="_blank">(Wikipedia).</a>

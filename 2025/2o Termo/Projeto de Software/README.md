@@ -1,7 +1,5 @@
 # Projeto de Software
 
----
-
 ## Conceitos e Aplicações
 
 ### Objetivo Principal
@@ -9,8 +7,6 @@
 **PARA UM TAP, O IDEAL É IDEALIZAR DIRETAMENTE PARA OS CHEFES, COM O ENGAJAMENTO DO CLIENTE.** O software precisa resolver algum **problema evidente**.
 
 * **Abordagem do Projeto:** Abordará tudo que é necessário, como os seus adjuntos para realização e funcionalidade do projeto.
-
----
 
 ### Termo de Abertura do Projeto (TAP)
 
@@ -23,8 +19,6 @@ UM **DOCUMENTO OFICIAL** QUE FORMALIZA O **INÍCIO DE UM PROJETO**, CONFERINDO *
     * Etiqueta de vestuário
     * Armazenamento de nuvem no celular
 
----
-
 ### O Que Impulsiona a Aderência?
 
 O que vai adjunto no seu projeto de software que vai impulsionar a **adesão dos usuários**?
@@ -33,8 +27,6 @@ O que vai adjunto no seu projeto de software que vai impulsionar a **adesão dos
     * Aproximação **interativa**, ou seja, assim como abordado nas aulas de backend, e sempre importante perguntar o nome logo no início e perguntar no fim se ele gostaria de usar novamente ou sair.
     * O programa não será apenas uma ferramenta de uso único, mas uma **preferência**, uma **identidade construída**.
     * Painel de **configurações** (cores personalizadas, opções de acessibilidade e alteração de idioma) constroem **adjuntos poderosos** que não necessariamente fariam parte do projeto, mas cairiam no **grau afetivo** do usuário.
-
----
 
 ### Ciclo de Vida do Projeto
 
@@ -47,8 +39,6 @@ UM PROJETO POSSUI UM CICLO DE VIDA QUE SE ESTENDE DE SEU **INÍCIO ATÉ SEU ENCE
     * Ter a possibilidade de **comunicação**.
     * É importante **sempre documentar** todas as etapas, planejamentos monetários e feedbacks.
 
----
-
 ## Execução e Acompanhamento
 
 ### Andamento e Detalhamento
@@ -56,8 +46,6 @@ UM PROJETO POSSUI UM CICLO DE VIDA QUE SE ESTENDE DE SEU **INÍCIO ATÉ SEU ENCE
 * **ANDAMENTO DO PROJETO:** Detalhar as **necessidades**, **requisitos**, **documentação**, **limite entregável**, **esqueleto do projeto**.
 * Tirar do papel e construir **de fato** o projeto.
 * **Execução do Projeto - Escopo:** Plano em prática.
-
----
 
 ### Tripla Restrição (Triple Constraint)
 
@@ -78,8 +66,6 @@ SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento a
 * Existe a possibilidade de **balancear o triângulo** ao reduzir ou aumentar algum para compensar a escassez do outro.
 * Garante **andamento**.
 
----
-
 ### Monitoramento e Controle
 
 * Cada **material**, **etapas**, **pessoas** e **fluxos de trabalho**.
@@ -89,21 +75,15 @@ SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento a
     * Não terceiros.
     * A não transferência de **responsabilidade** no caso de **contratos abusivos**.
 
----
-
 ### Comunicação
 
 * **TRANSPARÊNCIA**, **DIRETA**, **FREQUÊNCIA**, **PRIMAR PELO BOM AMBIENTE**.
 * **Comunicação Efficaz** e **Reuniões de Acompanhamento**.
 
----
-
 ### Gerenciamento
 
 * **Gerenciamento de Stakeholders:** Gestão de **pessoas interessadas (participantes)** do projeto.
 * **Gerir no projeto:** Gerenciamento dos **time stakeholders** adjunto ao projeto.
-
----
 
 ### Liderança e Equipe
 
@@ -112,8 +92,6 @@ SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento a
 * **Controle** do andamento.
 * **Motivação** da equipe.
 * **Treinamento** e **capacita** um **novo líder**.
-
----
 
 ## Encerramento e Entrega
 
