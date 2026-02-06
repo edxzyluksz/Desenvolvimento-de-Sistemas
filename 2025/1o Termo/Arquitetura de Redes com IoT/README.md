@@ -1,6 +1,26 @@
-# ARQUITETURA DE REDES COM IOT
+# Arquitetura de Redes com IoT 🛜
 
-## CONCEITOS E HISTÓRICO
+## Sumário
+- [Conceitos e Histórico](#conceitos-e-histórico)
+    - [O Que São Redes de Computadores](#o-que-são-redes-de-computadores)
+- [Tipos de Redes e Comunicação](#tipos-de-redes-e-comunicação)
+    - [Quantos Tipos de Redes Existem?](#quantos-tipos-de-redes-existem)
+    - [Cabeadas vs. Sem Fio (Wireless)](#cabeadas-vs-sem-fio-wireless)
+- [Componentes e Funções](#componentes-e-funções)
+    - [Dispositivos de Rede](#dispositivos-de-rede)
+    - [Outros Componentes e Funções](#outros-componentes-e-funções)
+- [Modelos e Protocolos de Comunicação](#modelos-e-protocolos-de-comunicação)
+    - [Modelos de Comunicação](#modelos-de-comunicação)
+    - [Detalhes de Protocolo](#detalhes-de-protocolo)
+- [Endereçamento e Infraestrutura](#endereçamento-e-infraestrutura)
+    - [Endereçamento IP](#endereçamento-ip)
+    - [Classes e Máscaras de Sub-Rede](#classes-e-máscaras-de-sub-rede)
+    - [Cabeamento e Velocidade](#cabeamento-e-velocidade)
+- [Topologias e Ferramentas](#topologias-e-ferramentas)
+    - [Tipos de Topologias de Rede](#tipos-de-topologias-de-rede)
+    - [Ferramentas de Diagnóstico e Configuração](#ferramentas-de-diagnóstico-e-configuração)
+
+## Conceitos e Histórico
 
 ### O Que São Redes de Computadores?
 
@@ -34,7 +54,7 @@
 * Em 1992, o tráfego de dados era de até **100GB por dia**, enquanto em 2013, já ultrapassava **28TB por segundo**.
 * **Volume de Tráfego de Dados na Internet em 2024:** 68 Exabytes ou **24,92 Terabits por segundo**.
 
-## TIPOS DE REDES E COMUNICAÇÃO
+## Tipos de Redes e Comunicação
 
 ### Quantos Tipos de Redes Existem?
 
@@ -61,7 +81,7 @@
 **COMUTAÇÃO DE PACOTES**
 * Um método de transmissão de dados em que as informações são divididas em **pacotes menores** e enviadas **independentemente** através de uma rede.
 
-## COMPONENTES E FUNÇÕES
+## Componentes e Funções
 
 ### Dispositivos de Rede
 
@@ -90,7 +110,7 @@
 * **SERVIDOR DHCP** -> **SERVIDOR DNS** -> **SERVIDOR WEB** (sequência de comunicação).
 * **CERTIFICADO DIGITAL** - SHA-256.
 
-## MODELOS E PROTOCOLOS DE COMUNICAÇÃO
+## Modelos e Protocolos de Comunicação
 
 ### Modelos de Comunicação
 
@@ -133,7 +153,7 @@
 
 * **PACOTE:** Fragmento de um dado a ser transmitido em rede, dividido em cada uma das camadas (na prática, 4).
 
-## ENDEREÇAMENTO E INFRAESTRUTURA
+## Endereçamento e Infraestrutura
 
 ### Endereçamento IP
 
@@ -184,7 +204,7 @@
 * **CAT7 e CAT8:** Data centers e ambientes críticos.
 * Para dispositivos **iguais** use o **CROSSOVER**, caso contrário, **par trançado**.
 
-## TOPOLOGIAS E FERRAMENTAS
+## Topologias e Ferramentas
 
 ### Tipos de Topologias de Rede
 
@@ -212,5 +232,5 @@
 * **NSLOOKUP:** Solicita o DNS para informação sobre o **domínio nome** e **endereços de IP**.
 * **O CACHE:** É o arquivo temporário.
 
-**POSSÍVEL TRABALHO**
+**Cisco Packet Tracer**
 * *Diagrama mostrando conexões entre DHCP, WEB, ROUTER, FIREWALL, 1 VM e 2 VM C.*

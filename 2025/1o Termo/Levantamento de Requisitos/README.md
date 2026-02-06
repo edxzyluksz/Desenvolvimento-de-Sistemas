@@ -1,4 +1,34 @@
-# LEVANTAMENTO DE REQUISITOS (LR)
+# Levantamento de Requisitos (LR) 📝
+
+## Sumário
+- [Visão Geral e Fundamentos do LR](#visão-geral-e-fundamentos-do-lr)
+    - [Propósito e Benefícios do LR](#propósito-e-benefícios-do-lr)
+    - [Requisitos (Tipos)](#requisitos-tipos)
+    - [Pontos Cruciais no LR](#pontos-cruciais-no-lr-avaliação-de-lr)
+- [Técnicas para Coletar Requisitos](#técnicas-para-coletar-requisitos)
+    - [Lidando com Requisitos Conflitantes ou Ambíguos](#lidando-com-requisitos-conflitantes-ou-ambíguos)
+- [Otimização e Melhoria Contínua](#otimização-e-melhoria-contínua)
+    - [Produtividade e Eficiência](#produtividade-e-eficiência)
+    - [Melhores Práticas de Planejamento e Entrega](#melhores-práticas-de-planejamento-e-entrega)
+    - [Princípios de Otimização Adicionais](#princípios-de-otimização-adicionais)
+    - [Melhorias e Prospecção](#melhorias-e-prospecção)
+- [Modelos de Projeto (Abordagens)](#modelos-de-projeto-abordagens)
+    - [Modelo 1 (Prática)](#modelo-1-prática)
+    - [Modelo 2 (Ideal / Seguro)](#modelo-2-ideal--seguro)
+- [Entrega de Resultados (e Pós-Entrega)](#entrega-de-resultados-e-pós-entrega)
+    - [Definição de Entrega de Resultados](#definição-de-entrega-de-resultados)
+    - [Considerações](#considerações)
+    - [Tipos de Resultado (Retomada SCRUM)](#tipos-de-resultado-retomada-scrum)
+    - [Pós Entrega Projeto](#pós-entrega-projeto)
+- [Metodologias Ágeis (Detalhes)](#metodologias-ágeis-detalhes)
+    - [SCRUM (Organizado e Adaptável)](#scrum-organizado-e-adaptável)
+    - [Kanban (Agilidade Visual)](#kanban-agilidade-visual)
+        - [Práticas Essenciais do Kanban](#práticas-essenciais-do-kanban)
+    - [Outras Metodologias (e Princípios de Gestão)](#outras-metodologias-e-princípios-de-gestão)
+- [Regras de Ouro e Conclusões Finais](#regras-de-ouro-e-conclusões-finais)
+    - [Estudo de Caso / Exemplo Prático (Bolo de Laranja)](#estudo-de-caso--exemplo-prático-bolo-de-laranja)
+        - [O Erro no LR](#o-erro-no-lr)
+        - [Detalhamento Correto (Maneira Adequada)](#detalhamento-correto-maneira-adequada)
 
 ## Visão Geral e Fundamentos do LR
 

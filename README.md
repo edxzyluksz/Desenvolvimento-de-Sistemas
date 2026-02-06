@@ -24,12 +24,12 @@ Para 2026, os professores Wellington e William não estarão mais presentes na i
 No momento, é incerto a distribuição das aulas entre os professores. Portanto, nos próximos dias estas informações serão preenchidas.
 
 Docentes:
-    - Diogo Takamori Barbosa;
-    - Jorge Carneiro.
+- Diogo Takamori Barbosa;    
+- Jorge Carneiro.
 
 ### Lista de Afazeres (Repositório):
 - 03/02/2026: É necessário preencher os conteúdos das pastas `.\2026\"3o Termo"\` conforme o andamento das aulas.
-- Adicionar os próximos softwares urilizados
+- Adicionar os próximos softwares utilizados
 
 ## Softwares Utilizados
 Pasta no Google Drive para a instalação dos Setups, Isos e Portáteis utilizados ao decorrer do curso:

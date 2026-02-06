@@ -1,8 +1,61 @@
-# Lógica de Programação e Algoritmos
+# Lógica de Programação e Algoritmos 🤖
+
+## Sumário
+- [Conceitos e Fundamentos](#conceitos-e-fundamentos)
+    - [Lógica de Programação e Algoritmos](#lógica-de-programação-e-algoritmos)
+    - [LPA - Termos da Programação e Retomada dos Pseudocódigos](#lpa---termos-da-programação-e-retomada-dos-pseudocódigos-2503)
+        - [Variáveis](#variáveis)
+        - [Constantes](#constantes)
+        - [Escopo de Variável](#escopo-de-variável)
+    - [Variáveis Locais e Globais](#variáveis-locais-e-globais)
+    - [Regras de Declaração de Variáveis](#regras-de-declaração-de-variáveis)
+    - [Sinal de Atribuição](#sinal-de-atribuição)
+    - [Pauta - 11/02 (Continuação)](#pauta---1102-continuação)
+    - [Fluxograma (Elementos)](#fluxograma-elementos)
+    - [Passos para a Solução de Problemas](#passos-para-a-solução-de-problemas)
+- [Estruturas de Dados (Vetores e Matrizes)](#estruturas-de-dados-vetores-e-matrizes)
+    - [Vetores](#vetores)
+    - [Matrizes](#matrizes)
+- [Tipagem e Operadores](#tipagem-e-operadores)
+    - [Declaração de Variáveis - Tipagem](#declaração-de-variáveis---tipagem)
+    - [Operadores](#operadores)
+        - [Operadores Matemáticos](#operadores-matemáticos)
+        - [Operadores Relacionais](#operadores-relacionais)
+        - [Operadores Lógicos](#operadores-lógicos)
+    - [Tabela Verdade](#tabela-verdade)
+        - [Operador OR](#operador-or)
+        - [Operador AND](#operador-and)
+- [Estruturas de Controle](#estruturas-de-controle)
+    - [Estruturas de Decisão](#estruturas-de-decisão)
+    - [Estruturas de Repetição](#estruturas-de-repetição)
+        - [Repetições Indefinidas (WHILE)](#repetições-indefinidas-while)
+        - [Repetições Previsíveis (FOR)](#repetições-previsíveis-for)
+- [Procedimentos e Funções (27/05)](#procedimentos-e-funções-2705)
+    - [Procedimento](#procedimento)
+    - [Funções](#funções)
+- [Exemplos de Algoritmos (Pseudocódigo e Fluxograma)](#exemplos-de-algoritmos-pseudocódigo-e-fluxograma)
+    - [Exemplo - Atividades Diárias](#exemplo---atividades-diárias)
+    - [Exemplo - Viagem para a Praia (2 horas) - Carro](#exemplo---viagem-para-a-praia-2-horas---carro)
+    - [Exemplos de Exercícios - Resoluções](#exemplos-de-exercícios---resoluções)
+        - [1. Máximo de Ingressos](#1-máximo-de-ingressos)
+        - [2. Média e Aprovação (Nota Mínima = 6)](#2-média-e-aprovação-nota-mínima--6)
+        - [3. Múltiplo de 3 e 5](#3-múltiplo-de-3-e-5)
+    - [Pseudocódigo Simples (Média de 4 Notas)](#pseudocódigo-simples-média-de-4-notas)
+- [Outros Exercícios Propostos](#outros-exercícios-propostos)
+    - [Exercício: Jogo da Cobrinha (20x20)](#exercício-jogo-da-cobrinha-20x20)
+    - [Exercício: Tabuada](#exercício-tabuada)
+    - [Exercícios Adicionais](#exercícios-adicionais)
+        - [1. Par ou Ímpar](#1-par-ou-ímpar)
+        - [2. Média e Situação (4 números)](#2-média-e-situação-4-números)
+        - [3. Expressão Matemática e Resultado Percentual](#3-expressão-matemática-e-resultado-percentual)
+- [Fluxograma - Exercício da Pizzaria (18/03)](#fluxograma---exercício-da-pizzaria-1803)
+    - [Dados](#dados)
+    - [Estrutura do Fluxograma](#estrutura-do-fluxograma)
+- [Testes e Análise de Linguagem](#testes-e-análise-de-linguagem)
+    - [Teste de Mesa (Exemplo com Palavra/Símbolo)](#teste-de-mesa-exemplo-com-palavrasímbolo)
+    - [Pesquisas e Tópicos](#pesquisas-e-tópicos)
 
 ## Conceitos e Fundamentos
-
----
 
 ### **Lógica de Programação e Algoritmos**
 
@@ -55,7 +108,7 @@ $$=$$
 * Início/Fim (OVAL)
 * Processamento (RETÂNGULO)
 * Operação de Entrada de Dados (PARALELOGRAMO)
-* Operação de Saída de Dados (PARALELOGRAMO)
+* Operação de Saída de Dados (RETÂNGULO COM VÉRTICE INFERIOR ESQUERDO ARREDONDADO)
 * Decisão (LOSANGO)
 * Operação de Atribuição (SETAS)
 
@@ -117,12 +170,22 @@ $$>, <, >=, <=, = \text{ e } \neq \text{ (ou } \text{!)}$$
 #### **Operadores Lógicos**
 $$\text{E}, \text{ OU}, \text{ XOR}, \text{ e } \text{ NÃO}$$
 
-### **Tabela Verdade (Operador OU)**
+### **Tabela Verdade**
+
+#### Operador OR
 
 | V | V | = V |
 | :--- | :--- | :--- |
 | V | F | = V |
 | F | V | = V |
+| F | F | = F |
+
+#### Operador AND
+
+| V | V | = V |
+| :--- | :--- | :--- |
+| V | F | = F |
+| F | V | = F |
 | F | F | = F |
 
 ## Estruturas de Controle
@@ -131,10 +194,32 @@ $$\text{E}, \text{ OU}, \text{ XOR}, \text{ e } \text{ NÃO}$$
 
 ### **Estruturas de Decisão**
 
-* **SE (Condição) $\rightarrow$ IF**
-* **Blocos de Comando**
+* **SE (Condição) → IF**  
+  Executa um bloco de comandos apenas se a condição for verdadeira.
+
+* **Bloco de Comandos**  
+  Conjunto de instruções executadas quando a condição é satisfeita.
+
+* **SE / SENÃO → IF / ELSE**  
+  Executa um bloco se a condição for verdadeira e outro se for falsa.
+
+* **SE / SENÃO SE / SENÃO → IF / ELSE IF / ELSE**  
+  Permite testar múltiplas condições em sequência.
+
+**Exemplo:**
+```c
+if (condicao1) {
+    // bloco 1
+} else if (condicao2) {
+    // bloco 2
+} else {
+    // bloco padrão
+}
+```
 
 ### **Estruturas de Repetição**
+
+#### **Repetições Indefinidas (WHILE)**
 
 * **ENQUANTO (Loop)**
     * $\text{INÍCIO}$
@@ -142,10 +227,10 @@ $$\text{E}, \text{ OU}, \text{ XOR}, \text{ e } \text{ NÃO}$$
     * $\text{ENQUANTO} (\text{LOOP})$
         * $\text{X} = \text{X} + 1$
     * $\text{FIM ENQUANTO}$
-* **Avaliação de $\text{WHILE}$ vs $\text{DO WHILE}$ (22/04)**
-    * A diferença do **$\text{WHILE}$** é que o primeiro testa se a **condição é verdadeira antes de executar o bloco**.
 
-### **Código da Tabuada (FOR Aninhado)**
+    * A diferença do **$\text{WHILE}$** vs **$\text{DO WHILE}$** é que o primeiro testa se a **condição é verdadeira antes de executar o bloco**.
+
+#### **Repetições Previsíveis (FOR)**
 
 $$\text{for (i=0; i<x; i++) \{ print(i) \}}$$
 
@@ -181,14 +266,14 @@ $$\text{FIM FUNÇÃO}$$
 
 ## Exemplos de Algoritmos (Pseudocódigo e Fluxograma)
 
-### **Exemplos de Algoritmo - Atividades Diárias**
+### **Exemplo - Atividades Diárias**
 
 * Faça o algoritmo da sua atividade **após** o almoço de domingo.
     * *Exemplo:* Após o almoço de domingo tomei minha pílula de vitamina D e li algumas páginas do livro 'A Última Apostasia'. Depois, estou lendo no celular. Às 01:00 voltei para casa e me preparei para dormir. Minha janta foi pizza.
 
 * Crie o **próprio projeto** enquanto trabalha dentro de uma empresa.
 
-### **Algoritmo de Viagem para a Praia (2 Horas) - Carro**
+### **Exemplo - Viagem para a Praia (2 Horas) - Carro**
 
 **Para uma viagem à praia com o carro, é necessário:**
 
