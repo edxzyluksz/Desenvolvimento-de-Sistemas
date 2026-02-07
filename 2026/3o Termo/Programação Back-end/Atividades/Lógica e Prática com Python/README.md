@@ -2,6 +2,8 @@
 
 ## DIOGO TAKAMORI BARBOSA
 
+> Atividade de revisão opcional
+
 1. Assista a estes dois vídeos que explicam a lógica e as variáveis de forma bem simples:
     - A Receita do Computador: Introdução à Lógica de Programação — Veja como a lógica é como um passo a passo para o computador.
         - https://www.youtube.com/watch?v=jBIPvXHRYpg&themeRefresh=1
@@ -53,16 +55,6 @@ Código Base para completar no VS Code:
         print("Ingresso: R$ 15,00")
     else:
         print("Ingresso: R$ 30,00")
-```
-
-### Desafio 5: 
-No VS Code, tente escrever o código abaixo e teste mudando a palavra "verde" para "vermelho".
-``` python
-cor = "verde"
-if cor == "verde":
-    print("Siga em frente!")
-else:
-    print("Pare o carro!")
 ```
 
 **O que entregar?**

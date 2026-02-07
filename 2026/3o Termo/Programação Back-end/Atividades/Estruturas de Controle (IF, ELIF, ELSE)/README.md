@@ -2,6 +2,8 @@
 
 ## DIOGO TAKAMORI BARBOSA
 
+> Atividade de revisão opcional
+
 Assista e Entenda: O Mapa das Decisões
 ver a lógica "acontecendo" é fundamental. Recomendo estes vídeos que explicam de forma bem visual:
 
@@ -55,10 +57,10 @@ Dica: Use um elif para cada poder e um else para caso a pessoa digite algo que n
 - O Erro é um Aviso: Quando aparecer a linha vermelha de erro, chame de "O Robô pedindo ajuda". Ajude o aluno a ler o erro. Geralmente é falta de dois pontos : ou o espaço (indentação) no começo da linha.
 
 Checklist de Entrega para o Aluno:
-- [ ] Meu código tem um if.
-- [ ] Usei : (dois pontos) depois das condições.
-- [ ] O que o robô faz está "empurrado para a direita" (TAB/Espaço).
-- [ ] O robô respondeu o que eu esperava no terminal.
+- [X] Meu código tem um if.
+- [X] Usei : (dois pontos) depois das condições.
+- [X] O que o robô faz está "empurrado para a direita" (TAB/Espaço).
+- [X] O robô respondeu o que eu esperava no terminal.
 
 Entrega:
 - Entregar em um Arquivo ZIP os Códigos escritos para essa atividade

@@ -2,6 +2,11 @@
 
 ## Sumário
 - [Introdução ao Levantamento de Requisitos](#aula-05022026---introdução)
+    - [Requisitos](#requisitos)
+    - [Metodologias Tradicionais](#metodologias-tradicionais)
+    - [Metodologias Ágeis](#metodologias-ágeis)
+        - [Os quatro princípios](#os-quatro-princípios-das-metodologias-ágeis)
+        - [Atividade: Jogo de Pong simples](#atividade-desenvolver-um-jogo-de-pong-simples-scratch)
 
 ## Aula (05/02/2026) - Introdução
 
@@ -46,3 +51,16 @@ Indivíduos e interações mais processos e ferramentas
 Software em funcionamento mais que documentação abrangente
 Colaboração com o cliente mais que negociação de contratos
 Responder as mudanças mais que seguir um plano
+
+#### Atividade: Desenvolver um jogo de Pong simples (Scratch)
+**Requisitos Funcionais:**
+- O jogo inicialmente deverá possuir:
+    - Uma bola que quica sobre a tela;
+    - Uma raquete que se movimenta horizontalmente;
+    - Colisão entre os dois objetos.
+- Após entregue a primeira versão:
+    - Caso a bola colidir com o chão, o jogo acaba;
+    - Aumentar a velocidade da bola a cada defesa.
+**Requisitos Não-Funcionais:**
+- Após o jogador defender a bola 10 vezes, o fundo de tela muda;
+- Se o jogo acaba com a colisão da bola no chão, exibe "Game Over" na tela.

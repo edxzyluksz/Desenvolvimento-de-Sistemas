@@ -2,6 +2,8 @@
 
 ## DIOGO TAKAMORI BARBOSA
 
+> Atividade de revisão opcional
+
 Esta atividade foi elaborada para quem precisa revisar e aprofundar seus conhecimentos em HTML e CSS, as linguagens essenciais para construir a estrutura e o estilo de qualquer página web. Independentemente do seu nível atual, o objetivo é que você saia desta atividade com uma compreensão sólida e prática desses conceitos.
 Utilizaremos recursos visuais (vídeos do YouTube) para facilitar o aprendizado e a compreensão. Siga as etapas propostas, assista aos vídeos com atenção e realize os desafios práticos. Em caso de dúvidas, não hesitem em me procurar.
 O HTML (HyperText Markup Language) é a linguagem de marcação que define a estrutura e o conteúdo de uma página web. Ele é responsável por organizar elementos como textos, imagens, links, tabelas e formulários. Já o CSS (Cascading Style Sheets) é a linguagem de estilo que permite controlar a aparência desses elementos, definindo cores, fontes, layouts, espaçamentos e muito mais.

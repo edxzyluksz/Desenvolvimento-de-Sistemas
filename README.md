@@ -29,7 +29,6 @@ Docentes:
 
 ### Lista de Afazeres (Repositório):
 - 03/02/2026: É necessário preencher os conteúdos das pastas `.\2026\"3o Termo"\` conforme o andamento das aulas.
-- Adicionar os próximos softwares utilizados
 
 ## Softwares Utilizados
 Pasta no Google Drive para a instalação dos Setups, Isos e Portáteis utilizados ao decorrer do curso:
