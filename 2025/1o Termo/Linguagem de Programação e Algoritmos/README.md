@@ -81,8 +81,8 @@
 
 ### **Variáveis Locais e Globais**
 
-* **Variáveis Locais:** Precisa ser declarada **antes do bloco**.
-* **Variáveis Globais:**
+* **Variáveis Locais:** Manipulável somente em um bloco de código específico. Não existe;
+* **Variáveis Globais:** Ao ser declarada, pode ser utilizada em qualquer bloco. Usualmente declarada no topo do código. 
 
 ### **Regras de Declaração de Variáveis**
 
