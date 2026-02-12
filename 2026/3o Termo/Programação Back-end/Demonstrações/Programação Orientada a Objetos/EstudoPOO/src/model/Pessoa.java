@@ -1,6 +1,6 @@
 package model; // Atributos protegidos ficam acessíveis somente na package
 
-public class Pessoa { // Encapsulamento
+public abstract class Pessoa { // Encapsulamento
     // Atributos Privados - só podem ser acessados pela classe
     // Outras classes e métodos não conseguem acessar esses atributos
     private String nome;
@@ -42,5 +42,9 @@ public class Pessoa { // Encapsulamento
 
     public void setDataNasc(String dataNasc) {
         this.dataNasc = dataNasc;
+    }
+    public void exibirInfo(){
+        System.out.println("Nome: " + nome);
+        System.out.println("CPF: " + cpf);
     }
 }
