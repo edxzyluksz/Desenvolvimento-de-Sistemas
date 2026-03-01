@@ -1,0 +1,9 @@
+[submodule "ConEduc"]
+    path = 2025/2o Termo/Projeto de Software/ConEduc
+    url = https://github.com/edxzyluksz/ConEduc
+[submodule "TBRHub"]
+    path = 2025/2o Termo/Linguagens de Marcação/TBRHub
+    url = https://github.com/edxzyluksz/TBRHub
+[submodule "MyDailyTasks"]
+    path = 2026/Olimpíada do Conhecimento
+    url = https://github.com/edxzyluksz/MyDailyTasks

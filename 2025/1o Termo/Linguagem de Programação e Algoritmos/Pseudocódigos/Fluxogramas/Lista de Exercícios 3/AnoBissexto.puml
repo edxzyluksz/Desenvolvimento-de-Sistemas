@@ -1,0 +1,14 @@
+@startuml AnoBissexto
+start
+
+:Mostrar "Digite um ano:";
+:Leia ano;
+
+if ((ano % 4 == 0) e ((ano % 100 != 0) ou (ano % 400 == 0))?) then (Sim)
+  :Mostrar ano + " é um ano bissexto!";
+else
+  :Mostrar ano + " não é um ano bissexto!";
+endif
+
+stop
+@enduml

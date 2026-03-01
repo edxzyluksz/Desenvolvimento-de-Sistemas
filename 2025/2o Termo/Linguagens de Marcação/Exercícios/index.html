@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório de Exercícios</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+            background-color: rgb(236, 236, 236);
+        }
+
+        nav {
+            align-self: flex-start;
+            width: 100%;
+        }
+
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header-principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .secao1,
+        .secao2,
+        .secao3
+        .secao4{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        section{
+            min-width: 0;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .secao1 section {
+            width: 100%;
+            min-height: 10vh;
+        }
+
+        .secao3 section {
+            width: 33.3333%;
+            min-height: 25vh;
+        }
+
+        section h3 {
+            margin-bottom: 0.5%;
+        }
+
+        .secao4 section {
+            width: 25%;
+            min-height: 40vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        }
+
+        section:hover{
+             animation: jump 600ms cubic-bezier(.2,.8,.2,1);
+        }
+
+        @keyframes jump{
+            0%   { transform: translateY(0); }
+            30%  { transform: translateY(-22px); }
+            55%  { transform: translateY(0); }
+            75%  { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+
+
+
+        section a {
+            display: inline-block;
+            color: #0d3f6d;      /* <<< cor normal */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease, background-position 0.9s linear;
+        }
+
+        section a:hover {
+            /* ativa o arco-íris */
+            background: linear-gradient(90deg,
+                #ff004d, #ff7a00, #ffd500, #2eff6e, #00d4ff, #5b4cff, #ff2dd7);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;     /* <<< remove a cor normal, deixando o gradiente aparecer */
+        }
+        section hr {
+            border-color: black;
+            width: 70%;
+            margin: 0px;
+        }
+
+        main div {
+            display: flex;
+        }
+
+
+        .titulos {
+            text-align: center;
+        }
+
+        #texto-lindo {
+            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        }
+
+        .arco-iris {
+            background-image: linear-gradient(to right,
+                    rgb(255, 70, 70),
+                    rgb(255, 189, 66),
+                    rgb(253, 253, 77),
+                    rgb(89, 250, 89),
+                    rgb(80, 80, 248),
+                    rgb(192, 103, 255),
+                    rgb(241, 150, 241));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-principal">
+            <h1 class="titulos" id="texto-lindo">Bem vindo ao Repositório de CÓDIGOS em HTML, CSS e JS do Billy</h1>
+            <p>(Não organizado em Módulos e Aulas)</p>
+        </div>
+        <h2 class="titulos">Para visualizar minhas obras primas a mando do Billy,
+            analise as seções abaixo:
+        </h2>
+        <hr style="border-color: black; width: 100%;">
+    </header>
+    <main>
+        <div class="secao3">
+            <section style="background-color: #89ff9d;">
+                <h3>Comentários e links</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Comentarios e Links/comentarios.html">Comentários</a></li>
+                        <li><a href="Comentarios e Links/E1.html">Atributos de Links</a></li>
+                        <li><a href="Comentarios e Links/E3.html">Loja Fictícia</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="arco-iris">
+                <h3>Cores</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Cores/atividade1.html">BG-Color com RGB</a></li>
+                        <li><a href="Cores/ex1.html">Parágrafos com Cores (Nomes)</a></li>
+                        <li><a href="Cores/ex2.html">Parágrafos com Cores (Hexadecimal)</a></li>
+                        <li><a href="Cores/ex3.html">Parágrafos com Cores (RGB)</a></li>
+                        <li><a href="Cores/ex4.html">Fundo de Elemento com Cores (RGBA)</a></li>
+                        <li><a href="Cores/ex5.html">Hexadecimal, RGB e RGBA</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(124, 200, 250);">
+                <h3>Imagens</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Imagens/atividade2.html">Formatos de Imagem</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="secao4">
+            <section style="background-color: rgb(247, 110, 110);">
+                <h3>Impressão Inicial</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Impressao Inicial/web.html">Meu Primeiro Site</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(191, 122, 255);">
+                <h3>Metadados</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Metadados/index.html">Sobre Eduardo</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(252, 252, 149);">
+                <h3>Multimídia</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Multimidia/exercicio1.html">Imagem com Texto Alternativo</a></li>
+                        <li><a href="Multimidia/exercicio2.html">Imagens em Caminho Absoluto</a></li>
+                        <li><a href="Multimidia/exercicio3.html">Propriedade <code>background-image</code></a></li>
+                        <li><a href="Multimidia/exercicio4.html">Caminho Relativo x Absoluto</a></li>
+                        <li><a href="Multimidia/exercicio5.html">Vídeo do Youtube com <code>&lt;iframe&gt;</code></a>
+                        </li>
+                        <li><a href="Multimidia/exercicio6.html">Um Dia Perfeito</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(255, 235, 205);">
+                <h3>Semântica</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Semantica/Atividade1.html"><code>&lt;strong&gt;</code> e
+                                <code>&lt;em&gt;</code> (HTML)</a></li>
+                        <li><a href="Semantica/Atividade2.html"><code>&lt;strong&gt;</code> e
+                                <code>&lt;em&gt;</code> (PK e FK)</a></li>
+                        <li><a href="Semantica/Atividade3.html">Manipulando Textos</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="secao4">
+            <section style="background-color: rgb(255, 172, 254);">
+                <h3>Listas</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Listas/ex1.html">Lista Não Ordenada</a></li>
+                        <li><a href="Listas/ex2.html">Lista Ordenada</a></li>
+                        <li><a href="Listas/ex3.html">Lista de Definição</a></li>
+                        <li><a href="Listas/ex4.html">Lista com Indentação</a></li>
+                        <li><a href="Listas/meu_perfil.html">Meu Perfil</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(12, 231, 220);">
+                <h3>Tabelas</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Tabelas/ex1.html">Produtos</a></li>
+                        <li><a href="Tabelas/ex2.html">Cronograma</a></li>
+                        <li><a href="Tabelas/ex3.html">Boletim</a></li>
+                        <li><a href="Tabelas/ex4.html">Campeonato</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section style="background-color: rgb(165, 222, 231);">
+                <h3>Formulários</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Formularios/Simples/formulariosimples.html">Usuário e Senha</a></li>
+                        <li><a href="Formularios/Simples/formulariocadastro.html">Cadastro</a></li>
+                        <li><a href="Formularios/Simples/pesquisaopiniao.html">Pesquisa de Opinião</a></li>
+                        <li><a href="Formularios/Simples/uploadcurriculo.html">Upload de PDF</a></li>
+                        <li><a href="Formularios/Validação/M4_A16_P1.html">Cadastro Melhorado</a></li>
+                        <li><a href="Formularios/Validação/M4_A16_P2.html">Inscrição</a></li>
+                        <li><a href="Formularios/Validação/M4_A16_P3.html">Conta & Endereço</a></li>
+                        <li><a href="Formularios/Validação/M4_A16_P4.html">Registro & Endereço</a></li>
+
+                    </ul>
+                </nav>
+            </section>
+
+            <section style="background-color: rgb(147, 231, 86);">
+                <h3>Grid e Flexbox</h3>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="Grid e Flexbox/replicaLayout.html">Réplica Mercado Livre</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="secao1">
+            <section style="background-color: #ff7c02;">
+                <h3>JavaScript</h3>
+                <hr>
+                <ul>
+                    <li><a href="JavaScript/A23_A1/A23_A1.html">Calculadora com Histórico</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

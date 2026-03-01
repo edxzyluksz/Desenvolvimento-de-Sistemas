@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5.A18_A1</title>
+    <style>
+        p{
+            color: blue;
+        }
+        .destaque{
+            color: red;
+        }
+        #especial{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de especificidade</h1>
+    <p>Esse parágrafo foi estilizado apenas pelo seletor de TAG (azul)</p>
+    <p class="destaque">Esse parágrafo foi estilizado pela classe destaque (vermelho)</p>
+    <p class="destaque" id="especial">Esse parágrafo tem CLASSE + ID → quem vence é o ID (verde)</p>
+</body>
+</html>

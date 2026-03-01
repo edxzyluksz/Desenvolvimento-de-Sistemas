@@ -1,0 +1,21 @@
+@startuml SemEspaco
+start
+
+:Exibir "EscrevaUmaFraseEDeixe-MeConsertarEla";
+:ler frase;
+
+:fraseSemEspaco = "";
+
+:Obter tamanho da frase;
+
+for (i = 0 até tamanho - 1) 
+    :caracter = obter caracter da frase na posição i;
+    if (caracter != " ") then (sim)
+        :fraseSemEspaco = fraseSemEspaco + caracter;
+    endif
+endfor
+
+:Exibir "SuaFraseFicouAssim: " + fraseSemEspaco;
+
+stop
+@enduml

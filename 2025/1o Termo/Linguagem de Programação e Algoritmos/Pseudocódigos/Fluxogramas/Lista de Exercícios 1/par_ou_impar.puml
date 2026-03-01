@@ -1,0 +1,14 @@
+@startuml par_ou_impar
+start
+
+:Mostrar "Olá. Por favor, digite um número e eu direi se ele é par ou ímpar:";
+:Leia aleatorio;
+
+if (aleatorio % 2 == 0?) then (Sim)
+  :Mostrar "Seu número é par.";
+else
+  :Mostrar "Seu número é ímpar.";
+endif
+
+stop
+@enduml

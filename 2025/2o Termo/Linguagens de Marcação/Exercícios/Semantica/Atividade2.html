@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+<h1>Chaves em Banco de Dados</h1>
+
+<p>Em <em>bancos de dados relacionais</em>, as <u>chaves primárias</u> e <u>estrangeiras</u> são elementos cruciais para a organização e relacionamento entre tabelas.</p>
+
+<p>A <strong>chave primária (PK) </strong>identifica exclusivamente cada registro em uma tabela, garantindo que não haja duplicidades e facilitando a
+busca por informações específicas.</p>
+
+<p>Já a <strong>chave estrangeira (FK)</strong> estabelece um vínculo entre tabelas, referenciando a chave primária de outra tabela e permitindo a
+conexão e recuperação de dados relacionados.</p> 
+
+<h2>Chave Primária (PK):</h2>
+<p>
+- Função: Identifica de forma única cada registro em uma tabela. <br>
+- Características: Não pode ser nula (NULL) e deve ser única para cada registro. <br>
+- Exemplo: Em uma tabela de clientes, o CPF ou um ID único podem ser chaves primárias. 
+</p>
+
+<h2>Chave Estrangeira (FK):</h2>
+<p>
+- Função: Estabelece um relacionamento entre tabelas, referenciando a chave primária de outra tabela. <br>
+- Características: Pode ser nula e pode haver mais de uma chave estrangeira em uma tabela. <br>
+- Exemplo: Em uma tabela de pedidos, o ID do cliente, que é a chave primária na tabela de clientes, pode ser uma chave estrangeira na tabela de pedidos. 
+</p>
+
+<h2>Relação entre PK e FK:</h2>
+<p>
+- A chave estrangeira em uma tabela se refere à chave primária de outra tabela. <br>
+- Essa relação permite que você conecte informações relacionadas e faça consultas que abrangem várias tabelas. <br>
+- Por exemplo, você pode buscar todos os pedidos de um determinado cliente através da chave estrangeira na tabela de pedidos que referência a chave primária na tabela de clientes.</p>
+
+<h2>Importância:</h2>
+<p>
+- As chaves primárias e estrangeiras são essenciais para a integridade dos dados e para a modelagem de relacionamentos em bancos de dados relacionais. <br>
+- Elas garantem que os dados sejam consistentes e que as consultas retornem resultados precisos. <br>
+- Além disso, as chaves estrangeiras ajudam a manter a integridade referencial, impedindo que você exclua ou altere dados que estão sendo usados por outras tabelas.
+</p>
+<script src="../retorno.js"></script>
+</body>
+</html>

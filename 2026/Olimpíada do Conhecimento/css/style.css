@@ -1,0 +1,514 @@
+:root {
+    --bg-vazio: rgb(46, 46, 46);
+    --bg-app: #505050;
+    --bg-header: rgb(106, 57, 134);
+    --bg-footer: #1d1c1c;
+    --shadow: rgba(0,0,0,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Classes Utilitárias */
+/* Feitas para poupar definição de layout sempre a cada estilização criada */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+/* Fim */
+
+body {
+    background-color: var(--bg-vazio);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Anula as configurações de estilo do botão css padrão + Mudança de cursor */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--bg-app);
+    height: 100vh;
+    box-shadow: 0 0 20px var(--shadow);
+    color: white;
+    overflow: hidden;
+}
+
+/* Para telas maiores que um celular, a página arredonda as bordas*/
+@media (min-width: 481px) {
+    .app-container {
+        border-radius: 24px;
+        height: 100vh;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.app-container header {
+    height: 15vh;
+    width: 100%;
+    background-color: var(--bg-header);
+}
+
+#header-title {
+    font-size: 2.5rem;
+    font-weight: 700; 
+    letter-spacing: 0.8px;
+    text-shadow: 0px 2px 2px var(--shadow);
+}
+
+.app-container main {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+    
+    /* Essas configurações a seguir não permitem que a scroll bar apareça */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge antigo */
+}
+
+.app-container main::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+#primary-options {
+    height: 20vh;
+}
+
+#primary-options button:hover {
+    background-color: #707070;
+}
+
+.btn-select {
+    background-color: rgb(65, 65, 65);
+    font-weight: bold;
+    width: 30%;
+    border-radius: 8px;
+    height: 5vh;
+    transition: transform 0.2s ease-in-out, border 0.1s;
+}
+
+.btn-select.active-mode {
+    filter: brightness(0.8);
+    transform: scale(0.95);
+    border: 2px solid #333;
+}
+
+.task.select-finish {
+    border: 3px solid #2ecc71 !important;
+}
+
+.task.select-delete {
+    border: 3px solid #e74c3c !important;
+}
+
+.btn-select:hover {
+    border: 1px solid #FFF;
+    transform: scale(1.05);
+}
+
+.btn-select:active {
+    transform: scale(0.95);
+}
+
+.section-info {
+    padding-left: 0.5%;
+    font-style: italic;
+}
+
+#user-tasks{
+    padding: 5%;
+}
+
+#edit-task {
+    padding: 5%;
+    display: none;
+}
+
+#done-tasks {
+    padding: 5%;
+    display: none;
+}
+
+#confirm-action {
+    background-color: rgb(75, 172, 75);
+    color: white;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 7.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+#confirm-action:hover {
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.task {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(105, 110, 133);
+    box-shadow: 0 0 20px var(--shadow);
+    padding: 0 15px 0 15px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.task:hover {
+    background-color: rgb(64, 85, 179);
+    transform: scale(1.05);
+}
+
+.done-task {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(140, 175, 126);
+    box-shadow: 0 0 20px var(--shadow);
+    padding: 0 15px 0 15px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.done-task:hover {
+    background-color: rgb(95, 114, 87);;
+}
+
+.done-task-actions {
+    width: 10%;
+}
+
+.done-task-actions img {
+    width: 45px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.delete-done-btn:hover img {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(-50deg);
+}
+/* Precisa repetir estilização pra cada classe, senão se apertar hover em um, o outro também ficará destacado. */
+.view-done-info-btn:hover img {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(-50deg);
+}
+
+.task-name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;  
+    text-align: left;   
+    white-space: nowrap;  
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+}
+
+.task-priority {
+    flex-shrink: 0;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.app-container footer {
+    height: 15vh;
+    width: 100%;
+    background-color: var(--bg-footer);
+}
+
+.app-container footer button {
+    font-size: 1.5em;
+    transition: font-size 0.1s;
+}
+
+.app-container footer button:hover {
+    font-size: 1.8em;
+}
+
+#page-switch {
+    display: flex;
+}
+
+#page-switch-text {
+    font-size: 1.3em;
+    font-style: italic;
+    text-wrap: nowrap;
+}
+
+#create-task-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);   
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background-color: rgb(89, 99, 99);
+    width: 85%;
+    max-width: 440px;
+    height: auto; 
+    min-height: 70vh;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px var(--shadow);
+    padding-left: 2%;
+    animation: scaleUp 0.3s ease-out forwards;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#create-task-overlay textarea {
+    height: auto;     
+    min-height: 20vh;   
+    width: 100%;       
+    resize: none;      
+    overflow-y: auto;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+#new-taskData {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-input {
+    width: 100%;
+    min-height: 45px;
+    background-color: #444;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.task-input::placeholder {
+    color: #dadada;
+    font-style: italic;
+}
+
+#createTask-decision {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.taskDecisionbtn {
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    transition: filter 0.2s, transform 0.1s, border 0.1s;
+    margin-top: 20px;
+}
+
+.taskDecisionbtn:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    border: 1px solid #FFF;
+}
+
+.task-input {
+    width: 100%;
+    height: 10%;
+}
+
+textarea {
+    resize: none;
+    padding: 3%;
+    font-family: inherit;
+    text-align: left;
+    vertical-align: top;
+}
+
+#edit-task textarea {
+    min-height: 28vh;
+    overflow-y: auto; 
+    width: 100%;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+input[type="text"] {
+    padding: 3%;
+    font-family: inherit;
+}
+
+input[type="radio"] {
+    transform: scale(1.5); 
+    margin-right: 8px;    
+    accent-color: var(--bg-header);
+    cursor: pointer;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#edit-task fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left: 1%;
+    gap: 7.5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(91, 124, 168);
+}
+
+/* Animação de Swipe para a Direita (Finish) */
+@keyframes swipeRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+}
+
+/* Animação de dissolução (Delete) */
+@keyframes dissolve {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+        filter: blur(10px) grayscale(100%);
+    }
+}
+
+/* Classes para adicionar no JS */
+
+.anim-finish {
+    animation: swipeRight 0.5s forwards ease-in;
+    pointer-events: none; /* Impede cliques durante a animação */
+}
+
+.anim-delete {
+    animation: dissolve 0.5s forwards ease-out;
+    pointer-events: none;
+}

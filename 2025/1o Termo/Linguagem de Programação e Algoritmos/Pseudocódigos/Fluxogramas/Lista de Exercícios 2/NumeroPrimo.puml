@@ -1,0 +1,30 @@
+@startuml NumeroPrimo
+start
+
+:Mostrar "Digite um número e nós descobriremos se é primo ou não:";
+:Leia x;
+:Mostrar "Este resultado pode demorar algum tempo de acordo com o valor inserido...";
+
+if (x > 0?) then (Sim)
+  :valor = 1;
+  :divisores = 0;
+  
+  while (valor <= x)
+    if (x % valor == 0?) then (Sim)
+      :divisores = divisores + 1;
+    endif
+    :valor = valor + 1;
+  endwhile
+  
+  if (divisores == 2?) then (Sim)
+    :Mostrar "Seu número é primo.";
+  else
+    :Mostrar "Seu número não é primo.";
+  endif
+
+else
+  :Mostrar "Valor negativo ou igual a zero";
+endif
+
+stop
+@enduml

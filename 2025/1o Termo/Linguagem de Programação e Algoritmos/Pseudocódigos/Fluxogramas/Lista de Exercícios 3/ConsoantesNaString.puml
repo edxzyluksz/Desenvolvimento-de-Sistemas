@@ -1,0 +1,25 @@
+@startuml ConsoantesNaString
+start
+
+:Mostrar "Digite uma palavra:";
+:Leia frase;
+
+:frase = caixa_baixa(frase);
+:tamanho = numero_caracteres(frase);
+
+:consoantes = {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'};
+
+para (indiceConsoante = 0; indiceConsoante < 21; indiceConsoante++) {
+    :quantidade = 0;
+
+    para (posicaoFrase = 0; posicaoFrase < tamanho; posicaoFrase++) {
+        if (obter_caracter(frase, posicaoFrase) == consoantes[indiceConsoante]?) then (Sim)
+            :quantidade = quantidade + 1;
+        endif
+    }
+
+    :Mostrar "Quantidade de consoantes " + caixa_alta(consoantes[indiceConsoante]) + ": " + quantidade;
+}
+
+stop
+@enduml

@@ -1,0 +1,46 @@
+@startuml SomaMaiores
+start
+
+:Mostrar "Digite 3 números:\n1- ";
+:Leia numero1;
+
+repeat
+  :Mostrar "2- ";
+  :Leia numero2;
+  if (numero2 == numero1?) then (Sim)
+    :Mostrar "Os números não podem ser iguais.";
+  endif
+repeat while (numero2 == numero1?)
+
+repeat
+  :Mostrar "3- ";
+  :Leia numero3;
+  if (numero3 == numero1 ou numero3 == numero2?) then (Sim)
+    :Mostrar "Os números não podem ser iguais.";
+  endif
+repeat while (numero3 == numero1 ou numero3 == numero2?)
+
+if (numero1 > numero2 e numero1 > numero3?) then (Sim)
+  if (numero2 > numero3?) then (Sim)
+    :valorsoma = numero1 + numero2;
+  else
+    :valorsoma = numero1 + numero3;
+  endif
+elseif (numero2 > numero1 e numero2 > numero3?) then (Sim)
+  if (numero1 > numero3?) then (Sim)
+    :valorsoma = numero2 + numero1;
+  else
+    :valorsoma = numero2 + numero3;
+  endif
+else
+  if (numero1 > numero2?) then (Sim)
+    :valorsoma = numero3 + numero1;
+  else
+    :valorsoma = numero3 + numero2;
+  endif
+endif
+
+:Mostrar "A soma dos dois maiores números é: " + valorsoma;
+
+stop
+@enduml

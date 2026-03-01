@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A21.D4.Grid - Um exemplo mais complexo</title>
+    <style>
+        :root {
+            --gap: 10px;
+            --col-side: 200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            line-height: 1.4;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "menu main aside"
+                "footer footer footer";
+            grid-template-columns: var(--col-side) 1fr var(--col-side);
+            grid-template-rows: auto 1fr auto;
+            gap: var(--gap);
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f08080;
+        }
+
+        nav {
+            grid-area: menu;
+            background-color: #98fb98;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #add8e6;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #fff9c4;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #d3d3d3;
+        }
+
+        header,
+        nav,
+        main,
+        aside,
+        footer {
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 8px;
+        }
+
+        nav a {
+            display: block;
+            background-color: #eaffea;
+            text-decoration: none;
+            color: #134e13;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 180px 1fr;
+                grid-template-areas: "header header"
+                    "menu main"
+                    "aside main"
+                    "footer footer"
+                ;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "menu"
+                    "main"
+                    "aside"
+                    "footer";
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <h1>Meu site</h1>
+            <p>Layout avançado em CSS Grid (header, menu, contato, aside e footer)</p>
+        </header>
+        <nav>
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Artigo</a></li>
+                <li><a href="#">Projeto</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Conteúdo principal</h2>
+            <p>Aqui vai o conteúdo principal da página. A área <code>main</code> ocupa a maior parte do espaço entre o
+                menu e a barra lateral</p>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Card 1</h3>
+                    <p>Texto de exemplo para demonstrar cards centro da área principal</p>
+                </article>
+                <article class="card">
+                    <h3>Card 2</h3>
+                    <p>Mais conteúdo de exemplo. Este grid interno é independente do grid da página.</p>
+                </article>
+                <article class="card">
+                    <h3>Card 3</h3>
+                    <p>Use esta seção para destacar posts, produtos ou serviços.</p>
+                </article>
+            </div>
+        </main>
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>Links úteis, anúncios, widgets ou informações complementares.</p>
+        </aside>
+        <footer>
+            <p>&copy; 2025 - Exemplo de Layout com CSS Grid - Senai/SP</p>
+        </footer>
+    </div>
+</body>
+
+</html>

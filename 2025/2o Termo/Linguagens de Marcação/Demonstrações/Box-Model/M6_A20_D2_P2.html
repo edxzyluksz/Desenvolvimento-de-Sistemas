@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6.A20.D2 - Layout </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #ACAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .menu {
+            background-color: #f2f2f2;
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            height: 300px;
+        }
+
+        .content {
+            background-color: #ddd;
+            width: 75%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 300px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <div class="header">Cabeçalho do site</div>
+    <!--Menu Lateral-->
+    <div class="menu">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <!--Conteúdo Principal-->
+    <div class="content">
+        <h2>Bem-vindo!</h2>
+        <p>Está é a área principal do site; Aqui vão os texos, imagens e informações</p>
+        <p>Perceba como o <strong>menu</strong> e o <strong>conteudo</strong> ficam lado a lado graças
+            ao <em>float</em></p>
+    </div>
+    <!--Rodapé-->
+    <div class="footer">&copy; 2025 - M6.A20 - Linguagem de Marcação - Aula BoxModel</div>
+</body>
+
+</html>

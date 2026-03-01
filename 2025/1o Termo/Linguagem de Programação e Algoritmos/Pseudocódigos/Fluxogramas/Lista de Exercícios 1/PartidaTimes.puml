@@ -1,0 +1,27 @@
+@startuml PartidaTimes
+start
+
+:Mostrar "Programação com o intuito de registrar se um time ganhou, perdeu, ou empatou com outro.";
+
+:Mostrar "Escreva o nome do primeiro time:";
+:Leia time1;
+
+:Mostrar "Agora o nome do segundo time:";
+:Leia time2;
+
+:Mostrar "Quantidade de gols que " + time1 + " marcou:";
+:Leia gol1;
+
+:Mostrar "Quantidade de gols que " + time2 + " marcou:";
+:Leia gol2;
+
+if (gol1 > gol2?) then (Sim)
+  :Mostrar time1 + " ganhou o jogo!";
+elseif (gol2 > gol1?) then (Sim)
+  :Mostrar time2 + " ganhou o jogo!";
+else
+  :Mostrar "O jogo foi um empate!";
+endif
+
+stop
+@enduml

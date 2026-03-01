@@ -1,0 +1,57 @@
+@startuml Tanque-dAgua
+start
+
+repeat
+  :Mostrar "Olá. Qual é o formato tridimensional do tanque d'água? - Opções: Cubo, Paralelepipedo, Cilindro.\nDigite aqui:";
+  :Leia formato;
+  if (formato inválido?) then (Sim)
+    :Mostrar "Digite um formato válido ou escreva corretamente.";
+  endif
+repeat while (formato inválido?)
+
+if (formato == "CUBO" ou formato == "Cubo" ou formato == "cubo") then (Sim)
+  repeat
+    :Mostrar "Informe o lado de seu tanque cúbico, em metros:";
+    :Leia lado;
+    if (lado < 0?) then (Sim)
+      :Mostrar "Inválido. Não é possível adicionar um valor negativo para o lado";
+    else
+      :cubo = lado * lado * lado;
+      :Mostrar "Seu tanque possui " + cubo + " metros cúbicos.";
+    endif
+  repeat while (lado < 0)
+
+elseif (formato == "PARALELEPIPEDO" ou formato == "Paralelepipedo" ou formato == "paralelepipedo") then (Sim)
+  repeat
+    :Mostrar "Informe o lado, altura e profundidade de seu tanque, em metros:\n1 - Lado:";
+    :Leia lado;
+    :Mostrar "2 - Altura:";
+    :Leia altura;
+    :Mostrar "3 - Profundidade:";
+    :Leia profundidade;
+    :paralelepipedo = lado * altura * profundidade;
+    if (paralelepipedo < 0?) then (Sim)
+      :Mostrar "Resultado inválido! Confira se os valores inseridos estão positivos.";
+    else
+      :Mostrar "Seu tanque possui " + paralelepipedo + " metros cúbicos.";
+    endif
+  repeat while (paralelepipedo < 0)
+
+elseif (formato == "CILINDRO" ou formato == "Cilindro" ou formato == "cilindro") then (Sim)
+  repeat
+    :Mostrar "Informe o raio da base e a altura de seu tanque cilíndrico, em metros:\n1 - Raio da base:";
+    :Leia raio;
+    :areabase = raio * raio * PI;
+    :Mostrar "2 - Altura:";
+    :Leia altura;
+    :cilindro = areabase * altura;
+    if (cilindro < 0?) then (Sim)
+      :Mostrar "Resultado inválido! Confira se os valores inseridos estão positivos.";
+    else
+      :Mostrar "Seu tanque possui " + cilindro + " metros cúbicos.";
+    endif
+  repeat while (cilindro < 0)
+endif
+
+stop
+@enduml

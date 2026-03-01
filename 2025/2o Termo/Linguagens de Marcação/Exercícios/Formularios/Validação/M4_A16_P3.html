@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4.A16 - Validações</title>
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        legend {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0056B3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="18" max="99" required>
+        <br><br>
+        <label for="usuario">Usuário:</label>
+        <input type="text" name="usuario" id="usuario" minlength="5" maxlength="12" required>
+        <br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" pattern="\d{5}-\d{3}" placeholder="00000-000"
+        required>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="../retorno.js"></script>
+</body>
+</html>

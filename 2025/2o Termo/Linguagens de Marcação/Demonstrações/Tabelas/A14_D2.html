@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A14.D2 - Formatação de Tabelas - Cores</title>
+
+    <style>
+        #celula{
+            background-image: url('images/pc-gamer.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+<body>
+    <table border="1">
+        <tr bgcolor="lightgreen">
+            <th>Aluno</th>
+            <th>Nota</th>
+        </tr>
+        <tr bgcolor="yellow">
+            <td>Maria</td>
+            <td>5.0</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td bgcolor="green">10.0</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" bgcolor="beige" cellpadding="30">
+        <tr>
+            <th>Foto</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td id="celula"></td>
+            <td>Notebook</td>
+            <td>3.500,00</td>
+        </tr>
+    </table>
+</body>
+</html>

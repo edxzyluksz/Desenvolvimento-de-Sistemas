@@ -1,0 +1,42 @@
+@startuml Par-VS-Impar
+start
+
+:Solicitar ao usuário escolher "par" ou "ímpar";
+repeat
+    :ler decisão;
+    :converter decisão para caixa baixa;
+    if (decisão == "par" ou decisão == "ímpar") then (sim)
+        stop repeat
+    else (não)
+        :Exibir "Por favor, digite corretamente!";
+repeat while (decisão != "par" e decisão != "ímpar")
+
+:Sortear número aleatório entre 1 e 2;
+:afirmacao = número sorteado % 2;
+
+:Contagem regressiva;
+:Exibir "3...";
+:aguardar 1 segundo;
+:Exibir "2...";
+:aguardar 1 segundo;
+:Exibir "1...";
+:aguardar 1 segundo;
+
+:Exibir número sorteado;
+
+if (decisão == "par") then (sim)
+    if (afirmacao == 0) then (sim)
+        :Exibir "Você ganhou!";
+    else (não)
+        :Exibir "Eu ganhei!!!";
+    endif
+else (decisão == "ímpar")
+    if (afirmacao == 1) then (sim)
+        :Exibir "Você ganhou!";
+    else (não)
+        :Exibir "Eu ganhei!!!";
+    endif
+endif
+
+stop
+@enduml

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5.A19.P2. Formatando Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td{
+            border: 1px solid yellow;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(255, 206, 214);
+
+        }
+        tr:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>19</td>
+            <td>Curitiba</td>
+        </tr>
+    </table>
+</body>
+</html>

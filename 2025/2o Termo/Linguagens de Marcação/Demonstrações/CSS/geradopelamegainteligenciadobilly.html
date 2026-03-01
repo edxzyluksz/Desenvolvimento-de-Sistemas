@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Showcase – Transparências & Firulas</title>
+  <style>
+    /* ==========================
+       Reset e variáveis globais
+       ========================== */
+    :root {
+      --bg-1: 230 70% 6%;          /* Fundo escuro azulado */
+      --bg-2: 270 85% 10%;         /* Fundo gradiente roxo */
+      --glass: 0 0% 100% / 0.10;   /* transparência das cartas */
+      --glass-strong: 0 0% 100% / 0.18;
+      --txt: 0 0% 98%;
+      --muted: 0 0% 85%;
+      --accent-1: 280 90% 60%;
+      --accent-2: 200 95% 60%;
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 22px;
+      --blur: 16px; /* vidro fosco */
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      color: hsl(var(--txt));
+      font: 500 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      /* Fundo com gradiente animado */
+      background: radial-gradient(1200px 800px at 10% 10%, hsl(var(--bg-2)) 0%, transparent 60%),
+                  radial-gradient(1200px 800px at 90% 90%, hsl(var(--bg-2) / .75) 0%, transparent 60%),
+                  linear-gradient(120deg, hsl(var(--bg-1)), hsl(var(--bg-2)) 60%);
+      overflow-x: hidden;
+    }
+
+    /* Partículas suaves (firula sutil) */
+    .sparkles {
+      position: fixed; inset: 0; pointer-events: none; overflow: hidden;
+    }
+    .sparkles i {
+      position: absolute; width: 3px; height: 3px; border-radius: 50%;
+      background: white; opacity: .5; filter: blur(.5px);
+      animation: drift var(--t) linear infinite;
+      left: var(--x); top: -10px; transform: translateY(-20px);
+    }
+    @keyframes drift {
+      to { transform: translateY(110vh); opacity: 0; }
+    }
+
+    /* Blob gradiente flutuante de fundo */
+    .blob {
+      position: fixed; width: 55vmax; height: 55vmax; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%,
+                  hsl(var(--accent-1) / .9), hsl(var(--accent-2) / .85) 50%, transparent 70%);
+      filter: blur(60px) saturate(130%);
+      opacity: .35; z-index: 0;
+      animation: float 18s ease-in-out infinite;
+    }
+    .blob.b2 { animation-duration: 22s; mix-blend-mode: screen; opacity: .25; }
+    @keyframes float {
+      0%, 100% { transform: translate(10vw, 5vh) scale(1); }
+      50%      { transform: translate(60vw, 40vh) scale(1.15); }
+    }
+
+    /* Nav de vidro */
+    .nav {
+      position: sticky; top: 0; z-index: 40;
+      backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
+      background: linear-gradient( to right, hsl(var(--glass)), hsl(var(--glass-strong)) );
+      border-bottom: 1px solid hsl(0 0% 100% / .18); box-shadow: var(--shadow);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .brand { font-weight: 800; letter-spacing: .5px; }
+    .spacer { flex: 1; }
+    .btn {
+      appearance: none; border: none; border-radius: 999px; padding: 10px 16px; cursor: pointer;
+      color: white; background: linear-gradient(135deg, hsl(var(--accent-1)), hsl(var(--accent-2)));
+      box-shadow: 0 10px 30px hsl(var(--accent-1) / .35), inset 0 1px 0 hsl(0 0% 100% / .3);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 34px hsl(var(--accent-1) / .5); }
+
+    /* Hero */
+    .hero {
+      position: relative; z-index: 1; max-width: 1100px; margin: 40px auto 0; padding: 24px;
+      display: grid; gap: 24px; align-items: center; grid-template-columns: 1.2fr .8fr;
+    }
+    .hero .title { font-size: clamp(28px, 4.5vw, 56px); line-height: 1.1; margin: 6px 0 12px; }
+    .hero p { color: hsl(var(--muted)); margin: 0 0 18px; }
+
+    .glass {
+      background: linear-gradient( to bottom right, hsl(var(--glass)), hsl(var(--glass-strong)) );
+      border: 1px solid hsl(0 0% 100% / .22);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
+    }
+
+    .card-grid { 
+      position: relative; z-index: 1; max-width: 1100px; margin: 14px auto 60px; padding: 24px; 
+      display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); 
+    }
+    .card { grid-column: span 4; padding: 18px; transition: transform .25s ease, background .25s ease; }
+    .card:hover { transform: translateY(-4px); background: linear-gradient( to bottom right, hsl(0 0% 100% / .14), hsl(0 0% 100% / .22) ); }
+    .card h3 { margin: 8px 0 4px; font-size: 18px; }
+    .card p { margin: 0; color: hsl(var(--muted)); font-size: 14px; }
+
+    /* Botões firulas: glow + onda (ripple) */
+    .btn.glow { position: relative; overflow: hidden; }
+    .btn.glow::after {
+      content: ""; position: absolute; inset: -1000% 0 0 0; height: 180%;
+      background: conic-gradient(from 0deg, hsl(var(--accent-1)), hsl(var(--accent-2)), hsl(var(--accent-1)));
+      filter: blur(18px); opacity: .25; animation: spin 8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(1turn); } }
+
+    /* Secção showcase */
+    .section { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tile {
+      padding: 18px; position: relative; overflow: hidden; isolation: isolate;
+    }
+    .tile .shine {
+      content: ""; position: absolute; inset: -60%; background: radial-gradient(circle, #fff3, transparent 40%);
+      transform: rotate(25deg) translateX(-20%);
+      animation: sweep 4s ease-in-out infinite;
+      z-index: -1; pointer-events: none;
+    }
+    @keyframes sweep {
+      0%, 100% { transform: rotate(25deg) translateX(-20%); opacity: .25; }
+      50%      { transform: rotate(25deg) translateX(30%);  opacity: .55; }
+    }
+
+    /* Cartão grande com imagem simulada (gradiente) */
+    .banner {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; align-items: center;
+      padding: 20px;
+    }
+    .banner .mock {
+      height: 220px; border-radius: 18px; border: 1px solid hsl(0 0% 100% / .2);
+      background: linear-gradient(135deg, hsl(var(--accent-1) / .2), transparent),
+                  linear-gradient(45deg, hsl(var(--accent-2) / .2), transparent),
+                  repeating-linear-gradient(90deg, hsl(0 0% 100% / .08) 0 1px, transparent 1px 8px);
+    }
+
+    /* Modal com vidro e backdrop */
+    dialog.modal {
+      border: none; border-radius: var(--radius);
+      background: linear-gradient( to bottom right, hsl(var(--glass)), hsl(var(--glass-strong)) );
+      color: hsl(var(--txt));
+      backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
+      box-shadow: var(--shadow); padding: 18px; width: min(520px, calc(100% - 32px));
+    }
+    dialog.modal::backdrop {
+      background: linear-gradient( to bottom, hsl(0 0% 0% / .0), hsl(0 0% 0% / .65) );
+      backdrop-filter: blur(4px);
+    }
+
+    /* Footer */
+    footer { text-align: center; color: hsl(var(--muted)); padding: 40px 0 60px; }
+
+    /* Responsividade */
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .banner { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; }
+      .card { grid-column: span 12; }
+    }
+
+    /* Scrollbar custom (apenas navegadores WebKit/Blink) */
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(hsl(var(--accent-1)), hsl(var(--accent-2)));
+      border-radius: 10px; border: 3px solid transparent; background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Blobs decorativos (firulas visuais) -->
+  <div class="blob"></div>
+  <div class="blob b2"></div>
+
+  <!-- Partículas suaves -->
+  <div class="sparkles" aria-hidden="true" id="sparkles"></div>
+
+  <!-- Navegação de vidro -->
+  <nav class="nav glass">
+    <div class="nav-inner">
+      <div class="brand">✨ Glass&Glow</div>
+      <div class="spacer"></div>
+      <button class="btn glow" id="openModal">Abrir Modal</button>
+      <button class="btn" id="toggleTheme" title="Alternar tema">Tema</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div>
+      <h1 class="title">Transparências, vidro fosco & firulas modernas</h1>
+      <p>Exemplo completo de <strong>glassmorphism</strong>, gradientes animados, partículas, botões com glow e efeito ripple, cartões com brilho e um modal translúcido – tudo em um único HTML.</p>
+      <div style="display:flex; gap:10px; flex-wrap: wrap;">
+        <button class="btn glow" data-ripple>Começar agora</button>
+        <button class="btn" data-ripple>Ver recursos</button>
+      </div>
+    </div>
+    <div class="glass" style="padding: 18px; border-radius: var(--radius);">
+      <h3 style="margin:0 0 8px">Características</h3>
+      <ul style="margin:0; padding-left: 18px; color:hsl(var(--muted));">
+        <li>Vidro fosco (backdrop-filter)</li>
+        <li>Gradientes e blobs animados</li>
+        <li>Cartões responsivos</li>
+        <li>Modal translúcido</li>
+        <li>Firulas com partículas, brilho e ripple</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Cartões -->
+  <section class="card-grid">
+    <article class="card glass">
+      <h3>Glass Cards</h3>
+      <p>Transparência elegante com contrastes equilibrados e borda sutil.</p>
+    </article>
+    <article class="card glass">
+      <h3>Hover Suave</h3>
+      <p>Eleva levemente no hover e intensifica a translucidez.</p>
+    </article>
+    <article class="card glass">
+      <h3>Responsivo</h3>
+      <p>Grade de 12 colunas que se adapta do mobile ao desktop.</p>
+    </article>
+  </section>
+
+  <!-- Showcase extra -->
+  <section class="section">
+    <div class="banner glass tile">
+      <div>
+        <h2 style="margin:6px 0 10px">Banner com mock visual</h2>
+        <p style="color:hsl(var(--muted)); margin:0 0 14px">Área perfeita para destacar um produto/curso/evento. Inclui textura, gradiente e linhas repetidas para simular imagem.</p>
+        <div style="display:flex; gap:10px; flex-wrap: wrap;">
+          <button class="btn glow" data-ripple>Quero saber mais</button>
+          <button class="btn" data-ripple>Documentação</button>
+        </div>
+      </div>
+      <div class="mock"></div>
+      <div class="shine" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <dialog class="modal" id="modal">
+    <h3 style="margin-top:0">Olá! Eu sou um modal translúcido 👋</h3>
+    <p>Este modal usa <code>dialog</code> nativo com <em>backdrop</em> desfocado e conteúdo em vidro. Pressione ESC para fechar, ou use o botão abaixo.</p>
+    <div style="display:flex; gap:10px; justify-content:flex-end; margin-top: 10px;">
+      <button class="btn" id="closeModal" data-ripple>Fechar</button>
+    </div>
+  </dialog>
+
+  <footer>
+    Feito com 💜 por você — experimente reduzir/expandir a janela e brincar com os botões.
+  </footer>
+
+  <script>
+    // ===============================
+    // Partículas: criar 'estrelas' com durações e posições aleatórias
+    // ===============================
+    const sparkles = document.getElementById('sparkles');
+    for (let i = 0; i < 50; i++) {
+      const s = document.createElement('i');
+      s.style.setProperty('--x', Math.random() * 100 + 'vw');
+      s.style.setProperty('--t', 6 + Math.random() * 8 + 's');
+      s.style.opacity = 0.3 + Math.random() * 0.5;
+      sparkles.appendChild(s);
+    }
+
+    // ===============================
+    // Modal
+    // ===============================
+    const modal = document.getElementById('modal');
+    document.getElementById('openModal').addEventListener('click', () => modal.showModal());
+    document.getElementById('closeModal').addEventListener('click', () => modal.close());
+
+    // Fechar ao clicar fora do conteúdo do dialog (backdrop)
+    modal.addEventListener('click', (e) => {
+      const rect = modal.getBoundingClientRect();
+      const inDialog = (
+        e.clientX >= rect.left && e.clientX <= rect.right &&
+        e.clientY >= rect.top && e.clientY <= rect.bottom
+      );
+      if (!inDialog) modal.close();
+    });
+
+    // ===============================
+    // Efeito Ripple nos botões
+    // ===============================
+    document.querySelectorAll('[data-ripple]').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const circle = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const d = Math.max(rect.width, rect.height);
+        circle.style.position = 'absolute';
+        circle.style.left = (e.clientX - rect.left - d / 2) + 'px';
+        circle.style.top  = (e.clientY - rect.top  - d / 2) + 'px';
+        circle.style.width = circle.style.height = d + 'px';
+        circle.style.borderRadius = '50%';
+        circle.style.background = 'rgba(255,255,255,.35)';
+        circle.style.transform = 'scale(0)';
+        circle.style.transition = 'transform .45s ease, opacity .55s ease';
+        circle.style.pointerEvents = 'none';
+        circle.className = 'ripple';
+        this.style.position = 'relative';
+        this.style.overflow = 'hidden';
+        this.appendChild(circle);
+        requestAnimationFrame(() => {
+          circle.style.transform = 'scale(2.2)';
+          circle.style.opacity = '0';
+        });
+        setTimeout(() => circle.remove(), 600);
+      });
+    });
+
+    // ===============================
+    // Alternar Tema (claro/escuro via CSS variables)
+    // ===============================
+    const toggleTheme = document.getElementById('toggleTheme');
+    let dark = true;
+    toggleTheme.addEventListener('click', () => {
+      dark = !dark;
+      if (!dark) {
+        document.documentElement.style.setProperty('--bg-1', '0 0% 98%');
+        document.documentElement.style.setProperty('--bg-2', '220 60% 92%');
+        document.documentElement.style.setProperty('--txt', '220 20% 12%');
+        document.documentElement.style.setProperty('--muted', '220 10% 35%');
+        document.documentElement.style.setProperty('--glass', '0 0% 100% / 0.55');
+        document.documentElement.style.setProperty('--glass-strong', '0 0% 100% / 0.75');
+        document.documentElement.style.setProperty('--accent-1', '280 85% 55%');
+        document.documentElement.style.setProperty('--accent-2', '200 85% 55%');
+      } else {
+        document.documentElement.style.setProperty('--bg-1', '230 70% 6%');
+        document.documentElement.style.setProperty('--bg-2', '270 85% 10%');
+        document.documentElement.style.setProperty('--txt', '0 0% 98%');
+        document.documentElement.style.setProperty('--muted', '0 0% 85%');
+        document.documentElement.style.setProperty('--glass', '0 0% 100% / 0.10');
+        document.documentElement.style.setProperty('--glass-strong', '0 0% 100% / 0.18');
+        document.documentElement.style.setProperty('--accent-1', '280 90% 60%');
+        document.documentElement.style.setProperty('--accent-2', '200 95% 60%');
+      }
+    });
+  </script>
+</body>
+</html>

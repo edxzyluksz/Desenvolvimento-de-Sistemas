@@ -1,0 +1,227 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fluido</title>
+    <style>
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+     }
+ 
+
+     .container {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+     }
+ 
+
+     header {
+        background: #333;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #bbb 1px solid;
+     }
+ 
+
+     header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+     }
+ 
+
+     header ul {
+        margin: 0;
+        padding: 0;
+     }
+ 
+
+     header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+     }
+ 
+
+     header #branding {
+        float: left;
+     }
+ 
+
+     header #branding h1 {
+        margin: 0;
+     }
+ 
+
+     header nav {
+        float: right;
+        margin-top: 10px;
+     }
+ 
+
+     header .highlight, header .current a {
+        color: #e8491d;
+        font-weight: bold;
+     }
+ 
+
+     #newsletter {
+        padding: 15px;
+        color: #fff;
+        background: #333;
+     }
+ 
+
+     #newsletter h1 {
+        float: left;
+     }
+ 
+
+     #newsletter form {
+        float: right;
+        margin-top: 15px;
+     }
+ 
+
+     #newsletter input[type="email"] {
+        padding: 4px;
+        height: 25px;
+        width: 250px;
+     }
+ 
+
+     .button_1 {
+        height: 38px;
+        background: #e8491d;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #fff;
+     }
+ 
+
+     #main {
+        padding: 20px;
+     }
+ 
+
+     #sidebar {
+        float: right;
+        width: 30%;
+        padding: 10px;
+        margin-top: 20px;
+     }
+ 
+
+     #sidebar input[type="text"] {
+        width: 90%;
+        padding: 4px;
+        margin-bottom: 10px;
+     }
+ 
+
+     article#main-col {
+        float: left;
+        width: 65%;
+     }
+ 
+
+     footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #e8491d;
+        text-align: center;
+     }
+ 
+
+     /* Media Queries */
+     @media(max-width: 768px) {
+        header #branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        #newsletter form,
+        #main,
+        article#main-col,
+        #sidebar {
+         float: none;
+         text-align: center;
+         width: 100%;
+        }
+ 
+
+        header {
+         padding-bottom: 20px;
+        }
+ 
+
+        #newsletter form {
+         margin-top: 0px;
+        }
+     }
+    </style>
+ </head>
+ <body>
+    <header>
+     <div class="container">
+        <div id="branding">
+         <h1><span class="highlight">Layout</span> Fluido</h1>
+        </div>
+        <nav>
+         <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="services.html">Serviços</a></li>
+         </ul>
+        </nav>
+     </div>
+    </header>
+ 
+
+    <section id="newsletter">
+     <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+         <input type="email" placeholder="Enter Email...">
+         <button type="submit" class="button_1">Subscribe</button>
+        </form>
+     </div>
+    </section>
+ 
+
+    <section id="main">
+     <div class="container">
+        <article id="main-col">
+         <h1>About Us</h1>
+         <p>Este é um exemplo de layout fluido. O layout fluido se adapta a diferentes tamanhos de tela,
+            proporcionando uma experiência de usuário consistente em diversos dispositivos.</p>
+         <p>O layout fluido é uma técnica de design web que permite que o conteúdo de uma página se ajuste
+            automaticamente ao tamanho da tela do dispositivo em que está sendo visualizado. Isso é feito usando
+            unidades de medida relativas, como porcentagens, em vez de unidades fixas, como pixels.</p>
+        </article>
+ 
+
+        <aside id="sidebar">
+         <div class="dark">
+            <h3>O que fazemos</h3>
+            <p>Nós criamos layouts fluidos para a web. Nossos layouts são responsivos e se adaptam a qualquer
+             tamanho de tela.</p>
+         </div>
+        </aside>
+     </div>
+    </section>
+ 
+
+    <footer>
+     <p>Layout Fluido, Copyright &copy; 2023</p>
+    </footer>
+ </body>
+ </html>
+ ```

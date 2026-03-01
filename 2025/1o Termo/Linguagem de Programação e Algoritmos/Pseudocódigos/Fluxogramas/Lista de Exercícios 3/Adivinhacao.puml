@@ -1,0 +1,31 @@
+@startuml Adivinhacao
+start
+
+:sorteio = u.sorteia(1, 100);
+:Mostrar "Adivinhe o número aleatório por meu programa:";
+:Leia chute;
+:numerodechutes = 0;
+
+while (chute != sorteio)
+  :diferenca = sorteio - chute;
+  if (diferenca < 0?) then (Sim)
+    :diferenca = -diferenca;
+  endif
+
+  if (diferenca <= 5?) then (Sim)
+    :Mostrar "Está perto de adivinhar!";
+  elseif (diferenca <= 15?) then (Sim)
+    :Mostrar "Não tão perto, não tão longe....";
+  else
+    :Mostrar "Poxa! Está longe...";
+  endif
+
+  :Mostrar "Tente novamente:";
+  :numerodechutes = numerodechutes + 1;
+  :Leia chute;
+endwhile
+
+:Mostrar "Parabéns! Você adivinhou qual era. Número de tentativas: " + (numerodechutes + 1);
+
+stop
+@enduml

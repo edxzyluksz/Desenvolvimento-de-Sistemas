@@ -1,0 +1,2 @@
+# Aviso
+Os fluxogramas .puml foram gerados pela inteligência artificial seguindo a base dos códigos portugol autorais e feitos pelo criador. Isso se dá pois, apesar de registrados em um arquivo .docx enviado no classroom do docente, somente imagens podem ser recuperadas nesse momento (2o Semestre de 2025), considerando que nunca fora salvo os .xml feitos no draw.io da forma correta e também substituiu-se o navegador web, sem chance de recuperação no cache.
