@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Incluir o Thymeleaf -->
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Thymeleaf</title>
+</head>
+<body>
+    <!--Inserir a Nav Bar-->
+    <div th:insert="~{fragments/header :: header}"></div>
+    <h1>Seja Bem-Vindo</h1>
+    <span th:text="${msg}"></span>
+
+    <form action="/" method="post">
+        <label for="nome">Nome
+            <input type="text" name="nome" id="nome">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

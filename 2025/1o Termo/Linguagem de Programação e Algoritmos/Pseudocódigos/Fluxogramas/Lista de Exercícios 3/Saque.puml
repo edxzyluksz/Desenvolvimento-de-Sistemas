@@ -1,0 +1,52 @@
+@startuml Saque
+start
+
+:Solicitar valor do saque;
+:ler valor;
+
+if (valor <= 0) then (sim)
+    :Exibir "Digite um valor maior que zero.";
+    stop
+else (não)
+    :restante = valor;
+
+    :notas100 = restante / 100;
+    :restante = restante % 100;
+
+    :notas50 = restante / 50;
+    :restante = restante % 50;
+
+    :notas20 = restante / 20;
+    :restante = restante % 20;
+
+    :notas10 = restante / 10;
+    :restante = restante % 10;
+
+    :notas5 = restante / 5;
+    :restante = restante % 5;
+
+    :notas1 = restante;
+
+    :Exibir "Notas necessárias:";
+    if (notas100 > 0) then (sim)
+        :Exibir notas100 "nota(s) de R$100";
+    endif
+    if (notas50 > 0) then (sim)
+        :Exibir notas50 "nota(s) de R$50";
+    endif
+    if (notas20 > 0) then (sim)
+        :Exibir notas20 "nota(s) de R$20";
+    endif
+    if (notas10 > 0) then (sim)
+        :Exibir notas10 "nota(s) de R$10";
+    endif
+    if (notas5 > 0) then (sim)
+        :Exibir notas5 "nota(s) de R$5";
+    endif
+    if (notas1 > 0) then (sim)
+        :Exibir notas1 "nota(s) de R$1";
+    endif
+endif
+
+stop
+@enduml

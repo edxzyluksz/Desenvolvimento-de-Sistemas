@@ -1,0 +1,46 @@
+@startuml MediaEstudante
+start
+
+:Mostrar "Digite 4 notas (0 a 10):";
+
+repeat
+  :Leia num1;
+  if (num1 < 0 or num1 > 10?) then (Sim)
+    :Mostrar "Nota inválida. Use 0 a 10.";
+  endif
+repeat while (num1 < 0 or num1 > 10)
+
+repeat
+  :Leia num2;
+  if (num2 < 0 or num2 > 10?) then (Sim)
+    :Mostrar "Nota inválida. Use 0 a 10.";
+  endif
+repeat while (num2 < 0 or num2 > 10)
+
+repeat
+  :Leia num3;
+  if (num3 < 0 or num3 > 10?) then (Sim)
+    :Mostrar "Nota inválida. Use 0 a 10.";
+  endif
+repeat while (num3 < 0 or num3 > 10)
+
+repeat
+  :Leia num4;
+  if (num4 < 0 or num4 > 10?) then (Sim)
+    :Mostrar "Nota inválida. Use 0 a 10.";
+  endif
+repeat while (num4 < 0 or num4 > 10)
+
+:Calcule média = (num1 + num2 + num3 + num4) / 4;
+:Mostrar "Sua média foi: " + média;
+
+if (média > 7?) then (Sim)
+  :Mostrar "Aprovado!";
+elseif (média >= 5 and média <= 6.99?) then (Sim)
+  :Mostrar "Recuperação!";
+else
+  :Mostrar "Reprovado!";
+endif
+
+stop
+@enduml

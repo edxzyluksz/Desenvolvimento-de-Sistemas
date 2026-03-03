@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5.A20.D1 - BoxModel</title>
+    <style>
+        /*  Tamanho total: content + padding + border + margin 
+            Cálculo = 200 + (20 * 2) + (5 * 2) + (30 * 2)
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .caixa {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid #333;
+            margin: 30px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa">Conteúdo da caixa</div>
+</body>
+
+</html>

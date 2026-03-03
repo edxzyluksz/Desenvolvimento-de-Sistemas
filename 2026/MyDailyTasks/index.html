@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>MyDailyTasks - Aplicativo</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="app-container flex-col">
+            <header class="flex-center flex-row">
+                <h1 id="header-title">MyDailyTasks</h1>
+            </header>
+            <main>
+                <section id="primary-options" class="flex-col flex-center" style="gap: 20%;">
+                    <h2>O que deseja fazer a seguir?</h2>
+                    <nav class="flex-row flex-around" style="width: 100%;">
+                        <button id="new-task" class="btn-select">
+                            <p>Nova Tarefa</p>
+                        </button>
+                        <button id="finish-task" style="display: none;" class="btn-select">
+                            <p>Concluir</p>
+                        </button>
+                        <button id="delete-task" style="display: none;" class="btn-select">
+                            <p>Excluir</p>
+                        </button>
+                    </nav>
+                </section>
+                <section id="user-tasks" class="flex-col">
+                    <h2>Tarefas pendentes</h2>
+                    <p class="section-info">Clique para ver todos os detalhes.</p>
+                    <nav class="flex-col">
+                    </nav>
+                </section>
+                <section id="edit-task" class="flex-col">
+                    <h2>Editar tarefa</h2>
+                    <hr style="width: 40%; opacity: 0.4;">
+                    <form id="edit-taskData" class="task-data" style="margin-top: 5%;">
+                    <h3>Nome</h3>
+                        <input type="text" name="taskName" id="taskName" class="task-input" maxlength="100" required placeholder="Atribua um nome à tarefa...">
+                    <h3>Descrição</h3>
+                        <textarea name="taskDesc" id="taskDesc" class="task-input" placeholder="Descreva detalhes, metas ou horários aqui." maxlength="1000"></textarea>
+                    <fieldset>
+                        <h3>Prioridade</h3>
+                        <div class="flex-row" style="gap: 15%;">
+                            <label>
+                                <input type="radio" name="priority" value="baixa" required> Baixa
+                            </label>
+                            <label>
+                                <input type="radio" name="priority" value="media"> Média
+                            </label>
+                            <label>
+                                <input type="radio" name="priority" value="alta"> Alta
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div id="createTask-decision">
+                        <button class="taskDecisionbtn" type="submit" id="submit-edit" style="background-color: rgb(0, 128, 0);">Editar</button>
+                        <button class="taskDecisionbtn" type="button" id="cancel-edit" style="background-color: rgb(165, 42, 42);">Sair</button>
+                    </div>   
+                </form>
+                </section>
+                <section id="done-tasks" class="flex-col">
+                    <h2>Tarefas concluídas</h2>
+                    <p class="section-info">Itens que podem ser visualizados ou deletados.</p>
+                    <nav class="flex-col">
+                    </nav>
+                </section>
+            </main>
+            <footer class="flex-center flex-col" style="gap: 10px;">
+                <nav id="page-switch" class="flex-center" style="gap: 10%; font-weight: bold;">
+                    <button id="return-page-btn" style="visibility: hidden;"><</button>
+                    <span id="page-switch-text">Ver concluídos</span>
+                    <button id="advance-page-btn">></button>
+                </nav>
+                <span style="flex-shrink: 1;">Feito por EdxzyLuksz - <a href="https://github.com/edxzyluksz" target="_blank">Github</a></span>
+            </footer>
+            <section id="create-task-overlay">
+                <div class="modal-box flex-col">
+                    <h2 style="margin-top: 5%;">Nova tarefa</h2>
+                    <hr style="width: 80%; opacity: 0.4;">
+                    
+                    <form id="new-taskData" style="margin-top: 5%;">
+                        <label for="taskName">Nome</label>
+                        <input type="text" name="taskName" id="taskName" class="task-input" maxlength="100" required placeholder="Atribua um nome à tarefa...">
+
+                        <label for="taskDec">Descrição</label>
+                        <textarea name="taskDesc" id="taskDesc" class="task-input" style="height: 30%;" placeholder="Descreva detalhes, metas ou horários aqui." maxlength="1000"></textarea>
+                        
+                        <fieldset>
+                            <legend style="margin-bottom: 5%;">Prioridade</legend>
+                            <label><input type="radio" name="priority" value="baixa" required> Baixa</label>
+                            <label><input type="radio" name="priority" value="media"> Média</label>
+                            <label><input type="radio" name="priority" value="alta"> Alta</label>
+                        </fieldset>
+
+                        <div id="createTask-decision">
+                            <button class="taskDecisionbtn" type="submit" id="submit-task" style="background-color: rgb(0, 128, 0);">Criar</button>
+                            <button class="taskDecisionbtn" type="button" id="cancel-task" style="background-color: rgb(165, 42, 42);">Cancelar</button>
+                        </div>   
+                    </form>
+                </div>
+            </section>
+            <button id="confirm-action" style="display: none;">Confirmar escolhidos (X itens)</button>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

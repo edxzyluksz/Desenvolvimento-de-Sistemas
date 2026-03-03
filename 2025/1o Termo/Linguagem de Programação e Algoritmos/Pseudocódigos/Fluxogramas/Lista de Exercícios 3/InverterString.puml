@@ -1,0 +1,17 @@
+@startuml InverterString
+start
+
+:Mostrar "Digite uma frase:";
+:Leia frase;
+
+:fraseInvertida = "";
+:tamanho = numero_caracteres(frase);
+
+:Para i = tamanho-1 até 0 faça
+    :fraseInvertida = fraseInvertida + obter_caracter(frase, i);
+:FimPara
+
+:Mostrar "Frase invertida: " + fraseInvertida;
+
+stop
+@enduml

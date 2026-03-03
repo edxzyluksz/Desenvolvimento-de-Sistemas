@@ -1,0 +1,18 @@
+<!-- Cabeçalho para todas as páginas do site -->
+<header th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-responsive">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a th:href="@{/}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/funcionario}" class="nav-link">Funcionário</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/listar}" class="nav-link">Listar Funcionário</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
