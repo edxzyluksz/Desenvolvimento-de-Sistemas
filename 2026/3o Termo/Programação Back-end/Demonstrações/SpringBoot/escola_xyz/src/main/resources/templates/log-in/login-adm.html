@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola XYZ - Login ADM</title>
+    <div th:insert="~{fragments/style}"><!-- menu de estilização --></div>
+    <link rel="stylesheet" th:href="@{css/style-login.css}">
+</head>
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <span th:text="${msg}" class="classe"></span>
+                <div class="login-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Login do Administrador</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="acesso-adm" method="post">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" placeholder="CPF do Usuário" name="cpf">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="password" class="form-control" placeholder="Senha" name="senha">
+                                </div>
+                                <button type="submit" class="btn btn-block btn-login"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+                                <a href="/cadastro-adm"><button type="button" class="btn btn-block btn-login"><i class="fas fa-sign-in-alt"></i> Cadastrar</button></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

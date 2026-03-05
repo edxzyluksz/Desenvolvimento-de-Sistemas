@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Administrador</title>
+    <div th:insert="~{fragments/style}"></div>
+</head>
+<body>
+    <h1>Página Interna do ADM</h1>
+    <form action="/deslogar-adm" method="post">
+        <button type="submit" class="btn btn-danger">Quero deslogar</button>
+    </form>
+</body>
+</html>

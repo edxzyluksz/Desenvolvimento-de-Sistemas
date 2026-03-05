@@ -5,18 +5,23 @@ Os estudantes serão divididos entre duas salas, A e B. O critério de divisão 
 O autor está dentro do cronograma previsto para a turma A, conforme a exibição:
 
 ## Terça-Feira
+
 **Manhã:**
+
 - Programação para dispositivos móveis
 - Projeto de Software 2
 
 **Tarde:**
-- Programação Backend 2
+
+- Programação Frontend
 
 ## Quinta-Feira
+
 **Manhã:**
+
 - Programação Backend 2
 - Projeto de Software 2
 
 **Tarde:**
-- Programação Frontend
 
+- Projeto de Software 2
