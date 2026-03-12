@@ -2,7 +2,23 @@
 
 ## Sumário
 
+- [Aviso](#️-aviso)
 - [Tipo de Desenvolvimento](#tipo-de-desenvolvimento)
+- [Preparação de Ambiente: Dart e Flutter](#preparação-de-ambiente-dart-e-flutter)
+- [Instalação do Flutter SDK](#instalação-do-flutter-sdk)
+  - [Instalação do Android SDK](#instalação-do-android-sdk)
+  - [Criação de Projetos e Códigos da Linha de Comando](#criação-de-projetos-e-códigos-da-linha-de-comando)
+
+
+## ⚠️ Aviso
+
+Projetos Flutter **não funcionarão corretamente** se estiverem dentro de pastas que contenham:
+
+- Espaços
+- Acentuação (á, é, í, ç, etc.)
+- Caracteres especiais
+
+O Flutter e o Gradle podem apresentar erros inesperados quando o caminho do projeto não utiliza apenas caracteres ASCII simples.
 
 ## Tipo de Desenvolvimento
 

@@ -1,0 +1,160 @@
+:root {
+    --senai-red: #E30613;
+    --senai-red-dark: #B0000A;
+    --senai-white: #FFFFFF;
+    --senai-gray-900: #1F2937;
+    --senai-gray-50: #F9FAFB;
+    --senai-gray-200: #E5E7EB;
+    --senai-radius: 10px;
+    --senai-container: 1100px;
+    --senai-font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: var(--senai-font);
+    color: var(--senai-gray-900);
+    background: var(--senai-gray-50);
+}
+
+.senai-shell {
+    max-width: var(--senai-container);
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.senai-header{
+    background: var(--senai-white);
+    border-bottom: 4px solid var(--senai-red);
+}
+
+.senai-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    padding: 14px 0;
+}
+
+.senai-logo{
+    height: 32px;
+    width: auto;
+}
+
+.senai-brand-text{
+    font-weight: 700;
+}
+
+.senai-nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.senai-link{
+    text-decoration: none;
+    color: var(--senai-gray-900);
+    font-weight: 600;
+}
+
+.senai-button {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--senai-red);
+    color: var(--senai-white);
+    padding: 10px 14px;
+    border-radius: var(--senai-radius);
+    font-weight: 700;
+}
+
+.senai-button:hover{
+    background: var(--senai-red-dark);
+}
+
+.senai-main {padding: 28px 0;}
+
+.senai-hero {
+    background: var(--senai-white);
+    border: 1px solid var(--senai-gray-200);
+    border-radius: var(--senai--radius);
+    padding: 28px 0;
+}
+
+.senai-title {margin: 0; font-size: 28px;}
+.senai-subtitle {margin: 10px 0 0; color: #4B5563;}
+
+.senai-actions {
+    margin-top: 28px;
+    background: var(--senai-white);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.senai-footer-text {
+    margin: 0;
+    padding: 18px 0;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.senai-card {
+    background: var(--senai-white);
+    border: 1px solid var(--senai-gray-200);
+    border-radius: var(--senai-radius);
+    padding: 18px;
+}
+
+.senai-form {
+    margin-top: 14px;
+    display: grid;
+    gap: 8px;
+}
+
+.senai-label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.senai-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--senai-gray-200);
+    border-radius: var(--senai--radius);
+    font: inherit;
+    background: var(--senai-white);
+}
+
+.seani-input:focus {
+    outline: none;
+    border-color: var(--senai-red);
+    box-shadow: 0 0 0 3px rgba(227,6,19, 0.15);
+}
+
+.senai-alert {
+    border-radius: var(--senai-radius);
+    padding: 10px 12px;
+    margin-top: 12px;
+}
+
+.senai-alert-error {
+    border: 1px solid #FCA5A5;
+    background: #FEF2F2;
+    color: #991B1B;
+}
+
+.senai-alert-sucess {
+    border: 1px solid #86EFAC;
+    background: #F0FDF4;
+    color: #166534;
+}
+
+.senai-alert p {margin: 0;}
