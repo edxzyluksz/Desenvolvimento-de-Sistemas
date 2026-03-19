@@ -6,6 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface FuncionarioCadastradoRepository extends JpaRepository<CadastroFuncionario, Long> {
     Optional<CadastroFuncionario> findByNifAndAtivoTrue(String nif);
-    boolean existsByNifAndNomeAndAtivoTrue(String nif, String nome);
-    boolean existsByNif(String nif);
+    boolean existsByNifAndAtivoTrue(String nif);
 }

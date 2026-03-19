@@ -14,17 +14,11 @@ public class Funcionario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false) // Cadastro do Já Cadastrado. O limite de caracteres está na tabela de validação.
+    @Column(nullable = false, length = 120)
     private String nome;
 
     @Column(nullable = false, unique = true, length = 20)
     private String nif;
-
-    @Column(nullable = false)
-    private String senha;
-
-    @Column(nullable = false)
-    private boolean ativo = true;
 
     // Getters and Setters
     public Long getId() {
@@ -44,17 +38,5 @@ public class Funcionario implements Serializable {
     }
     public void setNif(String nif){
         this.nif = nif;
-    }
-    public String getSenha() {
-        return senha;
-    }
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-    public boolean isAtivo(){
-        return ativo;
-    }
-    public void setAtivo(boolean ativo){
-        this.ativo = ativo;
     }
 }
