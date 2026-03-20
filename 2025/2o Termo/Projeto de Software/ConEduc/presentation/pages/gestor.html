@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor - conEduc</title>
+    <link rel="stylesheet" href="style.css/gestor.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="imagens/logoReal-Photoroom.png" alt="Logo conEduc" class="logo">
+        </a>
+
+        <h2 class="titulo-pagina">Gestão e controle de unidade escolar</h2>
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#contato">contato</a></li>
+                    <li><a href="#Aluno">Aluno</a></li>
+                    <li><a href="#Professor">Professor</a></li>
+                    <li><a href="gestor.html">Gestor</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
+        <main>
+            <section class="selecao">
+                <div>
+                    <button>Lista de alunos</button>
+
+                </div>
+            </section>
+        </main>
+    </header>
+
+
+</body>
+
+</html>

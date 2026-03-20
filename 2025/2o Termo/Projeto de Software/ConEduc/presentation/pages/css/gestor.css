@@ -1,0 +1,186 @@
+* {
+    /* Garante que padding e border sejam incluídos na largura/altura do elemento */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FFF5ED; 
+    
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0066FF;
+    padding: 10px;
+    font-size: 24px;
+    /* Essencial: Serve como referência para o posicionamento absoluto do #menu */
+    position: relative; 
+    min-height: 80px; 
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto; 
+    max-height: 140px; /* Limita a altura do logo para caber no header */
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.titulo-pagina {
+    color: black; 
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 24px;
+    position: relative;
+}
+
+#menu {
+    z-index: 102; /* Aumentado para garantir que fique acima de tudo */
+    position: absolute; /* Garantido que a regra anterior prevaleça */
+    top: 0;
+    right: 0;
+}
+
+#menu {
+    /* Posicionamento absoluto do container no canto direito */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 102; /* Garante que o botão fique acima de tudo */
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    /* Margem para espaçamento interno no canto direito */
+    margin: 30px 20px 20px 0; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+/* --- Menu Lateral (NAV) - Animação de Deslize --- */
+  body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF5ED ;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  /* AJUSTE: Mudamos a margem de 20px da esquerda para a DIREITA (top, right, bottom, left) */
+  margin: 30px 20px 20px 0; 
+  cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.nav.change {
+    background-color: #FF9933 ; 
+    padding: 20px; 
+}
+
+.menu-bg,
+        #menu {
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
