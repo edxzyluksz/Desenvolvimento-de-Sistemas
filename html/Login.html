@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ConEduc</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <form id="login-form">
+        <fieldset>
+            <img src="../assets/images/icon/imagotipo.png" alt="Logo">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite o e-mail..." required>
+            <br><br>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite a senha..." minlength="8" maxlength="30"
+                required>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Impede envio imediato
+            // Se o form for válido:
+            if (this.checkValidity()) {
+                window.location.href = "index.html"; // Redireciona
+            } else {
+                this.reportValidity(); // Mostra os avisos do navegador
+            }
+        });
+    </script>
+</body>
+
+</html>
