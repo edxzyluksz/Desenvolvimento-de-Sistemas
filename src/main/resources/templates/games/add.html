@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/game/add">Adicionar Games</a>
+            <a href="/game/list">Listar Games</a>
+        </nav>
+    </header>
+    <h1>Game Store</h1>
+    <form action="" method="post">
+        <label for="nome">Nome do Jogo</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="descricao">Descrição</label>
+        <input type="text" name="descricao" id="descricao">
+
+        <label for="desenvolvedora">Desenvolvedora</label>
+        <input type="text" name="desenvolvedora" id="desenvolvedora">
+
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="preco">
+
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+
+</html>
