@@ -1,14 +1,20 @@
-# Introdução ao Desenvolvimento Mobile
+# Introdução ao Desenvolvimento Mobile 📱
 
 ## Sumário
 
-- [Aviso](#️-aviso)
+- [Aviso](#-aviso)
 - [Tipo de Desenvolvimento](#tipo-de-desenvolvimento)
 - [Preparação de Ambiente: Dart e Flutter](#preparação-de-ambiente-dart-e-flutter)
 - [Instalação do Flutter SDK](#instalação-do-flutter-sdk)
-  - [Instalação do Android SDK](#instalação-do-android-sdk)
-  - [Criação de Projetos e Códigos da Linha de Comando](#criação-de-projetos-e-códigos-da-linha-de-comando)
-
+- [Instalação do Android SDK](#instalação-do-android-sdk)
+- [Linha de Comando](#linha-de-comando)
+- [Gerenciamento de dependências do PubSec()](#gerenciamento-de-dependências-do-pubsec)
+- [Estrutura Básica de um Aplicativo em Flutter](#estrutura-básica-de-um-aplicativo-em-flutter)
+  - [Árvore de Widgets](#árvore-de-widgets)
+  - [Tipos de Janelas](#tipos-de-janelas)
+    - [Stateless](#stateless)
+    - [Stateful](#stateful)
+    - [Comparativo VS](#comparativo-vs)
 
 ## ⚠️ Aviso
 
@@ -22,29 +28,37 @@ O Flutter e o Gradle podem apresentar erros inesperados quando o caminho do proj
 
 ## Tipo de Desenvolvimento
 
-- Nativo
-  - Android:
-    - SDK : Android SDK;
-    - IDE: Android Studio;
-    - Linguagens : Kotlin e Java;
-    - Ambientes: Mac, Windows, Linux.
-  - IOS:
-    - SDK: Cocoa Touch;
-    - IDE: Xcode;
-    - Linguagens: Swift / ObjectType-C;
-    - Ambientes: Mac.
+### Nativo
 
-- Multiplataforma
-  - React Native:
-    - SDK: Node.JS;
-    - IDE: VSCode;
-    - Linguagens: JavaScript / TypeScript;
-    - Ambientes: Mac, Win, Linux.
-  - Flutter
-    - SDK: Flutter SDK;
-    - IDE: VSCode, Android Studio;
-    - Linguagens: Dart;
-    - Ambientes: Mac, Win, Linux.
+#### Android
+
+- SDK : Android SDK;
+- IDE: Android Studio;
+- Linguagens : Kotlin e Java;
+- Ambientes: Mac, Windows, Linux.
+
+#### IOS
+
+- SDK: Cocoa Touch;
+- IDE: Xcode;
+- Linguagens: Swift / ObjectType-C;
+- Ambientes: Mac.
+
+### Multiplataforma
+  
+#### React Native
+
+- SDK: Node.JS;
+- IDE: VSCode;
+- Linguagens: JavaScript / TypeScript;
+- Ambientes: Mac, Win, Linux.
+
+#### Flutter
+
+- SDK: Flutter SDK;
+- IDE: VSCode, Android Studio;
+- Linguagens: Dart;
+- Ambientes: Mac, Win, Linux.
 
 ## Preparação de Ambiente: Dart e Flutter
 
@@ -64,44 +78,67 @@ Um conjunto de bibliotecas voltado para uma solução completa de um problema. N
 
 ### Instalação do Android SDK
 
-- Downaload do Android SDK - Command Line Tools
+- Download do Android SDK - Command Line Tools
 - Adicionar o Command-line ao `C:\src\AndroidSDK`
 - Adicionar o SDKManager as variáveis de ambiente (sistema)
-- Download dos pacotes
-  - emulator
-  - platforms
-  - platform-tools
-  - build-tools
+
+#### Download dos pacotes
+
+- emulator
+- platforms
+- platform-tools
+- build-tools
+
 - Adicionar o ADB e o Emulator às variáveis de ambiente
 - Criação da Imagem do Emulador - Via sdkmanager
 - Build do Emulador - via sdkmanager
 
-### Criação de Projetos e Códigos da Linha de Comando
+### Linha de Comando
 
-- Criação de Projetos
-  - `flutter create <nome_do_app>`
-    - flags (parâmetros):
-      - --empty : Cria um aplicativo "vazio" (Hello World!)
-      - --platforms : Permite a seleção de uma plataforma de desenvolvimento
-        - ex: `--platforms=android` (a criação do projeto será somente para a plataforma android)
-  - exemplo de criação de uma aplicativo android vazio
-    - `flutter create nome_do_app --empty --platforms=android`
-    - obs: nome do aplicativo: Todas as letras minúsculas, separação de palavras com '\_';
-  - `flutter doctor`
-    - Permite correção de pequenos problemas no flutter e identificação dos parâmetros funcionais em relação as plataformas de desenvolvimento
-    - Sempre rodar o `flutter doctor` no começo do desenvolvimento
-  - `flutter clean`
-    - limpa o cache do build (apaga o apk anterior)
-  - `flutter run -v`
-    - build do app (apk)
-- Gerenciamento de dependências do PubSec()
-  - Instalação
-    - `flutter pub add <nome_dependencia>`
-  - Baixar e instalar dependências projetadas
-    - `flutter pub get`
-  - Outros comandos do flutter pub (dependências)
-    - `flutter pub outdated` (verifica se as dependências estão desatualizadas)
-    - `flutter pub upgrade` (atualiza as dependências do flutter pub)
+#### `flutter create <nome_do_app>`
+
+##### flags (parâmetros)
+
+- --empty : Cria um aplicativo "vazio" (Hello World!)
+- --platforms : Permite a seleção de uma plataforma de desenvolvimento
+
+ex: `--platforms=android` (a criação do projeto será somente para a plataforma android)
+
+##### Exemplo de Criação
+
+- `flutter create nome_do_app --empty --platforms=android`
+
+  obs: nome do aplicativo: Todas as letras minúsculas, separação de palavras com '\_';
+
+##### `flutter doctor`
+
+Permite correção de pequenos problemas no flutter e identificação dos parâmetros funcionais em relação as plataformas de desenvolvimento
+
+Sempre rodar o `flutter doctor` no começo do desenvolvimento
+
+##### `flutter clean`
+
+limpa o cache do build (apaga o apk anterior)
+
+##### `flutter run -v`
+
+build do app (apk)
+
+#### Gerenciamento de dependências do PubSec()
+
+##### Instalação
+
+`flutter pub add <nome_dependencia>`
+
+##### Baixar e instalar dependências projetadas
+
+`flutter pub get`
+
+##### Outros comandos do flutter pub (dependências)
+
+`flutter pub outdated` (verifica se as dependências estão desatualizadas)
+
+`flutter pub upgrade` (atualiza as dependências do flutter pub)
 
 ### Estrutura Básica de um Aplicativo em Flutter
 
@@ -125,3 +162,25 @@ flowchart TD
   MaterialApp --> Janelas
   Janelas --> Scaffold
 ```
+
+#### Tipos de Janelas
+
+##### Stateless
+
+Janelas imutáveis - Uma vez construída ela não se altera. Apesar disso, pode ser reescrita caso ocorra uma troca de janelas no processo.
+
+OBS: Pode ter movimento (GIFs, Movies, Carousels, Cards), mas não consegue alterar imagens, os vídeos e os elementos de movimento depois de construídos. Para isso, é necessário o uso de uma janela statefull.
+
+##### Stateful
+
+Janelas dinâmicas que permitem mudança de estado (setState)
+
+OBS: Permite adicionar elementos a janela, como novas imagens, novos textos, entre outros.
+
+##### Comparativo VS
+
+|Característica|Stateless|Stateful|
+|-|-|-|
+|Mutabilidade|Não|Sim|
+|Uso Ideal|Layouts Fixos e exibição de dados estáticos|Interações do Usuário, ANimações e Dados Dinâmicos|
+|Método Principal|build()|build() + setState()|
