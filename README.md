@@ -29,16 +29,10 @@ Para 2026, os professores Wellington e William não estarão mais presentes na i
 
 ### 3o Termo - Disciplinas
 
-No momento, é incerto a distribuição das aulas entre os professores. Portanto, nos próximos dias estas informações serão preenchidas.
+Docentes: 
 
-Docentes:
-
-- Diogo Takamori Barbosa;
-- Jorge Carneiro.
-
-### Lista de Afazeres (Repositório)
-
-- 03/02/2026: É necessário preencher os conteúdos das pastas `.\2026\"3o Termo"\` conforme o andamento das aulas.
+- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / ... ;
+- Jorge Carneiro: Programação Front-end / ...
 
 ## Softwares Utilizados
 
