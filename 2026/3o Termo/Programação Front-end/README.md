@@ -22,3 +22,4 @@
 
 O primeiro elemento de uma lista possui índice 0.
 Considerando que um array sempre possui comprimento definido, usa-se o laço 'for' para percorrê-lo.
+
