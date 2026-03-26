@@ -11,22 +11,23 @@
 
 ## Programação Orientada a Objetos (c/ Java)
 
-**Encapsulamento**
+### Encapsulamento
 
 Uma forma de proteger os atributos de uma classe, tornando-os privados, e com métodos públicos
 
-**Herança**
+### Herança
 
 Instanciar uma super classe (geralmente abstrata) que possui atributos que classes filha herdam
 
-**Polimorfismo**
+### Polimorfismo
 
 Métodos com o mesmo nome mas que executam ações diferentes, essas ações podem ser:
 
 - Polimorfismo de Classe: Mesmo método reescrito
 - Polimorfismo de Parâmetros: Veremos em breve
 
-**Abstração**
+### Abstração
+
 Uma classe que não deve ser instanciada diretamente, tornando o código seguro que impede o programa de criar um objeto com atributos genéricos.
 
 ### API REST
@@ -62,7 +63,7 @@ Em ambientes web, ele é comumente usado para gerar páginas HTML dinâmicas, at
 
 O arquivo `.env` é um arquivo de texto simples que contém variáveis de ambiente e seus valores correspondentes. Ele é usado para armazenar informações sensíveis, como credenciais de banco de dados, chaves de API e outras configurações que não devem ser hardcoded no código-fonte. O arquivo `.env` é geralmente colocado na raiz do projeto e é lido pelo aplicativo durante a inicialização para configurar o ambiente de execução.
 
-## Docker 
+## Docker
 
 O Docker é uma plataforma de software que permite criar, implantar e executar aplicativos em contêineres. Os contêineres são unidades leves e portáteis que empacotam o código do aplicativo, suas dependências e o ambiente de execução necessário para que ele funcione de maneira consistente em qualquer ambiente.
 
@@ -82,6 +83,6 @@ RUN javac Main.java
 CMD ["java", "Main"]
 ```
 
-### Render 
+### Render
 
 Render é uma plataforma de hospedagem em nuvem que permite implantar aplicativos web, APIs e serviços de backend de forma rápida e fácil. Ele oferece uma interface amigável para gerenciar e escalar suas aplicações, além de suporte para várias linguagens de programação e frameworks. Com o Render, você pode implantar seu aplicativo diretamente do repositório do GitHub, configurar variáveis de ambiente, monitorar o desempenho e escalar automaticamente conforme a demanda. É uma opção popular para desenvolvedores que desejam uma solução de hospedagem simples e eficiente para seus projetos.
