@@ -16,9 +16,11 @@ void main(List<String> args){
 class ToDoList extends StatefulWidget {
   const ToDoList({super.key});
 
-  @override
+  @override // Chama o rebuild da Tela
   State<ToDoList> createState() => _ToDoListState();
 }
+
+// Toda classe StatefulWidget possuirá duas classes
 
 // 2ª Class => Lógica de construção da janela
 class _ToDoListState extends State<ToDoList> {
@@ -67,7 +69,13 @@ class _ToDoListState extends State<ToDoList> {
                         _tarefas[index]["concluida"] = valor!;
                       })
                     ),
-                  )
+                    // Inserir um ícone de lixeira, que ao ser clicado, irá deletar a tarefa
+                    // Usando o traling para colocar o icone da lixeira
+                    trailing: IconButton(
+                      onPressed: () => _deletarTarefa(index), 
+                      icon: Icon(Icons.delete),
+                    )
+                  ),
                 ),
               )
           ],
@@ -79,7 +87,7 @@ class _ToDoListState extends State<ToDoList> {
   // Método para adicionar tarefa na lista
   void _adicionarTarefa() {
     if(_tarefaController.text.trim().isNotEmpty){
-      setState(() {
+      setState(() { // Chama a mudança de estado da janela 
         // Adiciona a tarefa na lista
         _tarefas.add({
           "titulo": _tarefaController.text, 
@@ -89,5 +97,11 @@ class _ToDoListState extends State<ToDoList> {
         _tarefaController.clear();
       });
     }
+  }
+  
+  void _deletarTarefa(int index){
+    setState(() {
+      _tarefas.removeAt(index);
+    });
   }
 }

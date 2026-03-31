@@ -2,7 +2,7 @@
 
 ## Sumário
 
-- [Aviso](#-aviso)
+- [Aviso](#️-aviso)
 - [Tipo de Desenvolvimento](#tipo-de-desenvolvimento)
 - [Preparação de Ambiente: Dart e Flutter](#preparação-de-ambiente-dart-e-flutter)
 - [Instalação do Flutter SDK](#instalação-do-flutter-sdk)
@@ -174,6 +174,8 @@ OBS: Pode ter movimento (GIFs, Movies, Carousels, Cards), mas não consegue alte
 ##### Stateful
 
 Janelas dinâmicas que permitem mudança de estado (setState)
+
+Possui duas classes: Aquela que chama o setState e aquela que constrói a janela (build)
 
 OBS: Permite adicionar elementos a janela, como novas imagens, novos textos, entre outros.
 
