@@ -1,0 +1,98 @@
+/* Fontes de Texto */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Fondamento:ital@0;1&family=Tangerine:wght@400;700&display=swap');
+
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Configurações para o Header */
+header{
+    background-color: #6dacff;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.icone > a{
+    margin-left: 3%;
+}
+
+a > img{
+    width: 47vh;
+}
+
+header hr{
+    height: 10vh;
+    border-color: rgba(0, 0, 0, 0.15);
+
+}
+
+.barra-pesquisa{
+    height: 5.5vh;
+    display: flex;
+    border: black solid;
+    border-radius: 10px;
+    background-color: #fffff0;
+    width: 20vw;
+}
+
+div > img:hover{
+    cursor: pointer;
+}
+
+input[type="search"]{
+    font-family: "Arimo", sans-serif;
+    border: none;
+    outline: none;
+    width: 12vw;
+}
+
+.menu{
+    margin-right: 3%;
+}
+
+button > hr{
+    width: 3vw;
+    height: 0.20vh;
+    background-color: black;
+    border-color: black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header form{
+    margin-top: 1.35vh
+}
+
+
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fffff0;
+}
+
+.titulos{
+    font-family: "Fondamento", sans-serif;
+}
+
+.texto{
+    font-family: "Arimo", sans-serif;
+}
+
+.autor{
+    font-family: "Tangerine", sans-serif;
+}
+
+footer{
+    margin-top: 5%;
+    height: 40vh;
+    background-color: #d6d6d2;
+}

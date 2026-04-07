@@ -1,0 +1,54 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: #dddcdc;
+    padding: 20px;
+    background-image: url('../assets/images/background/loginFundoo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+fieldset {
+    width: 300px;
+    margin: 0 auto;
+    color: blue;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+}
+
+fieldset img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+input,
+select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #0000ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}

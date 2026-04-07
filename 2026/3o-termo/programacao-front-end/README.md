@@ -1,0 +1,49 @@
+# Programação Front-End
+
+## Sumário
+
+- [Introdução aos conceitos](#aula-290126---introdução)
+
+## Aula (29/01/26) - Introdução
+
+- Instalação do Node.js (Permite a compilação do JavaScript na Máquina)
+  - node -v (verifica a versão instalada do node)
+  - npm -v (verifica a versão instalada do npm)
+    - Node Package Manager (Gerenciador de Pacotes)
+    - Set-ExecutionPolicy Unrestricted (Libera a execução de scripts do Node)
+  - Sempre instalar a versão LTS (Long Term Support)
+
+- Introdução ao JavaScript (JS)
+
+- Informações importantes
+  - Usa-se o ambiente de variáveis do sistema para possiblititar a compilação do JS no Windows
+
+## Aula (24/02/26) - Arrays e Matrizes
+
+O primeiro elemento de uma lista possui índice 0.
+Considerando que um array sempre possui comprimento definido, usa-se o laço 'for' para percorrê-lo.
+
+## Arrow Functions
+
+As Arrow Functions são uma forma mais concisa de escrever funções em JavaScript, Dart, TypeScript e outras linguagens que suportam essa sintaxe.
+
+Elas permitem criar funções anônimas de maneira mais simples e legível. A sintaxe básica é a seguinte:
+
+```javascript
+const nomeDaFuncao = (parametros) => {
+  // corpo da função
+};
+```
+
+### Diferença entre Arrow Functions e Funções Tradicionais
+
+- **Sintaxe**: As Arrow Functions têm uma sintaxe mais curta e concisa em comparação com as funções tradicionais. Elas não possuem a palavra-chave `function` e usam a seta `=>` para separar os parâmetros do corpo da função.
+
+- **Contexto de `this`**: As Arrow Functions não possuem seu próprio contexto de `this`. Em vez disso, elas herdam o valor de `this` do contexto em que foram definidas. Isso pode ser útil para evitar problemas relacionados ao escopo de `this` em funções tradicionais.
+
+- **Uso de `arguments`**: As Arrow Functions não possuem o objeto `arguments`, que é uma coleção de todos os argumentos passados para a função. Se você precisar acessar os argumentos, pode usar o operador rest (`...`) para coletá-los em um array.
+
+Ex: ```javascript
+const minhaFuncao = (...args) => {
+  console.log(args);
+};
