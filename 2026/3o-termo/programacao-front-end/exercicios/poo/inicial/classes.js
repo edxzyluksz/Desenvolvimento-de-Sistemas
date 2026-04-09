@@ -34,6 +34,9 @@ class Produto {
     }
 
     vender(reduzido){
+        if (this.#estoque - reduzido < 0){
+            console.log("Impossível reduzir: Valor resulta em negativo.");
+        }
         this.#estoque -= reduzido
     }
 
@@ -142,6 +145,9 @@ class ContaBancaria {
     }
 
     saca(saldo) {
+        if (this.#saldo - saldo < 0){
+            console.log("Impossível reduzir: Valor resulta em negativo.");
+        }
         this.#saldo -= saldo
     }
 
