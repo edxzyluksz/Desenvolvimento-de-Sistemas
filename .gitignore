@@ -1,1 +1,8 @@
-/node_modules
+# Node
+node_modules/
+package-lock.json
+package.json
+
+# Settings Externas
+.vscode/
+
