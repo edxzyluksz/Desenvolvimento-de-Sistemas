@@ -1,18 +1,25 @@
 /* Folha de estilização para o HTML */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
     background-color: #f4f4f4;
-    margin: 0;
     padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 60vw;
+    max-height: 70vh;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 h1 {
@@ -26,6 +33,7 @@ h1 {
 }
 
 input {
+    min-width: 30%;
     flex: 1;
     padding: 10px;
     font-size: 20px;
@@ -48,6 +56,12 @@ button:hover {
 ul {
     list-style: none;
     padding: 0;
+    margin-top: 1.25%;
+}
+
+ul span {
+    overflow-x: auto;
+    scrollbar-width:none;
 }
 
 li {
@@ -58,6 +72,8 @@ li {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 6px;
+    gap: 10px;
+    scrollbar-color: rgb(37, 37, 37) transparent;
 }
 
 li.completed span {
