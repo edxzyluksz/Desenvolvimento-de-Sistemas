@@ -43,7 +43,22 @@ const nomeDaFuncao = (parametros) => {
 
 - **Uso de `arguments`**: As Arrow Functions não possuem o objeto `arguments`, que é uma coleção de todos os argumentos passados para a função. Se você precisar acessar os argumentos, pode usar o operador rest (`...`) para coletá-los em um array.
 
-Ex: ```javascript
+Exemplo:
+
+```javascript
 const minhaFuncao = (...args) => {
   console.log(args);
 };
+```
+
+## MVC (Model-View-Controller)
+
+O MVC é um padrão de arquitetura de software que separa a aplicação em três componentes principais: Model (Modelo), View (Visão) e Controller (Controlador). Cada componente tem uma responsabilidade específica, o que facilita a manutenção e a escalabilidade da aplicação.
+
+- **Model (Modelo)**: Responsável por gerenciar os dados e a lógica de negócios da aplicação. Ele representa a estrutura dos dados e as regras de negócio.
+
+- **View (Visão)**: Responsável por apresentar os dados ao usuário. Ela é a interface gráfica da aplicação, onde o usuário interage com os dados.
+
+- **Controller (Controlador)**: Responsável por receber as entradas do usuário, processar as informações e atualizar o Model e a View de acordo. Ele atua como um intermediário entre o Model e a View.
+
+O MVC é amplamente utilizado em desenvolvimento web e em outras áreas de desenvolvimento de software, pois promove a separação de preocupações e facilita a manutenção do código.

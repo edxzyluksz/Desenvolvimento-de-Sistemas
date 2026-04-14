@@ -4,7 +4,7 @@
 // Adicionar uma anotação na classe => export
 // A classe será usada em outras partes da aplicação
 
-export class TarefaModel {
+export class TaskModel {
     
     // Js permite colocar atributos diretamente no construtor
     constructor(){
@@ -19,7 +19,7 @@ export class TarefaModel {
         const newTask = {
             id: this.currentId++,
             title: title,
-            completed
+            completed: false
         };
         this.tasks.push(newTask)
     }
@@ -38,7 +38,7 @@ export class TarefaModel {
 
     // Remover a tarefa do vetor (delete)
     removeTask(id) {
-        this.tasks = this.tasks.filter(task)
+        this.tasks = this.tasks.filter(task => task.id !== id)
     }
 }
 
