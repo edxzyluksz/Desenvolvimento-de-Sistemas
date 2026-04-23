@@ -145,9 +145,9 @@ Situações em que ambientes virtuais são úteis:
 - **Gerenciamento de dependências**: Permite instalar pacotes específicos para um projeto sem afetar outros projetos ou o ambiente global.
 - **Isolamento de projetos**: Evita conflitos entre diferentes versões de pacotes usados
 em projetos diferentes.
-- **Facilidade de desenvolvimento**: Facilita a configuração e o gerenciamento de dependências, tornando o processo de desenvolvimento mais eficiente e organizado.
+- Facilidade de desenvolvimento: Facilita a configuração e o gerenciamento de dependências, tornando o processo de desenvolvimento mais eficiente e organizado.
 
-### Python
+### .venv (Python)
 
 ```bash
 python -m venv venv
@@ -155,3 +155,24 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate  # Windows
 ```
 
+## PHP - PHP: Hypertext Preprocessor
+
+PHP é uma linguagem de script de código aberto amplamente utilizada para desenvolvimento web. Ela é especialmente adequada para criar páginas web dinâmicas e interativas, permitindo que os desenvolvedores integrem facilmente o código PHP com HTML. O PHP é executado no servidor, o que significa que o código é processado antes de ser enviado ao navegador do usuário, tornando-o ideal para tarefas como manipulação de formulários, acesso a bancos de dados e geração de conteúdo dinâmico. Com uma ampla comunidade de desenvolvedores e uma vasta gama de bibliotecas e frameworks disponíveis, o PHP continua sendo uma escolha popular para o desenvolvimento web em todo o mundo.
+
+### php.init
+
+O arquivo `php.ini` é o arquivo de configuração principal do PHP, onde você pode definir várias diretivas que controlam o comportamento do PHP em seu ambiente de execução. Ele é usado para configurar aspectos como:
+
+- Configurações de exibição de erros
+- Configurações de upload de arquivos
+- Configurações de tempo de execução
+- Configurações de extensão
+- Configurações de segurança
+
+O `php.ini` é essencial para personalizar o ambiente PHP de acordo com as necessidades do seu projeto, permitindo que você ajuste as configurações para otimizar o desempenho, a segurança e a funcionalidade do seu aplicativo PHP. Ele é geralmente localizado na pasta de instalação do PHP ou em um diretório específico do servidor web, dependendo da configuração do ambiente.
+
+### index.php
+
+Nome comum para o arquivo principal de um projeto PHP, que serve como ponto de entrada para a aplicação. Ele é responsável por processar as requisições do usuário, interagir com o banco de dados e gerar a resposta adequada, geralmente em formato HTML, para ser exibida no navegador. O `index.php` é frequentemente usado para lidar com rotas e controlar o fluxo da aplicação, tornando-se um componente central na estrutura de muitos projetos PHP.
+
+Se o nome do arquivo for diferente de `index.php`, é necessário configurar o servidor web para reconhecer o nome do arquivo como ponto de entrada, ou seja, como a página inicial da aplicação ou colocar o novo nome do arquivo na URL para acessar a aplicação, por exemplo: `http://localhost/novo_nome.php`.

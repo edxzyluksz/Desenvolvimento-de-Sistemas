@@ -1,4 +1,4 @@
-# Documentação de Especificações de Requisto de Software (SRS)
+# Documentação de Especificações de Requisito de Software (SRS - Software Requirement Specification)
 
 Documento Baseado na ISO/IEEE 29148:2018
 
@@ -382,7 +382,7 @@ flowchart TD
 
 ### 7.3 Rastreabilidade
 
-Relacionamento entre requisitos, casos de uso, textes e códigos
+Relacionamento entre requisitos, casos de uso, textos e códigos
 
 ```mermaid
     flowchart LR
