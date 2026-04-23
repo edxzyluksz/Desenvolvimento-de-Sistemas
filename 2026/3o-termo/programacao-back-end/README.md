@@ -2,22 +2,23 @@
 
 ## 📋 Sumário
 
-- [📋 Sumário](#-sumário)
 - [☕ Programação Orientada a Objetos (c/ Java)](#-programação-orientada-a-objetos-c-java)
   - [💊 Encapsulamento](#-encapsulamento)
-  - [⚖️ Herança](#-herança)
+  - [⚖️ Herança](#️-herança)
   - [🐛 Polimorfismo](#-polimorfismo)
   - [😵‍💫 Abstração](#-abstração)
-  - [🛏️ API REST](#-api-rest)
+  - [🛏️ API REST](#️-api-rest)
   - [🧲 Springboot](#-springboot)
-  - [🛠️ Maven](#-maven)
+  - [🛠️ Maven](#️-maven)
   - [🌿 Thymeleaf](#-thymeleaf)
-  - [⚙️ .env](#-env)
+  - [⚙️ .env](#️-env)
   - [🐳 Docker](#-docker)
     - [🐋📄 Dockerfile](#-dockerfile)
   - [🌐 Render](#-render)
-  - [🗄️ JSON](#-json)
-  
+  - [🗄️ JSON](#️-json)
+- [Comparação: Express (JavaScript) × Flask (Python)](#comparação-express-javascript--flask-python)
+- [Rotas da API – CRUD de Contatos](#rotas-da-api--crud-de-contatos)
+- [Códigos de Status HTTP comuns](#códigos-de-status-http-comuns)
 
 ## ☕ Programação Orientada a Objetos (c/ Java)
 
@@ -93,10 +94,9 @@ RUN javac Main.java
 CMD ["java", "Main"]
 ```
 
-##  🌐 Render
+## 🌐 Render
 
 Render é uma plataforma de hospedagem em nuvem que permite implantar aplicativos web, APIs e serviços de backend de forma rápida e fácil. Ele oferece uma interface amigável para gerenciar e escalar suas aplicações, além de suporte para várias linguagens de programação e frameworks. Com o Render, você pode implantar seu aplicativo diretamente do repositório do GitHub, configurar variáveis de ambiente, monitorar o desempenho e escalar automaticamente conforme a demanda. É uma opção popular para desenvolvedores que desejam uma solução de hospedagem simples e eficiente para seus projetos.
-
 
 ## 🗄️ JSON
 
@@ -106,5 +106,52 @@ Usa-se o módulo padrão `fs` do Node.js para ler e escrever arquivos JSON, perm
 
 Em python, a biblioteca `json` é usada para ler e escrever arquivos JSON, facilitando a manipulação de dados estruturados em aplicações Python. Com a função `json.load()`, é possível carregar dados de um arquivo JSON para um objeto Python, enquanto a função `json.dump()` permite escrever um objeto Python em um arquivo JSON, tornando o processo de leitura e escrita de dados JSON simples e eficiente em Python.
 
+## Comparação: Express (JavaScript) × Flask (Python)
 
+| Conceito | Express | Flask |
+| --- | --- | --- |
+| Criar servidor | express() | Flask(__name__) |
+| JSON no body | req.body | request.json |
+| GET | app.get() | methods=["GET"] |
+| POST | app.post() | methods=["POST"] |
+| PUT | app.put() | methods=["PUT"] |
+| DELETE | app.delete() | methods=["DELETE"] |
+| Resposta | res.json() | jsonify() |
+
+## Rotas da API – CRUD de Contatos
+
+| Método | URL | Descrição |
+| --- | --- | --- |
+| GET | /contatos/alunos | Listar contatos |
+| POST | /contatos/alunos | Criar contato |
+| PUT | /contatos/alunos/0 | Atualizar contato |
+| DELETE | /contatos/alunos/0 | Excluir contato |
+
+## Códigos de Status HTTP comuns
+
+- 400 - Bad Request: Requisição malformada ou inválida.
+- 404 - Not Found: Recurso não encontrado.
+- 500 - Internal Server Error: Erro no servidor.
+- 200 - OK: Requisição bem-sucedida.
+- 201 - Created: Recurso criado com sucesso.
+- 501 - Not Implemented: Método HTTP não suportado.
+
+## Ambientes virtuais
+
+Ambientes virtuais são uma prática recomendada para isolar as dependências de um projeto, garantindo que as bibliotecas e pacotes necessários para um projeto específico não entrem em conflito com os de outros projetos. Eles permitem que você crie um ambiente separado para cada projeto, onde você pode instalar as dependências necessárias sem afetar o sistema global ou outros projetos.
+
+Situações em que ambientes virtuais são úteis:
+
+- **Gerenciamento de dependências**: Permite instalar pacotes específicos para um projeto sem afetar outros projetos ou o ambiente global.
+- **Isolamento de projetos**: Evita conflitos entre diferentes versões de pacotes usados
+em projetos diferentes.
+- **Facilidade de desenvolvimento**: Facilita a configuração e o gerenciamento de dependências, tornando o processo de desenvolvimento mais eficiente e organizado.
+
+### Python
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate  # Windows
+```
 

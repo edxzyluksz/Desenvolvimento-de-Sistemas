@@ -12,7 +12,7 @@ const PORT = 3000;
 // req.body fica undefined 
 app.use(express.json());
 // Chama o arquivo json (BD)
-const ARQUIVO = "./contatos.json";
+const ARQUIVO = "../contatos.json";
 
 // Ler dados 
 function lerDados() {
