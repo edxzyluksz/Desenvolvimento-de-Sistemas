@@ -26,6 +26,11 @@ export class TaskController {
             return; // Interrompe a função
         }
 
+        if (title.length > 100) {
+            this.view.showMessage("O título deve conter no máximo 100 caracteres.")
+            return
+        }
+
         // Continuo escrevendo a função
         this.view.cleanMessage(); // Limpa a mensagem de erro
         this.model.addTask(title);
