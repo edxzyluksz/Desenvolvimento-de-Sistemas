@@ -1,25 +1,5 @@
 # 🧑‍🍳 Programação Back-end
 
-## 📋 Sumário
-
-- [☕ Programação Orientada a Objetos (c/ Java)](#-programação-orientada-a-objetos-c-java)
-  - [💊 Encapsulamento](#-encapsulamento)
-  - [⚖️ Herança](#️-herança)
-  - [🐛 Polimorfismo](#-polimorfismo)
-  - [😵‍💫 Abstração](#-abstração)
-  - [🛏️ API REST](#️-api-rest)
-  - [🧲 Springboot](#-springboot)
-  - [🛠️ Maven](#️-maven)
-  - [🌿 Thymeleaf](#-thymeleaf)
-  - [⚙️ .env](#️-env)
-  - [🐳 Docker](#-docker)
-    - [🐋📄 Dockerfile](#-dockerfile)
-  - [🌐 Render](#-render)
-  - [🗄️ JSON](#️-json)
-- [Comparação: Express (JavaScript) × Flask (Python)](#comparação-express-javascript--flask-python)
-- [Rotas da API – CRUD de Contatos](#rotas-da-api--crud-de-contatos)
-- [Códigos de Status HTTP comuns](#códigos-de-status-http-comuns)
-
 ## ☕ Programação Orientada a Objetos (c/ Java)
 
 ### 💊 Encapsulamento
@@ -142,8 +122,8 @@ Ambientes virtuais são uma prática recomendada para isolar as dependências de
 
 Situações em que ambientes virtuais são úteis:
 
-- **Gerenciamento de dependências**: Permite instalar pacotes específicos para um projeto sem afetar outros projetos ou o ambiente global.
-- **Isolamento de projetos**: Evita conflitos entre diferentes versões de pacotes usados
+- __Gerenciamento de dependências__ : Permite instalar pacotes específicos para um projeto sem afetar outros projetos ou o ambiente global.
+- __Isolamento de projetos__ : Evita conflitos entre diferentes versões de pacotes usados
 em projetos diferentes.
 - Facilidade de desenvolvimento: Facilita a configuração e o gerenciamento de dependências, tornando o processo de desenvolvimento mais eficiente e organizado.
 
