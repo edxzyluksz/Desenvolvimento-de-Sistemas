@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quitanda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Gerenciamento de Quitanda</h1>
+
+    <!-- REPOSITOR -->
+    <div class="secao" id="repositor">
+        <h2>Repositor</h2>
+
+        <div class="linha">
+            <input type="text" id="repositor-nome" placeholder="Nome">
+            <input type="text" id="repositor-categoria" placeholder="Categoria">
+        </div>
+
+        <div class="linha">
+            <input type="number" id="repositor-preco" placeholder="Preço">
+            <input type="number" id="repositor-quantidade" placeholder="Quantidade">
+        </div>
+
+        <button id="btn-repositor-cadastrar">Cadastrar</button>
+    </div>
+
+    <hr>
+
+    <!-- CAIXA -->
+    <div class="secao" id="caixa">
+        <h2>Caixa</h2>
+
+        <div class="linha">
+            <input type="text" id="caixa-nome" placeholder="Nome">
+        </div>
+
+        <div class="linha">
+            <input type="number" id="caixa-preco" placeholder="Preço">
+            <input type="number" id="caixa-quantidade" placeholder="Quantidade">
+        </div>
+
+        <button id="btn-caixa-vender">Vender</button>
+    </div>
+
+    <hr>
+
+    <!-- ESTOQUISTA -->
+    <div class="secao" id="estoquista">
+        <h2>Estoquista</h2>
+
+        <div class="linha">
+            <button id="btn-ver-produtos">Ver Produtos</button>
+            <button id="btn-ver-vendas">Ver Vendas</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

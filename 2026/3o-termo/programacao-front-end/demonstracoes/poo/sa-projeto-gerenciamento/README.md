@@ -7,7 +7,7 @@ Documento Baseado na ISO/IEEE 29148:2018
 **Padrão:** ISO//IEC/IEEE 29148:2018
 **Versão:** 1.0.0
 **Data:** 2026-04-14
-**Autor:** EdxzyLuksz
+**Autores:** EdxzyLuksz, GuizineRa e Liphyzz
 
 ---
 
@@ -161,7 +161,7 @@ O Sistema deve:
 **Critérios de Aceitação:**
 
 * [ ] Verificar se item já está cadastrado
-* [ ] Entrada de Dados? Nome, Categoria, PReço, Quantidade
+* [ ] Entrada de Dados: Nome, Categoria, Preço, Quantidade
 * [ ] Validação de Campos
 * [ ] Saóda: Notificação ao Usuário
 
@@ -253,7 +253,7 @@ O Sistema deve:
 
 Podem existir restrições para o negócio (legais, movimentação, local)
 
-## 5. Modelos do Sisema
+## 5. Modelos do Sistema
 
 ### 5.1 Diagrama de Casos de Uso
 
@@ -280,8 +280,8 @@ classDiagram
         price
         quantity
 
-        +venda(name, quantity, totalValue)
-        +entrada(name, quantity, price)
+        +venda(quantity, totalValue)
+        +entrada(quantity, price)
     }
 
     class QuitandaModel{

@@ -1,0 +1,148 @@
+/* ===== BASE ===== */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4dd);
+    margin: 0;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #1e8449;
+    letter-spacing: 1px;
+}
+
+/* ===== SEÇÕES (CARDS) ===== */
+.secao {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    transition: transform 0.2s ease;
+}
+
+.secao:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== SUBTÍTULOS ===== */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #34495e;
+    border-left: 5px solid #27ae60;
+    padding-left: 10px;
+}
+
+/* ===== LINHA INPUTS ===== */
+.linha {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+/* ===== INPUTS ===== */
+input {
+    flex: 1;
+    min-width: 160px;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fafafa;
+}
+
+input:focus {
+    border-color: #27ae60;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.25);
+}
+
+/* ===== BOTÕES BASE ===== */
+button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover geral */
+button:hover {
+    transform: scale(1.04);
+}
+
+/* ===== BOTÃO REPOSITOR ===== */
+#btn-repositor-cadastrar {
+    background: #27ae60;
+    color: white;
+}
+
+#btn-repositor-cadastrar:hover {
+    background: #1e8449;
+}
+
+/* ===== BOTÃO CAIXA ===== */
+#btn-caixa-vender {
+    background: #2980b9;
+    color: white;
+}
+
+#btn-caixa-vender:hover {
+    background: #1f618d;
+}
+
+/* ===== BOTÕES ESTOQUISTA ===== */
+#btn-ver-produtos {
+    background: #8e44ad;
+    color: white;
+}
+
+#btn-ver-produtos:hover {
+    background: #6c3483;
+}
+
+#btn-ver-vendas {
+    background: #e67e22;
+    color: white;
+}
+
+#btn-ver-vendas:hover {
+    background: #ca6f1e;
+}
+
+/* ===== LISTA ===== */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== ITENS ===== */
+li {
+    background: #f8f9fa;
+    margin: 8px 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border-left: 5px solid #27ae60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== SEPARADOR ===== */
+hr {
+    border: none;
+    height: 1px;
+    background: #dcdcdc;
+    margin: 30px 0;
+    opacity: 0.6;
+}
