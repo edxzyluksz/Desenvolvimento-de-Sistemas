@@ -29,10 +29,8 @@ Para 2026, os professores Wellington e William não estarão mais presentes na i
 
 ### 3o Termo - Disciplinas
 
-Docentes: 
-
-- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / ... ;
-- Jorge Carneiro: Programação Front-end / ...
+- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / Programação Front-end ;
+- Jorge Carneiro: Programação Back-end / Projeto de Software 2
 
 ## Softwares Utilizados
 
