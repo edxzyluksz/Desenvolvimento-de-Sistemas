@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os tons de cinza explicando formatos de imagem</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, black, white);
+            background-size: contain;
+            height: 100vh;
+            margin: 0;
+        }
+       main{
+        color: rgba(235, 210, 191);
+        background-color: crimson;
+        background-size: contain;
+        display: inline-block;
+        border-radius: 10px;
+        margin: 0;
+       }
+
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1 style="color: white; text-align: center;">Explicando Formatos de Imagem com Exemplos</h1>
+    <figure style="text-align: center;">
+        <img src="images/kazuha.jpg" alt="Kaedehara Kazuha de Genshin Impact" title="Foto de Perfil em JPG" width="200px">
+        <img src="images/splashart.png" alt="Splashart de Kaedehara Kazuha" title="Logotipo com transparência" width="200px">
+        <img src="images/gato.svg" alt="Gatinho Chorando" title="Ícone em vetor" width="200px">
+        <img src="images/elementalburst.gif" alt="Movimento especial de Kazuha" title="Banner animado" width="200px">
+    </figure>
+
+    <main class="alinhado">
+        <h2>Imagem 1 - JPG</h2>
+        <p>São leves e compactas, porém não suportam transparência e tendem a perder qualidade.</p>
+        <h2>Imagem 2 - PNG </h2>
+        <p>Ideal para logos e imagens com transparência e com qualidade superior ao JPG, ocupando mais armazenamento.</p>
+        <h2>Imagem 3 - SVG</h2>
+        <p>Estas imagens não perdem qualidade ao redimensioná-las, com tamanhos de arquivo leves <em>vetoriais</em></p>
+        <h2>Imagem 4 - GIF</h2>
+        <p>Criada para ilustrar animações simples, com muitas limitações de cores.</p>
+    </main>
+    <script src="../retorno.js"></script>
+</body>
+</html>

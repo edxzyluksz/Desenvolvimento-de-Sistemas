@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Histórico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="calculadora" style="text-align: center;">
+            <h1>Calculadora com Histórico</h1>
+            <div class="row" style="margin-top: 10px;">
+                <input type="number" name="numeroA" id="numeroA" required>
+                <select name="operation" id="operations">
+                    <option value="" disabled selected>Escolha a operação</option>
+                    <option value="sum">Soma</option>
+                    <option value="subtract">Subtração</option>
+                    <option value="multiply">Multiplicação</option>
+                    <option value="division">Divisão</option>
+                    <option value="exponent">Exponenciação</option>
+                </select>
+                <input type="number" name="numeroB" id="numeroB" required>
+            </div>
+            <button id="calcular" style="margin-top: 10px;">Calcular</button>
+            <div id="resultado" class="output" style="text-align: left;"></div>
+            <button id="limpHist" style="margin-top: 10px;">Limpar Histórico</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="../retorno.js"></script>
+</body>
+
+</html>

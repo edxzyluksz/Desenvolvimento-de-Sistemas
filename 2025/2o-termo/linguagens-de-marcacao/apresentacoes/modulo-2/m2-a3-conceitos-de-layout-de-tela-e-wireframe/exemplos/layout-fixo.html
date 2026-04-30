@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fixo</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+
+    .container {
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+    overflow: hidden;
+    }
+
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+    nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    }
+
+    nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    }
+
+    nav li {
+    display: inline;
+    margin: 0 10px;
+    }
+
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+    main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    }
+
+    aside {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #ddd;
+    }
+
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+    <header>
+    <h1>Layout Fixo - Largura de 960px</h1>
+    </header>
+    <nav>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Serviços</a></li>
+    <li><a href="#">Contato</a></li>
+    </ul>
+    </nav>
+    <main>
+    <h2>Conteúdo Principal</h2>
+    <p>Este é um exemplo de layout fixo. O conteúdo principal ocupa 70% da largura do container.</p>
+    </main>
+    <aside>
+    <h3>Barra Lateral</h3>
+    <p>Esta é a barra lateral que ocupa 30% da largura do container.</p>
+    </aside>
+    <footer>
+    <p>&copy; 2024 Layout Fixo</p>
+    </footer>
+    </div>
+ </body>
+ </html>
+ ```

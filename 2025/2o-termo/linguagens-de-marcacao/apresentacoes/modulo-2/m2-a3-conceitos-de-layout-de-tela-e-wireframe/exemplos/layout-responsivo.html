@@ -1,0 +1,229 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+     }
+ 
+
+     .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        overflow: hidden;
+     }
+ 
+
+     header {
+        background-color: #35424a;
+        color: white;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+     }
+ 
+
+     header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+     }
+ 
+
+     header ul {
+        margin: 0;
+        padding: 0;
+     }
+ 
+
+     header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+     }
+ 
+
+     header #branding {
+        float: left;
+     }
+ 
+
+     header #branding h1 {
+        margin: 0;
+     }
+ 
+
+     header nav {
+        float: right;
+        margin-top: 10px;
+     }
+ 
+
+     header .highlight, header .current a {
+        color: #e8491d;
+        font-weight: bold;
+     }
+ 
+
+     #newsletter {
+        padding: 15px;
+        color: #fff;
+        background: #35424a;
+     }
+ 
+
+     #newsletter h1 {
+        float: left;
+     }
+ 
+
+     #newsletter form {
+        float: right;
+        margin-top: 15px;
+     }
+ 
+
+     #newsletter input[type="email"] {
+        padding: 4px;
+        height: 25px;
+        width: 250px;
+     }
+ 
+
+     .button_1 {
+        height: 38px;
+        background: #e8491d;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #fff;
+     }
+ 
+
+     #main {
+        padding: 20px;
+     }
+ 
+
+     #sidebar {
+        float: right;
+        width: 30%;
+        padding: 10px;
+        background-color: #35424a;
+        color: #fff;
+        margin-top: 10px;
+     }
+ 
+
+     #sidebar input[type="text"] {
+        width: 90%;
+        padding: 4px;
+        margin-bottom: 10px;
+     }
+ 
+
+     article#main-col {
+        float: left;
+        width: 65%;
+     }
+ 
+
+     footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #e8491d;
+        text-align: center;
+     }
+ 
+
+     /* Media Queries */
+     @media(max-width: 768px) {
+        header #branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        #newsletter form,
+        #main article#main-col,
+        #sidebar {
+         float: none;
+         text-align: center;
+         width: 100%;
+        }
+ 
+
+        header {
+         padding-bottom: 20px;
+        }
+ 
+
+        #newsletter form {
+         margin-top: 0;
+        }
+     }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+     <header>
+        <div id="branding">
+         <h1><span class="highlight">Layout</span> Responsivo</h1>
+        </div>
+        <nav>
+         <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="services.html">Serviços</a></li>
+         </ul>
+        </nav>
+     </header>
+ 
+
+     <section id="newsletter">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+         <input type="email" placeholder="Enter Email...">
+         <button type="submit" class="button_1">Subscribe</button>
+        </form>
+     </section>
+ 
+
+     <section id="main">
+        <article id="main-col">
+         <h1>O que é Layout Responsivo?</h1>
+         <p>
+            Design responsivo é uma abordagem de design de página da web que torna as páginas da web renderizadas bem em uma variedade de dispositivos e tamanhos de janela ou tela, desde o menor dos telefones até os maiores monitores de desktop.
+         </p>
+         <p>
+            O design responsivo é um dos dois componentes do design da experiência do usuário (UX). O outro é o design de aplicativos móveis.
+         </p>
+        </article>
+ 
+
+        <aside id="sidebar">
+         <h3>Sidebar</h3>
+         <p>
+            Este é um exemplo de sidebar. Você pode adicionar informações adicionais aqui.
+         </p>
+         <input type="text" placeholder="Search...">
+        </aside>
+     </section>
+ 
+
+     <footer>
+        <p>Layout Responsivo, Copyright &copy; 2023</p>
+     </footer>
+    </div>
+ </body>
+ </html>
+ ```
