@@ -1,53 +1,10 @@
 # Arquitetura de Redes com IoT 🛜
 
-## Sumário
-
-- [Conceitos e Histórico](#conceitos-e-histórico)
-  - [O Que São Redes de Computadores?](#o-que-são-redes-de-computadores)
-    - [DEFINIÇÃO](#definição)
-    - [REDE EXPERIMENTAL](#rede-experimental)
-    - [ARPANET (RESUMO)](#arpanet-resumo)
-    - [EVOLUÇÃO E TRÁFEGO](#evolução-e-tráfego)
-- [Tipos de Redes e Comunicação](#tipos-de-redes-e-comunicação)
-  - [Quantos Tipos de Redes Existem?](#quantos-tipos-de-redes-existem)
-  - [Cabeadas vs. Sem Fio (Wireless)](#cabeadas-vs-sem-fio-wireless)
-    - [REDES CABEADAS (WIRED)](#redes-cabeadas-wired)
-    - [REDES SEM FIO (WIRELESS)](#redes-sem-fio-wireless)
-    - [COMUTAÇÃO DE PACOTES](#comutação-de-pacotes)
-- [Componentes e Funções](#componentes-e-funções)
-  - [Dispositivos de Rede](#dispositivos-de-rede)
-    - [HUB (O QUE É?)](#hub-o-que-é)
-    - [SWITCH](#switch)
-    - [ROTEADOR](#roteador)
-    - [Outros Componentes e Funções](#outros-componentes-e-funções)
-- [Modelos e Protocolos de Comunicação](#modelos-e-protocolos-de-comunicação)
-  - [Modelos de Comunicação](#modelos-de-comunicação)
-    - [MODELOS DE COMUNICAÇÃO DE REDES: MODELOS OSI E TCP/IP](#modelos-de-comunicação-de-redes-modelos-osi-e-tcpip)
-    - [PRINCIPAIS PROTOCOLOS DE REDE](#principais-protocolos-de-rede)
-    - [CAMADAS E PROTOCOLOS](#camadas-e-protocolos)
-    - [Detalhes de Protocolo](#detalhes-de-protocolo)
-- [Endereçamento e Infraestrutura](#endereçamento-e-infraestrutura)
-  - [Endereçamento IP](#endereçamento-ip)
-    - [IP v4 (32 BITS)](#ip-v4-32-bits)
-    - [IP v6 (128 BITS)](#ip-v6-128-bits)
-    - [Classes e Máscaras de Sub-Rede](#classes-e-máscaras-de-sub-rede)
-    - [FAIXAS IP](#faixas-ip)
-    - [MÁSCARA E HOSTS](#máscara-e-hosts)
-    - [Cabeamento e Velocidade](#cabeamento-e-velocidade)
-    - [CABEAMENTO DE REDE](#cabeamento-de-rede)
-    - [VELOCIDADE](#velocidade)
-    - [TIPOS DE CABOS](#tipos-de-cabos)
-- [Topologias e Ferramentas](#topologias-e-ferramentas)
-  - [Tipos de Topologias de Rede](#tipos-de-topologias-de-rede)
-    - [DESCRIÇÕES DE TOPOLOGIAS](#descrições-de-topologias)
-  - [Ferramentas de Diagnóstico e Configuração](#ferramentas-de-diagnóstico-e-configuração)
-    - [Cisco Packet Tracer](#cisco-packet-tracer)
-
 ## Conceitos e Histórico
 
 ### O Que São Redes de Computadores?
 
-#### DEFINIÇÃO
+#### Definição
 
 - São sistemas **interconectados de dispositivos** que **compartilham recursos e informações** por meio de **protocolos de comunicação**.
 - Essas redes podem variar de tamanho e complexidade, desde **Redes Locais (LAN)** até **Redes Globais como a Internet**.
@@ -61,18 +18,18 @@
 - E-commerce e Bancos
 - Saúde
 
-#### REDE EXPERIMENTAL
+#### Rede Experimental
 
 - A criação das redes de internet surgiram durante a **Época da Guerra Fria** na década de 60, pois os EUA buscavam criar uma rede de comunicação **resistente a ataques nucleares**, que originou a rede experimental **ARPANET**.
 - A Internet que conhecemos é uma **evolução da ARPANET** com a adição de **Protocolos de Comunicação**.
 
-#### ARPANET (RESUMO)
+#### ARPANET (Resumo)
 
 - Significa em português: "**Rede da Agência de Pesquisas em Projetos Avançados**".
 - Foi a **primeira rede de computadores** feita em **1969** para transmitir dados militares sigilosos e para interligar os departamentos de pesquisa por todos os Estados Unidos.
 - **No contexto da Guerra Fria**.
 
-#### EVOLUÇÃO E TRÁFEGO
+#### Evolução e Tráfego
 
 - **Comunicação nos anos de 1970.** O **WWW (World Wide Web)** tornou a tecnologia acessível ao grande público no final dos anos 1980.
 - A Internet é um esforço coletivo de vários cientistas e engenheiros. Estes são os principais nomes:
@@ -97,18 +54,18 @@
 
 ### Cabeadas vs. Sem Fio (Wireless)
 
-#### REDES CABEADAS (WIRED)
+#### Redes Cabeadas (Wired)
 
 - **Tecnologia, Velocidade, Confiabilidade.**
 - **Instalação, Mobilidade.**
 - Geralmente **melhores que as Wireless** em questão de **velocidade**.
 
-#### REDES SEM FIO (WIRELESS)
+#### Redes Sem Fio (Wireless)
 
 - Garante **flexibilidade e mobilidade**.
 - O 5G no Brasil demorou, pois utilizava a mesma frequência dos canais de TV.
 
-#### COMUTAÇÃO DE PACOTES
+#### Comutação de Pacotes
 
 - Um método de transmissão de dados em que as informações são divididas em **pacotes menores** e enviadas **independentemente** através de uma rede.
 
@@ -116,19 +73,19 @@
 
 ### Dispositivos de Rede
 
-#### HUB (O QUE É?)**
+#### Hub (O que é?)**
 
 - Traduzido como **"Ponto Central"**, tem a função de **interligar computadores em uma rede local**.
 - As redes interligadas por HUB costumam ser **lentas**, então **não é recomendado o uso simultâneo de mais de duas máquinas**.
 
-#### SWITCH
+#### Switch
 
 - O SWITCH facilita o **compartilhamento de recursos** conectando todos os dispositivos, inclusive computadores, impressoras e servidores, na rede de uma empresa de pequeno porte.
 - Enquanto um HUB conecta vários dispositivos Ethernet em um único segmento, o SWITCH permite **endereçar individualmente o tráfego** e permite dividi-lo em várias **VLANs**.
 - **RESUMINDO:** HUBS e SWITCHES conectam computadores numa mesma LAN, mas os SWITCHES conseguem distinguir os computadores conectados a ele, e para qual deles uma informação deve ser encaminhada.
 - **SWITCHES:** Gerenciáveis e Não Gerenciáveis.
 
-#### ROTEADOR
+#### Roteador
 
 - Ele funciona como um **distribuidor** direcionando o tráfego e escolhendo a rota mais eficiente para obter informações na forma de **pacotes de dados** e viajar pela rede.
 - **"BURRO":** Pois ele emite sinal igualmente para todos os dispositivos ao redor em quantidade.
@@ -158,11 +115,11 @@
     3. REDE
     4. ENLACE
 
-### PRINCIPAIS PROTOCOLOS DE REDE
+### Principais Protocolos de Rede
 
 - Os protocolos são importantes para a **interoperabilidade entre as fabricantes** (Seguir um Padrão).
 
-#### CAMADAS E PROTOCOLOS
+#### Camadas e Protocolos
 
 - **A APLICAÇÃO** define o protocolo (Ex: digitar **https://** no navegador - software do usuário).
 - **O TRANSPORTE** define **TCP e UDP**.
@@ -229,18 +186,18 @@
 
 ### Cabeamento e Velocidade
 
-#### CABEAMENTO DE REDE
+#### Cabeamento de Rede
 
 - **Meio físico** utilizado para conectar dispositivos e permitir comunicação em LANs ou redes maiores.
 - **Determina Velocidade e Confiabilidade**.
 - Os **TWISTED PAIR** são trançados para evitar **interferência eletromagnéticas**.
 
-#### VELOCIDADE
+#### Velocidade
 
 - **LARGURA DE BANDA (MHz):** Capacidade de transmitir sinais elétricos no cabo. Quanto **maior** a largura, **mais transmissão**.
 - **VELOCIDADE MÁXIMA:** Taxa de transferência de dados que o cabo suporta. A largura de banda afeta a velocidade de máxima, mas **não de forma linear**.
 
-#### TIPOS DE CABOS
+#### Tipos de Cabos
 
 - **CAT5E:** 100 MHz, 1 Gbps. Uso doméstico.
 - **CAT6:** 250 MHz, 10 Gbps (55m). Redes de maior velocidade, curta.
@@ -260,7 +217,7 @@
 - Híbrida
 - Ponto a Ponto
 
-#### DESCRIÇÕES DE TOPOLOGIAS
+#### Descrições de Topologias
 
 - **REDE EM ESTRELA:** O SWITCH se conecta em cada computador individualmente.
 - **REDE EM ANEL:** Evita a **colisão de dados**.

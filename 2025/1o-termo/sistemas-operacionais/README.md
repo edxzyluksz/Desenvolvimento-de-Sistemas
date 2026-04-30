@@ -1,25 +1,5 @@
 # Sistemas Operacionais (SO) ⚙️
 
-## Sumário
-
-- [Tipos de Sistemas Operacionais](#tipos-de-sistemas-operacionais)
-- [Arquitetura de Hardware e Processadores](#arquitetura-de-hardware-e-processadores)
-  - [Arquitetura de Processadores e Bitagem](#arquitetura-de-processadores-e-bitagem)
-- [Dispositivos de Armazenamento e Memória](#dispositivos-de-armazenamento-e-memória)
-  - [Tipos de Armazenamento](#tipos-de-armazenamento)
-  - [Memória e Cache](#memória-e-cache)
-- [Padrões de Conexão (Interface)](#padrões-de-conexão-interface)
-- [Sistemas de Arquivos (File Systems)](#sistemas-de-arquivos-file-systems)
-  - [Tipos Conhecidos](#tipos-conhecidos)
-- [Máquinas Virtuais (VM) e Cloud](#máquinas-virtuais-vm-e-cloud)
-- [Divisão, Backup e Otimização](#divisão-backup-e-otimização)
-  - [Unidades de Disquete (DOS)](#unidades-de-disquete-dos)
-- [BIOS, CMOS e TPM](#bios-cmos-e-tpm)
-- [Licenciamento e Distribuições](#licenciamento-e-distribuições)
-- [Histórico e Pioneiros](#histórico-e-pioneiros)
-- [Classificação de Porte (Computadores)](#classificação-de-porte-computadores)
-- [Consumo de Energia e Eficiência](#consumo-de-energia-e-eficiência)
-
 ## Tipos de Sistemas Operacionais
 
 - **SO DE PROPÓSITO GERAL**:
