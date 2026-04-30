@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6.A20.D6 - Layout Completo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia,
+                'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: #4CAf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            position: relative;
+        }
+
+        nav {
+            float: left;
+            width: 25%;
+            height: 400px;
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            padding: 8px;
+            margin-bottom: 10px;
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        nav li:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        section {
+            float: left;
+            width: 75%;
+            height: 400px;
+            background-color: #e0f7fa;
+            padding: 20px;
+        }
+
+        footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .btn-top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 99;
+        }
+
+        .btn-top:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <h1>Portal de Notícias</h1>
+    </header>
+    <!--MENU LATERAL-->
+    <nav>
+        <h3>Menu</h3>
+        <ul>
+            <li>Início</li>
+            <li>Tecnologia</li>
+            <li>Esportes</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <!--CONTEÚDO PRINCIPAL-->
+    <main>
+        <section>
+            <h2>Destaques do Dia</h2>
+            <p>Bem-vindo ao portal! Aqui você encontra as últimas notícias e novidades sobre tecnologia, esportes e
+                cultura.</p>
+            <p>Role a página e veja que o botão no canto inferior direito permanece fixo!</p>
+        </section>
+    </main>
+    <!--RODAPÉ-->
+    <footer>
+        &copy; 2025 - LiMa - Layout
+    </footer>
+    <!--BOTÃO FIXO-->
+    <button class="btn-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        ↑</button>
+</body>
+
+
+</html>
