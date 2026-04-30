@@ -1,3 +1,6 @@
+Corrigido
+Faça um pull para sincronizar as alterações
+
 # Como usar git e enviar corretamente para o GitHub
 
 ## Configurações Iniciais
