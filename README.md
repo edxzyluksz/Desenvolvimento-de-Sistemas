@@ -4,7 +4,8 @@ Meu nome é Eduardo, com nickname de EdxzyLuksz e no momento em que escrevo esta
 
 Exceções (Certificados não obrigatórios):
 
-- Python com Framework.
+- Python com Framework (2025)
+- Inteligências Artificiais Generativas Aplicada a Programação - Chatgpt (2026)
 
 ## 2025
 
