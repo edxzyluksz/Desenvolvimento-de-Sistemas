@@ -1,6 +1,6 @@
-# 💻 Programação Backend
+# Programação Backend
 
-## 🚀 Conceitos Fundamentais
+## Conceitos Fundamentais
 
 * **Lógica de Programação e Algoritmo:** É a **base** para todas as linguagens de programação; estrutura essencial para a construção dos códigos.
 * **Definição Backend:** Execução das funcionalidades existentes no **FRONT**, ou mais contextos para um **resultado factível**.
@@ -8,7 +8,7 @@
   * **Linguagem Compilada:** É convertida diretamente em um **código de máquina** que o processador pode executar.
   * **Linguagem Interpretada:** Executa o código diretamente como **streaming**, no momento da execução e é **traduzido**.
 
-## 🗂️ Estruturas Essenciais
+## Estruturas Essenciais
 
 * **Variáveis:** Valor que pode ser **alterado** na execução do código (ex: BOOLEAN).
 * **Variáveis Menos Utilizadas (exemplo):**
@@ -22,7 +22,7 @@
 * **Laços de Repetição**
 * **Orientação a Objetos**
 
-## 🛠️ Funções e Bibliotecas
+## Funções e Bibliotecas
 
 * **Funções:** Blocos de **códigos predefinidos** que podemos utilizar em nossos programas.
   * **Conceito em Python:** É uma parte ou bloco de código **pré-formatado** para executar uma determinada tarefa quando chamado no código principal.
@@ -36,7 +36,7 @@
     1. Manipulações de listas e sequências (remove, count, pop, insert)
     2. Entrada e Saída (print e input)
 
-## 🌐 Linguagens para Backend
+## Linguagens para Backend
 
 * **Python (1986):**
   * Criador: **Guido van Rossum**

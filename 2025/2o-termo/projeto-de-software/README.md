@@ -4,13 +4,13 @@
 
 ### Objetivo Principal
 
-**PARA UM TAP, O IDEAL É IDEALIZAR DIRETAMENTE PARA OS CHEFES, COM O ENGAJAMENTO DO CLIENTE.** O software precisa resolver algum **problema evidente**.
+**Para um TAP, o ideal é idealizar diretamente para os chefes, com o engajamento do cliente.** O software precisa resolver algum **problema evidente**.
 
 * **Abordagem do Projeto:** Abordará tudo que é necessário, como os seus adjuntos para realização e funcionalidade do projeto.
 
 ### Termo de Abertura do Projeto (TAP)
 
-UM **DOCUMENTO OFICIAL** QUE FORMALIZA O **INÍCIO DE UM PROJETO**, CONFERINDO **AUTORIDADE** E AS INFORMAÇÕES A EXECUTAR. Também **prazo**.
+Um **documento oficial** que formaliza o **início de um projeto**, conferindo **autoridade** e as informações a executar. Também **prazo**.
 
 * **Exemplos de (Adjuntos dos) Projetos:**
   * Capa de livro
@@ -30,7 +30,7 @@ O que vai adjunto no seu projeto de software que vai impulsionar a **adesão dos
 
 ### Ciclo de Vida do Projeto
 
-UM PROJETO POSSUI UM CICLO DE VIDA QUE SE ESTENDE DE SEU **INÍCIO ATÉ SEU ENCERRAMENTO**.
+Um projeto possui um ciclo de vida que se estende de seu **início até seu encerramento**.
 
 * Um bom projeto pode **aumentar sua vida útil** dado um bom **planejamento inicial**, **execução**, **monitoramento** e **controle constantes** em sua duração, até se tornar obsoleto.
 * **Ações Iniciais:**
@@ -43,25 +43,25 @@ UM PROJETO POSSUI UM CICLO DE VIDA QUE SE ESTENDE DE SEU **INÍCIO ATÉ SEU ENCE
 
 ### Andamento e Detalhamento
 
-* **ANDAMENTO DO PROJETO:** Detalhar as **necessidades**, **requisitos**, **documentação**, **limite entregável**, **esqueleto do projeto**.
+* **Andamento do projeto:** Detalhar as **necessidades**, **requisitos**, **documentação**, **limite entregável**, **esqueleto do projeto**.
 * Tirar do papel e construir **de fato** o projeto.
-* **Execução do Projeto - Escopo:** Plano em prática.
+* **Execução do projeto - Escopo:** Plano em prática.
 
 ### Tripla Restrição (Triple Constraint)
 
-SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento apropriado à reflexão.
+Se trata da relação: **Escopo**, **Tempo**, **Custo**, com um questionamento apropriado à reflexão.
 
-* **ESCOPO:**
+* **Escopo:**
   * Define os **parâmetros**.
-  * **O OBJETIVO DO PROJETO É RELEVANTE PARA O MERCADO?** Trará benefícios significativos ao se lançar?
-* **TEMPO:**
+  * **O objetivo do projeto é relevante para o mercado?** Trará benefícios significativos ao se lançar?
+* **Tempo:**
   * **Prazo disponível** para a M.A. (Mão de Obra).
   * Dado a tendência do mercado e saúde mental dos dev's, **terminará se o projeto no prazo?**
-* **CUSTO:**
-  * **MAIS INCREMENTO = MAIOR CUSTO.**
+* **Custo:**
+  * **Mais incremento = Maior custo.**
   * Apesar de escopo bem definido e tempo viável, **o quão caro será?** Consumirá recursos proporcionais aos benefícios?
 
-> Essas três áreas devem haver **respostas positivas** para aumentar as chances do projeto **NÃO O PREJUDICAR A EMPRESA** ou deixar de ser descartado.
+> Essas três áreas devem haver **respostas positivas** para aumentar as chances do projeto **não o prejudicar a empresa** ou deixar de ser descartado.
 
 * Existe a possibilidade de **balancear o triângulo** ao reduzir ou aumentar algum para compensar a escassez do outro.
 * Garante **andamento**.
@@ -69,20 +69,20 @@ SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento a
 ### Monitoramento e Controle
 
 * Cada **material**, **etapas**, **pessoas** e **fluxos de trabalho**.
-* **MONITORAMENTO E CONTROLE** do projeto: andamento e **entrega factual** do projeto.
-* **ESTRITAMENTE O QUE FOI DEFINIDO:** Controle e gestão da perda de **funcionários**, margem para trabalho de **segurança antecipada** e **documentada**.
+* **Monitoramento e controle** do projeto: andamento e **entrega factual** do projeto.
+* **Estritamente o que foi definido:** Controle e gestão da perda de **funcionários**, margem para trabalho de **segurança antecipada** e **documentada**.
 * **Pontos Negativos (Garantias):**
   * Não terceiros.
   * A não transferência de **responsabilidade** no caso de **contratos abusivos**.
 
 ### Comunicação
 
-* **TRANSPARÊNCIA**, **DIRETA**, **FREQUÊNCIA**, **PRIMAR PELO BOM AMBIENTE**.
-* **Comunicação Efficaz** e **Reuniões de Acompanhamento**.
+* **Transparência**, **Direta**, **Frequência**, **Primar pelo bom ambiente**.
+* **Comunicação Efficaz** e **Reuniões de acompanhamento**.
 
 ### Gerenciamento
 
-* **Gerenciamento de Stakeholders:** Gestão de **pessoas interessadas (participantes)** do projeto.
+* **Gerenciamento de stakeholders:** Gestão de **pessoas interessadas (participantes)** do projeto.
 * **Gerir no projeto:** Gerenciamento dos **time stakeholders** adjunto ao projeto.
 
 ### Liderança e Equipe
@@ -95,10 +95,10 @@ SE TRATA DA RELAÇÃO: **ESCOPO**, **TEMPO**, **CUSTO**, com um questionamento a
 
 ## Encerramento e Entrega
 
-* **ENTREGA DO PROJETO:** **Deadline**, **Cronograma** (M.A. aliado), **Gestão do Tempo**, **Margem de Erro** (aliado) e **(Inimigo)**.
+* **Entrega do projeto:** **Deadline**, **Cronograma** (M.A. aliado), **Gestão do tempo**, **Margem de erro** (aliado) e **(Inimigo)**.
 * Ao entregar o projeto antes ou depois da data combinada, o projeto **perde qualidade e/ou expressividade**, causando uma **má impressão** para o cliente.
 * Após a entrega, **o projeto não passa a ser seu turno de desenvolvimento**.
-* **ENCERRAMENTO DO PROJETO:**
+* **Encerramento do projeto:**
   * Ter **concluído** e **entregue tudo acordado no escopo**.
   * **Documento de entrega** e **finalização**.
   * **Dissolução da equipe**.

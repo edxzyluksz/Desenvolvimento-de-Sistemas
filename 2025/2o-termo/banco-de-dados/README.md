@@ -1,4 +1,4 @@
-# 💾 BANCO DE DADOS: ANOTAÇÕES DE ESTUDO
+# Banco de Dados
 
 ## **Conceitos Fundamentais**
 

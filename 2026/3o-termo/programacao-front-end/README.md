@@ -1,24 +1,12 @@
 # Programação Front-End
 
-## Sumário
+## JavaScript
 
-- [Introdução aos conceitos](#aula-290126---introdução)
+O JavaScript é uma linguagem de programação interpretada e de alto nível. Ele é amplamente utilizado no desenvolvimento web para criar experiências interativas e dinâmicas para os usuários. O JavaScript pode ser executado tanto no lado do cliente (navegador) quanto no lado do servidor (Node.js).
 
-## Aula (29/01/26) - Introdução
+Sua sintaxe é baseada em C, o que a torna familiar para muitos programadores. O JavaScript suporta programação orientada a objetos, funcional e imperativa, permitindo aos desenvolvedores escolherem o estilo de programação que melhor se adequa às suas necessidades.
 
-- Instalação do Node.js (Permite a compilação do JavaScript na Máquina)
-  - node -v (verifica a versão instalada do node)
-  - npm -v (verifica a versão instalada do npm)
-    - Node Package Manager (Gerenciador de Pacotes)
-    - Set-ExecutionPolicy Unrestricted (Libera a execução de scripts do Node)
-  - Sempre instalar a versão LTS (Long Term Support)
-
-- Introdução ao JavaScript (JS)
-
-- Informações importantes
-  - Usa-se o ambiente de variáveis do sistema para possiblititar a compilação do JS no Windows
-
-## Aula (24/02/26) - Arrays e Matrizes
+## Arrays e Matrizes
 
 O primeiro elemento de uma lista possui índice 0.
 Considerando que um array sempre possui comprimento definido, usa-se o laço 'for' para percorrê-lo.

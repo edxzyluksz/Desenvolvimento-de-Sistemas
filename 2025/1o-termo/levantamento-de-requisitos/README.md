@@ -1,23 +1,23 @@
-# Levantamento de Requisitos (LR) 📝
+# Levantamento de Requisitos (LR)
 
 ## Visão Geral e Fundamentos do LR
 
 - Melhor definição das necessidades.
 - Desenvolvimento mais ágil.
 - Melhor organização de prazos.
-- Guardar termo: "**CROMOTERAPIA**" (Entrega completa, funcionamento geral).
-- VIABILIZAR A DEMANDA DO CLIENTE E AO SISTEMA (SOFTWARE).
+- Guardar termo: "**Cromoterapia**" (Entrega completa, funcionamento geral).
+- Viabilizar a demanda do cliente e ao sistema (software).
 - Atender os anseios do cliente.
 - Mais assertivo no projeto.
-- Lançamento do **MVP** (Produto Minimamente Viável - não confundir com "**MOST VALUABLE PLAYER**").
+- Lançamento do **MVP** (Produto Minimamente Viável - não confundir com "**Most Valuable Player**").
 - Maior gasto financeiro.
 - Projeto é mais aderente.
 - O propósito do LR é o desenrolhamento do projeto completo.
-- A **IMPORTÂNCIA DO LR BEM ELABORADO**.
-- **DICA VALIOSA**: SEMPRE APRESENTA O MELHOR E MAIOR ORÇAMENTO PARA O PROJETO QUE VOCÊ ESTÁ DESENVOLVENDO.
-- Trabalhar cada etapa do projeto: definir o que será feito primeiro (**PLANTA BAIXA DO PROJETO**).
-- **1. ELABORAR PERGUNTAS PARA MAPEAR TODO O PROJETO** (MÍNIMO: **10**) PARA **PRECISÃO**.
-- **2. BOA COMUNICAÇÃO**: REUNIÃO, PERGUNTAS BEM FORMULADAS, ANTECIPAÇÃO DE PROBLEMAS.
+- A **importância do LR bem elaborado**.
+- **Dica Valiosa**: Sempre apresenta o melhor e maior orçamento para o projeto que você está desenvolvendo.
+- Trabalhar cada etapa do projeto: definir o que será feito primeiro (**planta baixa do projeto**).
+- **1. Elaborar perguntas para mapear todo o projeto** (Mínimo: **10**) Para **precisão**.
+- **2. Boa comunicação**: Reunião, perguntas bem formuladas, antecipação de problemas.
 
 ### Propósito e Benefícios do LR
 
@@ -34,132 +34,132 @@ O propósito do LR é:
 
 ### Requisitos (Tipos)
 
-- **REQUISITO FUNCIONAL**: O QUE DEVE FAZER.
-- **REQUISITO NÃO FUNCIONAL**: ASPECTOS DO SISTEMA.
-  - DESEMPENHO.
-  - USABILIDADE.
-  - SEGURANÇA.
-  - CONFIABILIDADE.
-  - MANUTENIBILIDADE.
-  - PORTABILIDADE.
+- **Requisito Funcional**: O que deve fazer.
+- **Requisito Não Funcional**: Aspectos do sistema.
+  - Desempenho.
+  - Usabilidade.
+  - Segurança.
+  - Confiabilidade.
+  - Manutenibilidade.
+  - Portabilidade.
 
 ### Pontos Cruciais no LR (Avaliação de LR)
 
-1. ENTREVISTAS.
-2. PLANEJAMENTO.
-3. PESQUISA DE MERCADO (ANÁLISE).
-4. DEFINIÇÃO DE ESCOPO.
-5. METODOLOGIAS ÁGEIS.
+1. Entrevistas.
+2. Planejamento.
+3. Pesquisa de mercado (Análise).
+4. Definição de escopo.
+5. Metodologias Ágeis.
 
 ## Técnicas para Coletar Requisitos
 
-- TÉCNICAS PARA COLETAR OS REQUISITOS, como **ENTREVISTAS E QUESTIONÁRIOS**.
-- Perguntas **ABERTAS**, **FECHADAS** e **DIRECIONADAS** (Entrevista).
-- Se preparar para desviar a conversa: **NOVOS INSIGHTS, NOVOS CAMINHOS**.
+- Técnicas para coletar os requisitos, como **entrevistas e questionários**.
+- Perguntas **abertas**, **fechadas** e **direcionadas** (Entrevista).
+- Se preparar para desviar a conversa: **novos insights, novos caminhos**.
 - Escuta Ativa, Documentação.
-- **RAPPORt**: COMPREENDA QUE É IMPORTANTE montar um ambiente de **CONFIANÇA**, demonstrando interesse: **RELAÇÃO DE ENTENDIMENTO MÚTUO E EMPATIA**.
+- **Rapport**: Compreenda que é importante montar um ambiente de **confiança**, demonstrando interesse: **relação de entendimento mútuo e empatia**.
 - **Ferramentas que podem auxiliar no LR e Gerenciamento**: Planilhas, Prototipação, Enquetes, Forms, Metodologia Ágil e Calendário.
 
 ### Lidando com Requisitos Conflitantes ou Ambíguos
 
-- **IDENTIFICAÇÃO**: RECONHECER, SITUAR O CONFLITO (sem vista grossa) E INTERPRETAR.
-- **CLARIFICAÇÃO**: ENTENDER A FUNDO A ORIGEM DA QUESTÃO.
-- **SUCESSO**: COMPREENSÃO DAS NECESSIDADES DO PROBLEMA.
-- A importância de envolver **TODAS AS PARTES INTERESSADAS** no processo.
+- **Identificação**: Reconhecer, situar o conflito (sem vista grossa) e interpretar.
+- **Clarificação**: Entender a fundo a origem da questão.
+- **Sucesso**: Compreensão das necessidades do problema.
+- A importância de envolver **todas as partes interessadas** no processo.
 - Como priorizar os requisitos de acordo com a importância.
 - Validação dos requisitos com todas partes interessadas.
-- Como lidar com **MUDANÇAS DE REQUISITOS** ao longo do projeto.
-- **IMPORTÂNCIA** do processo de levantamento de requisitos **ITERATIVO E ADAPTATIVO**.
+- Como lidar com **mudanças de requisitos** ao longo do projeto.
+- **Importância** do processo de levantamento de requisitos **iterativo e adaptativo**.
 
 ## Otimização e Melhoria Contínua
 
 ### Produtividade e Eficiência
 
-- EFICIÊNCIA E PRODUTIVIDADE.
+- Eficiência e produtividade.
 
-- UMA ORGANIZAÇÃO OTIMIZADA.
-- METODOLOGIAS ÁGEIS (**SCRUM, KANBAN, CALENDÁRIO**).
-- UM **BOM FLUXO DE TRABALHO**.
+- Uma organização otimizada.
+- Metodologias Ágeis (**Scrum, Kanban, Calendário**).
+- Um **bom fluxo de trabalho**.
 
 ### Melhores Práticas de Planejamento e Entrega
 
-- **1. PERGUNTAS BEM FORMULADAS**: Comunicação eficaz. (Ex: "QUAL É O BUDGET").
-- **2. REDUÇÃO DE CUSTOS, TEMPO, 5S, ANTECIPAÇÃO, COMUNICAÇÃO EFICAZ, ORGANIZAÇÃO, GESTÃO MONETÁRIA.**
-- **COMO UTILIZAR O TEMPO AO SEU FAVOR NO PLANEJAMENTO?**: NUNCA DÊ A EXATA DATA QUE VOCÊ PODE ENTREGAR O PROJETO. **FAÇA UMA MARGEM DE ERRO DE ALGUNS DIAS OU SEMANAS** PARA ter sucesso, nas dimensões aferidas e analisadas.
-- **Dicas de Carreira**: "**SEJA BOM O SUFICIENTE PARA SEMPRE ENTREGAR BONS RESULTADOS, PORÉM RESERVE MELHORIAS PARA NOVAS ENTREGAS**" (By Wellington).
-- Regra de Mercado: "**A CONCORRÊNCIA MOVIMENTA O MERCADO**".
+- **1. Perguntas bem formuladas**: Comunicação eficaz. (Ex: "Qual é o budget").
+- **2. Redução de custos, tempo, 5S, antecipação, comunicação eficaz, organização, gestão monetária.**
+- **Como utilizar o tempo ao seu favor no planejamento?**: Nunca dê a exata data que você pode entregar o projeto. **Faça uma margem de erro de alguns dias ou semanas** para ter sucesso, nas dimensões aferidas e analisadas.
+- **Dicas de Carreira**: "**Seja bom o suficiente para sempre entregar bons resultados, porém reserve melhorias para novas entregas**" (By Wellington).
+- Regra de Mercado: "**A concorrência movimenta o mercado**".
 
 ### Princípios de Otimização Adicionais
 
-- **2. PRIORIZAÇÃO DE TAREFAS**: Definição da importância das etapas, redução de tempo e custos.
-  - Atentar-se com **ASPECTOS PSICOLÓGICOS**.
-- **3. COLABORAÇÃO E TRANSPARÊNCIA**: Equipes que se ajudam ao longo do projeto e manter transparência na hora de documentar as tarefas.
+- **2. Priorização de tarefas**: Definição da importância das etapas, redução de tempo e custos.
+  - Atentar-se com **aspectos psicológicos**.
+- **3. Colaboração e Transparência**: Equipes que se ajudam ao longo do projeto e manter transparência na hora de documentar as tarefas.
   - Reuniões com equipes de diferentes setores.
-  - **EVIDENCIAR ERROS E DIFICULDADES**.
-- **4. ADAPTAÇÃO ÀS MODIFICAÇÕES**: Atualizações em tempo real conforme novas tarefas.
-  - **CORREÇÃO DE FALHAS DURANTE O PROJETO COM A EQUIPE**.
-- **5. MELHORIA CONTÍNUA**: Reunir dados para avaliar o desempenho e melhorar processos.
-  - Atender os desejos/anseios do cliente e **FIDELIZÁ-LO**.
-  - **REVISÃO PERIÓDICA DOS REQUISITOS**.
-- **6. POLÍTICAS EXPLÍCITAS**: Todos precisam saber das regras definidas.
-  - Garanti que o trabalho **SEJA FEITO CORRETAMENTE**. (Ex: Exibição dos Cookies, Políticas de Privacidade e Termos de Uso de forma clara na tela).
-- **7. CICLOS DE FEEDBACK**: Reuniões periódicas para devolutivas e tratativas dos **STAKE HOLDERS**.
+  - **Evidenciar erros e dificuldades**.
+- **4. Adaptação às modificações**: Atualizações em tempo real conforme novas tarefas.
+  - **Correção de falhas durante o projeto com a equipe**.
+- **5. Melhoria Contínua**: Reunir dados para avaliar o desempenho e melhorar processos.
+  - Atender os desejos/anseios do cliente e **fidelizá-lo**.
+  - **Revisão periódica dos requisitos**.
+- **6. Políticas Explícitas**: Todos precisam saber das regras definidas.
+  - Garanti que o trabalho **seja feito corretamente**. (Ex: Exibição dos Cookies, Políticas de Privacidade e Termos de Uso de forma clara na tela).
+- **7. Ciclos de Feedback**: Reuniões periódicas para devolutivas e tratativas dos **Stakeholders**.
 - **8. AJUSTAR O PROGRESSO CONFORME NECESSÁRIO**.
 
 ### Melhorias e Prospecção
 
-- **4. IDENTIFICAR OPORTUNIDADES DE MELHORIAS**.
+- **4. Identificar oportunidades de melhorias**.
 
-- **PROSPECÇÃO E ANTECIPAÇÃO**: ANTEVER RESULTADOS.
-  - **TENDÊNCIAS**: VISA RESOLVER O MERCADO (PROBLEMAS).
-- **MELHORIAS**: APÓS CONCLUIR A PROSPECÇÃO E ANTECIPAÇÃO: ENTREGAR UM PRODUTO SATISFATÓRIO E QUE CUMPRA UMA MANUTENÇÃO QUE SE BASEIE INTEIRAMENTE NAS ANÁLISES ANTERIORES.
-- **EXCELÊNCIA, NOTORIEDADE, MELHORIA CONTÍNUA** (**POSITIVO**).
+- **Prospecção e antecipação**: Antever resultados.
+  - **Tendências**: Visa resolver o mercado (problemas).
+- **Melhorias**: Após concluir a prospecção e antecipação: Entregar um produto satisfatório e que cumpra uma manutenção que se baseie inteiramente nas análises anteriores.
+- **Excelência, notoriedade, melhoria contínua** (**positivo**)
 - **Melhorias (Exemplo: Antecipa o Cliente)**:
-  - LIFAN X TOYOTA.
-  - JAC MOTORS X HONDA.
-- **PROBLEMAS X SOLUÇÕES**.
+  - Lifan x Toyota.
+  - JAC Motors x Honda.
+- **Problemas x Soluções**.
 
 ## Modelos de Projeto (Abordagens)
 
-A Realização de um software (Exemplo: **PAPELARIA**) pode seguir dois caminhos: Iniciar o projeto juntamente com o LR, **OU** projetar todo o escopo para depois começar.
+A realização de um software (exemplo: **papelaria**) pode seguir dois caminhos: iniciar o projeto juntamente com o LR, **ou** projetar todo o escopo para depois começar.
 
 ### Modelo 1 (Prática)
 
-- **Adoção:** Método adotado por muitos empreendedores, especialmente quando o público é amplamente diversificado e pode não haver um padrão de clientes.
+- **Adoção:** método adotado por muitos empreendedores, especialmente quando o público é amplamente diversificado e pode não haver um padrão de clientes.
 
-- **Descrição:** É como pensar em uma receita de bolo de laranja totalmente nova enquanto segura uma laranja na mão. Essa opção existe, mas é como vagar em uma caverna escura sem ter noção precisa do quadrante.
-- **Estratégia:** Absorver a repercussão das vendas e **personalizar seu software com mudanças constantes** até atingir um IDEAL.
+- **Descrição:** é como pensar em uma receita de bolo de laranja totalmente nova enquanto segura uma laranja na mão. Essa opção existe, mas é como vagar em uma caverna escura sem ter noção precisa do quadrante.
+- **Estratégia:** absorver a repercussão das vendas e **personalizar seu software com mudanças constantes** até atingir um ideal.
 
 ### Modelo 2 (Ideal / Seguro)
 
-- **Adoção:** Opção mais segura, mais precisa e que **evita possíveis problemas** que podem ser previstos no início. Poupa dinheiro a curto prazo.
+- **Adoção:** opção mais segura, mais precisa e que **evita possíveis problemas** que podem ser previstos no início. poupa dinheiro a curto prazo.
 
-- **Descrição:** Planejar o escopo antes do projeto implica que o empresário conhece o público que quer atingir, sabe a demanda de sua cidade e possui dinheiro relativamente alto para iniciar de maneira preparada.
-- **Estratégia:** O projeto trilhará um caminho "**TUDO OU NADA**", considerando que as chances de perder todo o progresso do trabalho existe, mas garante não possuir problemas técnicos gerais em sua plataforma caso seja aceito.
+- **Descrição:** planejar o escopo antes do projeto implica que o empresário conhece o público que quer atingir, sabe a demanda de sua cidade e possui dinheiro relativamente alto para iniciar de maneira preparada.
+- **Estratégia:** o projeto trilhará um caminho "**tudo ou nada**", considerando que as chances de perder todo o progresso do trabalho existe, mas garante não possuir problemas técnicos gerais em sua plataforma caso seja aceito.
 
 ## Entrega de Resultados (e Pós-Entrega)
 
 ### Definição de Entrega de Resultados
 
-- Quando consegue **MINIMAMENTE ATINGIR OS OBJETOS PROPOSTOS**, gerando resultado para o cliente.
+- Quando consegue **minimamente atingir os objetivos propostos**, gerando resultado para o cliente.
 
-- O resultado influencia diretamente a experiência e a **MANUTENÇÃO DO PROJETO**.
+- O resultado influencia diretamente a experiência e a **manutenção do projeto**.
 
 ### Considerações
 
-- Prazo para entrega: (6 meses < 4 meses) **PERDA**.
+- Prazo para entrega: (6 meses < 4 meses) **perda**.
 
 - Viabilidade da solicitação.
 - Escopo do projeto.
 - Análise e previsibilidade.
 - *Não trabalhe com a entrega de objetivos curtos ou apertados.*
 
-### Tipos de Resultado (Retomada SCRUM)
+### Tipos de Resultado (Retomada Scrum)
 
-- **Mal Resultado:** **OBRAS PÚBLICAS (BRASIL)**, **BOSS RESULTADOS GERAIS**.
+- **Mal resultado:** **obras públicas (Brasil)**, **boss resultados gerais**.
 
-- **Companhia Privada:** Aumento de resultados.
-- **Companhia Estatais (Híbrida):** Entrega no prazo, bons resultados.
+- **Companhia privada:** aumento de resultados.
+- **Companhia estatais (híbrida):** entrega no prazo, bons resultados.
 
 ### Pós Entrega Projeto
 
@@ -167,82 +167,82 @@ A Realização de um software (Exemplo: **PAPELARIA**) pode seguir dois caminhos
 
 - Atualizações do sistema.
 - Correção de bugs.
-- **Melhoria Contínua (5S)**: Visa a continuação de usar o sistema.
+- **Melhoria contínua (5S)**: visa a continuação de usar o sistema.
 
 ## Metodologias Ágeis (Detalhes)
 
-### SCRUM (Organizado e Adaptável)
+### Scrum (Organizado e Adaptável)
 
-- **Definição**: ORGANIZADO, ÁGIL, COLABORATIVO, ACOMPANHAMENTO, ADAPTÁVEL, DEFINIÇÃO.
+- **Definição**: organizado, ágil, colaborativo, acompanhamento, adaptável, definição.
 
-- **Princípios**: **TRANSPARÊNCIA, INSPEÇÃO, ADAPTAÇÃO.**
-- **Time**: **Product Owner** - **SCRUM Master** - **Time de Dev**.
+- **Princípios**: **transparência, inspeção, adaptação.**
+- **Time**: **Product Owner** - **Scrum Master** - **time de desenvolvimento**.
 - **Reunião (Daily)**: 15 minutos no máximo. Perguntas: "O que fiz ontem?" "O que farei hoje?" "Tem algum impedimento?".
-- **Função**: Veio para melhorar a entrega de resultados.
+- **Função**: veio para melhorar a entrega de resultados.
 - **Estrutura (Exemplo SENAI)**:
-  - **ALUNOS**: Product Owner.
-  - **PROFESSOR**: Scrum Master.
-  - **TEAM/SPRINT**: Funcionários SENAI.
-  - **DAILY SCRUM MEETING**: Aulas.
-  - **PRODUCT INCREMENT**: Conhecimento.
+  - **Alunos**: Product Owner.
+  - **Professor**: Scrum Master.
+  - **Time/Sprint**: funcionários SENAI.
+  - **Daily Scrum meeting**: aulas.
+  - **Product increment**: conhecimento.
 
 ### Kanban (Agilidade Visual)
 
-- **Definição**: MÉTODO ÁGIL, PRÁTICA E VISÍVEL que faz parte e interativa com várias áreas do processo.
+- **Definição**: método ágil, prática e visível que faz parte e interage com várias áreas do processo.
 
-- O **KANBAN SURGIU PARA ELIMINAR OU DIMINUIR A PERDA DE TEMPO E RECURSOS**.
-- Para empresas "**VISUAIS**" é o melhor.
+- O **Kanban surgiu para eliminar ou diminuir a perda de tempo e recursos**.
+- Para empresas "**visuais**" é o melhor.
 - **Princípios do Kanban**:
-  - INCREMENTO E EVOLUÇÃO.
-  - DEFINIÇÃO DOS PAPÉIS, RESPONSABILIDADES, TITULARIDADE E LIDERANÇA.
-- **Quadro e Cartões**: Informações dos processos de forma **VISÍVEL E INTERATIVA**.
+  - incremento e evolução.
+  - definição dos papéis, responsabilidades, titularidade e liderança.
+- **Quadro e cartões**: informações dos processos de forma **visível e interativa**.
 
 #### Práticas Essenciais do Kanban
 
-1. **VISUALIZAÇÃO DO TRABALHO**: Melhoria da produtividade (Gerenciamento).
-    - Informações em excesso (**DESMOTIVAÇÃO**).
-    - **O GESTOR DEVE MOTIVAR**.
-2. **LIMITAR O TRABALHO EM PROGRESSO (WIP)**: Todos no mesmo tempo de andamento demora na entrega do projeto.
-3. **GERENCIAMENTO DO FLUXO**: Etapas bem elaboradas e produzidas.
-    - **EMBARREIRAMENTO DE IDEIAS E PROCESSOS**.
-4. **TORNAR AS POLÍTICAS EXPLÍCITAS**: Clareza nas regras, quantidade e exposição para realização.
-5. **IMPLEMENTAR CICLOS DE FEEDBACK**: Colocar novos recursos solicitados.
-    - A quantidade de feedbacks e sugestões **NÃO ATINGÍVEIS** gera perda de recursos e tempo.
-6. **MELHORAR COLABORATIVAMENTE**: Compartilhar as ideias para melhorar conflitos, perca tempo, roubo de ideias.
-7. **EVOLUIR EXPERIMENTALMENTE**: Novas experiências com experimentos e testes.
-8. **AJUSTAR O PROGRESSO CONFORME NECESSÁRIO**.
-9. **PROMOVER A TRANSPARÊNCIA**.
+1. **Visualização do trabalho**: melhoria da produtividade (gerenciamento).
+    - Informações em excesso (**desmotivação**).
+    - **O gestor deve motivar**.
+2. **Limitar o trabalho em progresso (WIP)**: todos no mesmo tempo de andamento demora na entrega do projeto.
+3. **Gerenciamento do fluxo**: etapas bem elaboradas e produzidas.
+    - **embarreiramento de ideias e processos**.
+4. **Tornar as políticas explícitas**: clareza nas regras, quantidade e exposição para realização.
+5. **Implementar ciclos de feedback**: colocar novos recursos solicitados.
+    - A quantidade de feedbacks e sugestões **não atingíveis** gera perda de recursos e tempo.
+6. **Melhorar colaborativamente**: compartilhar as ideias para melhorar conflitos, perda de tempo, roubo de ideias.
+7. **Evoluir experimentalmente**: novas experiências com experimentos e testes.
+8. **Ajustar o progresso conforme necessário**.
+9. **Promover a transparência**.
 
 ### Outras Metodologias (e Princípios de Gestão)
 
-- **Lista de Metodologias Ágeis**: SIX SIGMA, LEAN, XP, SCRUMBAM, KANBAN, SCRUM, SAFe.
+- **Lista de Metodologias Ágeis**: Six Sigma, Lean, XP, Scrumban, Kanban, Scrum, SAFe.
 
-- **CALENDÁRIO - PRECURSSORA**
-  - **SCRUM**: Visa otimizar o máximo de tempo.
-  - **KANBAM**: Para entregar os melhores projetos.
-  - **LEAN**: Possível.
+- **Calendário - precursora**
+  - **Scrum**: visa otimizar o máximo de tempo.
+  - **Kanban**: para entregar os melhores projetos.
+  - **Lean**: possível.
   - **XP**
-  - **SIX SIGMA**
+  - **Six Sigma**
 - **Gestão e Processos**:
-  - Todas as metodologias visam melhorar a gestão do **CALENDÁRIO** e **GERENCIAMENTO**.
-  - Quantidade de coisa x Pessoas -> **TEMPO**.
-  - = **MELHOR QUALIDADE POSSÍVEL !!!**
-  - = Melhor qualidade de vida.
-- **Estratégias de Andamento de Processos**: Estratégias de andamento de processos, Entrega e manutenção de resultados (Obrigatório), Prospecção, antecipação e melhorias, Problemas x Soluções.
+  - Todas as metodologias visam melhorar a gestão do calendário e gerenciamento.
+  - Quantidade de coisa x pessoas -> **tempo**.
+  - = **melhor qualidade possível !!!**
+  - = melhor qualidade de vida.
+- **Estratégias de andamento de processos**: estratégias de andamento de processos, entrega e manutenção de resultados (obrigatório), prospecção, antecipação e melhorias, problemas x soluções.
 
 ## Regras de Ouro e Conclusões Finais
 
 - **Quanto mais perguntas você fizer sobre o projeto, melhor será realizado.**
 - Geralmente o projeto, nem mesmo o cliente sabe o que quer exatamente.
-- Não existe um projeto 100% completo. **SEMPRE SE DESENVOLVERÁ.**
-- A **PESQUISA DE MERCADO** é **IMPORTANTE**!!!
-- É importante que a **ECONOMIA DE DINHEIRO** seja considerada ao levantar requisito de capacidade do servidor (limite de clientes).
+- Não existe um projeto 100% completo. **Sempre se desenvolverá.**
+- A **pesquisa de mercado** é **importante**!!!
+- É importante que a **economia de dinheiro** seja considerada ao levantar requisito de capacidade do servidor (limite de clientes).
 - **Quantos mais detalhes no levantamento de requisitos, mais agradável será o seu projeto**, além de mais seguro financeiramente.
-- **PROBLEMAS**: INOVAÇÃO, PRODUTO ACESSÍVEL E CONCORRÊNCIA.
-- "**COPIE SÓ QUE FAÇA MELHOR**".
-- "**SE A VIDA TE DER UM LIMÃO, FAÇA UMA LIMONADA**".
-- **QUEM SOLUCIONA PRIMEIRO GANHA NOTORIEDADE** (**+ CLIENTES**).
-- **Conclusão**: OS PROBLEMAS SÃO RELEVANTES, MAS NÃO NECESSÁRIOS. ELES EXISTEM POR SI SÓ E DEVEMOS SUBIR POR CIMA DELES.
+- **Problemas**: inovação, produto acessível e concorrência.
+- "**Copie só que faça melhor**".
+- "**Se a vida te der um limão, faça uma limonada**".
+- **Quem soluciona primeiro ganha notoriedade** (**+ clientes**).
+- **Conclusão**: os problemas são relevantes, mas não necessários. Eles existem por si só e devemos subir por cima deles.
 
 ### Estudo de Caso / Exemplo Prático (Bolo de Laranja)
 
@@ -269,9 +269,9 @@ Minhas anotações sobre o bolo de laranja estão mais que imprecisas por não a
 - Liquidificador 1L
 - Batedeira média
 - Assadeira untada
-- Forno/Fogão elétricos/gás
+- Forno/fogão elétricos/gás
 - Colheres, espátula, 1 copo medidor
-- Eletricidade 127V / Gás
+- Eletricidade 127V / gás
 - 1 mesa
 - 1 tigela
 
@@ -287,7 +287,7 @@ Minhas anotações sobre o bolo de laranja estão mais que imprecisas por não a
 
 **Feedback do Bolo (Pós Entrega)**:
 
-- **Atualização do bolo/Corrigir o bolo.**
-- O bolo está **MVP**, no entanto, poderia melhorar na questão da **CALDA**, pois está seco.
+- **Atualização do bolo/corrigir o bolo.**
+- O bolo está **MVP**, no entanto, poderia melhorar na questão da **calda**, pois está seco.
 - Possível notar que a quantidade de manteiga para untar a assadeira não foi suficiente para evitar certas partes da borda ficarem desgrudadas.
-- Em geral, está **SATISFATÓRIO** para o consumo e **CUMPRE SUA FUNÇÃO**.
+- Em geral, está **satisfatório** para o consumo e **cumpre sua função**.

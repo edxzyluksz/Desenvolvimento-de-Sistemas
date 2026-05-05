@@ -1,27 +1,44 @@
-# 🧑‍🍳 Programação Back-end
+# Programação Back-end
 
-## ☕ Programação Orientada a Objetos (c/ Java)
+## Programação Orientada a Objetos (c/ Java)
 
-### 💊 Encapsulamento
+### Encapsulamento
 
 Uma forma de proteger os atributos de uma classe, tornando-os privados, e com métodos públicos
 
-### ⚖️ Herança
+### Herança
 
 Instanciar uma super classe (geralmente abstrata) que possui atributos que classes filha herdam
 
-### 🐛 Polimorfismo
+### Polimorfismo
 
 Métodos com o mesmo nome mas que executam ações diferentes, essas  podem ser:
 
 - Polimorfismo de Classe: Mesmo método reescrito
 - Polimorfismo de Parâmetros: Veremos em breve
 
-### 😵‍💫 Abstração
+### Abstração
 
 Uma classe que não deve ser instanciada diretamente, tornando o código seguro que impede o programa de criar um objeto com atributos genéricos.
 
-### 🛏️ API REST
+## Node.js 
+
+Node.js é um ambiente de execução JavaScript do lado do servidor, construído sobre o motor V8 do Google Chrome. Ele permite que os desenvolvedores executem código JavaScript fora do navegador, possibilitando a criação de aplicativos de backend, APIs e serviços web. O Node.js é conhecido por sua alta performance e escalabilidade, graças ao seu modelo de I/O assíncrono e orientado a eventos. Ele é amplamente utilizado para construir aplicações em tempo real, como chats e jogos online, bem como para criar APIs RESTful e microserviços.
+
+Comandos: 
+- node -v (verifica a versão instalada do node)
+- npm -v (verifica a versão instalada do npm)
+- Set-ExecutionPolicy Unrestricted (Libera a execução de scripts do Node)
+
+> Sempre instalar a versão LTS (Long Term Support)
+
+### Path do Windows
+
+Variáveis de ambiente são usadas para configurar o ambiente de execução do Node.js, permitindo que os desenvolvedores definam caminhos para bibliotecas, ferramentas e outras dependências necessárias para o desenvolvimento e a execução de aplicativos Node.js. No Windows, as variáveis de ambiente podem ser configuradas através do Painel de Controle, onde é possível adicionar ou modificar variáveis como `NODE_PATH` para especificar o caminho das bibliotecas do Node.js, ou `PATH` para incluir o diretório do Node.js, facilitando a execução de comandos do Node.js a partir do terminal.
+
+> Pesquisar: Editar as variáveis de ambiente do sistema (Windows)
+
+## API REST
 
 Esta é a forma pela qual o Backend e o Frontend se conversam, enviando requisições específicas que acionam cada etapa CRUD do backend:
 
@@ -30,7 +47,7 @@ Esta é a forma pela qual o Backend e o Frontend se conversam, enviando requisi�
 - Patch - Update
 - Delete
 
-## 🧲 Springboot
+## Springboot
 
 O Java Spring Framework (Spring Framework) é uma framework popular, de código aberto, de nível corporativo para criar aplicações de nível de produção que executam na máquina virtual (JVM). O Spring Boot otimiza e simplifica o desenvolvimento do Spring Framework por meio de três funcionalidades principais:
 
@@ -38,11 +55,11 @@ O Java Spring Framework (Spring Framework) é uma framework popular, de código 
 - Uma abordagem opinativa para configuração
 - A capacidade de criar aplicações independentes
 
-## 🛠️ Maven
+## Maven
 
 O Maven é uma ferramenta de automação de construção e gerenciamento de dependências para projetos Java. Ele simplifica o processo de construção, teste e implantação de aplicativos Java, fornecendo uma estrutura padronizada para organizar o código-fonte, as dependências e as tarefas de construção. O Maven utiliza um arquivo de configuração chamado `pom.xml` (Project Object Model) para definir as dependências do projeto, as fases de construção e outras configurações necessárias para o desenvolvimento e a implantação do aplicativo. Ele também facilita a integração com repositórios de dependências, como o Maven Central, para baixar e gerenciar as bibliotecas necessárias para o projeto.
 
-## 🌿 Thymeleaf
+## Thymeleaf
 
 O Thymeleaf é um motor de templates moderno e versátil para Java, projetado para ser utilizado tanto em ambientes web quanto em ambientes que não sejam web.
 
@@ -50,17 +67,17 @@ Em ambientes web, ele é comumente usado para gerar páginas HTML dinâmicas, at
 
 > Projetos de Teste: `rh`, `teste_thymeleaf`
 
-## ⚙️ .env
+## .env
 
 O arquivo `.env` é um arquivo de texto simples que contém variáveis de ambiente e seus valores correspondentes. Ele é usado para armazenar informações sensíveis, como credenciais de banco de dados, chaves de API e outras configurações que não devem ser hardcoded no código-fonte. O arquivo `.env` é geralmente colocado na raiz do projeto e é lido pelo aplicativo durante a inicialização para configurar o ambiente de execução.
 
-## 🐳 Docker
+## Docker
 
 O Docker é uma plataforma de software que permite criar, implantar e executar aplicativos em contêineres. Os contêineres são unidades leves e portáteis que empacotam o código do aplicativo, suas dependências e o ambiente de execução necessário para que ele funcione de maneira consistente em qualquer ambiente.
 
 O tamanho de um container Docker gira em torno de 10 a 100 MB, dependendo da base da imagem e das dependências incluídas. O Docker é amplamente utilizado para facilitar o desenvolvimento, a implantação e a escalabilidade de aplicativos, permitindo que os desenvolvedores criem ambientes isolados e consistentes para suas aplicações.
 
-### 🐋📄 Dockerfile
+### Dockerfile
 
 O Dockerfile é um arquivo de texto que contém uma série de instruções para construir uma imagem Docker. Ele define o ambiente, as dependências e as etapas necessárias para criar um contêiner a partir dessa imagem. Ele utiliza uma sintaxe específica para descrever como a imagem deve ser construída, incluindo a base da imagem, as instruções de instalação, as variáveis de ambiente e os comandos a serem executados quando o contêiner for iniciado.
 
@@ -74,11 +91,11 @@ RUN javac Main.java
 CMD ["java", "Main"]
 ```
 
-## 🌐 Render
+## Render
 
 Render é uma plataforma de hospedagem em nuvem que permite implantar aplicativos web, APIs e serviços de backend de forma rápida e fácil. Ele oferece uma interface amigável para gerenciar e escalar suas aplicações, além de suporte para várias linguagens de programação e frameworks. Com o Render, você pode implantar seu aplicativo diretamente do repositório do GitHub, configurar variáveis de ambiente, monitorar o desempenho e escalar automaticamente conforme a demanda. É uma opção popular para desenvolvedores que desejam uma solução de hospedagem simples e eficiente para seus projetos.
 
-## 🗄️ JSON
+## JSON
 
 JSON (JavaScript Object Notation) é um formato leve de troca de dados que é fácil de ler e escrever para humanos, e fácil de analisar e gerar para máquinas. Ele é amplamente utilizado para transmitir dados entre um servidor e um cliente em aplicações web. O JSON é baseado em uma estrutura de chave-valor, onde os dados são organizados em objetos (delimitados por chaves `{}`) e arrays (delimitados por colchetes `[]`). Ele suporta tipos de dados como strings, números, booleanos, nulos, objetos e arrays, tornando-o uma escolha popular para a representação de dados estruturados em APIs e outras aplicações.
 

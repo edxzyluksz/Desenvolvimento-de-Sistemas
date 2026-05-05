@@ -1,4 +1,4 @@
-# Lógica de Programação e Algoritmos 🤖
+# Lógica de Programação e Algoritmos
 
 ## Conceitos e Fundamentos
 
@@ -8,7 +8,7 @@
 - **Conceito de Algoritmo:** A automação. É o processo em que uma tarefa deixa de ser desempenhada pelo homem e passa a ser realizada por máquinas.
 - **Especificação de Algoritmo:** A sequência ordenada de passos que deve ser seguida para a realização de uma tarefa, garantindo sua repetibilidade.
 
-### **LPA - Termos da Programação e Retomada dos Pseudocódigos (25/03)**
+### **LPA - Termos da Programação e Retomada dos Pseudocódigos**
 
 #### **Variáveis**
 
@@ -22,7 +22,7 @@
 - Dado **fixo**.
 
 - Não pode ser alterado.
-- Sempre todos os caracteres em **MAIÚSCULO**.
+- Sempre todos os caracteres em **maiúsculo**.
 
 #### **Escopo de Variável**
 
@@ -57,20 +57,20 @@ $$=$$
 
 ### **Fluxograma (Elementos)**
 
-- Início/Fim (OVAL)
-- Processamento (RETÂNGULO)
-- Operação de Entrada de Dados (PARALELOGRAMO)
-- Operação de Saída de Dados (RETÂNGULO COM VÉRTICE INFERIOR ESQUERDO ARREDONDADO)
-- Decisão (LOSANGO)
-- Operação de Atribuição (SETAS)
+- Início/Fim (Oval)
+- Processamento (Retângulo)
+- Operação de Entrada de Dados (Paralelogramo)
+- Operação de Saída de Dados (Retângulo com vértice inferior esquerdo arredondado)
+- Decisão (Losango)
+- Operação de Atribuição (Setas)
 
 ### **Passos para a Solução de Problemas**
 
 Sempre leia um enunciado de problema e se pergunte:
 
-1. O que é **dado**? (**ENTRADA**)
-2. O que é necessário encontrar? (**SAÍDA**)
-3. Quais são as **condições** e **restrições**? (**PROCESSAMENTO**)
+1. O que é **dado**? (**Entrada**)
+2. O que é necessário encontrar? (**Saída**)
+3. Quais são as **condições** e **restrições**? (**Processamento**)
 
 ## Estruturas de Dados (Vetores e Matrizes)
 
@@ -94,7 +94,7 @@ $$\text{M} = \begin{bmatrix} 4 & 8 & 4 & 7 & 6 \\ 2 & 7 & 3 & 2 & 5 \\ 1 & 4 & 1
 
 | Tipo | Sigla | Nome Completo |
 | :--- | :--- | :--- |
-| **Inteiro** | INT | INT - SMALLINT - BIGINT |
+| **Inteiro** | INT | Int - SmallInt - BigInt |
 | **Real** | REAL | FLOAT - DECIMAL |
 | **Data** | DATE | TIMESTAMP - DATETIME |
 | **Caractere** | CHAR | |
@@ -103,13 +103,13 @@ $$\text{M} = \begin{bmatrix} 4 & 8 & 4 & 7 & 6 \\ 2 & 7 & 3 & 2 & 5 \\ 1 & 4 & 1
 
 **Exemplos de Variáveis:**
 
-- **INT** - IDADE
-- **DATE** - DTNASC
-- **CHAR** - SEXO
-- **BOOL** - ESTUDANTE
-- **REAL** - SALARIO
-- **TIME** - HORANASC
-- **VARCHAR(40)** - NOME\_USUARIO
+- **Int** - Idade
+- **Date** - DtNasc
+- **Char** - Sexo
+- **Bool** - Estudante
+- **Real** - Salario
+- **Time** - HoraNasc
+- **VarChar(40)** - Nome_Usuario
 
 ### **Operadores**
 
@@ -184,7 +184,7 @@ if (condicao1) {
     - $\text{X} = \text{X} + 1$
   - $\text{FIM ENQUANTO}$
 
-  - A diferença do **$\text{WHILE}$** vs **$\text{DO WHILE}$** é que o primeiro testa se a **condição é verdadeira antes de executar o bloco**.
+  - A diferença do **While** vs **Do While** é que o primeiro testa se a **condição é verdadeira antes de executar o bloco**.
 
 #### **Repetições Previsíveis (FOR)**
 
@@ -204,9 +204,9 @@ $$\text{for (i=0; i<x; i++) \{ print(i) \}}$$
 
 **Estrutura do Procedimento:**
 
-$$\text{PROCEDIMENTO NOME} (\text{TIPO P1}, \text{ TIPO P2}, \dots)$$
-$$[\text{BLOCO DE COMANDO}]$$
-$$\text{FIM PROCEDIMENTO}$$
+$$\text{Procedimento NOME} (\text{Tipo P1}, \text{ Tipo P2}, \dots)$$
+$$[\text{Bloco de Comando}]$$
+$$\text{Fim Procedimento}$$
 
 ### **Funções**
 
@@ -215,10 +215,10 @@ $$\text{FIM PROCEDIMENTO}$$
 
 **Estrutura da Função:**
 
-$$\text{FUNÇÃO TIPO NOME} (\text{TIPO P1}, \text{ TIPO P2}, \dots)$$
-$$[\text{BLOCO DE COMANDOS}]$$
-$$\text{RETORNO } <\text{VALOR}>$$
-$$\text{FIM FUNÇÃO}$$
+$$\text{Função Tipo NOME} (\text{Tipo P1}, \text{ Tipo P2}, \dots)$$
+$$[\text{Bloco de Comandos}]$$
+$$\text{Retorno} <\text{Valor}>$$
+$$\text{Fim Função}$$
 
 ## Exemplos de Algoritmos (Pseudocódigo e Fluxograma)
 
@@ -233,27 +233,27 @@ $$\text{FIM FUNÇÃO}$$
 
 **Para uma viagem à praia com o carro, é necessário:**
 
-- Ter **acordado**; caso contrário, **ACORDAR**.
-- Ter uma **habilitação de motorista**; caso contrário, **PROVIDENCIAR** uma.
-- Estar com o **tanque de combustível cheio**; caso contrário, **REABASTECER**.
-- Se certificar de **alimentação**, **vestimentas** e **equipamentos**; caso algum valor esteja incompleto, **PROVIDENCIAR** ou **ADIAR** viagem.
-- Ter **dinheiro** para o pedágio; senão, **GANHE**.
-- Para agilizar a viagem: **REALIZAR** o uso do **GPS** como guia.
+- Ter **acordado**; caso contrário, **acordar**.
+- Ter uma **habilitação de motorista**; caso contrário, **providenciar** uma.
+- Estar com o **tanque de combustível cheio**; caso contrário, **reabastecer**.
+- Se certificar de **alimentação**, **vestimentas** e **equipamentos**; caso algum valor esteja incompleto, **providenciar** ou **adiar** viagem.
+- Ter **dinheiro** para o pedágio; senão, **ganhe**.
+- Para agilizar a viagem: **realizar** o uso do **GPS** como guia.
 - Seguir uma estrada menos movimentada.
 - Ter a assinatura no Sem Parar.
 
 #### Condições (Versão do Professor)
 
-- Tenho um carro? (**SIM/NÃO**) - Se **NÃO**, não providenciar.
-- Tenho condições/desejos para viajar? (**SIM/NÃO**)
-- Está em condições? (**SIM/NÃO**) - Se **NÃO**, enviar para revisão.
-- Devidamente abastecido? (**SIM/NÃO**) - Se **NÃO**, providenciar.
-- Estão prontas as malas? (**SIM/NÃO**) - Se **NÃO**, providenciar.
+- Tenho um carro? (**Sim/Não**) - Se **Não**, não providenciar.
+- Tenho condições/desejos para viajar? (**Sim/Não**)
+- Está em condições? (**Sim/Não**) - Se **Não**, enviar para revisão.
+- Devidamente abastecido? (**Sim/Não**) - Se **Não**, providenciar.
+- Estão prontas as malas? (**Sim/Não**) - Se **Não**, providenciar.
 - Condições climáticas? Se tempo **bom e mais rápido**, seguir; se tempo **nublado e menor**, seguir.
-- Itens de segurança e manutenção? (**S/N**) - Se **NÃO**, providenciar. Se **SIM**, ir para o próximo passo.
-- Meios de pagamento/pedágio? (**S/N**) - Se **NÃO**, providenciar. Se **SIM**, ir para o próximo passo.
-- Sabe o caminho para a praia? (**SIM/NÃO**) - Se **NÃO**, providenciar **GPS** ou **mapas** e voltar ao passo anterior.
-- Chegou na praia? (**SIM/NÃO**) - Se **SIM**, parabéns. Se **NÃO**, continue o trajeto.
+- Itens de segurança e manutenção? (**S/N**) - Se **Não**, providenciar. Se **Sim**, ir para o próximo passo.
+- Meios de pagamento/pedágio? (**S/N**) - Se **Não**, providenciar. Se **Sim**, ir para o próximo passo.
+- Sabe o caminho para a praia? (**Sim/Não**) - Se **Não**, providenciar **GPS** ou **mapas** e voltar ao passo anterior.
+- Chegou na praia? (**Sim/Não**) - Se **Sim**, parabéns. Se **Não**, continue o trajeto.
 
 ### **Exemplos de Exercícios - Resoluções**
 
@@ -261,63 +261,63 @@ $$\text{FIM FUNÇÃO}$$
 
 Um aluno tem **R$ 50,00** e quer comprar o máximo de ingressos para um show que custa **R$ 12,00** cada. Quantos ele comprará e quanto sobrará?
 
-- **DADO:**
-  - TOTAL = **50**
-  - VALOR INGRESSO = **12**
-- **INÍCIO:**
-  - TOTAL DINHEIRO = **50**
-  - VALOR INGRESSO = **12**
-  - QUANTIDADE = TOTAL DINHEIRO / VALOR INGRESSO
-  - SOBROU = TOTAL DINHEIRO - (INGRESSO \* QUANTIDADE)
-  - ESCREVA A **QUANTIDADE**
-  - ESCREVA "**SOBROU R$**" + **SOBROU**
-- **FIM**
+- **Dado:**
+  - Total = **50**
+  - Valor Ingresso = **12**
+- **Início:**
+  - Total Dinheiro = **50**
+  - Valor Ingresso = **12**
+  - Quantidade = Total Dinheiro / Valor Ingresso
+  - Sobrou = Total Dinheiro - (Ingresso \* Quantidade)
+  - Escreva a **Quantidade**
+  - Escreva "**Sobrou R$**" + **Sobrou**
+- **Fim**
 
 #### **2. Média e Aprovação (Nota Mínima = 6)**
 
 Planeje a solução para o seguinte: um aluno tem uma nota final de **5**, **7**, e **8**. Calcule a **média final** e verifique se o aluno **passou** (média maior ou igual a 6).
 
-- **DADOS:** 3 Notas (**5**, **7**, **8**). Média Mínima.
-- **PROCESSAMENTO:** Calcular a Média.
-- **CONDIÇÃO:** MÉDIA >= **6** -> APROVADO, SENÃO -> REPROVADO.
-- **INÍCIO:**
-  - SOLICITAR A NOTA 1
-  - SOLICITAR A NOTA 2
-  - SOLICITAR A NOTA 3
-  - SOLICITAR A NOTA MÍNIMA (**6**)
-  - CALCULAR A MÉDIA: (**NOTA 1** + **NOTA 2** + **NOTA 3**) / **3**
-  - SE MÉDIA >= NOTA MÍNIMA
-    - ESCREVER "**APROVADO**"
-  - SENÃO
-    - ESCREVER "**REPROVADO**"
-- **FIM**
+- **Dados:** 3 Notas (**5**, **7**, **8**). Média Mínima.
+- **Processamento:** Calcular a Média.
+- **Condição:** Média >= **6** -> Aprovado, Senão -> Reprovado.
+- **Início:**
+  - Solicitar a Nota 1
+  - Solicitar a Nota 2
+  - Solicitar a Nota 3
+  - Solicitar a Nota Mínima (**6**)
+  - Calcular a Média: (**Nota 1** + **Nota 2** + **Nota 3**) / **3**
+  - Se Média >= Nota Mínima
+    - Escrever "**Aprovado**"
+  - Senão
+    - Escrever "**Reprovado**"
+- **Fim**
 
 #### **3. Múltiplo de 3 e 5**
 
 Escreva um algoritmo para verificar se um número dado é **múltiplo de 3 E 5**.
 
-- **DADO:** Número que seja **múltiplo de 3 e 5**.
-- **INÍCIO:**
-  - INSIRA NÚMERO QUALQUER
-  - CALCULE NÚMERO QUALQUER / **3**
-  - CALCULE NÚMERO QUALQUER / **5**
-  - CASO AMBOS OS RESULTADOS FOREM **VALORES INTEIROS**:
-    - ESCREVER "**ESTE NÚMERO É MÚLTIPLO DE 3 E 5**"
-  - SENÃO:
-    - ESCREVER "**CONDIÇÃO NÃO APROVADA**"
-- **FIM**
+- **Dado:** Número que seja **múltiplo de 3 e 5**.
+- **Início:**
+  - Insira Número Qualquer
+  - Calcule Número Qualquer / **3**
+  - Calcule Número Qualquer / **5**
+  - Caso Ambos os Resultados Forem **Valores Inteiros**:
+    - Escrever "**Este número é múltiplo de 3 e 5**"
+  - Senão:
+    - Escrever "**Condição não aprovada**"
+- **Fim**
 
 ### **Pseudocódigo Simples (Média de 4 Notas)**
 
-- **PSEUDOCÓDIGO:**
-  - INÍCIO
-  - LEIA NÚMERO 1
-  - LEIA NÚMERO 2
-  - LEIA NÚMERO 3
-  - LEIA NÚMERO 4
-  - MÉDIA = (**N1** + **N2** + **N3** + **N4**) / **4**
-  - ESCREVA **MÉDIA**
-  - FIM
+- **Pseudocódigo:**
+  - Início
+  - Leia Número 1
+  - Leia Número 2
+  - Leia Número 3
+  - Leia Número 4
+  - Média = (**N1** + **N2** + **N3** + **N4**) / **4**
+  - Escreva **Média**
+  - Fim
 
 ## Outros Exercícios Propostos
 
@@ -329,37 +329,37 @@ Escreva um algoritmo para verificar se um número dado é **múltiplo de 3 E 5**
 
 Quadrado **20x20**. A cobra começa em **[1,1]** e termina em **[20, 20]**, passando por toda a área. Ela não aumenta de tamanho.
 
-- **INÍCIO:**
+- **Início:**
   - X = **1**
   - Y = **1**
-  - POSIÇÃO = (**X**, **Y**)
-  - ENQUANTO POSIÇÃO < **20**
-    - FAÇA ENQUANTO Y < **20**
+  - Posição = (**X**, **Y**)
+  - Enquanto Posição < **20**
+    - Faça Enquanto Y < **20**
       - Y = Y + **1**
-    - FIM FAÇA
+    - Fim Faça
     - X = X + **1**
-  - FAÇA ENQUANTO Y > **1**
+  - Faça Enquanto Y > **1**
     - Y = Y - **1**
-  - FIM FAÇA
-  - ENQUANTO X < **20**
+  - Fim Faça
+  - Enquanto X < **20**
     - X = X + **1**
-- **FIM**
+- **Fim**
 
 ### **Exercício: Tabuada**
 
 Imprimir a **tabuada do 1 ao 10** com seus múltiplos de 1 a 10, respectivamente.
 
-- **INÍCIO:**
+- **Início:**
   - X = **1**
-  - FAÇA ENQUANTO X < **11**
+  - Faça Enquanto X < **11**
     - Y = **1**
-    - FAÇA ENQUANTO Y < **11**
-      - IMPRIMA (**X** \* **Y**)
+    - Faça Enquanto Y < **11**
+      - Imprima (**X** \* **Y**)
       - Y = Y + **1**
-    - FIM FAÇA
+    - Fim Faça
     - X = X + **1**
-  - FIM FAÇA
-- **FIM**
+  - Fim Faça
+- **Fim**
 
 ### **Exercícios Adicionais**
 
@@ -371,9 +371,9 @@ Faça um algoritmo que leia um número e escreva se é **par ou ímpar**.
 
 Faça um algoritmo que leia **4 números**, calcule a **média** e se:
 
-- Maior **7,00** = **APROVADO**
-- Entre **5,00** e **6,99** = **RECUPERAÇÃO**
-- Abaixo de **5,00** = **REPROVADO**
+- Maior **7,00** = **Aprovado**
+- Entre **5,00** e **6,99** = **Recuperação**
+- Abaixo de **5,00** = **Reprovado**
 
 #### **3. Expressão Matemática e Resultado Percentual**
 
@@ -385,7 +385,7 @@ $$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
 - $11 - 20$: Expressão **20%**
 - $21 - 50$: Expressão **50%**
 - $51 - 75$: Expressão **45%**
-- $> 76$: **ESTRANHA**
+- $> 76$: **Estranha**
 
 ## Fluxograma - Exercício da Pizzaria (18/03)
 
@@ -395,54 +395,54 @@ $$\frac{((A^2 + B^3) + C^4)}{19.0} + 1$$
 - Frango - **45 B**
 - Peperoni - **65 C**
 - Coca - **5 D**
-- **QUANTIDADE**
-- **VALOR TOTAL**
+- **Quantidade**
+- **Valor Total**
 
 ### **Estrutura do Fluxograma**
 
-1. **INÍCIO**
-2. **EXIBIR CARDÁPIO**
-3. **OPÇÃO CLIENTE** (Decisão: Deseja fechar conta? SIM/NÃO)
-    - Se **NÃO**, segue para **ESCOLHA CLIENTE**
-    - Se **SIM**, segue para **COBRA CLIENTE** -> **FIM**
-4. **ESCOLHA CLIENTE** (Decisão/Escolha: A, B, C, D)
+1. **Início**
+2. **Exibir Cardápio**
+3. **Opção Cliente** (Decisão: Deseja fechar conta? Sim/Não)
+    - Se **Não**, segue para **Escolha Cliente**
+    - Se **Sim**, segue para **Cobra Cliente** -> **Fim**
+4. **Escolha Cliente** (Decisão/Escolha: A, B, C, D)
     - **A (4 Queijos):**
-        - QT + **1**
-        - VT + **50**
+        - Qt + **1**
+        - Vt + **50**
     - **B (Frango):**
-        - QT + **1**
-        - VT + **45**
+        - Qt + **1**
+        - Vt + **45**
     - **C (Peperoni):**
-        - QT + **1**
-        - VT + **65**
+        - Qt + **1**
+        - Vt + **65**
     - **D (Coca):**
-        - QT + **1**
-        - VT + **5**
-5. **EXIBIR TOTAL**
-6. Retorna para a **OPÇÃO CLIENTE** (ponto Z).
+        - Qt + **1**
+        - Vt + **5**
+5. **Exibir Total**
+6. Retorna para a **Opção Cliente** (ponto Z).
 
 ## Testes e Análise de Linguagem
 
 ### **Teste de Mesa (Exemplo com Palavra/Símbolo)**
 
-- **INÍCIO**
+- **Início**
   - X = **1**
-  - IMPRIMA **DIGITE A PALAVRA**
-  - LEIA **PALAVRA**
-  - ENQUANTO X < TOTAL SÍMBOLOS
-    - SE SÍMBOLO \[X] = **2**
-      - TOTAL DE **2** = TOTAL DE **2** + **1**
-    - SE SÍMBOLO \[X] = **3**
-      - TOTAL DE **3** = TOTAL DE **3** + **1**
-    - SE SÍMBOLO \[X] = **4**
-      - TOTAL DE **4** = TOTAL DE **4** + **1**
+  - Imprima **Digite a Palavra**
+  - Leia **Palavra**
+  - Enquanto X < Total Símbolos
+    - Se Símbolo \[X] = **2**
+      - Total de **2** = Total de **2** + **1**
+    - Se Símbolo \[X] = **3**
+      - Total de **3** = Total de **3** + **1**
+    - Se Símbolo \[X] = **4**
+      - Total de **4** = Total de **4** + **1**
     - X = X + **1**
-  - FIM ENQUANTO
-  - SE TOTAL **2** = **1** E TOTAL **3** = **2** E TOTAL **4** = **3**
-    - IMPRIMA **PALAVRA CORRETA**
-  - SENÃO
-    - IMPRIMA **PALAVRA INCORRETA**
-- **FIM**
+  - Fim Enquanto
+  - Se Total **2** = **1** E Total **3** = **2** E Total **4** = **3**
+    - Imprima **Palavra Correta**
+  - Senão
+    - Imprima **Palavra Incorreta**
+- **Fim**
 
 ### **Pesquisas e Tópicos**
 

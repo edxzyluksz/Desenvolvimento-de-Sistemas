@@ -1,17 +1,10 @@
-# Projeto de Software 2 - 90h (120 Aulas)
+# Projeto de Software 2
 
-## Sumário
+## Introdução
 
-- [Introdução ao Levantamento de Requisitos](#aula-05022026---introdução)
-  - [Requisitos](#requisitos)
-  - [Metodologias Tradicionais](#metodologias-tradicionais)
-  - [Metodologias Ágeis](#metodologias-ágeis)
-    - [Os quatro princípios](#os-quatro-princípios-das-metodologias-ágeis)
-    - [Atividade: Jogo de Pong simples](#atividade-desenvolver-um-jogo-de-pong-simples-scratch)
+O projeto de software é uma disciplina que tem como objetivo ensinar os alunos a desenvolverem um projeto de software completo, desde a concepção até a entrega final. O curso aborda as principais etapas do desenvolvimento de software, incluindo levantamento de requisitos, design, implementação, testes e manutenção.
 
-## Aula (05/02/2026) - Introdução
-
-Adendo: O curso de Desenvolvimento de Sistemas não possui Trabalho de Conclsão de Curso (TCC) por não seguir os princípios das metodologias ágeis.
+> O curso de Desenvolvimento de Sistemas não possui Trabalho de Conclsão de Curso (TCC) por não seguir os princípios das metodologias ágeis.
 
 Não adianta ser o melhor programador do mundo. Se você não entendeu a necessidade do stakeholder, você entregará um produto incorreto para ele.
 A base principal do nosso curso é fazer levantamento de requisitos
@@ -33,13 +26,13 @@ Geralmente, o analista de requisitos é o Product Owner
 
 ##### Como Registrar
 
-| Campo             | Conteúdo                       | Exemplo                                                         |
-| ----------------- | ------------------------------ | --------------------------------------------------------------- |
-| ID                | Código Único                   | RF-001                                                          |
-| Nome              | Verbo no Infinitivo + Objetivo | Cadastro de Usuários                                            |
-| Descrição         | O ... Deve ser capaz de ...    | O Cliente deve ser capaz de realizar seu Cadastro na Plataforma |
-| Prioridade        | Importância para o negócio     | Alta (Precisa Ter)                                              |
-| Regras Vinculadas | Referência à a RNF             | RNF - Banco de Dados                                            |
+| Campo | Conteúdo | Exemplo |
+| --- | --- | --- |
+| ID | Código Único | RF-001 |
+| Nome | Verbo no Infinitivo + Objetivo | Cadastro de Usuários |
+| Descrição | O ... Deve ser capaz de ... | O Cliente deve ser capaz de realizar seu Cadastro na Plataforma |
+| Prioridade | Importância para o negócio | Alta (Precisa Ter) |
+| Regras Vinculadas | Referência à a RNF | RNF - Banco de Dados |
 
 Processo simplificado:
 
@@ -86,12 +79,15 @@ Responder as mudanças mais que seguir um plano
   - Uma bola que quica sobre a tela;
   - Uma raquete que se movimenta horizontalmente;
   - Colisão entre os dois objetos.
-- Após entregue a primeira versão: - Caso a bola colidir com o chão, o jogo acaba; - Aumentar a velocidade da bola a cada defesa.
-  **Requisitos Não-Funcionais:**
+
+Após entregue a primeira versão: - Caso a bola colidir com o chão, o jogo acaba; - Aumentar a velocidade da bola a cada defesa.
+
+**Requisitos Não-Funcionais:**
+
 - Após o jogador defender a bola 10 vezes, o fundo de tela muda;
 - Se o jogo acaba com a colisão da bola no chão, exibe "Game Over" na tela.
 
-## Aula (12/02/2026) - Levantamento de Requisitos em PSOFT
+## Levantamento de Requisitos em PSOFT
 
 ### Dinâmica de jogo - Divisão da sala
 
@@ -99,9 +95,9 @@ Responder as mudanças mais que seguir um plano
 
 ### Divisão de grupos - Cliente com Contratados
 
-\*\*Grupos de clientes devem propor uma ideia gerada pelo professor e exibir de maneira precária as necessidades do software e suas vontades. Este processo de grupos revezavam, sendo ora cliente e ora contratado.
+Grupos de clientes devem propor uma ideia gerada pelo professor e exibir de maneira precária as necessidades do software e suas vontades. Este processo de grupos revezavam, sendo ora cliente e ora contratado.
 
-## Módulo 3 - Técnicas de Levantamento de Requisto
+## Técnicas de Levantamento de Requisto
 
 - Briefing:
   - Coleta de Dados Inicial do Projeto
@@ -130,3 +126,5 @@ Responder as mudanças mais que seguir um plano
   - necessário de um MVP para apresentação
 
 - Prototipagem
+  - Criação de um Protótipo do Produto para Apresentação e Feedback dos StakeHoldes
+  - Pode ser um Protótipo de Baixa Fidelidade (Desenho) ou Alta Fidelidade (Funcional)

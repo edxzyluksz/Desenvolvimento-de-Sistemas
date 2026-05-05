@@ -1,21 +1,5 @@
 # Introdução ao Desenvolvimento Mobile 📱
 
-## Sumário
-
-- [Aviso](#️-aviso)
-- [Tipo de Desenvolvimento](#tipo-de-desenvolvimento)
-- [Preparação de Ambiente: Dart e Flutter](#preparação-de-ambiente-dart-e-flutter)
-- [Instalação do Flutter SDK](#instalação-do-flutter-sdk)
-- [Instalação do Android SDK](#instalação-do-android-sdk)
-- [Linha de Comando](#linha-de-comando)
-- [Gerenciamento de dependências do PubSec()](#gerenciamento-de-dependências-do-pubsec)
-- [Estrutura Básica de um Aplicativo em Flutter](#estrutura-básica-de-um-aplicativo-em-flutter)
-  - [Árvore de Widgets](#árvore-de-widgets)
-  - [Tipos de Janelas](#tipos-de-janelas)
-    - [Stateless](#stateless)
-    - [Stateful](#stateful)
-    - [Comparativo VS](#comparativo-vs)
-
 ## ⚠️ Aviso
 
 Projetos Flutter **não funcionarão corretamente** se estiverem dentro de pastas que contenham:
@@ -181,8 +165,8 @@ OBS: Permite adicionar elementos a janela, como novas imagens, novos textos, ent
 
 ##### Comparativo VS
 
-|Característica|Stateless|Stateful|
-|-|-|-|
-|Mutabilidade|Não|Sim|
-|Uso Ideal|Layouts Fixos e exibição de dados estáticos|Interações do Usuário, ANimações e Dados Dinâmicos|
-|Método Principal|build()|build() + setState()|
+| Característica | Stateless | Stateful |
+| --- | --- | --- |
+| Mutabilidade | Não | Sim |
+| Uso Ideal | Layouts Fixos e exibição de dados estáticos | Interações do Usuário, ANimações e Dados Dinâmicos |
+| Método Principal | build() | build() + setState() |

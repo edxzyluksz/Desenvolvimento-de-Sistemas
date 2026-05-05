@@ -1,8 +1,6 @@
-# 📚 Linguagens de Marcação
+# Linguagens de Marcação
 
-## 🌐 Introdução às Linguagens de Marcação e Estrutura Web
-
-### Linguagens de Marcação
+## Introdução às Linguagens de Marcação e Estrutura Web
 
 Sistemas para anotar um documento (texto) com **tags** para definir a **estrutura**, **layout** e **significado** do conteúdo.
 
@@ -36,7 +34,7 @@ Sistemas para anotar um documento (texto) com **tags** para definir a **estrutur
 * **Internet:** **Meio físico**.
 * **WWW (World Wide Web):** Um dos **serviços da Internet**.
 
-## 💻 Registro, Domínio e Hospedagem
+## Registro, Domínio e Hospedagem
 
 ### Registro
 
@@ -79,7 +77,7 @@ O **nome amigável** feito para ser **memorizado facilmente**.
   * **Efeito:** Confiabilidade, dependência de infraestrutura (AWS, Azure).
 * **Conclusão:** Tipo ideal é **Cloud Hosting** por pagar somente o que usa.
 
-## 📄 Boas Práticas e Validação de Código
+## Boas Práticas e Validação de Código
 
 * **W3C (World Wide Web Consortium):** Define **boas práticas** para as linguagens Web.
 * Usar **[validator.w3.org]** para **verificar o código**.
@@ -88,7 +86,7 @@ O **nome amigável** feito para ser **memorizado facilmente**.
   * **`<HTML>` $\rightarrow$ Elemento Raiz**.
   * **`<HEAD>`:** Contém **metadados**.
 
-## 📐 Tipos de Layout
+## Tipos de Layout
 
 * **Layout Fixo:**
   * Usa valores **absolutos em pixels**.

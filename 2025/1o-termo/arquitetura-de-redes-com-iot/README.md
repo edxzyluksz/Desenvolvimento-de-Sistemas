@@ -1,4 +1,4 @@
-# Arquitetura de Redes com IoT 🛜
+# Arquitetura de Redes com IoT
 
 ## Conceitos e Histórico
 
@@ -9,7 +9,7 @@
 - São sistemas **interconectados de dispositivos** que **compartilham recursos e informações** por meio de **protocolos de comunicação**.
 - Essas redes podem variar de tamanho e complexidade, desde **Redes Locais (LAN)** até **Redes Globais como a Internet**.
 
-**APLICAÇÕES NO DIA A DIA:**
+**Aplicações no dia a dia:**
 
 - Comunicação
 - Educação
@@ -76,44 +76,49 @@
 #### Hub (O que é?)**
 
 - Traduzido como **"Ponto Central"**, tem a função de **interligar computadores em uma rede local**.
-- As redes interligadas por HUB costumam ser **lentas**, então **não é recomendado o uso simultâneo de mais de duas máquinas**.
+- As redes interligadas por Hub costumam ser **lentas**, então **não é recomendado o uso simultâneo de mais de duas máquinas**.
 
 #### Switch
 
-- O SWITCH facilita o **compartilhamento de recursos** conectando todos os dispositivos, inclusive computadores, impressoras e servidores, na rede de uma empresa de pequeno porte.
-- Enquanto um HUB conecta vários dispositivos Ethernet em um único segmento, o SWITCH permite **endereçar individualmente o tráfego** e permite dividi-lo em várias **VLANs**.
-- **RESUMINDO:** HUBS e SWITCHES conectam computadores numa mesma LAN, mas os SWITCHES conseguem distinguir os computadores conectados a ele, e para qual deles uma informação deve ser encaminhada.
-- **SWITCHES:** Gerenciáveis e Não Gerenciáveis.
+O switch facilita o **compartilhamento de recursos** conectando todos os dispositivos, inclusive computadores, impressoras e servidores, na rede de uma empresa de pequeno porte.
+
+São separados entre gerenciáveis e não gerenciáveis, onde os primeiros permitem **configurações avançadas** e monitoramento do tráfego, enquanto os segundos são mais simples e fáceis de usar, mas sem recursos de gerenciamento.
+
+##### Comparativo
+
+Enquanto um Hub conecta vários dispositivos Ethernet em um único segmento, o switch permite **endereçar individualmente o tráfego** e permite dividi-lo em várias **VLANs**.
+
+**Resumindo:** Hubs e Switches conectam computadores numa mesma LAN, mas os Switches conseguem distinguir os computadores conectados a ele, e para qual deles uma informação deve ser encaminhada.
 
 #### Roteador
 
 - Ele funciona como um **distribuidor** direcionando o tráfego e escolhendo a rota mais eficiente para obter informações na forma de **pacotes de dados** e viajar pela rede.
-- **"BURRO":** Pois ele emite sinal igualmente para todos os dispositivos ao redor em quantidade.
-- **ROTEADOR:** É preciso para conectar dois SWITCHES, para que um reconheça o outro.
+- **"Burro":** Pois ele emite sinal igualmente para todos os dispositivos ao redor em quantidade.
+- **Roteador:** É preciso para conectar dois Switches, para que um reconheça o outro.
 
 ### Outros Componentes e Funções
 
 - **DBA:** Data Base Administrator.
-- **SERVIDOR DNS:** Domain Name Service.
+- **Servidor DNS:** Domain Name Service.
 - **DDoS:** Distributed Denial Of Service.
-- **CTRL + F5:** Força o **reset do cache de um site**.
-- **NÃO EXISTE AMBIENTE 100% SEGURO**.
-- **SERVIDOR DHCP** -> **SERVIDOR DNS** -> **SERVIDOR WEB** (sequência de comunicação).
-- **CERTIFICADO DIGITAL** - SHA-256.
+- **Ctrl + F5:** Força o **reset do cache de um site**.
+- **Não existe ambiente 100% seguro**.
+- **Servidor DHCP** -> **Servidor DNS** -> **Servidor Web** (sequência de comunicação).
+- **Certificado Digital** - SHA-256.
 
 ## Modelos e Protocolos de Comunicação
 
 ### Modelos de Comunicação
 
-#### MODELOS DE COMUNICAÇÃO DE REDES: MODELOS OSI E TCP/IP**
+#### Modelos de Comunicação de Redes: Modelos OSI e TCP/IP**
 
 - **OSI** - Open Systems Inter Connection (**7 Camadas**).
   - Qual modelo é mais adequado para explicar redes modernas? **OSI**.
 - **TCP/IP** - Possui **4 Camadas**:
-    1. APLICAÇÃO
-    2. TRANSPORTE
-    3. REDE
-    4. ENLACE
+    1. Aplicação
+    2. Transporte
+    3. Rede
+    4. Enlace
 
 ### Principais Protocolos de Rede
 
@@ -121,30 +126,30 @@
 
 #### Camadas e Protocolos
 
-- **A APLICAÇÃO** define o protocolo (Ex: digitar **https://** no navegador - software do usuário).
-- **O TRANSPORTE** define **TCP e UDP**.
-- **A REDE** define o formato do **Internet Protocol (IP)** ou outro com IoT.
-- **O ENLACE** define se é sinal **WiFi** ou **cabeado**.
+- **A Aplicação** define o protocolo (Ex: digitar **https://** no navegador - software do usuário).
+- **O Transporte** define **TCP e UDP**.
+- **A Rede** define o formato do **Internet Protocol (IP)** ou outro com IoT.
+- **O Enlace** define se é sinal **WiFi** ou **cabeado**.
 
 ### Detalhes de Protocolo
 
-- **PROTOCOLOS DE ROTEAMENTO:**
+- **Protocolos de Roteamento:**
   - **OSPF:** (Open Shortest Path First) Protocolo de Roteamento de **Estado de Link**.
 
-- **PROTOCOLOS DE CAMADA DE TRANSPORTE:**
-  - **TCP E UDP:** Enquanto um protocolo **garante que os dados foram devidamente recebidos** (**TCP**), o outro **não** (**UDP**).
+- **Protocolos de Camada de Transporte:**
+  - **TCP e UDP:** Enquanto um protocolo **garante que os dados foram devidamente recebidos** (**TCP**), o outro **não** (**UDP**).
   - Buscar termo "**Aperto de Mão**" em 4 fases no contexto **TCP**.
 
-- **PROTOCOLOS DE CAMADA DE REDE/DIAGNÓSTICO:**
-  - **ICMP:** **PROTOCOLO DE DIAGNÓSTICO**.
+- **Protocolos de Camada de Rede/Diagnóstico:**
+  - **ICMP:** **Protocolo de Diagnóstico**.
   - **ARP** e **IP**.
 
-- **PROTOCOLOS DE CAMADA DE APLICAÇÃO:**
-  - **TELNET:** **ABRE UMA JANELA DE CONVERSA COM A CONEXÃO**.
+- **Protocolos de Camada de Aplicação:**
+  - **TELNET:** **Abre uma janela de conversa com a conexão**.
   - **FTP:** Mandar e receber arquivos no servidor para a máquina.
   - **SSH**, **HTTP**, **DNS**, **DHCP**.
 
-- **PACOTE:** Fragmento de um dado a ser transmitido em rede, dividido em cada uma das camadas (na prática, 4).
+- **Pacote:** Fragmento de um dado a ser transmitido em rede, dividido em cada uma das camadas (na prática, 4).
 
 ## Endereçamento e Infraestrutura
 
@@ -154,17 +159,17 @@
 
 - **Endereço único** para dispositivos que se conectam em uma rede baseada no protocolo.
 
-#### IP v4 (32 BITS)
+#### IP v4 (32 bits)
 
 - **192.168.1.1** (32 bits, Decimal, dividido em 4 octetos e separados por **.**)
 - **255.255.255.255** - **4 Blocos**.
-- **IP DINÂMICO** - Servidor DHCP.
-- **IP ESTÁTICO** - Configurado manual.
-- **IP PÚBLICO x IP PRIVADO** (Exemplo: 186.223.47.32 x 192.168.6.213).
+- **IP Dinâmico** - Servidor DHCP.
+- **IP Estático** - Configurado manual.
+- **IP Público x IP Privado** (Exemplo: 186.223.47.32 x 192.168.6.213).
 - Um computador possui **65536 portas**.
-- O **MAC ADRESS** de um dispositivo é único.
+- O **MAC Address** de um dispositivo é único.
 
-#### IP v6 (128 BITS)
+#### IP v6 (128 bits)
 
 - **2001:D88:85A3::8A2E:370:7334** (128 bits, Hexadecimal, dividido por **:**)
 - **8 Blocos**.
@@ -172,16 +177,16 @@
 
 ### Classes e Máscaras de Sub-Rede
 
-#### FAIXAS IP
+#### Faixas IP
 
-- **CLASSE A:** 10.0.0.0 - 10.255.255.255. Máscara: **255.0.0.0**. **Grandes corporações.**
-- **CLASSE B:** 172.16.0.0 - 172.31.255.255. Máscara: **255.255.0.0**. **Empresas de médio porte.**
-- **CLASSE C:** 192.168.0.0 - 192.168.255.255. Máscara: **255.255.255.0**. **Pequenas redes domésticas ou corporativas.**
+- **Classe A:** 10.0.0.0 - 10.255.255.255. Máscara: **255.0.0.0**. **Grandes corporações.**
+- **Classe B:** 172.16.0.0 - 172.31.255.255. Máscara: **255.255.0.0**. **Empresas de médio porte.**
+- **Classe C:** 192.168.0.0 - 192.168.255.255. Máscara: **255.255.255.0**. **Pequenas redes domésticas ou corporativas.**
 
-#### MÁSCARA E HOSTS
+#### Máscara e Hosts
 
-- **IP e Máscara de Sub-Rede:** IP: 10.0.X.1; MÁSCARA: 255.0.0.0.
-- Apenas o **primeiro** bloco está em **255 na máscara**, isso implica que apenas o **10** representa a **REDE**, enquanto todos os restantes são os **HOSTS**.
+- **IP e Máscara de Sub-Rede:** IP: 10.0.X.1; Máscara: 255.0.0.0.
+- Apenas o **primeiro** bloco está em **255 na máscara**, isso implica que apenas o **10** representa a **Rede**, enquanto todos os restantes são os **Hosts**.
 - **253 máquinas** em uma rede Classe C.
 
 ### Cabeamento e Velocidade
@@ -190,12 +195,12 @@
 
 - **Meio físico** utilizado para conectar dispositivos e permitir comunicação em LANs ou redes maiores.
 - **Determina Velocidade e Confiabilidade**.
-- Os **TWISTED PAIR** são trançados para evitar **interferência eletromagnéticas**.
+- Os **Twisted Pair** são trançados para evitar **interferência eletromagnéticas**.
 
 #### Velocidade
 
-- **LARGURA DE BANDA (MHz):** Capacidade de transmitir sinais elétricos no cabo. Quanto **maior** a largura, **mais transmissão**.
-- **VELOCIDADE MÁXIMA:** Taxa de transferência de dados que o cabo suporta. A largura de banda afeta a velocidade de máxima, mas **não de forma linear**.
+- **Largura de Banda (MHz):** Capacidade de transmitir sinais elétricos no cabo. Quanto **maior** a largura, **mais transmissão**.
+- **Velocidade Máxima:** Taxa de transferência de dados que o cabo suporta. A largura de banda afeta a velocidade de máxima, mas **não de forma linear**.
 
 #### Tipos de Cabos
 
@@ -203,7 +208,7 @@
 - **CAT6:** 250 MHz, 10 Gbps (55m). Redes de maior velocidade, curta.
 - **CAT6A:** 500 MHz, 10 Gbps (100m).
 - **CAT7 e CAT8:** Data centers e ambientes críticos.
-- Para dispositivos **iguais** use o **CROSSOVER**, caso contrário, **par trançado**.
+- Para dispositivos **iguais** use o **Crossover**, caso contrário, **par trançado**.
 
 ## Topologias e Ferramentas
 
@@ -219,21 +224,21 @@
 
 #### Descrições de Topologias
 
-- **REDE EM ESTRELA:** O SWITCH se conecta em cada computador individualmente.
-- **REDE EM ANEL:** Evita a **colisão de dados**.
-- **REDE EM ÁRVORE:** É o **crescimento não programado** de uma estrela.
-- **REDE DE MALHA (MESH):** **Tudo e todos conectado**.
-- **REDE PONTO A PONTO:** Se um computador estiver desligado, os da frente **param de funcionar**.
+- **Rede em Estrela:** O Switch se conecta em cada computador individualmente.
+- **Rede em Anel:** Evita a **colisão de dados**.
+- **Rede em Árvore:** É o **crescimento não programado** de uma estrela.
+- **Rede de Malha (Mesh):** **Tudo e todos conectado**.
+- **Rede Ponto a Ponto:** Se um computador estiver desligado, os da frente **param de funcionar**.
 
 ### Ferramentas de Diagnóstico e Configuração
 
-- **PROGRAMA:** Wireshark, tracert e Pingploter.
-- **IPCONFIG /RENEW:** Solicita um novo IP.
-- **IPCONFIG /RELEASE:** Libera o IP.
-- **IPCONFIG /FLUSH DNS:** Limpa os nomes da tabela dos IPs.
-- **NSLOOKUP:** Solicita o DNS para informação sobre o **domínio nome** e **endereços de IP**.
-- **O CACHE:** É o arquivo temporário.
+- **Programa:** Wireshark, tracert e Pingploter.
+- **ipconfig /renew:** Solicita um novo IP.
+- **ipconfig /release:** Libera o IP.
+- **ipconfig /flushdns:** Limpa os nomes da tabela dos IPs.
+- **nslookup:** Solicita o DNS para informação sobre o **domínio nome** e **endereços de IP**.
+- **O Cache:** É o arquivo temporário.
 
 #### Cisco Packet Tracer**
 
-- *Diagrama mostrando conexões entre DHCP, WEB, ROUTER, FIREWALL, 1 VM e 2 VM C.*
+Software de simulação de rede desenvolvido pela Cisco Systems, utilizado para **ensinar e aprender sobre redes de computadores**. Ele permite que os usuários criem, configurem e testem redes virtuais em um ambiente simulado, facilitando o aprendizado prático de conceitos de rede sem a necessidade de hardware físico. O Packet Tracer é amplamente utilizado em cursos de certificação Cisco, como o CCNA, para ajudar os estudantes a entenderem a configuração e o funcionamento das redes.
