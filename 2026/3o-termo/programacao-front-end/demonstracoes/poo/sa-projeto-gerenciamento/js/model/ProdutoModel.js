@@ -1,18 +1,18 @@
 export class Produto {
-  constructor() {
-        this.id = id;
-        this.nome = "";
-        this.categoria = "";
-        this.preco = 0.0;
-        this.quantidade = 0;
+  constructor(id, nome, categoria, preco, quantidade) {
+    this.id = id;
+    this.nome = nome;
+    this.categoria = categoria;
+    this.preco = parseFloat(preco);
+    this.quantidade = parseInt(quantidade);
   }
 
   entrada(quantidade, preco) {
-        this.quantidade += estoque;
-        this.preco = preco;
-    }
+    this.quantidade += parseInt(quantidade);
+    this.preco = parseFloat(preco); // Atualiza o preço caso tenha mudado
+  }
 
-    venda(quantidade, valorTotal) {
-        this.quantidade -= quantidade;
-    }
+  venda(quantidade) {
+    this.quantidade -= parseInt(quantidade);
+  }
 }

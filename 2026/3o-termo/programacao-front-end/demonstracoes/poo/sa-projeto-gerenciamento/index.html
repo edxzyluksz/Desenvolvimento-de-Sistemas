@@ -9,54 +9,76 @@
 
     <h1>Gerenciamento de Quitanda</h1>
 
-    <!-- REPOSITOR -->
     <div class="secao" id="repositor">
         <h2>Repositor</h2>
-
+        
+        <h3>Cadastrar Novo Produto</h3>
         <div class="linha">
-            <input type="text" id="repositor-nome" placeholder="Nome">
-            <input type="text" id="repositor-categoria" placeholder="Categoria">
+            <input type="text" id="repositor-nome" placeholder="Nome do Produto">
+            <select id="repositor-categoria">
+                <option value="" disabled selected>Selecione a Categoria</option>
+                <option value="Frutas">Frutas</option>
+                <option value="Verduras">Verduras</option>
+                <option value="Legumes">Legumes</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Frios e Laticínios">Frios e Laticínios</option>
+                <option value="Outros">Outros</option>
+            </select>
         </div>
-
         <div class="linha">
-            <input type="number" id="repositor-preco" placeholder="Preço">
-            <input type="number" id="repositor-quantidade" placeholder="Quantidade">
+            <input type="number" id="repositor-preco" placeholder="Preço Unitário" step="0.01" min="0">
+            <input type="number" id="repositor-quantidade" placeholder="Quantidade Inicial" min="0">
         </div>
+        <button id="btn-repositor-cadastrar">Cadastrar Produto</button>
 
-        <button id="btn-repositor-cadastrar">Cadastrar</button>
+        <hr style="margin: 25px 0;"> <h3>Atualizar Estoque</h3>
+        <div class="linha">
+            <input type="number" id="repositor-id-atualizar" placeholder="ID do Produto">
+        </div>
+        <div class="linha">
+            <input type="number" id="repositor-preco-atualizar" placeholder="Novo Preço (Opcional)" step="0.01" min="0">
+            <input type="number" id="repositor-quantidade-atualizar" placeholder="Qtd (+ Adicionar / - Remover)">
+        </div>
+        <button id="btn-repositor-atualizar" style="background: #34495e; color: white;">Atualizar Estoque</button>
     </div>
 
     <hr>
 
-    <!-- CAIXA -->
     <div class="secao" id="caixa">
         <h2>Caixa</h2>
-
         <div class="linha">
-            <input type="text" id="caixa-nome" placeholder="Nome">
+            <input type="number" id="caixa-id" placeholder="ID do Produto">
+            <input type="number" id="caixa-quantidade" placeholder="Quantidade Vendida">
         </div>
-
-        <div class="linha">
-            <input type="number" id="caixa-preco" placeholder="Preço">
-            <input type="number" id="caixa-quantidade" placeholder="Quantidade">
-        </div>
-
-        <button id="btn-caixa-vender">Vender</button>
+        <button id="btn-caixa-vender">Realizar Venda</button>
     </div>
 
     <hr>
 
-    <!-- ESTOQUISTA -->
     <div class="secao" id="estoquista">
         <h2>Estoquista</h2>
-
         <div class="linha">
             <button id="btn-ver-produtos">Ver Produtos</button>
             <button id="btn-ver-vendas">Ver Vendas</button>
         </div>
+        
+        <h3 id="titulo-estoque" class="escondido">Estoque Atual:</h3>
+        <ul id="lista-estoque" class="escondido"></ul>
+
+        <h3 id="titulo-vendas" class="escondido">Histórico de Vendas:</h3>
+        <ul id="lista-vendas" class="escondido"></ul>
     </div>
 
-    <script src="app.js"></script>
+    <div id="modal-alerta" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <h3 id="modal-title">Aviso</h3>
+            <p id="modal-message">Mensagem de teste aqui.</p>
+            <button id="btn-modal-ok">OK</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
 
 </body>
 </html>
