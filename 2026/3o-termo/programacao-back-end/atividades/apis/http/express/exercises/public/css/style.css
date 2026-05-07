@@ -1,0 +1,24 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    background-image: url(https://cdn.aarp.net/content/dam/aarp/home-and-family/your-home/2023/07/1140-flower-garden-bouquet-esp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    background-color: black;
+    border-radius: 15px;
+    padding: 0.55%;
+    text-align: center;
+    margin-top: 5vh;
+}

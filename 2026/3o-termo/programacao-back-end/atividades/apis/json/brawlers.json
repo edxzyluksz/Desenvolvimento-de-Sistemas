@@ -1,0 +1,189 @@
+{
+  "algoz": [
+    {
+      "nome": "Crow",
+      "raridade": "Lendário",
+      "vida": 2400,
+      "ataque": "Adagas Envenenadas",
+      "descricao": "Arremessa três adagas que causam dano ao longo do tempo.",
+      "poder_estrelar": "Toxina Extra",
+      "poder_estrelar_descricao": "Inimigos envenenados causam menos dano.",
+      "estilo": "Rápido, dano contínuo"
+    },
+    {
+      "nome": "Edgar",
+      "raridade": "Épico",
+      "vida": 3000,
+      "ataque": "Soco Sombrio",
+      "descricao": "Ataca rapidamente com golpes curtos que regeneram vida.",
+      "poder_estrelar": "Pulo Hardcore",
+      "poder_estrelar_descricao": "Ganha escudo ao usar o super.",
+      "estilo": "Mobilidade alta, agressivo"
+    }
+  ],
+
+  "destruidor": [
+    {
+      "nome": "Shelly",
+      "raridade": "Inicial",
+      "vida": 3800,
+      "ataque": "Espingarda",
+      "descricao": "Dispara vários projéteis causando mais dano de perto.",
+      "poder_estrelar": "Bala de Aço",
+      "poder_estrelar_descricao": "Super causa mais dano.",
+      "estilo": "Curto alcance, explosivo"
+    },
+    {
+      "nome": "Colt",
+      "raridade": "Raro",
+      "vida": 2800,
+      "ataque": "Revólveres Duplos",
+      "descricao": "Dispara uma sequência de tiros em linha reta.",
+      "poder_estrelar": "Pistoleiro",
+      "poder_estrelar_descricao": "Aumenta o alcance e velocidade dos tiros.",
+      "estilo": "Alta precisão"
+    },
+    {
+      "nome": "Spike",
+      "raridade": "Lendário",
+      "vida": 2400,
+      "ataque": "Cacto Espinhoso",
+      "descricao": "Projétil explode em espinhos ao atingir o alvo.",
+      "poder_estrelar": "Fertilizante",
+      "poder_estrelar_descricao": "Regenera vida dentro do super.",
+      "estilo": "Controle de área"
+    }
+  ],
+
+  "tanque": [
+    {
+      "nome": "Bull",
+      "raridade": "Raro",
+      "vida": 5000,
+      "ataque": "Espingarda Pesada",
+      "descricao": "Dispara múltiplos tiros com alto dano de perto.",
+      "poder_estrelar": "Fúria",
+      "poder_estrelar_descricao": "Recarrega mais rápido com pouca vida.",
+      "estilo": "Alta resistência"
+    },
+    {
+      "nome": "Rosa",
+      "raridade": "Raro",
+      "vida": 5200,
+      "ataque": "Luvas de Boxe",
+      "descricao": "Golpes rápidos de curto alcance.",
+      "poder_estrelar": "Espinhos",
+      "poder_estrelar_descricao": "Inimigos recebem dano ao atacar Rosa.",
+      "estilo": "Defensiva"
+    },
+    {
+      "nome": "Frank",
+      "raridade": "Épico",
+      "vida": 7000,
+      "ataque": "Martelo Gigante",
+      "descricao": "Causa dano em área com atraso.",
+      "poder_estrelar": "Poder Brutal",
+      "poder_estrelar_descricao": "Mais dano com menos vida.",
+      "estilo": "Lento e devastador"
+    }
+  ],
+
+  "suporte": [
+    {
+      "nome": "Poco",
+      "raridade": "Raro",
+      "vida": 3400,
+      "ataque": "Onda Sonora",
+      "descricao": "Ataque em área que atravessa inimigos.",
+      "poder_estrelar": "Cura Afinada",
+      "poder_estrelar_descricao": "Ataques curam aliados.",
+      "estilo": "Cura em equipe"
+    },
+    {
+      "nome": "Pam",
+      "raridade": "Épico",
+      "vida": 4800,
+      "ataque": "Sucata",
+      "descricao": "Dispara vários projéteis espalhados.",
+      "poder_estrelar": "Zona de Cura",
+      "poder_estrelar_descricao": "Torre cura mais rapidamente.",
+      "estilo": "Sustentação"
+    },
+    {
+      "nome": "Byron",
+      "raridade": "Mítico",
+      "vida": 2400,
+      "ataque": "Veneno Curativo",
+      "descricao": "Causa dano em inimigos e cura aliados.",
+      "poder_estrelar": "Dose Extra",
+      "poder_estrelar_descricao": "Aumenta efeitos ao longo do tempo.",
+      "estilo": "Híbrido"
+    }
+  ],
+
+  "sniper": [
+    {
+      "nome": "Brock",
+      "raridade": "Raro",
+      "vida": 2800,
+      "ataque": "Foguete",
+      "descricao": "Projéteis explosivos de longo alcance.",
+      "poder_estrelar": "Explosão Incendiária",
+      "poder_estrelar_descricao": "Deixa fogo no chão.",
+      "estilo": "Longo alcance"
+    },
+    {
+      "nome": "Bea",
+      "raridade": "Épico",
+      "vida": 2400,
+      "ataque": "Disparo Preciso",
+      "descricao": "Tiros que ficam mais fortes ao acertar.",
+      "poder_estrelar": "Colmeia",
+      "poder_estrelar_descricao": "Super desacelera inimigos.",
+      "estilo": "Alvo único"
+    },
+    {
+      "nome": "Piper",
+      "raridade": "Épico",
+      "vida": 2400,
+      "ataque": "Guarda-chuva",
+      "descricao": "Mais dano quanto maior a distância.",
+      "poder_estrelar": "Emboscada",
+      "poder_estrelar_descricao": "Mais dano escondida.",
+      "estilo": "Distância máxima"
+    }
+  ],
+
+  "controlador": [
+    {
+      "nome": "Lou",
+      "raridade": "Mítico",
+      "vida": 3200,
+      "ataque": "Sorvete Congelante",
+      "descricao": "Congela inimigos com múltiplos acertos.",
+      "poder_estrelar": "Hipotermia",
+      "poder_estrelar_descricao": "Inimigos congelados recebem mais dano.",
+      "estilo": "Controle"
+    },
+    {
+      "nome": "Willow",
+      "raridade": "Mítico",
+      "vida": 2800,
+      "ataque": "Controle Mental",
+      "descricao": "Pode controlar inimigos temporariamente.",
+      "poder_estrelar": "Domínio",
+      "poder_estrelar_descricao": "Aumenta duração do controle.",
+      "estilo": "Tático"
+    },
+    {
+      "nome": "Squeak",
+      "raridade": "Mítico",
+      "vida": 3600,
+      "ataque": "Bomba Pegajosa",
+      "descricao": "Projéteis grudam e explodem.",
+      "poder_estrelar": "Reação em Cadeia",
+      "poder_estrelar_descricao": "Mais dano com múltiplos inimigos.",
+      "estilo": "Área"
+    }
+  ]
+}
