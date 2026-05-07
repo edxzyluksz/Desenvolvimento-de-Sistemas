@@ -11,15 +11,18 @@
         <h2><li>Funções com Parâmetros</li></h2>
         <ul>
             <h3><li>Saudação de Usuário</li></h3>
-        </ul>
         <?php
             function saudacaoUsuario($nome){
                 echo "Bem-vindo(a), $nome";
             }
+            saudacaoUsuario("Técnico");
             function soma($a, $b){
                 return $a + $b;
             }
+            echo "<h3><li>Cálculo de Soma</li></h3>";
+            echo "A soma de 4 por 5 é " . soma(4, 5);
         ?>
+        </ul>
     </ol>
 </body>
 </html>
