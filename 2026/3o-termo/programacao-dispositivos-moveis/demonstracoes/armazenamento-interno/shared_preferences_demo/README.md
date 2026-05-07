@@ -1,3 +1,3 @@
 # shared_preferences
 
-A new Flutter project.
+Entendendo a aplicação da dependência "shared_preferences" para persistência de dados

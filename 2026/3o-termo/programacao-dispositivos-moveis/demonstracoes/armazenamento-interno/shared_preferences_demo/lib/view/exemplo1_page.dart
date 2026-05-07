@@ -14,21 +14,21 @@ class _Exemplo1PageState extends State<Exemplo1Page> {
   TextEditingController _nomeInput = TextEditingController();
   String _nomeSalvo = "";
 
-  //uso shared ´para buscar o nome no inicio do aplicativo 
-  //salvar nome nas preferencias
-  _salvarNomeShared() async{ // conexão async => permite continuar rodadno o código enquanto é feito a conexão com a base de dados
-  //conectar com o SharedPreferences
+  // Shared para buscar o nome no início do aplicativo 
+
+  _salvarNomeShared() async{ // Conexão async => permite continuar rodadno o código enquanto é feito a conexão com a base de dados
+  // Conectar com o SharedPreferences
   SharedPreferences prefs = await SharedPreferences.getInstance();// busca as informaç~eos salvas no shared prefs
   await prefs.setString("nome",_nomeInput.text.trim()); // salvou na chave "nome" => o valor colocado no input
   _nomeInput.clear();
-  _carregarNomeShared(); // atualiza o nome para a tela
+  _carregarNomeShared(); // Atualiza o nome para a tela
   }
 
-  //buscar nome nas preferencias
+  // Buscar nome nas preferencias
   _carregarNomeShared() async{
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
-      _nomeSalvo = prefs.getString("nome") ?? "" ; //operador de nulidade
+      _nomeSalvo = prefs.getString("nome") ?? "" ; // Se a chave 'nome' for nula, retorna uma string vazia
     });
   }
 
@@ -58,7 +58,8 @@ class _Exemplo1PageState extends State<Exemplo1Page> {
             SizedBox(height: 20,),
             TextButton(onPressed: () => Navigator.pop(context), child: Text("Voltar"))
           ],
-        ),),
+        ),
+      ),
     );
   }
 }
