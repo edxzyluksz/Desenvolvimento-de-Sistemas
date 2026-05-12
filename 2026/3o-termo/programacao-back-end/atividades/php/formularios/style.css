@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header img {
+    width: 10%;
+    aspect-ratio: 1200 / 823;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    background-color: rgb(76, 117, 156);
+    border-radius: 15px;
+    height: 500px;
+    max-height: 70vh;
+    width: 700px;
+    max-width: 50vw;
+    border: 2px solid black;
+}
+
+form input {
+    border: none;
+    border-radius: 3px;
+    height: 10%;
+    width: 90%;
+    font-size: clamp(1.5rem, 20%, 2rem);
+}
+
+form label {
+    color: white;
+    font-weight: bold;
+    font-size: clamp(2rem, 30%, 3rem);
+}
+
+fieldset {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    border: none;
+    justify-content: space-between;
+}
+
+form input[type="submit"]{
+    cursor: pointer;
+    background-color: rgb(101, 209, 101);
+    border: 1px solid white;
+    align-self: center;
+    width: 55%;
+    height: 10%;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(48, 143, 48);
+    transition: background-color 1s;
+}
+
+form input[type="submit"]:not(:hover){
+    background-color: rgb(101, 209, 101);
+    transition: background-color 1s;
+}

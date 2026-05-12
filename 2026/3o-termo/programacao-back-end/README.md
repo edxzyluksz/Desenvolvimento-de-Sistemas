@@ -25,7 +25,8 @@ Uma classe que não deve ser instanciada diretamente, tornando o código seguro 
 
 Node.js é um ambiente de execução JavaScript do lado do servidor, construído sobre o motor V8 do Google Chrome. Ele permite que os desenvolvedores executem código JavaScript fora do navegador, possibilitando a criação de aplicativos de backend, APIs e serviços web. O Node.js é conhecido por sua alta performance e escalabilidade, graças ao seu modelo de I/O assíncrono e orientado a eventos. Ele é amplamente utilizado para construir aplicações em tempo real, como chats e jogos online, bem como para criar APIs RESTful e microserviços.
 
-Comandos: 
+Comandos:
+
 - node -v (verifica a versão instalada do node)
 - npm -v (verifica a versão instalada do npm)
 - Set-ExecutionPolicy Unrestricted (Libera a execução de scripts do Node)
