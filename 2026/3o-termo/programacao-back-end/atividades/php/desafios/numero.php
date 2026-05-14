@@ -16,7 +16,6 @@
         <input type="submit" value="Enviar" name="enviar">
     </form>
     <?php 
-        
         if (isset($_POST["enviar"])){
             if (!isset($_POST["numero"])) $numero = 0;
             else $numero = intval($_POST["numero"]);

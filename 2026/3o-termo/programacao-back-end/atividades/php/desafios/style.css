@@ -29,3 +29,7 @@ form {
     height: 20vh;
     gap: 20%;
 }
+
+#resultados {
+    text-align: left;
+}
