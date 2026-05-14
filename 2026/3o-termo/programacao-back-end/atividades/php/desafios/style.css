@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    background-color: rgb(76, 117, 156);
+    border-radius: 15px;
+    padding: 2.5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 2.5%;
+    height: 20vh;
+    gap: 20%;
+}
