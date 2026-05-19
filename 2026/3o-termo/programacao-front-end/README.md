@@ -50,3 +50,7 @@ O MVC é um padrão de arquitetura de software que separa a aplicação em três
 - **Controller (Controlador)**: Responsável por receber as entradas do usuário, processar as informações e atualizar o Model e a View de acordo. Ele atua como um intermediário entre o Model e a View.
 
 O MVC é amplamente utilizado em desenvolvimento web e em outras áreas de desenvolvimento de software, pois promove a separação de preocupações e facilita a manutenção do código.
+
+## TypeScript
+
+O TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ele é um superconjunto do JavaScript, o que significa que todo código JavaScript é também um código TypeScript válido. O TypeScript adiciona recursos de tipagem estática ao JavaScript, permitindo que os desenvolvedores definam tipos para variáveis, funções e objetos. Isso ajuda a detectar erros em tempo de compilação, antes que o código seja executado, melhorando a qualidade e a robustez do código. O TypeScript é amplamente utilizado em projetos de grande escala, onde a manutenção e a escalabilidade são preocupações importantes. Ele é compatível com todas as bibliotecas e frameworks JavaScript existentes, tornando a transição para o TypeScript relativamente fácil para os desenvolvedores que já estão familiarizados com o JavaScript.
