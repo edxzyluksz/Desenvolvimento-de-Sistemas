@@ -1,8 +1,131 @@
-# Node
+# ----------------------------
+#           Geral
+# ----------------------------
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary / compiled output
+tmp
+out-tsc
+bazel-out
+
+# Miscellaneous
+*.log
+*.swp
+.connect.lock
+libpeerconnection.log
+testem.log
+__screenshots__/
+
+# ----------------------------
+#            Node
+# ----------------------------
 node_modules/
+npm-debug.log
+yarn-error.log
 
-# Settings Externas
-.vscode/
-
-# Ambientes virtuais
+# ----------------------------
+#        Python
+# ----------------------------
 .venv/
+*.pyc
+
+# ----------------------------
+#         Flutter / Dart
+# ----------------------------
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+app.*.symbols
+app.*.map.json
+
+# ----------------------------
+#      Android / Gradle
+# ----------------------------
+android/app/debug
+android/app/profile
+android/app/release
+
+gradle-wrapper.jar
+.gradle
+captures/
+gradlew
+gradlew.bat
+local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Keystore files
+key.properties
+**/*.keystore
+**/*.jks
+
+# ----------------------------
+#     Spring Boot / Java
+# ----------------------------
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ----------------------------
+#     IDEs and editors
+# ----------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# ----------------------------
+#       General files
+# ----------------------------
+.atom/
+.build/
+.buildlog/
+.history/
+.svn/
+.swiftpm/
+migrate_working_dir/
+.angular/cache
+.sass-cache/
+coverage/
+typings
