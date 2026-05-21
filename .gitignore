@@ -27,6 +27,11 @@ npm-debug.log
 yarn-error.log
 
 # ----------------------------
+#         TypeScript
+# ----------------------------
+dist/
+
+# ----------------------------
 #        Python
 # ----------------------------
 .venv/
@@ -45,6 +50,7 @@ build/
 coverage/
 app.*.symbols
 app.*.map.json
+ephemeral/
 
 # ----------------------------
 #      Android / Gradle
@@ -98,7 +104,7 @@ build/
 # ----------------------------
 #     IDEs and editors
 # ----------------------------
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -126,6 +132,7 @@ build/
 .swiftpm/
 migrate_working_dir/
 .angular/cache
+.angular/
 .sass-cache/
 coverage/
 typings
