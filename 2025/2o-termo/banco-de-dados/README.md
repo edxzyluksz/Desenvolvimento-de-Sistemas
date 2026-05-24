@@ -1,127 +1,127 @@
 # Banco de Dados
 
-## **Conceitos Fundamentais**
+## Conceitos fundamentais
 
-### **Componentes de um SGBD**
+### Componentes de um SGBD
 
-* **Itens Individuais:** Linhas - Registros ou Tuplas.
-* **Colunas:** Atributos ou Campos.
-* **Características:** Propriedades.
-* **Ações:** Restaurar, fazer *overwrite*, adicionar e excluir informações.
+* Itens individuais: linhas - registros ou tuplas.
+* Colunas: atributos ou campos.
+* Características: propriedades.
+* Ações: restaurar, sobrescrever, adicionar e excluir informações.
 
-### **MER - Modelo Entidade Relacional**
+### MER - Modelo entidade-relacional
 
-Uma forma de **representar a realidade em termos de dados**.
+Uma forma de representar a realidade em termos de dados.
 
-* Modelo Visual.
+* modelo visual.
 
-### **DER - Diagrama Entidade Relacional**
+### DER - Diagrama entidade-relacional
 
-* **Normalização:**
-    1. O que o sistema precisa guardar? (**LR** - Levantamento de Requisitos).
-    2. Criar um **Modelo Conceitual**.
-    3. Organizar e descrever a **estrutura do Banco de Dados**.
-    4. Criar o Banco de Dados usando um **SGBD**.
+* Normalização:
+    1. O que o sistema precisa guardar? (LR - levantamento de requisitos).
+    2. Criar um modelo conceitual.
+    3. Organizar e descrever a estrutura do banco de dados.
+    4. Criar o banco de dados usando um SGBD.
 
-### **Estrutura de Tabelas e Chaves**
+### Estrutura de tabelas e chaves
 
-#### **Tabela Cliente (Exemplo)**
+#### Tabela cliente (exemplo)
 
-| CAMPO | TIPO DE DADOS |
+| Campo | Tipo de dados |
 | :--- | :--- |
-| NOME | VARCHAR |
-| CPF | CHAR |
-| EMAIL | VARCHAR |
+| nome | VARCHAR |
+| cpf | CHAR |
+| email | VARCHAR |
 
-#### **Chave Primária (Primary Key - PK)**
+#### Chave primária (primary key - PK)
 
-Um campo (ou conjunto de campos) que **identifica unicamente cada registro em uma tabela**. Basicamente, o **ID**.
+Um campo (ou conjunto de campos) que identifica unicamente cada registro em uma tabela. Basicamente, o id.
 
-* **Características:**
-  * Uma para cada registro.
-  * Não pode ser **nula**.
-  * Garante a **identificação exclusiva** de cada linha na tabela.
-* **Importância:**
-  * Facilita a **busca e atualização** de dados.
-  * Mantém a **integridade dos dados**.
-  * Base para **relacionamento entre tabelas**.
-* **Tipos:**
-  * **Chave Simples:** Atributo único.
-  * **Chave Composta:** Dois ou mais atributos, para formar **unicidade**.
+* Características:
+  * uma para cada registro.
+  * não pode ser nula.
+  * garante a identificação exclusiva de cada linha na tabela.
+* Importância:
+  * facilita a busca e atualização de dados.
+  * mantém a integridade dos dados.
+  * base para relacionamento entre tabelas.
+* Tipos:
+  * chave simples: atributo único.
+  * chave composta: dois ou mais atributos, para formar unicidade.
 
-#### **Chave Estrangeira (Foreign Key - FK)**
+#### Chave estrangeira (foreign key - FK)
 
-Um campo em uma tabela que **aponta para a chave primária de outra tabela**.
+Um campo em uma tabela que aponta para a chave primária de outra tabela.
 
-* **Função:**
-  * Estabelecer **vínculos entre tabelas**.
-  * **Integridade Relacional**.
-  * Navegação e consulta integrada em conjuntos de dados relacionados.
+* Função:
+  * estabelecer vínculos entre tabelas.
+  * integridade referencial.
+  * navegação e consulta integrada em conjuntos de dados relacionados.
 
-#### **Exemplo de Relacionamento (Autor e Livro)**
+#### Exemplo de relacionamento (autor e livro)
 
-1. A tabela **AUTOR** é **PAI**, sendo assim, a tabela **LIVRO** é **FILHO** do **AUTOR**.
-2. A tabela **AUTOR** possui somente uma chave, sendo esta **primária** "ID\_AUTOR", enquanto a tabela **LIVRO** possui chave **primária** "ID\_LIVRO" e chave **estrangeira** "ID\_AUTOR".
-3. Se não existe um autor atribuído a nenhum livro, este pode ser apagado sem problemas, caso contrário, o SGBD **proibiria a ação** (Integridade Referencial).
+1. A tabela autor é pai, sendo assim, a tabela livro é filho do autor.
+2. A tabela autor possui somente uma chave, sendo esta primária `id_autor`, enquanto a tabela livro possui chave primária `id_livro` e chave estrangeira `id_autor`.
+3. Se não existe um autor atribuído a nenhum livro, este pode ser apagado sem problemas; caso contrário, o SGBD proibiria a ação por integridade referencial.
 
-### **Normalização**
+### Normalização
 
-#### **Modelo Físico**
+#### Modelo físico
 
-É interessante **DESNORMALIZAR** um BD para **RELATÓRIOS MAIS PESADOS** e para **FACILITAR IMPRESSÃO**.
+É interessante desnormalizar um banco de dados para relatórios mais pesados e para facilitar impressão.
 
-#### **Desnormalização**
+#### Desnormalização
 
-* Permite **redundância de dados**.
-* **Inconsistência** - ao apagar determinada informação, outras também podem ser excluídas ou mantidas isoladamente.
+* permite redundância de dados.
+* inconsistencia - ao apagar determinada informação, outras também podem ser excluídas ou mantidas isoladamente.
 
-#### **1ª Forma Normal (1FN)**
+#### 1ª forma normal (1FN)
 
 Ao seguir a 1FN, estas considerações serão impostas:
 
-* Para **atributos multivalorados** (que podem ter vários valores para um mesmo registro), **duplica-se as linhas** para evitar desnormalização.
-* Para **atributos compostos**, este atributo transforma-se em **vários campos**.
+* para atributos multivalorados (que podem ter vários valores para um mesmo registro), duplica-se as linhas para evitar desnormalização.
+* para atributos compostos, este atributo transforma-se em vários campos.
 
-#### **Exemplo 1FN (Pessoa e Cursos)**
+#### Exemplo 1FN (pessoa e cursos)
 
-| NOME | ENDEREÇO | NIF | CURSOS |
+| Nome | Endereço | NIF | Cursos |
 | :--- | :--- | :--- | :--- |
-| ANA | COVILHÃ | 123456789 | PROGRAMADOR |
-| ANA | FUNDÃO | 999999999 | OPERADOR |
-| ANA | FUNDÃO | 000000000 | PROGRAMADOR |
-| CARLOS | COVILHÃ | 222333444 | ANALISTA |
-| CARLOS | COVILHÃ | 222333444 | PROGRAMADOR |
-| CARLOS | COVILHÃ | 222333444 | OPERADOR |
-| PAULO | GUARDA | 555666777 | OPERADOR |
-| PAULO | GUARDA | 555666777 | ANALISTA |
+| Ana | Covilhã | 123456789 | Programador |
+| Ana | Fundão | 999999999 | Operador |
+| Ana | Fundão | 000000000 | Programador |
+| Carlos | Covilhã | 222333444 | Analista |
+| Carlos | Covilhã | 222333444 | Programador |
+| Carlos | Covilhã | 222333444 | Operador |
+| Paulo | Guarda | 555666777 | Operador |
+| Paulo | Guarda | 555666777 | Analista |
 
-#### **Exemplo 1FN (Pedido de Produtos)**
+#### Exemplo 1FN (pedido de produtos)
 
-| PEDIDO | PRODUTO | QTD | PREÇO |
+| Pedido | Produto | Qtd | Preço |
 | :--- | :--- | :--- | :--- |
-| 1001 | CAMISA | 2 | 50 |
-| 1001 | TÉNIS | 1 | 100 |
+| 1001 | Camisa | 2 | 50 |
+| 1001 | Tênis | 1 | 100 |
 
-#### **2ª Forma Normal (2FN)**
+#### 2ª forma normal (2FN)
 
-* Obrigatoriamente precisa da **1FN**.
-* Consiste basicamente em **atribuir as tabelas corretamente**.
+* obrigatoriamente precisa da 1FN.
+* consiste basicamente em atribuir as tabelas corretamente.
 
-### **SGBD e Dificuldades**
+### SGBD e dificuldades
 
-#### **Aplicações**
+#### Aplicações
 
-* **TCCs** (Trabalhos de Conclusão de Curso) deverão ser documentados e possuir **MER** e **DER**.
-* **SQL:** DDL (Data Definition Language), DML (Data Manipulation Language).
+* TCCs (trabalhos de conclusão de curso) deverão ser documentados e possuir MER e DER.
+* SQL: DDL (Data Definition Language), DML (Data Manipulation Language).
 
-#### **SGBD (Sistema Gerenciador de Banco de Dados)**
+#### SGBD (Sistema Gerenciador de Banco de Dados)
 
-Um Banco de Dados atual com SGBD é exponencialmente **mais veloz** do que uma planilha/Excel, e mais ainda que escrito com papel e caneta.
+Um banco de dados atual com SGBD é exponencialmente mais veloz do que uma planilha/Excel, e mais ainda do que escrito com papel e caneta.
 
-#### **Dificuldades Encontradas**
+#### Dificuldades encontradas
 
-Aprender a manipular e criar ambientes como esse (Banco de Dados) significa estar disputando lado a lado com seus concorrentes e **abraçar o futuro**. As folhas físicas são mais **obsoletas** e difíceis de...
+Aprender a manipular e criar ambientes como esse (banco de dados) significa estar disputando lado a lado com seus concorrentes e abraçar o futuro. As folhas físicas são mais obsoletas e difíceis de...
 
 ## MySQL
 
-O comando SELECT "*" é ideal apenas em ambiente de testes, visto que em uma aplicação real isto traria mais processamento para o banco de dados.
+O comando `SELECT *` é ideal apenas em ambiente de testes, visto que em uma aplicação real isto traria mais processamento para o banco de dados.
