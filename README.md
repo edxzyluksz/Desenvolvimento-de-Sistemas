@@ -12,11 +12,12 @@ Para atividades avaliativas, a palavra 'somativa' é utilizada dentro da institu
 
 ## 🛥️ Navegação Básica
 
+- Documentos explicativos fornecidos pelos professores relacionado à matéria --> `📁 apresentacoes/`
 - Demonstrações de conteúdos práticos (ex: Códigos de Java escritos pelo docente) --> `📁 demonstracoes/`
 - Atividades autorais dado orientações dos professores --> `📁 atividades/`
 - Avaliações de domínio realizadas (somativa) --> `📁 somativa/`
 
-> OBS: Atualmente, está em fase de transição para separar o conteúdo interno destes diretórios como separados por linguagem de programação e frameworks.
+> OBS: Atualmente, está em fase de transição para separar o conteúdo interno destes diretórios como separados por linguagem de programação e frameworks (O progresso será iniciado através de outra branch).
 
 ## 👨‍🏫 Cursos Externos/Transversais
 
