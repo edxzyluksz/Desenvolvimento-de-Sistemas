@@ -7,7 +7,7 @@
 Thumbs.db
 
 # Temporary / compiled output
-tmp
+tmp/
 out-tsc
 bazel-out
 
