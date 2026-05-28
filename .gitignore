@@ -11,7 +11,7 @@ tmp/
 out-tsc
 bazel-out
 
-# Miscellaneous
+# Miscellanoeous
 *.log
 *.swp
 .connect.lock
