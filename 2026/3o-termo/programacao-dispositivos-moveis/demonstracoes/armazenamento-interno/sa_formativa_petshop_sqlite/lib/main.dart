@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
+void main(List<String> args) {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MaterialApp(
+    title: "PetShop SqLite",
+    debugShowCheckedModeBanner: false,
+    theme: ThemeData(primarySwatch: Colors.deepOrange),
+    home: HomeScreen(),
+  ));
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('PetShop SqLite'),
+      ),
+      body: Center(
+        child: Text('Welcome to PetShop SqLite'),
       ),
     );
   }
