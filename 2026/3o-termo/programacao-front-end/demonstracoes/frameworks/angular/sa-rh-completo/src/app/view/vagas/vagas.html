@@ -1,0 +1,15 @@
+<section class="listar-vagas">
+  <!-- property do data binding ngFor -->
+   <div *ngFor="let vaga of vagas">
+      <div class="card">
+        <img src="assets\img\vagas\{{vaga.foto}}" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Código da Vaga: {{vaga.id}}</h5>
+          <h5 class="card-title">Vaga: {{vaga.nome}}</h5>
+          <p class="card-text">Descrição da Vaga: {{vaga.descricao}}</p>
+          <p class="card-text">Salário: R$ {{vaga.salario}}</p>
+
+        </div>
+      </div>
+   </div>
+</section>

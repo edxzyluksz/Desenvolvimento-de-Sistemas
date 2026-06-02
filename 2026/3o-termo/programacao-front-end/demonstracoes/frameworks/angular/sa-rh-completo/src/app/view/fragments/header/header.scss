@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  a {
+    text-decoration: none; //remove o sublinhado do texto
+    color: #777;
+    font-weight: bold;
+  }
+
+  .navItens {
+    display: flex;
+    gap: 1.5rem;
+
+    .navLinks {
+      color: #0077ff;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease; //transição suave da cor
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+
+  // Media Query  => tela menor
+  @media (max-width: 800px) {
+    flex-direction: columns;
+    align-items: flex-start;
+    padding: 1rem;
+
+    .navItens {
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      margin-top: 1rem;
+
+      .navLink {
+        padding: 0.8rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.05)
+      }
+
+      &:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+    }
+  }
+}
