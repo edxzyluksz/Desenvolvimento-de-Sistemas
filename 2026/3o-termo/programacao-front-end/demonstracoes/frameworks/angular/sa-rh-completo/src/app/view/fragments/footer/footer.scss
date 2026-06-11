@@ -1,9 +1,11 @@
 .footer {
+  height: 6vh;
   background-color: #343434;
   color: #fff;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,32 +1,16 @@
 export class Vaga {
-  // //atributos
-  // id: number = 0;
-  // nome: string = "";
-  // foto: string = "";
-  // descricao: string = "";
-  // salario: number = 0;
-
-  // //construtor
-  // constructor(id:number, nome:string, foto:string, descricao:string, salario:number){
-  //   this.id = id,
-  //   this.nome = nome,
-  //   this.foto = foto,
-  //   this.descricao = descricao,
-  //   this.salario = salario
-  // }
-
-  //Construtor Encurtado =>
+  // Construtor Encurtado
   constructor(
-    public id: number,
+    public id: string,
     public nome: string,
     public foto: string,
     public descricao: string,
     public salario: number,
   ) {}
 
-  //métodos
+  // Métodos
   // Mapeamento de Dados da API (toMap e fromMap)
-  // to MAp OBJ => API
+  // toMap OBJ => API
   toMap(): { [key: string]: any } {
     return {
       id: this.id,
@@ -37,7 +21,7 @@ export class Vaga {
     };
   }
 
-  // FromMAp = API => OBJ
+  // FromMap = API => OBJ
   fromMap(map: any): Vaga {
     return new Vaga(map.id, map.nome, map.foto, map.descricao, map.salario);
   }

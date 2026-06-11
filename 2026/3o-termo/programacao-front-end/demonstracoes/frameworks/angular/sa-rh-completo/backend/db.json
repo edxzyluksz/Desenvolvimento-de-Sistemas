@@ -2,9 +2,9 @@
   "vagas": [
     {
       "id": "1",
-      "nome": "Desenvolver FrontEnd Jr",
-      "foto": "foto1.jpg",
-      "descricao": "Trabalhar com HTML, CSS e JS",
+      "nome": "Design Ux/Ui",
+      "foto": "foto4.jpg",
+      "descricao": "Trabalhar com Design de Páginas Web",
       "salario": 5000
     },
     {
@@ -20,13 +20,6 @@
       "foto": "foto3.jpg",
       "descricao": "Trabalhar com Desenvolvimento Web",
       "salario": 18000
-    },
-    {
-      "nome": "Design Ux/Ui",
-      "foto": "foto4.jpg",
-      "descricao": "Trabalhar com Design de Páginas Web",
-      "salario": 5000,
-      "id": "PxeeI7fYMYY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

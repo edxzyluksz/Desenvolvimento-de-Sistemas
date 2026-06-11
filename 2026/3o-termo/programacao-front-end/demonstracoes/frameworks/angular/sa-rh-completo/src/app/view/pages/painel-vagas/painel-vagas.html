@@ -1,0 +1,49 @@
+<h2>Cadastrar</h2>
+
+<!-- Formulário para mostrar a vaga selecionada ou cadastrar uma vaga nova -->
+
+<form action="">
+  <label for="">ID</label>
+  <input type="text" name="id" [(ngModel)]="vaga.id" placeholder="ID">
+  <label for="">Nome</label>
+  <input type="text" name="nome" [(ngModel)]="vaga.nome" placeholder="nome">
+  <label for="">Foto</label>
+  <input type="text" name="foto" [(ngModel)]="vaga.foto" placeholder="foto">
+  <label for="">Descrição</label>
+  <input type="text" name="descricao" [(ngModel)]="vaga.descricao" placeholder="descricao">
+  <label for="">Salário</label>
+  <input type="text" name="salario" [(ngModel)]="vaga.salario" placeholder="salario">
+  <!-- import to FormsModule -->
+
+  <!-- Botões do form -->
+   <div>
+     <button type="button" (click)="cadastrarVaga()">Cadastra Vaga</button>
+     <button type="button" (click)="atualizarVaga(vaga.id)">Atualizar Vaga</button>
+     <button type="button" (click)="removerVaga(vaga.id)">Excluir Vaga</button>
+   </div>
+
+   <!-- Tabela com as vagas já cadastradas -->
+</form>
+
+<section class="listar-vagas">
+    <table class="table">
+      <thead>
+        <th>ID Vaga</th>
+        <th>Vaga</th>
+        <th>Descrição</th>
+        <th>Salário</th>
+        <th>Ação</th>
+      </thead>
+      <tbody>
+        @for (item of vagas; track vagas){
+          <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.descricao}}</td>
+            <td>{{item.salario}}</td>
+            <td><button type="button" (click)="listarVagaUnica(item)">Listar</button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>

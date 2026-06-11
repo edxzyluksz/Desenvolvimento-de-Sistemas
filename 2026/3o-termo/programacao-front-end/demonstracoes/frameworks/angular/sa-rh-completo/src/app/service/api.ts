@@ -9,7 +9,7 @@ import { Vaga } from '../model/vaga.model';
 export class Api {
   //atributo
   //endereço de conexão da api
-  private apiUrl = 'http://localhost:3000/vagas'; //caminho da API
+  private apiUrl = 'http://localhost:3008/vagas'; //caminho da API
 
   constructor(private http: HttpClient) {}
 

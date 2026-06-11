@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Api } from '../../service/api';
-import { Vaga } from '../../model/vaga.model';
+import { Api } from '../../../service/api';
+import { Vaga } from '../../../model/vaga.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-vagas',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './vagas.html',
-  styleUrl: './vagas.scss',
+  styleUrl: './vagas.scss'
 })
 export class Vagas implements OnInit {
   //atributos

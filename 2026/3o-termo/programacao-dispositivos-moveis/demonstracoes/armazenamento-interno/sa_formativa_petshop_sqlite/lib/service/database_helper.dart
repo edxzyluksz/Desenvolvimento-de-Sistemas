@@ -4,39 +4,41 @@ import 'package:sa_formativa_petshop_sqlite/model/pet_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DatabaseHelper {
-  //Transforma essa classe em singleton
-  //não permite instanciar outro obj enquanto um obj estiver ativo
+  // Classe do tipo Singleton (permite o instanciamento de um único objeto por vez)
   static final DatabaseHelper _instance = DatabaseHelper._internal();
 
-  //Construir o Singleton
-  // essa Classe não Possui um Construtor Normal, 
-  //ele Precisa do factory para estabelecer a conexão
+  // Essa não possui um construtor normal
+  // Ele Precisa do factory para estabelece a conexão com o banco de dados, 
+  // Com essa técnica de escrita de construtor, a classe permite a criação de apenas um objeto por vez
+
   DatabaseHelper._internal();
   factory DatabaseHelper() => _instance;
 
-  //Conector do Banco de Dados
+
+  // Conector do Banco de Dados
   Database? _database; //Privado
 
-  //get database
+  // Método get da Conexão
   Future<Database> get database async{
-    if(_database != null) return _database!;
-    _database = await _initDb();
+    if(_database != null) return _database!; // Se conexão já existir retorna a conexão existente
+    _database = await _initDb(); // Se não existir, inicia uma nova
     return _database!;
   }
 
   Future<Database> _initDb() async{
-    //pegar o armazenamento do banco
-    String path = join(await getDatabasesPath(), "petshop.db");
+    // Começar a conexão com o banco
+    String path = join(await getDatabasesPath(), "petshop_db");
     return await openDatabase(
       path,
       version: 1,
+      // A primeira vez que for rodar o banco , cria as tabelas
       onCreate: (db, version) async{
         await db.execute(
           '''CREATE TABLE pets(
           id INTEGER PRIMARY KEY AUTOINCREMENT, 
           nome TEXT, raca TEXT, 
           nomeDono TEXT, 
-          telefoneDono TEXT)''');
+          telefone TEXT)''');
         await db.execute(
           '''CREATE TABLE consultas(
           id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -46,28 +48,29 @@ class DatabaseHelper {
           observacoes TEXT,
           FOREIGN KEY(petId) REFERENCES pets(id) ON DELETE CASCADE)''');
       },
-      onConfigure: (db) async => await db.execute("PRAGMA foreign_keys = ON"), //delete on CASCADE
-    );
+      onConfigure: (db) async => await db.execute("PRAGMA foreign_key = ON"), //garante o delete on CASCADE
+      );
   }
 
-  //Métodos CRUD Simplificados
-  //inserir pet no BD
+  // Métodos do API REST Simplificados
+
+  //POST
   Future<int> insertPet(Pet pet) async => (await database).insert("pets", pet.toMap());
-  
-  // Listar Pets do BD
-  Future<List<Pet>> getPets() async{
-    final List<Map<String,dynamic>> maps = await (await database).query("pets", orderBy: "nome ASC");
+
+  //GET
+  Future<List<Pet>> getPets() async {
+    // Busca os pets no banco e retrona uma lista em ordem alfabetica
+    final List<Map<String, dynamic>> maps = await (await database).query("pets", orderBy: "nome ASC");
     return List.generate(maps.length, (e) => Pet.fromMap(maps[e]));
   }
 
-  //InsertConsulta
+  //POST
   Future<int> insertConsulta(Consulta c) async => (await database).insert("consultas", c.toMap());
 
-  //Get Consultas por Pet
-  Future<List<Consulta>> getConsultasPorPet(int petId) async {
-    final List<Map<String,dynamic>> maps = await (await database).query("consultas", where: "petId = ?", whereArgs: [petId], orderBy: "dataHora DESC");
-    return List.generate(maps.length, (e) => Consulta.fromMap(maps[e]));
-
+  //GET
+  Future<List<Consulta>> getConsultaPorPet(int petId) async{
+    final List<Map<String,dynamic>> maps = await (await database).query("consultas", where: "petId = ?", whereArgs: [petId], orderBy: "dataHora DESC" );
+    return List.generate(maps.length, (e)=>Consulta.fromMap(maps[e]));
   }
 
 }
