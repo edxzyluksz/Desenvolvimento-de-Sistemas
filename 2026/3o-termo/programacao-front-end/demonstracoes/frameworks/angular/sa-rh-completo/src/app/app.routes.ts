@@ -1,12 +1,18 @@
 import { Routes } from '@angular/router';
-import { Vagas } from './view/pages/vagas/vagas';
-import { Inicio } from './view/pages/inicio/inicio';
-import { PainelVagas } from './view/pages/painel-vagas/painel-vagas';
-import { NotFound } from './view/pages/not-found/not-found';
+import { VagasComponent } from './view/pages/main/vagas/vagas.component';
+import { InicioComponent } from './view/pages/main/inicio/inicio.component';
+import { PainelVagasComponent } from './view/pages/admin/gerenciamento-vagas/gerenciamento-vagas.component';
+import { NotFoundComponent } from './view/pages/utils/not-found/not-found.component';
+import { CurriculosComponent } from './view/pages/main/curriculos/curriculos.component';
+import { GaleriaComponent } from './view/pages/main/galeria/galeria.component';
+import { GerenciamentoCurriculosComponent } from './view/pages/admin/gerenciamento-curriculos/gerenciamento-curriculos.component';
 
 export const routes: Routes = [
-  {path: "", component: Inicio},
-  {path: "vagas", component: Vagas},
-  {path: "painel-vaga", component: PainelVagas},
-  {path: "**", component: NotFound}
+  { path: '', component: InicioComponent },
+  { path: 'vagas', component: VagasComponent },
+  { path: 'painel-vagas', component: PainelVagasComponent },
+  { path: 'curriculos', component: CurriculosComponent },
+  { path: 'painel-curriculos', component: GerenciamentoCurriculosComponent },
+  { path: 'galeria', component: GaleriaComponent },
+  { path: '**', component: NotFoundComponent },
 ];

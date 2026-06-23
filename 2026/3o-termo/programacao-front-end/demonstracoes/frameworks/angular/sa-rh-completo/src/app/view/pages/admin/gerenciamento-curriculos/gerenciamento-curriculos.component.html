@@ -1,0 +1,79 @@
+<div class="painel-admin-container">
+  <h1>Cadastrar Currículo</h1>
+
+  <form action="">
+
+    <div class="input-group">
+      <label for="id">ID</label>
+      <input type="text" name="id" [(ngModel)]="curriculo.id" readonly placeholder="ID automático">
+    </div>
+
+    <div class="input-group">
+      <label for="userId">ID do Usuário</label>
+      <input type="text" name="userId" [(ngModel)]="curriculo.userId" placeholder="Insira o ID de vínculo do usuário...">
+    </div>
+
+    <div class="input-group">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" [(ngModel)]="curriculo.nome" placeholder="Digite o nome do candidato...">
+    </div>
+
+    <div class="input-group">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" [(ngModel)]="curriculo.email" placeholder="Digite o e-mail...">
+    </div>
+
+    <div class="input-group">
+      <label for="formacao">Formação Acadêmica</label>
+      <input type="text" name="formacao" [(ngModel)]="curriculo.formacao" placeholder="Ex: Análise e Desenvolvimento de Sistemas">
+    </div>
+
+    <div class="input-group">
+      <label for="experiencia">Experiência Profissional</label>
+      <input type="text" name="experiencia" [(ngModel)]="curriculo.experiencia" placeholder="Descreva as experiências anteriores...">
+    </div>
+
+    <div class="input-group">
+      <label for="habilidades">Habilidades Técnicas</label>
+      <input type="text" name="habilidades" [(ngModel)]="curriculo.habilidades" placeholder="Ex: Angular, TypeScript, HTML, CSS">
+    </div>
+
+    <div class="input-group">
+      <label for="linkedin">Perfil do LinkedIn</label>
+      <input type="text" name="linkedin" [(ngModel)]="curriculo.linkedin" placeholder="URL do LinkedIn...">
+    </div>
+
+    <div class="form-actions">
+      <button type="button" (click)="cadastrarCurriculo()">Cadastrar Currículo</button>
+      <button type="button" (click)="atualizarCurriculo(curriculo.id)">Atualizar Currículo</button>
+      <button type="button" (click)="removerCurriculo(curriculo.id)">Excluir Currículo</button>
+    </div>
+  </form>
+
+  <section class="tabela-admin">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Formação</th>
+          <th>Habilidades</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of curriculos; track item.id) {
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.formacao }}</td>
+            <td>{{ item.habilidades }}</td>
+            <td><button type="button" (click)="listarCurriculoUnico(item)">Editar</button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+</div>

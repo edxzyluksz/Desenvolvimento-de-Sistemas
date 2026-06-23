@@ -1,0 +1,64 @@
+<div class="painel-admin-container">
+
+  <h1>Cadastrar Vaga</h1>
+
+  <form action="">
+
+    <div class="input-group">
+      <label for="id">ID</label>
+      <input type="text" name="id" [(ngModel)]="vaga.id" readonly placeholder="Atribua o identificador único..">
+    </div>
+
+    <div class="input-group">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" [(ngModel)]="vaga.nome" placeholder="Digite o nome da vaga...">
+    </div>
+
+    <div class="input-group">
+      <label for="foto">Foto</label>
+      <input type="text" name="foto" [(ngModel)]="vaga.foto" placeholder="Insira o caminho da foto..">
+    </div>
+
+    <div class="input-group">
+      <label for="descricao">Descrição</label>
+      <input type="text" name="descricao" [(ngModel)]="vaga.descricao" placeholder="Descreva a vaga...">
+    </div>
+
+    <div class="input-group">
+      <label for="salario">Salário</label>
+      <input type="text" name="salario" [(ngModel)]="vaga.salario" placeholder="Defina o salário..">
+    </div>
+
+    <div class="form-actions">
+      <button type="button" (click)="cadastrarVaga()">Cadastrar Vaga</button>
+      <button type="button" (click)="atualizarVaga(vaga.id)">Atualizar Vaga</button>
+      <button type="button" (click)="removerVaga(vaga.id)">Excluir Vaga</button>
+    </div>
+  </form>
+
+  <section class="tabela-admin">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID Vaga</th>
+          <th>Vaga</th>
+          <th>Descrição</th>
+          <th>Salário</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of vagas; track item){
+          <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.descricao}}</td>
+            <td>{{item.salario}}</td>
+            <td><button type="button" (click)="listarVagaUnica(item)">Editar</button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+</div>

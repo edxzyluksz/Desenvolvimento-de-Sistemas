@@ -1,25 +1,50 @@
 {
   "vagas": [
     {
-      "id": "1",
-      "nome": "Design Ux/Ui",
-      "foto": "foto4.jpg",
-      "descricao": "Trabalhar com Design de Páginas Web",
-      "salario": 5000
-    },
-    {
       "id": "2",
-      "nome": "Desenvolver BackEnd Pleno",
-      "foto": "foto2.jpg",
+      "nome": "Desenvolver BackEnd Pleno II",
+      "foto": "backend.jpg",
       "descricao": "Trabalhar com Desenvolvimento Web",
-      "salario": 9000
+      "salario": "1000002323"
     },
     {
       "id": "3",
       "nome": "Desenvolver Fullstack Senior",
-      "foto": "foto3.jpg",
+      "foto": "fullstack.jpg",
       "descricao": "Trabalhar com Desenvolvimento Web",
-      "salario": 18000
+      "salario": "25000"
+    }
+  ],
+  "curriculos": [
+    {
+      "id": "1",
+      "userId": "301",
+      "nome": "Marcos Oliveira",
+      "email": "marcos.oliver@email.com",
+      "formacao": "Análise e Desenvolvimento de Sistemas II",
+      "experiencia": "Desenvolvedor Mobile Júnior",
+      "habilidades": "Flutter, Dart, Firebase, Git Ub",
+      "linkedin": "linkedin.com/in/marcosoliver"
+    },
+    {
+      "id": "2",
+      "userId": "302",
+      "nome": "Gabriela Mendes",
+      "email": "gabi.mendes@email.com",
+      "formacao": "Ciência da Computação",
+      "experiencia": "Engenheira de Dados Pleno",
+      "habilidades": "Python, SQL, Spark, Airflow",
+      "linkedin": "linkedin.com/in/gabimendes"
+    },
+    {
+      "id": "4",
+      "userId": "304",
+      "nome": "Amanda Vieira",
+      "email": "amanda.v@email.com",
+      "formacao": "Web Design",
+      "experiencia": "UI/UX Designer Pleno",
+      "habilidades": "Figma, Adobe XD, HTML/CSS, Less",
+      "linkedin": "linkedin.com/in/amandavieira"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

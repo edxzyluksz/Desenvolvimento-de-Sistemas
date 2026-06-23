@@ -22,7 +22,7 @@ export class Vaga {
   }
 
   // FromMap = API => OBJ
-  fromMap(map: any): Vaga {
+  static fromMap(map: any): Vaga {
     return new Vaga(map.id, map.nome, map.foto, map.descricao, map.salario);
   }
 }

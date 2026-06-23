@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #E31A12;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  a {
+    text-decoration: none; //remove o sublinhado do texto
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 1.5rem;
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: underline;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease; //transição suave da cor
+
+      &:hover {
+        color: #0A66C2;
+      }
+    }
+  }
+
+  // Media Query  => tela menor
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+
+    .nav-items {
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      margin-top: 1rem;
+
+      .nav-link {
+        padding: 0.8rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.05)
+      }
+
+      &:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+    }
+  }
+}

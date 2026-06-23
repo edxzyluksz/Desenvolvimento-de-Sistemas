@@ -1,0 +1,19 @@
+<section class="container-galeria">
+  <div class="page-header-intro">
+    <h1>Galeria</h1>
+    <p>Conheça todas as fotos disponíveis relacionadas às vagas</p>
+  </div>
+
+  <div class="card-list">
+    @for (item of listaVagas; track item.arquivo) {
+      <div class="card">
+        <img src="/assets/img/vagas/{{ item.arquivo }}" alt="{{ item.nome }}">
+        <div class="card-body">
+          <h5>Categoria: {{ item.categoria }}</h5>
+          <p>Imagem: {{ item.nome }}</p>
+          <span>Referência: {{ item.arquivo }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</section>

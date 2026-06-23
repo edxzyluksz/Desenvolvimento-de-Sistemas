@@ -1,15 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { Header } from './view/fragments/header/header';
-import { Footer } from './view/fragments/footer/footer';
+import { HeaderComponent } from './view/fragments/header/header.component';
+import { FooterComponent } from './view/fragments/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    Header,
-    Footer
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
