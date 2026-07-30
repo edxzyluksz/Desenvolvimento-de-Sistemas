@@ -1,0 +1,259 @@
+/* ===== BASE ===== */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4dd);
+    margin: 0;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #1e8449;
+    letter-spacing: 1px;
+}
+
+/* ===== SEÇÕES (CARDS) ===== */
+.secao {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    transition: transform 0.2s ease;
+}
+
+.secao:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== SUBTÍTULOS ===== */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #34495e;
+    border-left: 5px solid #27ae60;
+    padding-left: 10px;
+}
+
+/* ===== LINHA INPUTS ===== */
+.linha {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+/* ===== INPUTS E SELECT ===== */
+/* Aplicando o mesmo estilo para os dois não afobar o design */
+input,
+select {
+    flex: 1;
+    min-width: 160px;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fafafa;
+    font-family: inherit;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* Estilo extra focado só no Select para melhorar a usabilidade */
+select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+input:focus,
+select:focus {
+    border-color: #27ae60;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.25);
+}
+
+/* ===== BOTÕES BASE ===== */
+button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover geral */
+button:hover {
+    transform: scale(1.04);
+}
+
+/* ===== BOTÃO REPOSITOR ===== */
+#btn-repositor-cadastrar {
+    background: #27ae60;
+    color: white;
+}
+
+#btn-repositor-cadastrar:hover {
+    background: #1e8449;
+}
+
+/* ===== BOTÃO CAIXA ===== */
+#btn-caixa-vender {
+    background: #2980b9;
+    color: white;
+}
+
+#btn-caixa-vender:hover {
+    background: #1f618d;
+}
+
+/* ===== BOTÕES ESTOQUISTA ===== */
+#btn-ver-produtos {
+    background: #8e44ad;
+    color: white;
+}
+
+#btn-ver-produtos:hover {
+    background: #6c3483;
+}
+
+#btn-ver-vendas {
+    background: #e67e22;
+    color: white;
+}
+
+#btn-ver-vendas:hover {
+    background: #ca6f1e;
+}
+
+/* ===== LISTA ===== */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== ITENS ===== */
+li {
+    background: #f8f9fa;
+    margin: 8px 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border-left: 5px solid #27ae60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== SEPARADOR ===== */
+hr {
+    border: none;
+    height: 1px;
+    background: #dcdcdc;
+    margin: 30px 0;
+    opacity: 0.6;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Classe para esconder o modal */
+.modal-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.hidden .modal-content {
+    transform: translateY(-20px);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #95a5a6;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: #2c3e50;
+}
+
+#modal-title {
+    margin-top: 0;
+    border-left: none;
+    /* Remove a borda padrão do h2/h3 */
+    padding-left: 0;
+}
+
+/* Cores dinâmicas baseadas no tipo de aviso */
+.texto-sucesso {
+    color: #27ae60 !important;
+}
+
+.texto-erro {
+    color: #e74c3c !important;
+}
+
+.texto-aviso {
+    color: #f39c12 !important;
+}
+
+#btn-modal-ok {
+    margin-top: 20px;
+    background: #34495e;
+    color: white;
+    width: 100%;
+}
+
+#btn-modal-ok:hover {
+    background: #2c3e50;
+}
+
+/* ===== ESTADOS ATIVOS E OCULTOS ===== */
+.escondido {
+    display: none !important;
+}
+
+.btn-ativo {
+    filter: brightness(0.7);
+    /* Escurece o botão */
+    transform: translateY(4px) !important;
+    /* Empurra para baixo */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+    /* Cria sombra interna de profundidade */
+}

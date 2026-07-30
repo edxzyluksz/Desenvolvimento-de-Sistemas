@@ -59,12 +59,13 @@ Caso haja necessidade de validação, contate o criador para disponibilizar a ve
 
 #### 3o Termo
 
-- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / Programação Front-end ;
+- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / Programação Front-end
 - Jorge Carneiro: Programação Back-end / Projeto de Software 2
 
 #### 4o Termo
 
-- Status: Não alcançado no momento.
+- Diogo Takamori Barbosa: Programação para Dispositivos Móveis / Programação Front-end
+- Márcio Denadai: Internet das Coisas (IoT) / Testes de Software
 
 ## ⚙️ Softwares Utilizados
 

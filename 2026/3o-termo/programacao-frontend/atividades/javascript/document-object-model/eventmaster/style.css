@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#convidados {
+    display: flex;
+    gap: 20px;
+    max-height: 40vh;
+    width: 70vw;
+    /* 25 - 40*/
+}
+
+.darkMode {
+    color: white;
+    background-color: rgb(63, 63, 63);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#div-titulo {
+    height: 5vh;
+    display: flex;
+    gap: 20px;
+}
+
+#div-titulo button {
+    border: 1px solid rgb(102, 101, 101);
+    background-color: black;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+#registro-user {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 249, 255);
+    width: 70%;
+    border: 1px solid rgb(109, 107, 107);
+    padding: 30px;
+    border-radius: 15px;
+    color: black;
+    order: 1;
+}
+
+#registro-user button {
+    width: 50%;
+    align-self: center;
+    background-color: rgb(71, 182, 71);
+    color: white;
+    font-weight: bold;
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(95, 94, 94);
+}
+
+#registro-user button:hover {
+    background-color: green;
+}
+
+#confirmados-lista {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-color: rgb(88, 82, 82) transparent;
+    width: 20%;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.confirmado {
+    color: black;
+    background-color: rgb(223, 217, 217);
+    border-radius: 8px;
+    box-shadow: 0 0 3px 0 black;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+#confirmados-lista {
+    background-color: rgb(148, 147, 147);
+    padding: 1.5%;
+}
+
+#texto-dinamico {
+    color: green;
+    align-self: center;
+    margin: 10px;
+}

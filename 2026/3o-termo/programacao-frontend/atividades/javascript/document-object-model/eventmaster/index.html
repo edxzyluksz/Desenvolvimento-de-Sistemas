@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div-titulo">
+        <h1>Gestão de Convidados EventMaster</h1>
+        <button id="switchThemes">🌙</button>
+    </div>
+    <div id="convidados">
+        <form id="registro-user">
+            <h2>Formulário de Convidados</h2>
+            <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required>
+            <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" placeholder="Sua idade...">
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Seu email...">
+            <label for="telefone">Telefone</label>
+                <input type="text" name="tel" id="tel" placeholder="Seu telefone...">
+            <fieldset>
+                <legend>Escolha suas preferências</legend>
+                <div>
+                    <input type="checkbox" name="interesse" id="esportes" value="esportes">
+                    <label for="esportes">Esportes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesse" id="musica" value="musica">
+                    <label for="musica">Música</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesse" id="literatura" value="literatura">
+                    <label for="literatura">Literatura</label>
+                </div>
+            </fieldset>
+            <button type="submit">Adicionar Convidado</button>
+            <span id="texto-dinamico"></span>
+        </form>
+    
+        <div id="confirmados-lista">
+            <h2>Lista dos confirmados</h2>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
