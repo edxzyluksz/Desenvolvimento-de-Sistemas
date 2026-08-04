@@ -71,4 +71,4 @@ Caso haja necessidade de validação, contate o criador para disponibilizar a ve
 
 Pasta no Google Drive para a instalação dos Setups, ISOs e Portáteis utilizados ao decorrer do curso:
 
-- [Google Drive - Softwares](https://drive.google.com/drive/folders/1650XkWGCc-5uLBJ8kgAfvQyAYtIYnJJW?usp=drive_link)
+[Google Drive - Softwares](https://drive.google.com/drive/folders/1650XkWGCc-5uLBJ8kgAfvQyAYtIYnJJW?usp=drive_link)
