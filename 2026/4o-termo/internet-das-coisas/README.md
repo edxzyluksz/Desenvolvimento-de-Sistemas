@@ -126,3 +126,6 @@ Desvantagem: Maior complexidade no design, o que pode aumentar o custo de implem
 Os shields são placas que se encaixam ao Arduino para acrescentar funcionalidades de uma forma simples e confiável. A padronização elétrica e mecânica dos shields possibilitou que, de um lado, uma variedade grande de shields fossem oferecidos e, de outro, que placas com microcontroladores diferentes dos usados nos Arduinos originais pudessem suportar a maioria dos shields.
 
 <img width="20%" src="https://www.makerhero.com/wp-content/uploads/2021/01/shield-arduino-3.jpg.webp">
+
+## Aplicação prática - RoboCore Blackboard
+
