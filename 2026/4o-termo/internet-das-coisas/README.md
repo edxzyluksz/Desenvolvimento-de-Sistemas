@@ -129,3 +129,17 @@ Os shields são placas que se encaixam ao Arduino para acrescentar funcionalidad
 
 ## Aplicação prática - RoboCore Blackboard
 
+### Diferenças entre DHT11 e DHT22
+
+<img width="20%" src="https://i0.wp.com/autocorerobotica.blog.br/wp-content/uploads/2017/08/comparativo-1-300x156.jpg?resize=427%2C222">
+
+### Explicações
+
+Existem 2 tipos de comunicação binária:
+
+- USB (Universal Serial Bus)
+- Comunicação Paralela
+
+A principal diferença entre ambos é como a forma que os bits são enviados!
+
+Clock - Sincronismo
