@@ -1,6 +1,6 @@
 # Fluliterry
 
-# 1. Identificação do Projeto
+## 1. Identificação do Projeto
 
 - **Nome do Projeto**: Fluliterry
 - **Descrição**: Aplicativo móvel multiplataforma (Flutter) para gerenciamento de bibliotecas, com funcionalidade de CRUD (Create, Read, Update, Delete) para usuários, livros e empréstimos
@@ -15,8 +15,8 @@ O sistema tem como objetivo digitalizar e simplificar a gestão de acervos bibli
 | --- | --- | --- |
 | RF01 | Gerenciar livros | Listar, cadastrar, editar e excluir livros do acervo |
 | RF02 | Gerenciar usuários | Listar, cadastrar, editar e excluir usuários do sistema |
-| RF03 | Gerenciar empréstimos (de livros) |  |
-| RF04 | Navegação | Interface com navegação para abas (livros, empréstimos) | 
+| RF03 | Gerenciar empréstimos (de livros) | Visualizar e gerenciar empréstimos de livros |
+| RF04 | Navegação | Interface com navegação para abas (livros, empréstimos) |
 
 ## 4. Requisitos Não Funcionais (RNF)
 
@@ -74,8 +74,8 @@ erDiagram
         boolean returned
     }
 
-    user ||--o{ loan : "do"}
-    book ||--o{ loan : "is loan in"}
+    user ||--o{ loan : "do"
+    book ||--o{ loan : "is loan in"
 ```
 
 ### 6.2 Diagrama de Classe
@@ -113,5 +113,4 @@ classDiagram
         String returnDate
         bool returned
     }
-
 ```

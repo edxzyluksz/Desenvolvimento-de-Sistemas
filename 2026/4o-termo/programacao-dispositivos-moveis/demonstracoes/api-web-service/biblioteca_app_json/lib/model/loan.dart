@@ -1,13 +1,14 @@
-import 'book.dart';
-import 'user.dart';
+import 'package:biblioteca_app_json/model/book.dart';
+import 'package:biblioteca_app_json/model/user.dart';
 
 class Loan {
-    final String? id;
-    final User user;
-    final Book book;
-    final DateTime startDate;
-    final DateTime dueDate;
-    final bool returned;
+  // Atributos
+    String? id;
+    User user;
+    Book book;
+    DateTime startDate;
+    DateTime dueDate;
+    bool returned;
 
     Loan({
         this.id,
@@ -20,8 +21,8 @@ class Loan {
 
     Map<String, dynamic> toMap() => {
         "id": id,
-        "userId": user.toMap(),
-        "bookId": book.toMap(),
+        "user": user.toMap(),
+        "book": book.toMap(),
         "startDate": startDate.toIso8601String(),
         "dueDate": dueDate.toIso8601String(),
         "returned": returned
@@ -29,11 +30,11 @@ class Loan {
 
     factory Loan.fromMap(Map<String, dynamic> map) =>
     Loan(
-        id: map["id"].toString(),
-        user: User.fromMap(map["userId"]),
-        book: Book.fromMap(map["bookId"]),
-        startDate: DateTime.parse(map["startDate"].toString()),
-        dueDate: DateTime.parse(map["dueDate"].toString()),
-        returned: map["returned"] == true ? true : false
+        id: map['id'].toString(),
+        user: User.fromMap(map['user']),
+        book: Book.fromMap(map['book']),
+        startDate: DateTime.parse(map['startDate'].toString()),
+        dueDate: DateTime.parse(map['dueDate'].toString()),
+        returned: map['returned'] == true ? true : false
     );
 }

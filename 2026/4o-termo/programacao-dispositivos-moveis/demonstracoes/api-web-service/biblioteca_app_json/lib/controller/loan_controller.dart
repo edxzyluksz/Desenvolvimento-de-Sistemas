@@ -6,14 +6,14 @@ class LoanController {
     final loans = await ApiService.getList("loans?_sort=loanDate");
     return loans.map<Loan>((item) => Loan.fromMap(item)).toList();
   }
-}
 
-Future<Loan> create(Loan loan) async {
-  final created = await ApiService.post("loans", loan.toMap());
-  return Loan.fromMap(created);
-}
+  Future<Loan> create(Loan loan) async {
+    final created = await ApiService.post("loans", loan.toMap());
+    return Loan.fromMap(created);
+  }
 
-Future<Loan> update(Loan loan) async {
-  final update = await ApiService.put("loans", loan.toMap(), loan.id!);
-  return Loan.fromMap(update);
+  Future<Loan> update(Loan loan) async {
+    final update = await ApiService.put("loans", loan.toMap(), loan.id!);
+    return Loan.fromMap(update);
+  }
 }

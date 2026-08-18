@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = "http://localhost:3008";
+  static const String baseUrl = "http://10.87.38.131:3008";
 
   // Métodos para acessar os endpoints da API
 
@@ -31,9 +31,9 @@ class ApiService {
     throw Exception("Falha de conexão com $path");
   }
 
-  // POST 
+  // PUT
   static Future<Map<String, dynamic>> put(String path, Map<String, dynamic> body, String id) async {
-    final res = await http.post(
+    final res = await http.put(
       Uri.parse("$baseUrl/$path/$id"),
       headers: {"Content-Type": "application/json"},
       body: json.encode(body)
