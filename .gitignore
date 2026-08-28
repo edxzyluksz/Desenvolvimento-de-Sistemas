@@ -136,3 +136,4 @@ migrate_working_dir/
 .sass-cache/
 coverage/
 typings
+.env
