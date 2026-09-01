@@ -20,13 +20,14 @@ class DbHelper {
   }
 
   Future<Database> _initDb() async {
-    String path = join(await getDatabasesPath(), "fetchvie");
+    String path = join(await getDatabasesPath(), "fetchvie.db");
     return await openDatabase(
       path,
       version: 1,
       onCreate: (db, version) async {
         await db.execute(createWorkScript);
         await db.execute(createUserScript);
+        await db.execute(createUserFavoritesScript);
       },
     );
   }
@@ -35,17 +36,93 @@ class DbHelper {
 
   // -- Works
   Future<List<Work>> getSavedWorks() async {
-    final List<Map<String, dynamic>> maps = await (await database).query("works", limit: 100, orderBy: "id DESC");
+    final List<Map<String, dynamic>> maps = await (await database).query(
+      "works",
+      limit: 100,
+      orderBy: "id DESC",
+    );
     return List.generate(maps.length, (e) => Work.fromMap(maps[e]));
   }
-  Future<int> postApiWorks(Work w) async => (await database).insert("works", w.toMap());
-  Future<int> updateSavedWorkFromApi(Work w) async => (await database).update("works", w.toMap(), where: "id = ?", whereArgs: [w.id]);
+
+  Future<int> postApiWorks(Work w) async =>
+      (await database).insert("works", w.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
+
+  Future<int> updateSavedWorkFromApi(Work w) async => (await database).update(
+    "works",
+    w.toMap(),
+    where: "id = ?",
+    whereArgs: [w.id],
+    conflictAlgorithm: ConflictAlgorithm.replace,
+  );
 
   // -- User
   Future<List<User>> getSavedUsers() async {
-    final List<Map<String, dynamic>> maps = await (await database).query("users", limit: 100, orderBy: "id");
+    final List<Map<String, dynamic>> maps = await (await database).query(
+      "users",
+      limit: 100,
+      orderBy: "id",
+    );
     return List.generate(maps.length, (e) => User.fromMap(maps[e]));
   }
-  Future<int> createUser(User u) async => (await database).insert("works", u.toMap());
-  Future<int> updateUser(User u) async => (await database).update("users", u.toMap(), where: "uid = ?", whereArgs: [u.uid]);
+
+  Future<User> getUser(User u) async {
+    final List<Map<String, dynamic>> maps = await (await database).query(
+      "users",
+      where: "id = ?",
+      whereArgs: [u.uid],
+      limit: 1,
+    );
+
+    return User.fromMap(maps.first);
+  }
+
+  Future<int> createUser(User u) async =>
+      (await database).insert("users", u.toMap());
+
+  Future<int> updateUser(User u) async => (await database).update(
+    "users",
+    u.toMap(),
+    where: "id = ?",
+    whereArgs: [u.uid],
+  );
+
+  Future<List<Work>> getFavoriteMovies(User u) async {
+    final db = await database;
+    // Faz um JOIN entre works e user_favorites para trazer os dados completos da obra
+    final List<Map<String, dynamic>> maps = await db.rawQuery(
+      '''
+      SELECT w.* FROM works w
+      INNER JOIN user_favorites uf ON w.id = uf.work_id
+      WHERE uf.user_id = ?
+    ''',
+      [u.uid],
+    );
+    return List.generate(maps.length, (e) => Work.fromMap(maps[e]));
+  }
+
+  Future<bool> toggleFavoriteMovie(User u, Work w) async {
+    final db = await database;
+
+    // 1. Verifica se a obra já está favoritada
+    final List<Map<String, dynamic>> maps = await db.query(
+      "user_favorites",
+      where: "user_id = ? AND work_id = ?",
+      whereArgs: [u.uid, w.id],
+      limit: 1,
+    );
+
+    if (maps.isNotEmpty) {
+      await db.delete(
+        "user_favorites",
+        where: "user_id = ? AND work_id = ?",
+        whereArgs: [u.uid, w.id],
+      );
+      return false; 
+    } else {
+      await postApiWorks(w);
+
+      await db.insert("user_favorites", {"user_id": u.uid, "work_id": w.id});
+      return true; 
+    }
+  }
 }
