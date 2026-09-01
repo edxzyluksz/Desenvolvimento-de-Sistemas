@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Dia - Lista de Tarefas</title>
+    <!-- Google Fonts para tipografia moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <!-- Cabeçalho -->
+        <header class="app-header">
+            <h1 class="app-title">Meu Dia</h1>
+            <p class="app-subtitle">Organize suas tarefas de forma simples e produtiva</p>
+        </header>
+
+        <!-- Formulário de Tarefa Rápida + Botão com Modal -->
+        <section class="task-form">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="O que você planeja fazer hoje?" 
+                    autocomplete="off"
+                    aria-label="Nova tarefa rápida"
+                >
+                <button type="button" id="add-btn" class="btn-add" title="Adicionar rapidamente">Adicionar</button>
+                <button type="button" id="open-modal-btn" class="btn-modal-open" title="Adicionar com detalhes e categorias">
+                    <span>➕ Detalhes</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filtro por Categorias -->
+        <nav class="category-filters" aria-label="Filtro de categorias">
+            <button type="button" class="filter-btn active" data-category="all">Todas</button>
+            <button type="button" class="filter-btn" data-category="trabalho">💼 Trabalho</button>
+            <button type="button" class="filter-btn" data-category="estudos">📚 Estudos</button>
+            <button type="button" class="filter-btn" data-category="pessoal">👤 Pessoal</button>
+            <button type="button" class="filter-btn" data-category="saude">🏃 Saúde</button>
+            <button type="button" class="filter-btn" data-category="financas">💰 Finanças</button>
+            <button type="button" class="filter-btn" data-category="outros">📌 Geral</button>
+        </nav>
+
+        <!-- Lista de Tarefas -->
+        <section class="task-list-section">
+            <ul id="task-list" class="task-list">
+                <!-- Inseridas dinamicamente pelo JavaScript -->
+            </ul>
+            <div id="empty-state" class="empty-state">
+                <p id="empty-state-text">Nenhuma tarefa adicionada ainda. Aproveite seu dia! ✨</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Tipos e Detalhes da Tarefa -->
+    <div id="task-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-card">
+            <!-- Header do Modal -->
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title">Detalhes da Tarefa</h2>
+                <button type="button" id="modal-close-btn" class="btn-close" aria-label="Fechar modal">&times;</button>
+            </div>
+
+            <!-- Formulário do Modal -->
+            <form id="modal-form" class="modal-form" onsubmit="return false;">
+                <input type="hidden" id="modal-task-id" value="">
+
+                <!-- Seleção de Categorias/Tipos -->
+                <div class="form-group">
+                    <label class="form-label">Categoria / Tipo:</label>
+                    <div class="category-selector-grid">
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="trabalho" checked>
+                            <span class="category-pill cat-trabalho">💼 Trabalho</span>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="estudos">
+                            <span class="category-pill cat-estudos">📚 Estudos</span>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="pessoal">
+                            <span class="category-pill cat-pessoal">👤 Pessoal</span>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="saude">
+                            <span class="category-pill cat-saude">🏃 Saúde</span>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="financas">
+                            <span class="category-pill cat-financas">💰 Finanças</span>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="modal-category" value="outros">
+                            <span class="category-pill cat-outros">📌 Geral</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Título da Tarefa -->
+                <div class="form-group">
+                    <label for="modal-task-title" class="form-label">Título da Tarefa:</label>
+                    <input 
+                        type="text" 
+                        id="modal-task-title" 
+                        class="modal-input" 
+                        placeholder="Ex: Reunião de alinhamento com equipe" 
+                        required
+                        autocomplete="off"
+                    >
+                </div>
+
+                <!-- Campo de Detalhes -->
+                <div class="form-group">
+                    <label for="modal-task-details" class="form-label">Detalhes & Observações (opcional):</label>
+                    <textarea 
+                        id="modal-task-details" 
+                        class="modal-textarea" 
+                        rows="4" 
+                        placeholder="Adicione anotações, links ou passos para completar a tarefa..."
+                    ></textarea>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="modal-actions">
+                    <button type="button" id="modal-cancel-btn" class="btn-secondary">Cancelar</button>
+                    <button type="button" id="modal-save-btn" class="btn-primary">Salvar Tarefa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

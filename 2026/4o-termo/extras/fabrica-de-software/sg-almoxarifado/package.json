@@ -1,0 +1,16 @@
+{
+  "name": "sg-almoxarifado",
+  "version": "1.0.0",
+  "description": "Sistema de Gerenciamento de Almoxarifado com React e json-server",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npx json-server --watch backend/db.json --port 3001",
+    "dev:client": "npm --prefix frontend run dev",
+    "install:all": "npm install && npm --prefix frontend install",
+    "build:client": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4"
+  }
+}
