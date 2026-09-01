@@ -143,3 +143,59 @@ Existem 2 tipos de comunicação binária:
 A principal diferença entre ambos é como a forma que os bits são enviados!
 
 Clock - Sincronismo
+
+## Arquitetura Cliente-Servidor
+
+### Sistema Crítico
+
+Um sistema que pode pô em risco a vida de um ou mais indivíduos se mal executado
+
+### HTTP
+
+Em sistemas críticos, o protocolo HTTP não é a opção ideal, dado sua latência.
+
+Em redes locais, seu tempo de resposta leva de 1 a 3 segundos (localmente), podendo levar mais de acordo com as variáveis.
+
+> Deve atentar-se com o nível de importância dos sistemas em que serão implementados o IoT
+
+### MQTT
+
+## Arquitetura Publisher-Subscriber
+
+TCP/IP MQTT
+
+Características
+* Protocolo leve para IoT
+* Ideal em redes instáveis
+* Comunicação assíncrona (Todos os processos podem acontecer ao mesmo tempo)
+
+Vantagens
+* Baixo consumo de dados
+* Escalável e flexivel
+* Fácil implementação
+
+<img width="20%" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F53dn3nemlvy0d8v66gnu.png">
+
+### Camadas de Comunicação
+
+Percepção (Sensores) -> Input
+
+Computação de borda (Rede) -> Protocolos (Wi-fi, ZigBee, LoRa, 5G)
+    - O envio através de gateways e roteadores
+Responsável por agrupar os dados percebidos
+
+Aplicação (Dashboards, Apps móveis, Sistemas de análise) -> Output (Pós-Envio)
+
+Em sistemas críticos, dificilmente o acionamento remoto é externo ao local no IoT. Nesses casos, somente dashboards, por exemplo, caso não haver uma infraestrura com monitoramento integrado severo para garantir os procedimentos de segurança.
+
+## Node-red
+
+O Node-RED é uma ferramenta de programação visual baseada em fluxo, desenvolvida pela IBM, que permite a criação de aplicações de Internet das Coisas (IoT) de forma intuitiva. Ele utiliza uma interface gráfica onde os usuários podem arrastar e soltar blocos (nós) para criar fluxos de dados entre dispositivos, serviços e APIs.
+
+### Gauge
+
+Gauge é um tipo de nó no Node-RED que permite a visualização de dados em tempo real em forma de medidor ou indicador. Ele é útil para monitorar valores contínuos, como temperatura, pressão, velocidade, entre outros.
+
+#### Dashboard
+
+O Dashboard no Node-RED é uma interface gráfica que permite aos usuários criar painéis de controle interativos para visualizar e controlar dispositivos IoT. Ele oferece uma variedade de widgets, como gráficos, medidores, interruptores e sliders, que podem ser configurados para exibir dados em tempo real e permitir a interação do usuário com os sistemas conectados.
