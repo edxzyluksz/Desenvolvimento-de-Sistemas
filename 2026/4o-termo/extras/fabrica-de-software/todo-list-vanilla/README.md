@@ -1,0 +1,1 @@
+# Projeto Inicial Fábrica de Software - To-Do List em HTML, CSS, JS (Vanilla)

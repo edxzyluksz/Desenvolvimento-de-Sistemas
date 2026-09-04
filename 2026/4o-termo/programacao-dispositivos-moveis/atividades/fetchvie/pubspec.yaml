@@ -1,0 +1,37 @@
+name: fetchvie
+description: "API fetch from TMDB (The Movie Database)"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^6.0.1
+  http: ^1.6.0
+  sqflite: ^2.4.3
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.8
+  image_picker: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - .env
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/fetchvie.png"
+
+flutter_native_splash:
+  color: "#1e1e1e"
+  image: "assets/fetchvie.png"
+  android: true

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6.A20.D4 - BoxModel - Posicionamento</title>
+    <style>
+        .caixa {
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .static {
+            background: gray;
+            position: static;
+        }
+
+        .relative {
+            background: blue;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        .absolute {
+            background: red;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            border-radius: 50%;
+        }
+
+        .fixed {
+            background: green;
+            position: fixed;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa static">Static</div>
+    <div class="caixa relative">Relative</div>
+    <div class="caixa absolute">Absolute</div>
+    <div class="caixa fixed">Fixed</div>
+</body>
+
+</html>

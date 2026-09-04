@@ -1,0 +1,19 @@
+@startuml TerrenoCasas
+start
+
+:Mostrar "Quantas casas terão no terreno?";
+:Leia quantidade_casas;
+
+:Mostrar "Qual a largura das casas?";
+:Leia largura_casas;
+
+:Mostrar "Qual o comprimento das casas?";
+:Leia comprimento_casas;
+
+:area_casas = largura_casas * comprimento_casas;
+:tamanho_terreno = area_casas * quantidade_casas;
+
+:Mostrar "A área do terreno que deverá ser utilizada para a construção de " + quantidade_casas + " casas é de " + tamanho_terreno + " m²";
+
+stop
+@enduml

@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Adaptativo</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+    nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    }
+
+    .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    }
+
+    .main {
+    flex: 70%;
+    padding: 0 20px;
+    }
+
+    .sidebar {
+    flex: 30%;
+    padding: 0 20px;
+    background-color: #eee;
+    }
+
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    }
+
+    /* Media Queries para tornar o layout adaptativo */
+    @media (max-width: 768px) {
+    .content {
+    flex-direction: column;
+    }
+
+    .main, .sidebar {
+    flex: 100%;
+    padding: 0;
+    }
+
+    nav a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    }
+    }
+    </style>
+ </head>
+ <body>
+
+    <header>
+    <h1>Layout Adaptativo</h1>
+    </header>
+
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+    </nav>
+
+    <div class="container">
+    <section class="content">
+    <main class="main">
+    <h2>Título Principal</h2>
+    <p>Este é um exemplo de layout adaptativo. O layout se ajusta automaticamente ao tamanho da tela, proporcionando uma experiência de usuário otimizada em diferentes dispositivos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac accumsan justo tincidunt id.</p>
+    </main>
+
+    <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <p>Links úteis ou informações adicionais podem ser exibidos aqui.</p>
+    </aside>
+    </section>
+    </div>
+
+    <footer>
+    <p>&copy; 2024 Layout Adaptativo</p>
+    </footer>
+
+ </body>
+ </html>
+ ```

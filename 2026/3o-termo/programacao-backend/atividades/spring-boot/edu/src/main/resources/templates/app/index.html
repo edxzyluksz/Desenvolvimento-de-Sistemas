@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+    <title>Área Interna | Sistema de Estoque e
+        Patrimônio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+    <div th:include="~{fragments/header :: header}"></div>
+    <main class="senai-main">
+        <section class="senai-hero">
+            <div class="senai-shell" style="justify-content:center;">
+                <div class="senai-card" style="width: 100%;">
+                    <h1 class="senai-title" style="font-size: 22px;">Área interna</h1>
+                    <p class="senai-subtitle" style="margin-top: 6px;">Você está logado.</p>
+                    <p style="margin: 12px 0 0;" th:if="${nif}">
+                        <strong>NIF:</strong> <span th:text="${nif}"></span>
+                    </p>
+                    <div class="senai-actions" style="margin-top: 16px;">
+                        <a class="senai-button" th:href="@{/logout}">Logout</a>
+                        <a class="senai-link" th:href="@{/}">Voltar para a tela inicial</a>
+                    </div>
+                    <hr style="margin: 18px 0; border: 0; border-top: 1px solid #E5E7EB;" />
+                    <h2 style="margin: 0; font-size: 18px;">Próximos passos</h2>
+                    <ul style="margin: 10px 0 0;">
+                        <li>Criar as telas de
+                            Materiais, Categorias, Movimentações e Ativos.</li>
+                        <li>Conectar os botões às
+                            rotas e aos endpoints da API.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div th:include="~{fragments/footer :: footer}"></div>
+</body>
+
+</html>

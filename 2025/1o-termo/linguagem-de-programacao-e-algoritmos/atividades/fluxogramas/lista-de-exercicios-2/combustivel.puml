@@ -1,0 +1,24 @@
+@startuml Combustivel
+start
+
+repeat
+  :Mostrar "Para viajar, é necessário abastecer.\nDigite o valor do combustível de seu carro:";
+  :Leia dinheiro;
+  if (dinheiro < 0?) then (Sim)
+    :Mostrar "Valor inválido. Confira a sua escrita de dinheiro.";
+  endif
+repeat while (dinheiro < 0)
+
+repeat
+  :Mostrar "Digite a capacidade total do tanque ou o que falta para encher:";
+  :Leia tanque;
+  if (tanque < 0?) then (Sim)
+    :Mostrar "Valor de tanque inválido. Confira a sua escrita de tanque.";
+  endif
+repeat while (tanque < 0)
+
+:valorviagem = dinheiro * tanque;
+:Mostrar "Para viajar, você precisará de R$" + valorviagem + " para encher o tanque.\nEste valor pode não ser o suficiente, mesmo assim.";
+
+stop
+@enduml

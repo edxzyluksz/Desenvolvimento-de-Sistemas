@@ -1,0 +1,14 @@
+@startuml Aquario
+start
+
+:Mostrar "Informe o tamanho do tanque em m³";
+:Leia tamanho_tanque;
+
+:Mostrar "Informe a densidade de cada peixe em unidades/m³";
+:Leia densidade_peixes;
+
+:quantidade_peixes = tamanho_tanque / densidade_peixes;
+:Mostrar "A quantidade de peixes que poderá ser alocada num tanque de " + tamanho_tanque + " m³ é " + quantidade_peixes + " unidades";
+
+stop
+@enduml

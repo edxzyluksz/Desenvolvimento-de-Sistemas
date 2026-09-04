@@ -1,0 +1,14 @@
+@startuml NumeroInteiro
+start
+
+:Mostrar \"Escreva um número:\";
+:Leia número;
+
+if (número >= 0?) then (Sim)
+  :Mostrar \"Seu número é positivo!\";
+elseif (número < 0?) then (Sim)
+  :Mostrar \"Seu número é negativo!\";
+endif
+
+stop
+@enduml

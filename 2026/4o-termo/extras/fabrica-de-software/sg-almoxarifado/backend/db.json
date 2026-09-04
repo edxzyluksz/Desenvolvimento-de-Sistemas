@@ -1,0 +1,85 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Carlos Silva",
+      "cargo": "Administrador"
+    },
+    {
+      "id": "2",
+      "nome": "Mariana Santos",
+      "cargo": "Operador de Almoxarifado"
+    },
+    {
+      "id": "3",
+      "nome": "Roberto Almeida",
+      "cargo": "Operador de Almoxarifado"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Luva de Proteção Nitrílica (Par)",
+      "sku": "EPI-LUV-001",
+      "quantidade_estoque": 57
+    },
+    {
+      "id": "2",
+      "nome": "Óculos de Segurança Antirrisco",
+      "sku": "EPI-OCU-002",
+      "quantidade_estoque": 20
+    },
+    {
+      "id": "3",
+      "nome": "Parafuso Sextavado M8 x 50mm (Cento)",
+      "sku": "FIX-PAR-101",
+      "quantidade_estoque": 12
+    },
+    {
+      "id": "4",
+      "nome": "Cabo de Rede UTP Cat6 (Metro)",
+      "sku": "INF-CAB-301",
+      "quantidade_estoque": 150
+    },
+    {
+      "id": "5",
+      "nome": "Fita Isolante 3M 19mm x 20m",
+      "sku": "ELE-FIT-202",
+      "quantidade_estoque": 8
+    }
+  ],
+  "movimentacoes": [
+    {
+      "id": "1",
+      "produto_id": "1",
+      "usuario_id": "1",
+      "tipo": "entrada",
+      "quantidade_movimentada": 50,
+      "data": "2026-08-25T14:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "produto_id": "1",
+      "usuario_id": "2",
+      "tipo": "saida",
+      "quantidade_movimentada": 5,
+      "data": "2026-08-28T09:15:00.000Z"
+    },
+    {
+      "id": "3",
+      "produto_id": "2",
+      "usuario_id": "2",
+      "tipo": "entrada",
+      "quantidade_movimentada": 20,
+      "data": "2026-08-30T11:00:00.000Z"
+    },
+    {
+      "produto_id": "1",
+      "usuario_id": "1",
+      "tipo": "entrada",
+      "quantidade_movimentada": 12,
+      "data": "2026-09-01T14:07:05.865Z",
+      "id": "nrPApwF"
+    }
+  ]
+}

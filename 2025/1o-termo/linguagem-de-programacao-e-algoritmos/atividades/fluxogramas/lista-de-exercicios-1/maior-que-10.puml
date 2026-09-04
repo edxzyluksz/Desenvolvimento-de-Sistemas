@@ -1,0 +1,14 @@
+@startuml MaiorQue10
+start
+
+:Mostrar "Olá! Digite um número:";
+:Leia número;
+
+if (número > 10?) then (Sim)
+  :Mostrar "É MAIOR QUE 10!";
+else (Não)
+  :Mostrar "NÃO É MAIOR QUE 10!";
+endif
+
+stop
+@enduml

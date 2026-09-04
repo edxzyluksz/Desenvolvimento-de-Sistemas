@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4.A17.D2.Vários Tipos de CSS</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1#Exemplo1{
+            color: white;
+            text-align: center;
+        }
+        .especial{
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        
+        p#peixinhos{
+            text-align: center;
+            color: blueviolet;
+        }
+
+        .estilop2{
+            color: red;
+            text-align: center;
+        }
+
+
+
+        p.Exemplo2{
+            color: red;
+            text-align: center;
+        }
+        p.cl2{
+            background-color: blue;
+        }
+
+
+
+        h1.Exemplo3{
+            text-align: center;
+            color: blue;
+            border: 2px solid tomato;
+        }
+        h2.Exemplo3{
+            color: darkblue;
+            border: 5px dashed rgb(72,128,244);
+        }
+        p.Exemplo3{
+            color: mediumpurple;
+            background-color: rgba(72,128,244,0.25);
+        }
+
+
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+        p.two {
+            border-style: solid;
+            border-width: medium;
+            border-color: red;
+        }
+        p.three {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: green;
+        }
+        p.four {
+            border-style: solid;
+            border-width: thick;
+            border-color: red green blue yellow;
+        }
+        p.five {
+            border-style: double;
+            border-width: 15px;
+        }
+        p.six {
+            border-style: double;
+            border-width: thick;
+        }
+        p.seven {
+            border-style: solid;
+            border-width: 2px 10px 4px 20px;
+        }
+
+        div{
+            border: 1px solid black;
+            /* margin-top: 100px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+            margin-left: 80px; */
+            margin: 100px 80px 150px 100px;
+            background-color: lightcoral;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--Exemplo 1-->
+    <h1 id="Exemplo1">Exemplo de CSS</h1>
+    <p class="especial">Isso é um parágrafo.</p>
+    <p id="peixinhos" class="especial">Olá, aluninhos peixinhos dourados!</p>
+    <p>Este parágrafo não é afetado pelo CSS</p>
+    <p class="estilop2 especial">Cabeçalho vermelho e alinhamento no centro</p>
+    <p class="estilop2 especial">Parágrafo e alinhamento também no centro.</p>
+    <h3 class="estilop2">Exemplo h3</h3>
+
+    <hr>
+
+    <!--Exemplo 2-->
+    <h1 class="Exemplo2">Este cabeçalho não será afetado</h1>
+    <p class="Exemplo2">Este parágrafo será vermelho e alinhado no centro</p>
+    <p class="Exemplo2 cl2">Este parágrafo será vermelho, alinhado no centro e 
+        com fundo azul
+    </p>
+
+    <hr>
+
+    <!--Exemplo 3-->
+    <h1 class="Exemplo3">Olá SENAI!</h1>
+    <h2 class="Exemplo3">Adeus SENAI!</h2>
+    <p class="Exemplo3">fui....</p>
+
+    <hr>
+
+    <!--Exemplo 4-->
+    <h1>Olá Senai</h1>
+    <p>Esssas propriedades especificam a largura e estilo das 4 bordas</p>
+    <p class="one">1.)</p>
+    <p class="two">2.)</p>
+    <p class="three">3.)</p>
+    <p class="four">4.)</p>
+    <p class="five">5.)</p>
+    <p class="six">6.)</p>
+    <p class="seven">7.)</p>
+
+    <h2>Usando propriedades individuais de margem</h2>
+    <div>
+        Este elemento div tem uma margem de cima de 100px, direita de 150px, baixo igual a 100px e da esquerda de 80px
+    </div>
+    <p>Outro par</p>
+</body>
+</html>

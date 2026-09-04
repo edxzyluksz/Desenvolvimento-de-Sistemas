@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark{
+    background-color: rgb(82, 80, 80);
+    color: white;
+}
+
+header {
+    display: flex;
+    background-color: #a9987c;
+    height: 9.5vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+header img {
+    max-height: 90%;
+    aspect-ratio: 1 / 1;
+}
+
+header nav {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5%;
+}
+
+header nav ul li button {
+    color: black;
+    padding: 2.5vh;
+    background-color: gainsboro;
+    height: 100%;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+header nav ul li button:hover {
+    text-decoration: underline;
+    background-color: rgb(163, 157, 157);
+}
+
+header nav ul li a:hover {
+    text-decoration:underline;
+}
+
+main {
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.user {
+    width: 550px;
+    min-width: 30vw;
+}
+
+.user form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    max-width: 15vw;
+}
+
+#gcc-articles article {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 70vw;
+    min-height: 35vh;
+    max-height: 320px;
+}
+
+#gcc-articles article section {
+    color: white;
+    background-color: #ffa408;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gcc-articles img {
+    border-radius: 15px;
+    max-height: 90%;
+    max-width: 95%;
+    border: 2px ridge white;
+}
+
+footer {
+    display: flex;
+    background-color: #e0b594;
+    height: 17.5vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    justify-content: space-around;
+}
+
+.vertical-hr {
+    border: 0.5px solid white;
+    height: 80%;
+}

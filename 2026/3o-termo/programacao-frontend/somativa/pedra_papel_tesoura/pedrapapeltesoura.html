@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel, Tesoura</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="textao">Pedra, papel, tesoura!</h1>
+    <div class="main-container">
+        <br>
+        <h2 class="texto" id="escolha-texto">Escolha sua opção:</h2>
+        <div class="escolha-pagina" id="selecao">
+            <button class="botao pessoa" id="pedra">
+                🗿
+            </button>
+            <button class="botao pessoa" id="papel">
+                📄
+            </button>
+            <button class="botao pessoa" id="tesoura">
+                ✂️
+            </button>
+        </div>
+        <div class="escolha-pagina" id="disputa" style="display: none;">
+            <span class="icone">👤</span>
+            <button class="botao pessoa" id="humano-resultado"></button>
+            <span class="texto versus">VS</span>
+            <button class="botao robo" disabled="disabled" id="robo-resultado"></button>
+            <span class="icone">🤖</span>
+        </div>
+        <h3 class="texto" id="texto-opcao">...</h3>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

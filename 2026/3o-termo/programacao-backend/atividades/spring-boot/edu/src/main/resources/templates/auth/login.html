@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+    <title>Login | Sistema de Estoque e Patrimônio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+    <div th:include="~{fragments/header :: header}"></div>
+    <main class="senai-main">
+        <section class="senai-hero">
+            <div class="senai-shell" style="justify-content:center;">
+                <div class="senai-card" style="width: 100%; max-width: 520px;">
+                    <h1 class="senai-title" style="font-size: 22px;">Login</h1>
+                    <p class="senai-subtitle" style="margin-top: 6px;">Acesse com NIF e senha.</p>
+                    <div th:if="${erro}" class="senai-alert senai-alert-error" role="alert">
+                        <p th:text="${erro}"></p>
+                    </div>
+                    <div th:if="${sucesso}" class="senai-alert senai-alert-success" role="status">
+                        <p th:text="${sucesso}"></p>
+                    </div>
+                    <form th:action="@{/login}" method="post" class="senai-form" autocomplete="on">
+                        <label class="senai-label" for="nif">NIF</label>
+                        <input class="senai-input" type="text" id="nif" name="nif" placeholder="Digite seu NIF" required
+                            maxlength="20" />
+                        <label class="senai-label" for="senha">Senha</label>
+                        <input class="senai-input" type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+                        <button class="senai-button" type="submit" style="width:100%; margin-top: 12px;">Entrar</button>
+                    </form>
+                    <p style="margin: 12px 0 0;">
+                        Não tem conta?
+                        <a class="senai-link" th:href="@{/cadastro}">Criar conta</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div th:include="~{fragments/footer :: footer}"></div>
+</body>
+
+</html>

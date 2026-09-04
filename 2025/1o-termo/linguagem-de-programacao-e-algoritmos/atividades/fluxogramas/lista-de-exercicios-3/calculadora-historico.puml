@@ -1,0 +1,70 @@
+@startuml CalculadoraHistorico
+start
+
+:calculadora = verdadeiro;
+:indiceHistorico = 0;
+
+while (calculadora)
+  :Mostrar "=== Calculadora de Binário ===\n\n";
+  :Mostrar "Digite um número em BINÁRIO:";
+  :Leia numeroInserido1;
+  :Validar numeroInserido1 (apenas '0' e '1') -> se inválido, mostrar mensagem e retorne;
+
+  :Mostrar "Digite outro número em BINÁRIO:";
+  :Leia numeroInserido2;
+  :Validar numeroInserido2 (apenas '0' e '1') -> se inválido, mostrar mensagem e retorne;
+
+  if (numeroInserido1 ou numeroInserido2 > 32 bits?) then (Sim)
+    :Mostrar "Entradas maiores que 32 bits não são suportadas.";
+    stop
+  endif
+
+  :Mostrar "Digite a operação que você deseja: (+), (-), (*), (/)";
+  :Leia operacao;
+
+  if (operacao == '+') then (Sim)
+    :resultado = tp.cadeia_para_inteiro(numeroInserido1, 2) + tp.cadeia_para_inteiro(numeroInserido2, 2);
+  elseif (operacao == '-') then (Sim)
+    :resultado = tp.cadeia_para_inteiro(numeroInserido1, 2) - tp.cadeia_para_inteiro(numeroInserido2, 2);
+  elseif (operacao == '*') then (Sim)
+    :resultado = tp.cadeia_para_inteiro(numeroInserido1, 2) * tp.cadeia_para_inteiro(numeroInserido2, 2);
+  elseif (operacao == '/') then (Sim)
+    :resultado = tp.cadeia_para_inteiro(numeroInserido1, 2) / tp.cadeia_para_inteiro(numeroInserido2, 2);
+  else
+    :Mostrar "Tente escrever os símbolos exatamente como aparecem acima.";
+    stop
+  endif
+
+  if (resultado > 4294967295?) then (Sim)
+    :Mostrar "Erro: resultado excede o limite de 32 bits (4294967295).";
+    stop
+  endif
+
+  :binarioFinal = tp.inteiro_para_cadeia(resultado, 2);
+  :Remover zeros à esquerda;
+
+  :Mostrar "Seu resultado foi: " + binarioFinal + " (" + resultado + ")";
+  if (resultado == 4294967295?) then (Sim)
+    :Mostrar "Este é o maior valor representável com 32 bits sem sinal.";
+  endif
+
+  :Gravar no histórico (até 4 cálculos);
+
+  :Mostrar "Deseja continuar? (sim ou não)";
+  :Leia simOUnao;
+  :simOUnao = tx.caixa_baixa(simOUnao);
+
+  if (simOUnao != "sim") then (Sim)
+    :Mostrar "Deseja visualizar o histórico? (sim ou não)";
+    :Leia simOUnao;
+    :simOUnao = tx.caixa_baixa(simOUnao);
+    if (simOUnao == "sim") then (Sim)
+      :Mostrar histórico de cálculos;
+    endif
+    :Mostrar "Adeus!";
+    :calculadora = falso;
+  endif
+endwhile
+
+stop
+@enduml

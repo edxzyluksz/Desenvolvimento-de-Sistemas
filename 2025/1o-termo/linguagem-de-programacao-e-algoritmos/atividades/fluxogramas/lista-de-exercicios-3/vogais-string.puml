@@ -1,0 +1,30 @@
+@startuml VogaisNaString
+start
+
+:Exibir "Digite uma palavra:";
+:ler frase;
+:frase = caixa_baixa(frase);
+:tamanho = numero_caracteres(frase);
+
+partition Vogais {
+    :vogais[] = {a, e, i, o, u};
+    :indiceVogal = 0;
+
+    while (indiceVogal < 5)
+        :quantidade = 0;
+        :posicaoFrase = 0;
+
+        while (posicaoFrase < tamanho)
+            if (obter_caracter(frase, posicaoFrase) == vogais[indiceVogal]) then (sim)
+                :quantidade++;
+            endif
+            :posicaoFrase++;
+        endwhile
+
+        :Exibir "Quantidade de vogais " + vogais[indiceVogal] + ": " + quantidade;
+        :indiceVogal++;
+    endwhile
+}
+
+stop
+@enduml

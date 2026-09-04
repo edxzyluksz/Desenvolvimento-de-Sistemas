@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5.A19.P1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .compras{
+            list-style-type: square;
+            /* list-style-image: url(images/robux.png); */
+            font-size: 18px;
+            color: green;
+            list-style-position: inside;
+        }
+
+        .compras li:nth-child(even){
+            color: darkblue;
+        }
+        .compras li:nth-child(odd){
+            color: red;
+        }
+
+         .compras li:hover{
+            color: orange;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Minha lista de compras</h2>
+    <ul class="compras">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+    </ul>
+</body>
+</html>

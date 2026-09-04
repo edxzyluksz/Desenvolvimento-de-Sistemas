@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6.A20.D5 - BoxModel - Z_Index</title>
+    <style>
+        body {
+            height: 600px;
+            background-color: #f0f0f0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .caixa {
+            width: 150px;
+            height: 150px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            position: absolute;
+            transition: transform 0.3s;
+        }
+
+        .caixa1 {
+            background-color: red;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        .caixa2 {
+            background-color: blue;
+            top: 140px;
+            left: 140px;
+            z-index: 2;
+        }
+
+        .caixa3 {
+            background-color: green;
+            top: 180px;
+            left: 180px;
+            z-index: 3;
+        }
+
+        .caixa:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Demonstração da propriedade Z-Index</h2>
+    <div class="caixa caixa1">z-Index: 1</div>
+    <div class="caixa caixa2">z-Index: 2</div>
+    <div class="caixa caixa3">z-Index: 3</div>
+    <p style="margin-top: 400px; text-align: center;">Passe o mouse nas caixas e veja o que está por cima 👆</p>
+</body>
+
+</html>

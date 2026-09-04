@@ -1,0 +1,60 @@
+@startuml ConversorBases
+start
+
+:Mostrar "=== Conversor de Bases Numéricas ===";
+:Mostrar "Digite o número que deseja converter:";
+:Leia numeroDigitado;
+
+:Mostrar opções de base de entrada (A-B-C);
+:Leia baseEntrada;
+:baseEntrada = caixa_alta(baseEntrada);
+
+if (baseEntrada == "A") then (Sim)
+    :baseOrigem = 2;
+else if (baseEntrada == "B") then (Sim)
+    :baseOrigem = 10;
+else if (baseEntrada == "C") then (Sim)
+    :baseOrigem = 16;
+else
+    :Mostrar "Base de entrada inválida";
+    stop
+endif
+
+if (cadeia_e_inteiro(numeroDigitado, baseOrigem)) then (Sim)
+    :valorInteiro = cadeia_para_inteiro(numeroDigitado, baseOrigem);
+else
+    :Mostrar "Número inválido para a base informada";
+    stop
+endif
+
+:Mostrar opções de base de saída (A-B-C);
+:Leia baseSaida;
+:baseSaida = caixa_alta(baseSaida);
+
+if (baseSaida == "A") then (Sim)
+    :baseDestino = 2;
+else if (baseSaida == "B") then (Sim)
+    :baseDestino = 10;
+else if (baseSaida == "C") then (Sim)
+    :baseDestino = 16;
+else
+    :Mostrar "Base de saída inválida";
+    stop
+endif
+
+:resultado = inteiro_para_cadeia(valorInteiro, baseDestino);
+
+while (numero_caracteres(resultado) > 1 e obter_caracter(resultado,1) == "0") is (Sim)
+    :resultado = extrair_subtexto(resultado,2,numero_caracteres(resultado));
+endwhile
+
+if (baseDestino == 2) then (Sim)
+    :Mostrar "Binário: 0b" + resultado;
+else if (baseDestino == 10) then (Sim)
+    :Mostrar "Decimal: " + resultado;
+else if (baseDestino == 16) then (Sim)
+    :Mostrar "Hexadecimal: " + caixa_alta(resultado);
+endif
+
+stop
+@enduml

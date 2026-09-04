@@ -1,0 +1,29 @@
+@startuml CalculoIMC
+start
+
+:faca {
+    :Mostrar "Digite o peso:";
+    :Leia peso;
+} while (peso <= 0)
+  :Mostrar "Inválido. Digite um número maior que 0.";
+
+:faca {
+    :Mostrar "Digite sua altura:";
+    :Leia altura;
+} while (altura <= 0)
+  :Mostrar "Inválido. Digite um número maior que 0.";
+
+:imc = peso / (altura * altura);
+
+if (imc < 18.5?) then (Sim)
+  :Mostrar "Você está Abaixo do Peso.";
+elseif (imc >= 18.5 e imc <= 24.9?) then (Sim)
+  :Mostrar "Seu peso é Normal.";
+elseif (imc >= 25 e imc <= 29.5?) then (Sim)
+  :Mostrar "Você está em Sobrepeso.";
+else
+  :Mostrar "Você está em Obesidade.";
+endif
+
+stop
+@enduml

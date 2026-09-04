@@ -1,0 +1,22 @@
+@startuml Palindromo
+start
+
+:Solicitar ao usuário que digite uma palavra;
+:ler frase;
+:Converter frase para letras minúsculas;
+:tamanho = número de caracteres da frase;
+
+:fraseInvertida = "";
+repeat
+    :i = tamanho - 1 até 0;
+    :fraseInvertida = fraseInvertida + caractere da frase na posição i;
+repeat while (i >= 0)
+
+if (frase == fraseInvertida) then (sim)
+    :Escrever "É um palíndromo!";
+else (não)
+    :Escrever "Não é um palíndromo!";
+endif
+
+stop
+@enduml

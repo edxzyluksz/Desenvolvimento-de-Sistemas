@@ -1,0 +1,11 @@
+@startuml DistanciaISP
+start
+
+:Mostrar "Informe a distância da sua casa ao ISP em metros:";
+:Leia dist;
+
+:dist_kilo = dist / 1000;
+:Mostrar "A distância é de " + dist_kilo + " quilômetros";
+
+stop
+@enduml

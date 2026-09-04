@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Admin - Escola XYZ</title>
+    <!-- Insert do Thymeleaf usa-se "~" -->
+    <div th:insert="~{fragments/style}"></div>
+    <!-- Link com elementos do static (css/js) usam "@" -->
+    <link rel="stylesheet" th:href="@{css/style-cadastro.css}">
+</head>
+
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="register-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Cadastro</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="cadastrar-adm">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Nome" name="nome">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" placeholder="CPF" name="cpf">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" name="email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="password" class="form-control" placeholder="Senha">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="password" class="form-control" placeholder="Confirmar Senha"
+                                        name="senha">
+                                </div>
+                                <button type="submit" class="btn btn-block btn-register"><i
+                                        class="fas fa-user-plus"></i> Cadastrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div>
+    </div>
+</body>
+</html>
+

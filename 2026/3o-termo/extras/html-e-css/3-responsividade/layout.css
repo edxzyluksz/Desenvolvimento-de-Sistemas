@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    font-family: 'SN Pro', sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://meche.mit.edu/sites/default/files/styles/hero/public/slides/Research%20Oceans.jpg?itok=okSrE16D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+a {
+    text-decoration: none;
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+
+header {
+    background-color: rgb(82, 90, 158);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 15vh;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5vw;
+}
+
+main {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    flex: 1;
+    margin-bottom: 5vh;
+    padding: 0 5vh 0 5vh;
+}
+
+main section {
+    border-radius: 10px;
+    background-color: rgb(152, 170, 132);
+    width: 30vw;
+    min-height: 35vh;
+    display: flex;
+    padding: 16px;
+    gap: 5%;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgb(93, 117, 65);
+
+}
+
+@media (max-width: 768px){
+    main {
+        flex-direction: column;
+    }
+    main section {
+        width: 100%;
+        min-height: 20vh;
+    }
+    .card-img {
+        width: 30%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.card-transiton hr {
+    border: 10px solid black;
+}
+
+.card-txt{
+    width: 65%;
+}
+
+.card-img {
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txt-r {
+    text-align: right;
+}
+
+.txt-l {
+    text-align: left;
+}
+
+
+footer {
+    background-color: rgb(32, 32, 32);
+    min-height: 20vh;
+    text-align: center;
+}
+
+.footer-content {
+    margin: 2vh;
+}
+
+footer ul {
+    list-style: none;          
+    padding: 0;
+    margin: 2vh 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;   
+}
+
+a:hover {
+    color: #ffffff;
+}

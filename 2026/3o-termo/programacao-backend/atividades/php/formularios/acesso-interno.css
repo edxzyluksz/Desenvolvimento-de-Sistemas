@@ -1,0 +1,6 @@
+body {
+    background-image: url(https://forbes.com.br/wp-content/uploads/2020/11/Listas_MaioresEmpresasPrivadasEUA_231120_Getty.jpg);
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(10px);
+}

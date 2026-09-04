@@ -1,0 +1,39 @@
+<section class="container-curriculos">
+  <div class="page-header-intro">
+    <h1>Buscar Currículos</h1>
+    <h2><a href="/painel-curriculos">Ver painel</a></h2>
+  </div>
+
+  <input type="text"
+    aria-label="Pesquisar um currículo pelo ID"
+    name="pesquisa-curriculo"
+    id="pesquisa-curriculo"
+    placeholder="Insira o ID do postulante..."
+    #campo
+    (keyup.enter)="buscarCurriculo(campo.value)">
+
+  @if (isLoading) {
+    <div class="spinner-container">
+      <div class="loader"></div>
+      <p>Buscando candidato...</p>
+    </div>
+  }
+
+  @if (curriculoEncontrado && !isLoading) {
+    <div class="curriculo-card-result">
+      <div class="card-header">
+        <h3>{{ curriculoEncontrado.nome }}</h3>
+        <span class="badge">Candidato Encontrado</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>ID de Vínculo:</strong> {{ curriculoEncontrado.userId }}</p>
+        <p><strong>E-mail:</strong> {{ curriculoEncontrado.email }}</p>
+        <p><strong>Formação:</strong> {{ curriculoEncontrado.formacao }}</p>
+        <p><strong>Experiência:</strong> {{ curriculoEncontrado.experiencia }}</p>
+        <p><strong>Habilidades:</strong> {{ curriculoEncontrado.habilidades }}</p>
+        <p><strong>LinkedIn:</strong> <a href="{{ curriculoEncontrado.linkedin }}" target="_blank">{{ curriculoEncontrado.linkedin }}</a></p>
+      </div>
+    </div>
+  }
+</section>

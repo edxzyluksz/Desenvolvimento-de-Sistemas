@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Maria Silva",
+      "email": "maria@email.com"
+    },
+    {
+      "id": "2",
+      "name": "João Silva",
+      "email": "joao@email.com"
+    },
+    {
+      "id": "1234",
+      "name": "Pedro C",
+      "email": "pedro@email.com"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Dom Casmurro",
+      "author": "Machado de Assis",
+      "available": true
+    },
+    {
+      "id": "2",
+      "title": "O Cortiço",
+      "author": "Aluísio Azevedo",
+      "available": true
+    }
+  ],
+  "loans": [
+    {
+      "id": "1",
+      "userId": "1",
+      "bookId": "1",
+      "loanDate": "2023-06-01",
+      "returnDate": "2023-06-15"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

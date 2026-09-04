@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4.A16 - Validações</title>
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        legend {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0056B3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf"
+        pattern="\d{3}\.d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+        <br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep"
+        pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+        <br><br>
+        <label for="fone">Telefone:</label>
+        <input type="text" name="telefone" id="fone"
+        pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(11)91234-5678" required>
+        <br><br>
+        <input type="submit" value="Validar">
+    </form>
+    <script src="../retorno.js"></script>
+</body>
+</html>

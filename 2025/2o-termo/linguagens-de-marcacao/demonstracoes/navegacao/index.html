@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4.A11 Demo 1 - Links e Âncoras</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header id="topo">
+        <h1>Aula 11 - Links e âncoras</h1>
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="sobre.html">Sobre</a> |
+            <a href="contato.html">Contato</a> |
+            <a href="https:/www.sp.senai.br" target="_blank" 
+            title="Abrir site do SENAI em nova aba">SENAI/SP</a>
+        </nav>
+        <hr>
+
+    </header>
+    <!--Corpo principal-->
+    <main>
+        <p>Este site demonstra diferentes tipos de links: externo, internos,
+            âncoras internas, download e imagem como link.
+        </p>
+        <h2>Índice (Âncoras Internas)</h2>
+        <ul>
+            <li><a href="#intro">Ir para Introdução</a></li>
+            <li><a href="#conteudo">Ir para Conteúdo</a></li>
+            <li><a href="#conclusao">Ir para Conclusão</a></li>
+        </ul>
+
+        <section id="intro">
+            <h2>Introdução</h2>
+            <p id="secao-introducao">Nesta seção mostramos um parágrafo com um
+                <a href="sobre.html" title="Ir para a página Sobre">Link Interno</a>
+                e um <a href="https://www.w3.org/" target="_blank" title="Abrir o W3C">
+                Link Externo </a>
+            </p>
+            <p> <a href="#topo">Voltar ao topo</a></p>
+        </section>
+
+        <section id="conteudo">
+            <h2>Conteúdo</h2>
+            <p>Você pode baixar um material da aula clicando no link abaixo (usa
+                o atributo <code>download)</code>
+            </p>
+            <p><a href="arquivos/M4_A10_Inserindo_Imagens_Elementos_e_Atributos.pdf" download>
+                Baixar Guia da Aula 11 (PDF)</a></p>
+                <p>Também é possível usar uma imagem como link. Clique no logo para ir à
+                    página de contato:</p>
+            <p> <a href="contato.html" title="Ir para o Contato">
+                <img src="assets/logo.svg" alt="Logo Aula 11" width="200"></a>
+            </p>
+            <p><a href="#topo">Voltar para o topo</a></p>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Links conectam conteúdos e páginas, tornando a navegação possível.</p>
+            <p><a href="#topo">Voltar ao topo</a></p>
+        </section>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <hr>
+        <p>Demonstração Aula 11 - Links e Âncoras</p>
+    </footer>
+</body>
+</html>
